@@ -12,7 +12,7 @@ Hi,
 
 
 ## Students
-*
+*[David Tetreau] (https://twitter.com/david_tetreau)
 *
 *
 *
