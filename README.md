@@ -1,4 +1,4 @@
-# March 2021 Team: 💀🔥Post-Apocalyptic Coders🔥💀
+# March 2021 Team: 🔥Post-Apocalyptic Coders🔥
 
 
 Hi,
