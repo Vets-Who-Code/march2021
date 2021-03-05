@@ -3,7 +3,7 @@
 
 Hi,
 
- Welcome to Vets Who Code play repo for the new troops.
+Welcome to Vets Who Code play repo for the new troops.
 
 ## Instructors
 * [Jay](https://twitter.com/JeromeHardaway)
