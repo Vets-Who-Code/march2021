@@ -2,4 +2,4 @@
 
 
 Hi,
-I am Jerome, teaching these horrible people:
+I am Jerome, teaching these awesome people:
