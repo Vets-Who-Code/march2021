@@ -12,7 +12,7 @@ Hi,
 
 
 ## Students
-*
+* [Steve](https://twitter.com/sa_lamoureux)
 *
 *
 *
