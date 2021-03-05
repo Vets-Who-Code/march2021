@@ -7,11 +7,12 @@ Hi,
 
 ## Instructors
 * [Jay](https://twitter.com/JeromeHardaway)
-*
+* 
 *
 
 
 ## Students
+* [Joe](https://twitter.com/@joer71560650)
 * [Steve](https://twitter.com/sa_lamoureux)
 *
 *
@@ -20,7 +21,3 @@ Hi,
 *
 *
 *
-*
-
-
-
