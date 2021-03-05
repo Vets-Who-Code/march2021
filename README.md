@@ -3,7 +3,7 @@
 
 Hi,
 
-I am, teaching these awesome people:
+ Welcome to Vets WHo Code play repo for the new troops.
 
 ## Instructors
 * [Jay](https://twitter.com/JeromeHardaway)
