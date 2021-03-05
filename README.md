@@ -7,7 +7,7 @@ Hi,
 
 ## Instructors
 * [Jay](https://twitter.com/JeromeHardaway)
-*
+* [Joe](https://twitter.com/@joer71560650)
 *
 
 
