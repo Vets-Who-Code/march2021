@@ -1,23 +1,24 @@
-# March 2021 Team  Post-Apocalyptic Coder
-
+# March 2021 Team: 🔥Post-Apocalyptic Coders🔥
 
 Hi,
 
- Welcome to Vets Who Code play repo for the new troops.
+Welcome to Vets Who Code play repo for the new troops.
 
 ## Instructors
-* [Jay](https://twitter.com/JeromeHardaway)
-* 
-*
 
+- [Jay](https://twitter.com/JeromeHardaway)
+-
+-
 
 ## Students
-* [Joe](https://twitter.com/joer71560650)
-* [Steve](https://twitter.com/sa_lamoureux)
-* [David](https://twitter.com/david_tetreau)
-* [Trevon](https://twitter.com/Trey41741256)
-*
-*
-*
-*
-*
+
+- [Joe](https://twitter.com/joer71560650):apple:
+- [Steve](https://twitter.com/sa_lamoureux)
+- [David](https://twitter.com/david_tetreau):shipit:
+- [Lim](https://www.linkedin.com/in/sung-m-lim/)🍕🥓
+- [Albert](https://www.linkedin.com/in/albertdkim/)
+- [Mario](https://twitter.com/MarioDMitchell)
+- [Clinton](https://twitter.com/ClintonHerndon3)
+-
+-
+-
