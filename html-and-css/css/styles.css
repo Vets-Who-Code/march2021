@@ -61,7 +61,8 @@ h1 {
     color: var(--light-mode);
     font-size: 3.5em;
     color: #8a0303;
-    margin-left: 20px;
+    text-align: center;
+    margin: 20px 0;
 }
 
 nav {
@@ -83,4 +84,11 @@ nav a {
     text-align: center;
     padding: 15px 18px;
     text-decoration: none;
+}
+
+img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
 }
