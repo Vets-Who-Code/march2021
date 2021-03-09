@@ -46,24 +46,27 @@ q:before, q:after {
 
 :root {
 
-    --light-mode:#f8f8f8;
-    --dark-mode:#080808;
+    --light-mode:#eb6123;
+    --dark-mode:#191919;
     --dark-red: #8a0303;
     --light-green: #60D88E;
+    --off-white: #f8f8f8;
     font-size: 10px;
 }
 
 body {
-    background-color: var(--dark-mode) ;
-    color: var(--light-mode);
+    background-color: var(--light-mode) ;
     font-size: 2em;
     padding: .5em .5em;
 }
 
+body.dark-theme {
+    background-color: var(--dark-mode)
+}
+
 h1 {
-    color: var(--light-mode);
     font-size: 3.5em;
-    color: var(--dark-red);
+    color: var(--off-white);
     text-align: center;
     margin: 20px 0;
 }
@@ -75,7 +78,7 @@ nav {
 
 p {
     line-height: 30px;
-    color: var(--dark-red);
+    color: var(--off-white);
     margin: 20px;
 }
 
@@ -92,14 +95,14 @@ nav a {
 
 nav a:link, a:visited {
     text-decoration: none;
-    color: var(--dark-red);
+    color: var(--off-white);
 }
 
 nav a:hover {
     color: var(--light-green);
 }
 nav button {
-    color: var(--dark-red);
+    color: var(--off-white);
     background-color: rgb(24, 23, 23);
     border-radius: 1em;
 }
@@ -109,10 +112,10 @@ nav button:focus {
 }
 
 img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .blood {
