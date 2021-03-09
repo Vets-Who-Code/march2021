@@ -48,6 +48,7 @@ q:before, q:after {
 
     --light-mode:#f8f8f8;
     --dark-mode:#080808;
+    --dark-red: #8a0303;
     font-size: 10px;
 }
 
@@ -60,7 +61,7 @@ body {
 h1 {
     color: var(--light-mode);
     font-size: 3.5em;
-    color: #8a0303;
+    color: var(--dark-red);
     text-align: center;
     margin: 20px 0;
 }
@@ -72,7 +73,7 @@ nav {
 
 p {
     line-height: 30px;
-    color: #8a0303;
+    color: var(--dark-red);
     margin: 20px;
 }
 
@@ -84,6 +85,16 @@ nav a {
     text-align: center;
     padding: 15px 18px;
     text-decoration: none;
+    text-decoration-style: none;
+}
+
+nav a:link, a:visited {
+    text-decoration: none;
+    color: var(--dark-red);
+}
+nav button {
+    color: var(--dark-red);
+    background-color: rgb(24, 23, 23);
 }
 
 img {
