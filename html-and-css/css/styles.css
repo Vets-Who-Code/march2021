@@ -60,12 +60,21 @@ body {
 h1 {
     color: var(--light-mode);
     font-size: 3.5em;
+    color: #8a0303;
+    margin-left: 20px;
 }
 
 nav {
     display: flex;
     overflow: hidden;
 }
+
+p {
+    line-height: 30px;
+    color: #8a0303;
+    margin: 20px;
+}
+
  li {
      display: inline;
  }
