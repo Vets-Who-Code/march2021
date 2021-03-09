@@ -57,7 +57,7 @@ q:before, q:after {
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--off-white);
-    background-color: var(--light-mode) ;
+    background-color: var(--light-mode);
     font-size: 2em;
     padding: .5em .5em;
 }
