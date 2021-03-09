@@ -56,6 +56,7 @@ body {
     background-color: var(--dark-mode) ;
     color: var(--light-mode);
     font-size: 2em;
+    padding-top: .5em;
 }
 
 h1 {
@@ -95,6 +96,7 @@ nav a:link, a:visited {
 nav button {
     color: var(--dark-red);
     background-color: rgb(24, 23, 23);
+    border-radius: 1em;
 }
 
 img {
