@@ -49,6 +49,7 @@ q:before, q:after {
     --light-mode:#f8f8f8;
     --dark-mode:#080808;
     --dark-red: #8a0303;
+    --light-green: #60D88E;
     font-size: 10px;
 }
 
@@ -57,7 +58,6 @@ body {
     color: var(--light-mode);
     font-size: 2em;
     padding: .5em .5em;
-    overflow: hidden;
 }
 
 h1 {
@@ -93,6 +93,10 @@ nav a {
 nav a:link, a:visited {
     text-decoration: none;
     color: var(--dark-red);
+}
+
+nav a:hover {
+    color: var(--light-green);
 }
 nav button {
     color: var(--dark-red);
