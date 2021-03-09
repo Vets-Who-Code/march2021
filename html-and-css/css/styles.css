@@ -56,7 +56,8 @@ body {
     background-color: var(--dark-mode) ;
     color: var(--light-mode);
     font-size: 2em;
-    padding-top: .5em;
+    padding: .5em .5em;
+    overflow: hidden;
 }
 
 h1 {
