@@ -55,6 +55,8 @@ q:before, q:after {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--off-white);
     background-color: var(--light-mode) ;
     font-size: 2em;
     padding: .5em .5em;
@@ -65,6 +67,7 @@ body.dark-theme {
 }
 
 h1 {
+    font-family: 'Creepster', cursive;
     font-size: 3.5em;
     color: var(--off-white);
     text-align: center;
