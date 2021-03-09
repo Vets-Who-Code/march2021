@@ -46,4 +46,32 @@ q:before, q:after {
 
 :root {
 
+    --light-mode:#f8f8f8;
+    --dark-mode:#080808;
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--dark-mode) ;
+    color: var(--light-mode);
+    font-size: 2em;
+}
+
+h1 {
+    color: var(--light-mode);
+    font-size: 3.5em;
+}
+
+nav {
+    display: flex;
+    overflow: hidden;
+}
+ li {
+     display: inline;
+ }
+nav a {
+    float: left;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
 }
