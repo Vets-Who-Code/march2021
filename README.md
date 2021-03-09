@@ -19,6 +19,6 @@ Welcome to Vets Who Code play repo for the new troops.
 - [Albert](https://www.linkedin.com/in/albertdkim/)
 - [Mario](https://twitter.com/MarioDMitchell)
 - [Clinton](https://twitter.com/ClintonHerndon3)
--
+- [Trevon](https://twitter.com/Trey41741256)
 -
 -
