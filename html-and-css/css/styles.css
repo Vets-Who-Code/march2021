@@ -107,8 +107,9 @@ nav a:hover {
 }
 
 nav button {
+    width: 10em;
     color: var(--off-white);
-    background-color: rgb(24, 23, 23);
+    background-color: #575151;
     border-radius: 1em;
 }
 
