@@ -108,10 +108,16 @@ nav a:hover {
 
 nav button {
     width: 10em;
-    color: var(--off-white);
+    color: var(--dark-mode);
     background-color: #575151;
     border-radius: 1em;
+    font-size: 1em;
+    font-family: 'Creepster', cursive;
 }
+nav button.dark-theme{
+    color: var(--light-mode);
+}
+
 
 nav button:focus {
     outline: rgb(24, 23, 23);

@@ -10,7 +10,7 @@ btn.addEventListener("click", function() {
 
   //on click swap out btn text
   btn.innerHTML = (btn.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
-
+  btn.classList.toggle("dark-theme");
 });
 
 //on click take button away and append zombie gif"//
