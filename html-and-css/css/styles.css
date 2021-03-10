@@ -59,7 +59,8 @@ body {
     color: var(--off-white);
     background-color: var(--light-mode);
     font-size: 2em;
-    padding: .5em .5em;
+    
+    margin: .75em 1em;
 }
 
 body.dark-theme {
@@ -77,6 +78,7 @@ h1 {
 nav {
     display: flex;
     overflow: hidden;
+    height: 2em;
 }
 
 p {
@@ -84,12 +86,14 @@ p {
     color: var(--off-white);
     margin: 20px;
 }
+nav ul {
+    padding-top: .5em;
+}
 
- li {
-     display: inline;
- }
+li {
+    display: inline;
+}
 nav a {
-    float: left;
     text-align: center;
     padding: 15px 18px;
     text-decoration: none;
@@ -105,13 +109,21 @@ nav a:hover {
     color: var(--light-green);
 }
 nav button {
+    width: 10em;
     color: var(--off-white);
-    background-color: rgb(24, 23, 23);
+    background-color: #575151;
     border-radius: 1em;
+    font-family: 'Creepster', cursive;
+    font-size: 1em;
 }
 
 nav button:focus {
     outline: rgb(24, 23, 23);
+}
+
+
+nav button:hover {
+    color: var(--light-green);
 }
 
 img {
