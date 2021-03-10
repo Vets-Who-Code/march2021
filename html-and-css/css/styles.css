@@ -133,6 +133,10 @@ img {
     width: 50%;
 }
 
+.col {
+    text-align: center;
+}
+
 .blood {
     font-family: nosifer;
     font-size:5em;
