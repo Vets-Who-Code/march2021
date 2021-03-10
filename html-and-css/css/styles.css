@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,22 +91,40 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
@@ -46,127 +132,139 @@ q:before, q:after {
 
 :root {
 
-    --light-mode:#eb6123;
-    --dark-mode:#191919;
-    --dark-red: #8a0303;
-    --light-green: #60D88E;
-    --off-white: #f8f8f8;
-    font-size: 10px;
+	--light-mode: #eb6123;
+	--dark-mode: #191919;
+	--dark-red: #8a0303;
+	--light-green: #60D88E;
+	--off-white: #f8f8f8;
+	font-size: 10px;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--off-white);
-    background-color: var(--light-mode);
-    font-size: 2em;
-    
-    margin: .75em 1em;
+	font-family: 'Roboto', sans-serif;
+	color: var(--off-white);
+	background-color: var(--light-mode);
+	font-size: 2em;
+	margin: .75em 1em;
 }
 
 body.dark-theme {
-    background-color: var(--dark-mode)
+	background-color: var(--dark-mode)
 }
 
 h1 {
-    font-family: 'Creepster', cursive;
-    font-size: 3.5em;
-    color: var(--off-white);
-    text-align: center;
-    margin: 20px 0;
+	font-family: 'Creepster', cursive;
+	font-size: 3.5em;
+	color: var(--off-white);
+	text-align: center;
+	margin: 20px 0;
 }
 
 nav {
-    display: flex;
-    overflow: hidden;
-    height: 2em;
+	display: flex;
+	overflow: hidden;
+	height: 2em;
+	justify-content: center;
 }
 
 p {
-    line-height: 30px;
-    color: var(--off-white);
-    margin: 20px;
+	line-height: 30px;
+	color: var(--off-white);
+	margin: 20px;
+	text-indent: 20px;
 }
+
 nav ul {
-    padding-top: .5em;
+	padding-top: .5em;
 }
 
 li {
-    display: inline;
-}
-nav a {
-    text-align: center;
-    padding: 15px 18px;
-    text-decoration: none;
-    text-decoration-style: none;
+	display: inline;
 }
 
-nav a:link, a:visited {
-    text-decoration: none;
-    color: var(--off-white);
+nav a {
+	text-align: center;
+	padding: 15px 18px;
+	text-decoration: none;
+	text-decoration-style: none;
+}
+
+nav a:link,
+a:visited {
+	text-decoration: none;
+	color: var(--off-white);
 }
 
 nav a:hover {
-    color: var(--light-green);
+	color: var(--light-green);
 }
+
 nav button {
-    width: 10em;
-    color: var(--off-white);
-    background-color: #575151;
-    border-radius: 1em;
-    font-family: 'Creepster', cursive;
-    font-size: 1em;
+	width: 10em;
+	color: var(--off-white);
+	background-color: #575151;
+	border-radius: 1em;
+	font-family: 'Creepster', cursive;
+	font-size: 1em;
 }
 
 nav button:focus {
-    outline: rgb(24, 23, 23);
+	outline: rgb(24, 23, 23);
 }
 
 
 nav button:hover {
-    color: var(--light-green);
+	color: var(--light-green);
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding: 50px 0;
+}
+
+.about {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .col {
-    text-align: center;
+	text-align: center;
+	padding: 50px 0;
 }
 
 .blood {
-    font-family: nosifer;
-    font-size:5em;
-    transition: all .25s ease;
-      -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
-    animation: drip 2.5s infinite alternate;
+	font-family: nosifer;
+	font-size: 5em;
+	transition: all .25s ease;
+	-webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
+	animation: drip 2.5s infinite alternate;
 
-  }
+}
 
-  @keyframes drip {
-      to {
-          text-shadow:
-         4px 4px 1px #300000,
-         4px 6px 1px #400000,
-         4px 8px 1px #500000,
-         4px 10px 1px #600000,
-         4px 12px 1px #700000,
-         4px 14px 1px #800000,
-         4px 16px 1px #900000,
-         4px 18px 1px #A00000,
-         4px 20px 1px #B00000,
-         4px 22px 1px #C00000,
-         4px 24px 1px #D00000,
-         4px 26px 1px #E00000,
-         4px 28px 1px #F00000,
-         4px 30px 1px #FA0000,
-         4px 32px 1px #FB0000,
-         4px 34px 1px #FC0000,
-         4px 36px 1px #FD0000,
-         4px 38px 1px #FE0000,
-         4px 40px 2px #FF0000;
-      }
-  }
+@keyframes drip {
+	to {
+		text-shadow:
+			4px 4px 1px #300000,
+			4px 6px 1px #400000,
+			4px 8px 1px #500000,
+			4px 10px 1px #600000,
+			4px 12px 1px #700000,
+			4px 14px 1px #800000,
+			4px 16px 1px #900000,
+			4px 18px 1px #A00000,
+			4px 20px 1px #B00000,
+			4px 22px 1px #C00000,
+			4px 24px 1px #D00000,
+			4px 26px 1px #E00000,
+			4px 28px 1px #F00000,
+			4px 30px 1px #FA0000,
+			4px 32px 1px #FB0000,
+			4px 34px 1px #FC0000,
+			4px 36px 1px #FD0000,
+			4px 38px 1px #FE0000,
+			4px 40px 2px #FF0000;
+	}
+}
