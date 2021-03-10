@@ -43,7 +43,6 @@ q:before, q:after {
 	content: none;
 }
 
-
 :root {
 
     --light-mode:#eb6123;
@@ -77,17 +76,20 @@ h1 {
 nav {
     display: flex;
     overflow: hidden;
+    justify-content: center;
 }
 
 p {
     line-height: 30px;
     color: var(--off-white);
     margin: 20px;
+    text-indent: 20px;
 }
 
  li {
      display: inline;
  }
+
 nav a {
     float: left;
     text-align: center;
@@ -104,6 +106,7 @@ nav a:link, a:visited {
 nav a:hover {
     color: var(--light-green);
 }
+
 nav button {
     color: var(--off-white);
     background-color: rgb(24, 23, 23);
@@ -119,6 +122,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding: 50px 0;
 }
 
 .blood {
@@ -136,16 +140,21 @@ img {
     width: 40%;
     display: inline-block;
   }
-  
+
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-  
+
   .song {
     padding: 2px 16px;
     text-align: center;
     background-color: --light-green;
     font-size: 16px;
+  }
+
+  .thriller {
+      text-align: center;
+      padding: 50px 0;
   }
 
   @keyframes drip {
