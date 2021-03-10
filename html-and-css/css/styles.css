@@ -142,6 +142,7 @@ img {
   
   .song {
     padding: 2px 16px;
+    text-align: center;
   }
 
   @keyframes drip {
