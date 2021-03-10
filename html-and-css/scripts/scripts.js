@@ -12,3 +12,13 @@ btn.addEventListener("click", function() {
   btn.innerHTML = (btn.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
 
 });
+
+//on click take button away and append zombie gif"//
+function zombieBite() {
+  var y = document.getElementById("jump-scare");
+  var x = document.getElementById("whats-that-button");
+  x.parentNode.removeChild(x);
+  var img = document.createElement('img');
+  img.src = "/html-and-css/images/zombie.gif";
+  y.appendChild(img);
+}
