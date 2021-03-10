@@ -59,8 +59,7 @@ body {
     color: var(--off-white);
     background-color: var(--light-mode);
     font-size: 2em;
-    
-    margin: .75em 1em;
+    padding: .5em .5em;
 }
 
 body.dark-theme {
@@ -78,7 +77,6 @@ h1 {
 nav {
     display: flex;
     overflow: hidden;
-    height: 2em;
 }
 
 p {
@@ -86,14 +84,12 @@ p {
     color: var(--off-white);
     margin: 20px;
 }
-nav ul {
-    padding-top: .5em;
-}
 
-li {
-    display: inline;
-}
+ li {
+     display: inline;
+ }
 nav a {
+    float: left;
     text-align: center;
     padding: 15px 18px;
     text-decoration: none;
@@ -109,21 +105,13 @@ nav a:hover {
     color: var(--light-green);
 }
 nav button {
-    width: 10em;
     color: var(--off-white);
-    background-color: #575151;
+    background-color: rgb(24, 23, 23);
     border-radius: 1em;
-    font-family: 'Creepster', cursive;
-    font-size: 1em;
 }
 
 nav button:focus {
     outline: rgb(24, 23, 23);
-}
-
-
-nav button:hover {
-    color: var(--light-green);
 }
 
 img {
@@ -140,6 +128,24 @@ img {
       -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
     animation: drip 2.5s infinite alternate;
 
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    display: inline-block;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .song {
+    padding: 2px 16px;
+    text-align: center;
+    background-color: --light-green;
+    font-size: 16px;
   }
 
   @keyframes drip {
