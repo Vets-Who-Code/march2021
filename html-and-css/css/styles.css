@@ -41,6 +41,7 @@ q:before, q:after {
     content: '';
     content: none;
 }
+
 :root {
 
     --light-mode:#eb6123;
@@ -50,6 +51,7 @@ q:before, q:after {
     --off-white: #f8f8f8;
     font-size: 10px;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--off-white);
@@ -57,9 +59,11 @@ body {
     font-size: 2em;
     padding: .5em .5em;
 }
+
 body.dark-theme {
     background-color: var(--dark-mode)
 }
+
 h1 {
     font-family: 'Creepster', cursive;
     font-size: 3.5em;
@@ -67,18 +71,24 @@ h1 {
     text-align: center;
     margin: 20px 0;
 }
+
 nav {
     display: flex;
     overflow: hidden;
+    justify-content: center;
 }
+
 p {
     line-height: 30px;
     color: var(--off-white);
     margin: 20px;
+    text-indent: 20px;
 }
+
  li {
      display: inline;
  }
+
 nav a {
     float: left;
     text-align: center;
@@ -86,27 +96,34 @@ nav a {
     text-decoration: none;
     text-decoration-style: none;
 }
+
 nav a:link, a:visited {
     text-decoration: none;
     color: var(--off-white);
 }
+
 nav a:hover {
     color: var(--light-green);
 }
+
 nav button {
     color: var(--off-white);
     background-color: rgb(24, 23, 23);
     border-radius: 1em;
 }
+
 nav button:focus {
     outline: rgb(24, 23, 23);
 }
+
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding: 50px 0;
 }
+
 .blood {
     font-family: nosifer;
     font-size:5em;
@@ -115,6 +132,11 @@ img {
     animation: drip 2.5s infinite alternate;
 
   }
+
+  .wrapper {
+    padding: 50px 0;
+  }
+
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -124,9 +146,11 @@ img {
     float: left;
     margin-right: 1%;
   }
+
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+
   .col {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -134,9 +158,11 @@ img {
     display: inline-block;
     background-color: black;
   }
+
   .col:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+
   #whats-that-button {
         height: 200px;
         width: 200px;
@@ -144,20 +170,24 @@ img {
         border: 1px solid red;
         background-image: url('/html-and-css/images/28\ days\ later.png')
   }
+
   #jump-scare {
     padding: 2px 16px;
     text-align: center;
     font-size: 16px;
     height: 450px;
   }
+
   #quote {
       text-align: center;
       font-size: 14px;
       margin: 15px;
   }
+
   cite {
       font-style: italic;
   }
+
   @keyframes drip {
       to {
           text-shadow:
