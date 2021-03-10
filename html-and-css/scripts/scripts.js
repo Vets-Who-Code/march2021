@@ -11,5 +11,4 @@ btn.addEventListener("click", function() {
   //on click swap out btn text
   btn.innerHTML = (btn.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
 
-  
 });
