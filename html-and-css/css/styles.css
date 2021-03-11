@@ -131,6 +131,17 @@ img {
     padding: 50px 0;
 }
 
+footer {
+    background-color: var(--dark-mode);
+    color: var(--off-white);
+    text-align: center;
+    padding: 100px 0;
+}
+
+footer.dark-theme {
+    background-color: var(--light-mode);
+}
+
 .blood {
     font-family: nosifer;
     font-size:5em;
@@ -142,6 +153,7 @@ img {
 
   .wrapper {
     padding: 50px 0;
+    text-align: center;
   }
 
   .card {
@@ -152,6 +164,10 @@ img {
     background-color: black;
     float: left;
     margin-right: 1%;
+  }
+
+  .clear {
+      clear: both;
   }
 
   .card:hover {
