@@ -30,3 +30,14 @@ function zombieBite() {
     img.src = "images/zombie.gif";
     jumpScare.appendChild(img);
 }
+
+function zombieprompt() {
+  var txt;
+  var location = prompt("Please enter where you are living:", "Zip Code");
+  if (location == null || location == "") {
+    txt = "We tried to warn you...";
+  } else {
+    txt = "Please evacuate immediately, there are " + Math.ceil(Math.random()*100000) + " zombies in your area!";
+  }
+  document.getElementById("zqanswer").innerHTML = txt;
+}
