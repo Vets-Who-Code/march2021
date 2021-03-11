@@ -147,7 +147,7 @@ img {
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 50%;
+    width: 49.1%;
     display: inline-block;
     background-color: black;
     float: left;
@@ -158,10 +158,24 @@ img {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 48%;
+    display: inline-block;
+    background-color: black;
+    margin-right: 1%;
+  }
+
+  .card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
   .col {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 49%;
+    height: 460px;
     display: inline-block;
     background-color: black;
   }
@@ -175,14 +189,14 @@ img {
         width: 200px;
         border-radius: 50%;
         border: 1px solid red;
-        background-image: url('/html-and-css/images/28\ days\ later.png')
+        background-image: url('/images/28\ days\ later.png');
   }
 
   #jump-scare {
     padding: 2px 16px;
     text-align: center;
     font-size: 16px;
-    height: 450px;
+    height: 460px;
   }
 
   #quote {
