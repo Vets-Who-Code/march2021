@@ -3,7 +3,7 @@
 - Did introductions 
 - Discussed expectations for class and administrative issues
 - Discussed VetsWhoCode Curriculum https://github.com/Vets-Who-Code/Curriculum|Vets-Who-Code/Curriculum>Vets-Who-Code/Curriculum
-- Shared the following websites =:
+- Shared the following websites:
   1. https://css-tricks.com/css-tricks.comcss-tricks.com
   2. https://i2.wp.com/css-tricks.com/wp-content/uploads/2020/12/social-default.png?fit=1200%2C628&ssl=1
   3. https://davidwalsh.name/davidwalsh.namedavidwalsh.name
@@ -16,7 +16,7 @@
     
 
 # Day 2
-# Homework review on the internet and "What is code", CRUD, TCP/IP, 
+# Homework review on the internet and "What is code", CRUD, TCP/IP
 - shared https://twitter.com/Duncanmatwitter.comtwitter.com Duncan Mackenzie 
 - CRUD is an acronym that comes from the world of computer programming and refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete
 
