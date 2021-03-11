@@ -190,14 +190,27 @@ img {
         width: 200px;
         border-radius: 50%;
         border: 1px solid red;
-        background-image: url('images/28\ days\ later.png');
+        background-color: black;
+        margin-top: 15%;
   }
 
   #jump-scare {
-    padding: 2px 16px;
+    padding: 0 16px;
     text-align: center;
     font-size: 16px;
     height: 460px;
+  }`
+
+  .flex-container {
+    display: flex;
+    background-color: var(--light-green);
+  }
+  
+  .flex-container > div {
+    background-color: var(--dark-red);
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
   }
 
   #quote {
