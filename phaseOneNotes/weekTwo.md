@@ -28,27 +28,27 @@
 - Styling Text - we talked about additional tags that are used to segment and identify certain types of text content
   1. The <del> element
 
-  2. The <s>Text</s> element
+  2. The <s>Strikethough</s> element (use "del" element instead")
 
-  3. The <ins>Text</s> element
+  3. The <ins>Insert</ins> element
 
-  4. The <ins>Text<strong> element
+  4. The <string>Strong<strong> element
 
-  5. The <small>Text</small> element
+  5. The <small>Small</small> element
 
-  6. The <b>Text</b> element
+  6. The <b>Bold</b> element
 
-  7. The <cite>Text</cite> element
+  7. The <cite>Cite</cite> element
 
-  8. The <i>Text</i> element
+  8. The <i>Italics</i> element
 
-  9. The <q>Text</q> element
+  9. The <q>Short Quotation</q> element
 
-  10. The <em>Text</em> element
+  10. The <em>Emphasize</em> element
 
-  11. The <code>Text</code> element
+  11. The <code>Code</code> element
 
-  12. The //<mark>Text</mark>// element
+  12. The <mark>Mark</mark> element
 
 # Day 3
 ## Content Embedding, HTML Elements, Images / Multimedia HTML Elements, Global HTML Attributes, Growth Mindset
