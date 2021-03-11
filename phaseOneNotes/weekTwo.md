@@ -48,7 +48,7 @@
 
   11. The <code>Text</code> element
 
-  12. The <mark>Text</mark> element
+  12. The //<mark>Text</mark>// element
 
 # Day 3
 ## Content Embedding, HTML Elements, Images / Multimedia HTML Elements, Global HTML Attributes, Growth Mindset
