@@ -19,6 +19,6 @@ function zombieBite() {
   let whatsThatbutton = document.getElementById("whats-that-button");
   whatsThatbutton.parentNode.removeChild(whatsThatbutton);
   let img = document.createElement('img');
-  img.src = "../images/zombie.gif";
+  img.src = "images/zombie.gif";
   jumpScare.appendChild(img);
 }
