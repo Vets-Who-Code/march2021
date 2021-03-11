@@ -108,8 +108,8 @@ nav a:hover {
 
 nav button {
     width: 5em;
-    margin: .3em .3em;
     color: var(--dark-mode);
+    margin-top: .5em;
     background-color: #575151;
     
     font-size: 1em;
