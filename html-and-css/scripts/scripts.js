@@ -19,6 +19,6 @@ function zombieBite() {
   var x = document.getElementById("whats-that-button");
   x.parentNode.removeChild(x);
   var img = document.createElement('img');
-  img.src = "/images/zombie.gif";
+  img.src = "images/zombie.gif";
   y.appendChild(img);
 }
