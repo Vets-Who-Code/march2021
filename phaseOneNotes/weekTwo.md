@@ -53,7 +53,7 @@
 # Day 3
 ## Content Embedding, HTML Elements, Images / Multimedia HTML Elements, Global HTML Attributes, Growth Mindset
 
--We discussed having standups. Questions that will be discussed in the future: 
+- We discussed having standups. Questions that will be discussed in the future: 
   1. Where you at?
   2. what have you learn?
   3. Anything you need help with?
