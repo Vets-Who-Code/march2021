@@ -2,6 +2,14 @@
 
 // Select the button
 const btn = document.querySelector(".button-toggle");
+const loading = document.querySelector(".hide-if-loading");
+
+setTimeout(() => {
+  loading.classList.remove("hide-if-loading");
+  document.querySelector(".loading").classList.remove("loading");
+},3000)
+
+
 // Listen for a click on the button
 btn.addEventListener("click", function () {
   // Then toggle (add/remove) the .dark-theme class to the body
