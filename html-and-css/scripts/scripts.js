@@ -15,10 +15,10 @@ btn.addEventListener("click", function() {
 
 //on click take button away and append zombie gif"//
 function zombieBite() {
-  var y = document.getElementById("jump-scare");
-  var x = document.getElementById("whats-that-button");
-  x.parentNode.removeChild(x);
-  var img = document.createElement('img');
-  img.src = "/html-and-css/images/zombie.gif";
-  y.appendChild(img);
+  let jumpScare = document.getElementById("jump-scare");
+  let whatsThatbutton = document.getElementById("whats-that-button");
+  whatsThatbutton.parentNode.removeChild(whatsThatbutton);
+  let img = document.createElement('img');
+  img.src = "../images/zombie.gif";
+  jumpScare.appendChild(img);
 }
