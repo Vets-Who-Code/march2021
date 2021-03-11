@@ -132,6 +132,7 @@ img {
     padding: 50px 0;
 }
 
+
 /* Footer */
 
 footer {
@@ -239,12 +240,13 @@ footer.dark-theme {
     padding: 0 16px;
     text-align: center;
     font-size: 16px;
-    height: 460px;
+    height: 528px;
+    background-color: black;
   }
 
   .flex-container {
     display: flex;
-    background-color: var(--light-green);
+    background-color: black;
   }
 
   .flex-container > div {
@@ -257,7 +259,7 @@ footer.dark-theme {
   #quote {
       text-align: center;
       font-size: 14px;
-      margin: 15px;
+      margin-top: 25px;
   }
 
   cite {
@@ -292,22 +294,13 @@ footer.dark-theme {
   .cute-zombie {
     width: 10em;
   }
-  
-  .VetsWhoCode-img {
-      position: relative;
-      bottom: 200px;
-      width: 150px;
-      height: 150px;
-      right: 350px;
-      display: inline-block;
 
+  .VetsWhoCode-img {
+      width: 15%;
+      height: 15%;
   }
 
   .GitHub-img {
-    position: relative;
-      bottom: 200px;
-      width: 150px;
-      height: 150px;
-      left: 300px;
-      display: inline-block;
+      width: 30%;
+      height: 30%;
   }
