@@ -15,9 +15,9 @@
   7. Delete branch to declutter
 
 - Homework:
-- Use what you learned in class (root variables, default stylings) to your prework project and see how much it changes it. You may have to     
+  1. Use what you learned in class (root variables, default stylings) to your prework project and see how much it changes it. You may have to     
   readjust your project to account for these stylings. http://meyerweb.com/Eric/tools/css/reset
-- Look at the structure of the html document and the css document that we made. 
+  2. Look at the structure of the html document and the css document that we made. 
 
 # Day 2
 ## Content Embedding, HTML Elements, Images / Multimedia HTML Elements, Global HTML Attributes, Growth Mindset
