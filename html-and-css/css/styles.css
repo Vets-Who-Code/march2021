@@ -302,3 +302,12 @@ footer.dark-theme {
       display: inline-block;
 
   }
+
+  .GitHub-img {
+    position: relative;
+      bottom: 200px;
+      width: 150px;
+      height: 150px;
+      left: 300px;
+      display: inline-block;
+  }
