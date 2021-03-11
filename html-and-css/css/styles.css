@@ -292,3 +292,13 @@ footer.dark-theme {
   .cute-zombie {
     width: 10em;
   }
+  
+  .VetsWhoCode-img {
+      position: relative;
+      bottom: 200px;
+      width: 150px;
+      height: 150px;
+      right: 350px;
+      display: inline-block;
+
+  }
