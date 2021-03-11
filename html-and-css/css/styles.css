@@ -107,10 +107,11 @@ nav a:hover {
 }
 
 nav button {
-    width: 10em;
+    width: 5em;
+    margin: .3em .3em;
     color: var(--dark-mode);
     background-color: #575151;
-    border-radius: 1em;
+    
     font-size: 1em;
     font-family: 'Creepster', cursive;
 }
