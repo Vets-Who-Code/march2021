@@ -64,6 +64,10 @@ body.dark-theme {
     background-color: var(--dark-mode)
 }
 
+header {
+    height: 100vh;
+}
+
 h1 {
     font-family: 'Creepster', cursive;
     font-size: 3.5em;
