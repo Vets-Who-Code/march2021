@@ -120,7 +120,6 @@ li {
 
 h1 {
     font-family: 'Creepster', cursive;
-    font-size: 5em;
     color: var(--off-white);
     text-align: center;
     margin: 20px 0;
@@ -128,7 +127,7 @@ h1 {
 
 .blood {
     font-family: nosifer;
-    font-size:5em;
+    font-size: 6em;
     transition: all .25s ease;
       -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
     animation: drip 2.5s infinite alternate;
@@ -194,7 +193,7 @@ p {
     line-height: 30px;
     color: var(--off-white);
     margin: 20px;
-    padding: 0 250px;
+    padding: 0 11em;
     text-indent: 20px;
 }
 
@@ -320,6 +319,16 @@ footer.dark-theme {
 
 .footer-link {
     padding: 10px 0;
+}
+
+footer a,
+.footer-link a {
+    text-decoration: none;
+}
+
+footer a:hover,
+.footer-link a:hover {
+    color: var(--light-green);
 }
 
 .footer-images {
