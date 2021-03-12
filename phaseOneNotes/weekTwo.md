@@ -71,3 +71,25 @@
 - From now on we will be using markdown to keep notes. (use 1 folder for each week. inside the readme put an h1, h2, and notes)
 - Explained the Notion app
 - Went over github profiles
+
+# Day 4
+## Chrome Dev Tools, Box Model, SEO, Website Performance, Coding Conventions 
+
+- Standups included the questions: Where you at? What have you learned? Anything you need help with? Any blockers? Any questions? What have you built lately?
+- We Talked about _blank https://css-tricks.com/use-target_blank/
+  It is not recommended in the context of performance and SEO; 
+- We talked about the box model 
+- Touched on regex. More info is available at https://regexr.com/, https://regex101.com/, https://regex-generator.olafneumann.org/
+- We talked about the difference between margin and padding. If you're moving an element use margin. If you want to take more or less space use padding. 
+- Dash was mentioned (download documentation and read examples and learn stuff). The open source version is Zeal. More info is available at https://kapeli.com/dash
+- If you're going to freelance, WordPress is your friend. It doesn't matter what people say about not being a "real" developer. 
+- Mentioned email.js to make a working form 
+- Discussed Google chrome dev tools including plugins. Plugins included Lighthouse (heat snapsht, allocation, load time). Learned how to identify inheritance of styles on dev tools and how to spot performance issues on dev tools. 
+- A convention is to list your css in html page order. 
+- There's a debugger in vs code 
+- modals example: codepen.io/timothylong/pen/HhAer
+add and remove from the DOM
+- We mentioned hoisting (unassigned variables) as being a valid use of variables. More info can be found at https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
+
+- Homework
+1. Everything you learned in class this week apply to your profile site
