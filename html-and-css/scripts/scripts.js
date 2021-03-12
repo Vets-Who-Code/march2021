@@ -54,4 +54,9 @@ function windowOnClick(event) {
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
 
+function screamSound() {
+  let audio = document.getElementById("audio");
+  audio.play();
+}
+
 //Modal End//

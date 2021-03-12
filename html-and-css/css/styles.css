@@ -121,7 +121,7 @@ li {
 
 .cute-zombie {
     width: 10em;
-  }
+}
 
 h1 {
     font-family: 'Creepster', cursive;
@@ -137,7 +137,7 @@ h1 {
     transition: all .25s ease;
       -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
     animation: drip 2.5s infinite alternate;
-  }
+}
 
   @keyframes drip {
       to {
@@ -161,8 +161,8 @@ h1 {
          4px 36px 1px #FD0000,
          4px 38px 1px #FE0000,
          4px 40px 2px #FF0000;
-      }
-  }
+    }
+}
 
 /* Title End */
 
@@ -190,32 +190,42 @@ p {
 .flex-container {
     display: flex;
     background-color: black;
-  }
+}
 
 .flex-container > div {
     background-color: var(--dark-red);
     margin: 10px;
     padding: 20px;
     font-size: 30px;
-  }
+}
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 49.1%;
+    width: 50%;
     display: inline-block;
     background-color: black;
     float: left;
     margin-right: 1%;
-  }
+}
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
 
-  /* Modal Start */
+/* Modal Start */
+.trigger {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid red;
+    background-color: black;
+    margin-top: 22%;
+    color: white;
+    font-size: 30px;
+}
 
-  .modal {
+.modal {
     position: fixed;
     left: 0;
     top: 0;
@@ -227,6 +237,7 @@ p {
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
+
 .modal-content {
     position: absolute;
     top: 50%;
@@ -234,9 +245,11 @@ p {
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 24rem;
+    width: 75rem;
     border-radius: 0.5rem;
+    color: black;
 }
+
 .close-button {
     float: right;
     width: 1.5rem;
@@ -246,9 +259,11 @@ p {
     border-radius: 0.25rem;
     background-color: lightgray;
 }
+
 .close-button:hover {
     background-color: darkgray;
 }
+
 .show-modal {
     opacity: 1;
     visibility: visible;
@@ -265,11 +280,11 @@ p {
     display: inline-block;
     background-color: black;
     margin-right: 1%;
-  }
+}
 
 .card2:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
 
 #jump-scare {
     padding: 0 16px;
@@ -277,15 +292,6 @@ p {
     font-size: 16px;
     height: 528px;
     background-color: black;
-}
-
-#whats-that-button {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 1px solid red;
-    background-color: black;
-    margin-top: 15%;
 }
 
 #quote {
