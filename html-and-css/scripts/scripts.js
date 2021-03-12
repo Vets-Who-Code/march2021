@@ -14,14 +14,14 @@ btn.addEventListener("click", function () {
 });
 
 //on click take button away and append zombie gif"//
-function zombieBite() {
+/*function zombieBite() {
     let jumpScare = document.getElementById("jump-scare");
     let whatsThatbutton = document.getElementById("whats-that-button");
     whatsThatbutton.parentNode.removeChild(whatsThatbutton);
     let img = document.createElement('img');
     img.src = "images/zombie.gif";
     jumpScare.appendChild(img);
-}
+}*/
 
 function zombieprompt() {
   let txt;
@@ -33,3 +33,30 @@ function zombieprompt() {
   }
   document.getElementById("zqanswer").innerHTML = txt;
 }
+
+//Modal Start//
+
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+
+function screamSound() {
+  let audio = document.getElementById("audio");
+  audio.play();
+}
+
+//Modal End//
