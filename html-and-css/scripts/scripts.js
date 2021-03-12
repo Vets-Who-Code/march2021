@@ -2,6 +2,16 @@
 
 // Select the button
 const btn = document.querySelector(".button-toggle");
+
+//loading 
+const loading = document.querySelector(".hide-if-loading");
+
+//Display loader for 3 seconds
+setTimeout(() => {
+  loading.classList.remove("hide-if-loading");
+  document.querySelector(".loading").classList.remove("loading");
+},3000)
+
 // Listen for a click on the button
 btn.addEventListener("click", function () {
   // Then toggle (add/remove) the .dark-theme class to the body
@@ -13,15 +23,6 @@ btn.addEventListener("click", function () {
   btn.classList.toggle("dark-theme");
 });
 
-//on click take button away and append zombie gif"//
-/*function zombieBite() {
-    let jumpScare = document.getElementById("jump-scare");
-    let whatsThatbutton = document.getElementById("whats-that-button");
-    whatsThatbutton.parentNode.removeChild(whatsThatbutton);
-    let img = document.createElement('img');
-    img.src = "images/zombie.gif";
-    jumpScare.appendChild(img);
-}*/
 
 function zombieprompt() {
   let txt;
