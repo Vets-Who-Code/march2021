@@ -69,7 +69,6 @@ header {
 }
 
 /* Nav Start */
-
 nav {
     display: flex;
     overflow: hidden;
@@ -114,11 +113,9 @@ nav button:focus {
 li {
     display: inline;
 }
-
 /* Nav End */
 
 /* Title Start */
-
 .cute-zombie {
     width: 10em;
 }
@@ -163,10 +160,10 @@ h1 {
          4px 40px 2px #FF0000;
     }
 }
-
 /* Title End */
 
-.zombietools {
+/* Content Start */
+.zombie-tools {
     text-align: center;
 }
 
@@ -184,9 +181,9 @@ p {
     margin: 20px;
     text-indent: 20px;
 }
+/* Content End */
 
 /* Card Start */
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -201,6 +198,7 @@ p {
 .card:hover {
     box-shadow: 0 8px 16px 0 var(--off-white);
 }
+/* Card End */
 
 /* Modal Start */
 .trigger {
@@ -261,8 +259,6 @@ p {
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-/* Modal End */
-
 #jump-scare {
     padding: 0 16px;
     text-align: center;
@@ -270,12 +266,9 @@ p {
     height: 740px;
     background-color: black;
 }
-
-
-/* Card End */
+/* Modal End */
 
 /* Footer Start */
-
 footer {
     background-color: var(--dark-mode);
     color: var(--off-white);
@@ -317,5 +310,4 @@ footer.dark-theme {
     width: 30%;
     height: 30%;
 }
-
 /* Footer End */
