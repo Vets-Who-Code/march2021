@@ -24,8 +24,8 @@ function zombieBite() {
 }
 
 function zombieprompt() {
-  var txt;
-  var location = prompt("Please enter where you are living:", "Zip Code");
+  let txt;
+  let location = prompt("Please enter where you are living:", "Zip Code");
   if (location == null || location == "") {
     txt = "We tried to warn you...";
   } else {
