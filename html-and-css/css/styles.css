@@ -57,7 +57,6 @@ body {
     color: var(--off-white);
     background-color: var(--light-mode);
     font-size: 2em;
-    padding: .5em .5em;
 }
 
 body.dark-theme {
@@ -97,7 +96,6 @@ nav button {
     margin: .3em .3em;
     color: var(--dark-mode);
     background-color: #575151;
-
     font-size: 1em;
     font-family: 'Creepster', cursive;
 }
@@ -122,7 +120,7 @@ li {
 
 h1 {
     font-family: 'Creepster', cursive;
-    font-size: 3.5em;
+    font-size: 5em;
     color: var(--off-white);
     text-align: center;
     margin: 20px 0;
@@ -165,6 +163,24 @@ h1 {
 /* Content Start */
 .zombie-tools {
     text-align: center;
+}
+
+.zombie-button {
+    width: 7em;
+    margin: .3em .3em;
+    color: var(--dark-mode);
+    background-color: #575151;
+    font-size: 1em;
+    font-family: 'Creepster', cursive;
+    padding: 10px;
+}
+
+.zombie-button.dark-theme {
+    color: var(--light-mode);
+}
+
+zombie-button:focus {
+    outline: rgb(24, 23, 23);
 }
 
 img {
@@ -279,7 +295,7 @@ footer {
     background-color: var(--dark-mode);
     color: var(--off-white);
     text-align: center;
-    padding: 30px 0 20px 0;
+    padding: 50px 0 20px 0;
 }
 
 footer.dark-theme {
@@ -310,6 +326,7 @@ footer.dark-theme {
 .VetsWhoCode-img {
     width: 15%;
     height: 15%;
+    border-radius: 50%;
 }
 
 .GitHub-img {
