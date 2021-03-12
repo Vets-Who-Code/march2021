@@ -57,7 +57,7 @@
   1. Where you at?
   2. what have you learn?
   3. Anything you need help with?
-  4. Ttalk about blockers
+  4. Talk about blockers
   5. Q & A (https://github.com/Vets-Who-Code/march2021/projects/1)
 
 - Apply concepts you learn and change prework project as you go. It will be your capstone.  
@@ -70,13 +70,13 @@
 - Touched on naming conventions
 - From now on we will be using markdown to keep notes. (use 1 folder for each week. inside the readme put an h1, h2, and notes)
 - Explained the Notion app
-- Went over github profiles
+- Went over GitHub profiles
 
 # Day 4
 ## Chrome Dev Tools, Box Model, SEO, Website Performance, Coding Conventions 
 
 - Standups included the questions: Where you at? What have you learned? Anything you need help with? Any blockers? Any questions? What have you built lately?
-- We Talked about _blank https://css-tricks.com/use-target_blank/
+- We talked about _blank https://css-tricks.com/use-target_blank/
   It is not recommended in the context of performance and SEO; 
 - We talked about the box model 
 - Touched on regex. More info is available at https://regexr.com/, https://regex101.com/, https://regex-generator.olafneumann.org/
