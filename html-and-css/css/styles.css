@@ -179,7 +179,12 @@ p {
     line-height: 30px;
     color: var(--off-white);
     margin: 20px;
+    padding: 0 250px;
     text-indent: 20px;
+}
+
+.intro {
+    padding-bottom: 70px;
 }
 /* Content End */
 
@@ -193,6 +198,7 @@ p {
     height: 100%;
     display: inline-block;
     background-color: black;
+    margin-bottom: 90px;
 }
 
 .card:hover {
