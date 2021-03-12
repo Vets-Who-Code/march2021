@@ -68,14 +68,6 @@ header {
     height: 100vh;
 }
 
-h1 {
-    font-family: 'Creepster', cursive;
-    font-size: 3.5em;
-    color: var(--off-white);
-    text-align: center;
-    margin: 20px 0;
-}
-
 nav {
     display: flex;
     overflow: hidden;
@@ -115,7 +107,7 @@ nav button {
     margin: .3em .3em;
     color: var(--dark-mode);
     background-color: #575151;
-    
+
     font-size: 1em;
     font-family: 'Creepster', cursive;
 }
@@ -128,50 +120,15 @@ nav button:focus {
     outline: rgb(24, 23, 23);
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 50px 0;
-}
+.cute-zombie {
+    width: 10em;
+  }
 
-
-/* Footer */
-
-footer {
-    background-color: var(--dark-mode);
+  h1 {
     color: var(--off-white);
     text-align: center;
-    padding: 30px 0 20px 0;
+    margin: 20px 0;
 }
-
-footer.dark-theme {
-    background-color: var(--light-mode);
-}
-
-.footer-container {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.footer-col-1,
-.footer-col-2,
-.footer-col-3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-col-2 {
-    padding: 0 50px;
-}
-
-.footer-link {
-    padding: 10px 0;
-}
-
-/* End Footer */
 
 .blood {
     font-family: nosifer;
@@ -179,8 +136,40 @@ footer.dark-theme {
     transition: all .25s ease;
       -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
     animation: drip 2.5s infinite alternate;
-
   }
+
+  @keyframes drip {
+      to {
+          text-shadow:
+         4px 4px 1px #300000,
+         4px 6px 1px #400000,
+         4px 8px 1px #500000,
+         4px 10px 1px #600000,
+         4px 12px 1px #700000,
+         4px 14px 1px #800000,
+         4px 16px 1px #900000,
+         4px 18px 1px #A00000,
+         4px 20px 1px #B00000,
+         4px 22px 1px #C00000,
+         4px 24px 1px #D00000,
+         4px 26px 1px #E00000,
+         4px 28px 1px #F00000,
+         4px 30px 1px #FA0000,
+         4px 32px 1px #FB0000,
+         4px 34px 1px #FC0000,
+         4px 36px 1px #FD0000,
+         4px 38px 1px #FE0000,
+         4px 40px 2px #FF0000;
+      }
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 50px 0;
+}
 
   .wrapper {
     padding: 50px 0;
@@ -269,42 +258,48 @@ footer.dark-theme {
   cite {
       font-style: italic;
   }
+  /* Footer */
 
-  @keyframes drip {
-      to {
-          text-shadow:
-         4px 4px 1px #300000,
-         4px 6px 1px #400000,
-         4px 8px 1px #500000,
-         4px 10px 1px #600000,
-         4px 12px 1px #700000,
-         4px 14px 1px #800000,
-         4px 16px 1px #900000,
-         4px 18px 1px #A00000,
-         4px 20px 1px #B00000,
-         4px 22px 1px #C00000,
-         4px 24px 1px #D00000,
-         4px 26px 1px #E00000,
-         4px 28px 1px #F00000,
-         4px 30px 1px #FA0000,
-         4px 32px 1px #FB0000,
-         4px 34px 1px #FC0000,
-         4px 36px 1px #FD0000,
-         4px 38px 1px #FE0000,
-         4px 40px 2px #FF0000;
-      }
-  }
+footer {
+    background-color: var(--dark-mode);
+    color: var(--off-white);
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
 
-  .cute-zombie {
-    width: 10em;
-  }
+footer.dark-theme {
+    background-color: var(--light-mode);
+}
 
-  .VetsWhoCode-img {
-      width: 15%;
-      height: 15%;
-  }
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
 
-  .GitHub-img {
-      width: 30%;
-      height: 30%;
-  }
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col-2 {
+    padding: 0 50px;
+}
+
+.footer-link {
+    padding: 10px 0;
+}
+
+.VetsWhoCode-img {
+    width: 15%;
+    height: 15%;
+}
+
+.GitHub-img {
+    width: 30%;
+    height: 30%;
+}
+
+/* End Footer */
