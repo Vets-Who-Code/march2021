@@ -3,7 +3,7 @@
 // Select the button
 const btn = document.querySelector(".button-toggle");
 
-//loading 
+//loading
 const loading = document.querySelector(".hide-if-loading");
 
 //Display loader for 3 seconds

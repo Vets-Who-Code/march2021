@@ -64,7 +64,7 @@ body.dark-theme {
 }
 
 header {
-    height: 50vh;
+    height: 100vh;
 }
 
 /*Loading Classes*/
@@ -88,6 +88,7 @@ nav {
     display: flex;
     overflow: hidden;
     justify-content: center;
+    padding-top: 20px;
 }
 
 nav a {
@@ -144,6 +145,7 @@ h1 {
 .blood {
     font-family: nosifer;
     font-size: 6em;
+    padding-top: 2em;
     transition: all .25s ease;
       -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
     animation: drip 2.5s infinite alternate;
