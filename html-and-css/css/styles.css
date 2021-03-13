@@ -108,7 +108,7 @@ nav a:hover {
 nav button {
     width: 5em;
     margin: .3em .3em;
-    color: var(--dark-mode);
+    color: var(--light-green);
     background-color: #575151;
     font-size: 1em;
     font-family: 'Creepster', cursive;
@@ -118,12 +118,16 @@ nav button.dark-theme{
     color: var(--light-mode);
 }
 
+nav button.dark-theme:hover {
+    color: white;
+}
+
 nav button:focus {
     outline: rgb(24, 23, 23);
 }
 
 nav button:hover {
-    color: var(--light-green);
+    color: var(--dark-mode);
 }
 
 li {
@@ -225,7 +229,7 @@ h1 {
 .zombie-button {
     width: 7em;
     margin: .3em .3em;
-    color: var(--dark-mode);
+    color: var(--light-green);
     background-color: #575151;
     font-size: 1em;
     font-family: 'Creepster', cursive;
@@ -241,7 +245,7 @@ h1 {
 }
 
 .zombie-button:hover {
-    color: var(--light-green);
+    color: var(--dark-mode);
 }
 
 img {
