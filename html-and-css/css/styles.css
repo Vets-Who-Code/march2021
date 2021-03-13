@@ -63,10 +63,6 @@ body.dark-theme {
     background-color: var(--dark-mode)
 }
 
-header {
-    height: 100vh;
-}
-
 /*Loading Classes*/
 .loading {
     background: url('../images/cute-zombie.gif') no-repeat center center;
@@ -97,6 +93,7 @@ nav a {
     padding: 15px 18px;
     text-decoration: none;
     text-decoration-style: none;
+    font-size: 1.2em;
 }
 
 nav a:link, a:visited {
@@ -145,13 +142,17 @@ h1 {
 .blood {
     font-family: nosifer;
     font-size: 6em;
-    padding-top: 2em;
+    padding-top: 1em;
     transition: all .25s ease;
       -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
     animation: drip 2.5s infinite alternate;
 }
 
-  @keyframes drip {
+.container {
+    height: 100vh;
+}
+
+@keyframes drip {
       to {
           text-shadow:
          4px 4px 1px #300000,
@@ -174,6 +175,41 @@ h1 {
          4px 38px 1px #FE0000,
          4px 40px 2px #FF0000;
     }
+}
+
+.arrow {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.arrow::after {
+	content: "";
+	width: 40px;
+	height: 40px;
+	margin: 70vh auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-right: 4px solid var(--light-green);
+	border-bottom: 4px solid var(--light-green);
+	transform: rotate(45deg);
+	animation: 3s arrow infinite ease;
+}
+
+@keyframes arrow {
+
+	0%,
+	100% {
+		top: 50px;
+	}
+
+	50% {
+		top: 80px;
+	}
 }
 /* Title End */
 
