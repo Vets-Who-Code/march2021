@@ -122,6 +122,10 @@ nav button:focus {
     outline: rgb(24, 23, 23);
 }
 
+nav button:hover {
+    color: var(--light-green);
+}
+
 li {
     display: inline;
 }
@@ -232,8 +236,12 @@ h1 {
     color: var(--light-mode);
 }
 
-zombie-button:focus {
+.zombie-button:focus {
     outline: rgb(24, 23, 23);
+}
+
+.zombie-button:hover {
+    color: var(--light-green);
 }
 
 img {
