@@ -145,6 +145,10 @@ li {
 	display: inline;
 }
 
+ .hidden {
+	display: none;
+}
+
 /* Nav End */
 
 /* Title Start */
@@ -430,6 +434,12 @@ footer a:hover,
 /* Footer End */
 
 /* Media Queries Start */
+@media screen and (max-width: 1400px) {
+	.blood {
+		font-size: 3.5em;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.blood {
 		font-size: 2em;
@@ -439,14 +449,27 @@ footer a:hover,
 		height: 80vh;
 	}
 
+	img {
+		width: 75%;
+	}
+
 	p {
 		padding: 0;
+	}
+
+	.flex-container {
+		text-align: center;
+	}
+	.card {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	.blood {
-		font-size: 1.3em;
+		font-size: 1.6em;
+		padding-top: 0;
 	}
 
 	.arrow {
@@ -454,11 +477,11 @@ footer a:hover,
 	}
 
 	nav {
-		padding-top: 10px
+		padding: 0;
 	}
 
 	nav a {
-		padding: 10px 0;
+		font-size: 1em;
 	}
 
 	nav ul li {
@@ -478,7 +501,7 @@ footer a:hover,
 	.mobile-button {
 		display: initial;
 		width: 5em;
-		margin: .3em .3em;
+		margin: .5em .3em;
 		color: var(--light-green);
 		background-color: #575151;
 		font-size: 1em;
@@ -499,5 +522,28 @@ footer a:hover,
 
 	.mobile-button:hover {
 		color: var(--dark-mode);
+	}
+
+	.zombie-tools {
+		margin-top: 200px;
+	}
+
+	.container h1 {
+		display: none;
+	}
+
+	.hidden {
+		display: initial;
+	}
+
+	p {
+		text-indent: 0;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.blood {
+		font-size: 1em;
 	}
 }
