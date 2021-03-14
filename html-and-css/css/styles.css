@@ -74,10 +74,14 @@ body.dark-theme {
     z-index: 9999999;
 }
 
+.cute-zombie {
+    width: 10em;
+}
+
 .hide-if-loading{
     display: none;
 }
-/*Loading*/
+/*End Loading*/
 
 /* Nav Start */
 nav {
@@ -136,10 +140,6 @@ li {
 /* Nav End */
 
 /* Title Start */
-.cute-zombie {
-    width: 10em;
-}
-
 h1 {
     font-family: 'Creepster', cursive;
     color: var(--off-white);
@@ -209,14 +209,13 @@ h1 {
 }
 
 @keyframes arrow {
-
 	0%,
 	100% {
 		top: 50px;
 	}
 
 	50% {
-		top: 80px;
+		top: 100px;
 	}
 }
 /* Title End */
@@ -415,3 +414,5 @@ footer a:hover,
     margin: 0;
 }
 /* Footer End */
+
+/* Media Queries */
