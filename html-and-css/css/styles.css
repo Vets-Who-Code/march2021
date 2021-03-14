@@ -462,7 +462,7 @@ footer a:hover,
 	}
 	.card {
 		width: 90%;
-		margin: 0 auto;
+		margin: 0 auto 90px auto;
 	}
 }
 
