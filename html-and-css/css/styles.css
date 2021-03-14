@@ -377,7 +377,7 @@ footer {
 	background-color: var(--dark-mode);
 	color: var(--off-white);
 	text-align: center;
-	padding: 50px 0 20px 0;
+	padding: 50px 0 10px 0;
 }
 
 footer.dark-theme {
@@ -386,8 +386,8 @@ footer.dark-theme {
 
 .footer-container {
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: center;
-	padding: 10px 0;
 }
 
 .footer-col-1,
@@ -408,6 +408,7 @@ footer.dark-theme {
 footer a,
 .footer-link a {
 	text-decoration: none;
+    color: var(--off-white);
 }
 
 footer a:hover,
@@ -420,17 +421,22 @@ footer a:hover,
 	justify-content: space-around;
 }
 
+
 .VetsWhoCode-img {
 	width: 10%;
 	height: 10%;
 	border-radius: 50%;
 	margin: 0;
+    margin-right: 8%;
+    padding: 0;
 }
 
 .GitHub-img {
 	width: 10%;
 	height: auto;
 	margin: 0;
+    margin-left: 8%;
+    padding: 0;
 }
 
 /* Footer End */
