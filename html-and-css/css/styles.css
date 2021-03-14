@@ -50,6 +50,7 @@ q:before, q:after {
     --light-green: #60D88E;
     --off-white: #f8f8f8;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -134,6 +135,10 @@ nav button:hover {
     color: var(--dark-mode);
 }
 
+.mobile-button {
+    display: none;
+}
+
 li {
     display: inline;
 }
@@ -152,7 +157,7 @@ h1 {
     font-size: 6em;
     padding-top: 1em;
     transition: all .25s ease;
-      -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
+    -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
     animation: drip 2.5s infinite alternate;
 }
 
@@ -415,4 +420,63 @@ footer a:hover,
 }
 /* Footer End */
 
-/* Media Queries */
+/* Media Queries Start */
+@media screen and (max-width: 800px) {
+    .blood {
+        font-size: 2em;
+    }
+
+    .container {
+        height: 80vh;
+    }
+
+    p {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blood {
+        font-size: 1em;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .mobile-button {
+        display: initial;
+        width: 5em;
+        margin: .3em .3em;
+        color: var(--light-green);
+        background-color: #575151;
+        font-size: 1em;
+        font-family: 'Creepster', cursive;
+    }
+
+        .mobile-button.dark-theme{
+            color: var(--light-mode);
+        }
+
+        .mobile-button.dark-theme:hover {
+            color: white;
+        }
+
+        .mobile-button:focus {
+            outline: rgb(24, 23, 23);
+        }
+
+        .mobile-button:hover {
+            color: var(--dark-mode);
+        }
+    }
