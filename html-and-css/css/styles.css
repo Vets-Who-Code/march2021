@@ -114,8 +114,9 @@ nav a:hover {
 
 nav button {
 	width: 5em;
-	margin: .3em .3em;
 	color: var(--light-green);
+	margin-top: 13px;
+	margin-left: 18px;
 	background-color: #575151;
 	font-size: 1em;
 	font-family: 'Creepster', cursive;
@@ -491,37 +492,7 @@ footer a:hover,
 	}
 
 	nav button {
-		display: none;
-	}
-
-	.mobile-div {
-		text-align: center;
-	}
-
-	.mobile-button {
-		display: initial;
-		width: 5em;
-		margin: .5em .3em;
-		color: var(--light-green);
-		background-color: #575151;
-		font-size: 1em;
-		font-family: 'Creepster', cursive;
-	}
-
-	.mobile-button.dark-theme {
-		color: var(--light-mode);
-	}
-
-	.mobile-button.dark-theme:hover {
-		color: white;
-	}
-
-	.mobile-button:focus {
-		outline: rgb(24, 23, 23);
-	}
-
-	.mobile-button:hover {
-		color: var(--dark-mode);
+		margin: 15px auto 0 auto;
 	}
 
 	.zombie-tools {
