@@ -115,8 +115,9 @@ nav a:hover {
 nav button {
 	width: 5em;
 	color: var(--light-green);
-	margin-top: 13px;
+	margin-top: 6px;
 	margin-left: 18px;
+	padding: 8px;
 	background-color: #575151;
 	font-size: 1em;
 	font-family: 'Creepster', cursive;
