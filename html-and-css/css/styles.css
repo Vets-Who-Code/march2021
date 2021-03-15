@@ -388,6 +388,7 @@ footer.dark-theme {
 	display: flex;
 	justify-content: center;
 	padding: 10px 0;
+	flex-wrap: wrap;
 }
 
 .footer-col-1,
@@ -424,13 +425,13 @@ footer a:hover,
 	width: 10%;
 	height: 10%;
 	border-radius: 50%;
-	margin: 0;
+	margin: 0 5em 0 0;
 }
 
 .GitHub-img {
 	width: 10%;
 	height: auto;
-	margin: 0;
+	margin:  0 0 0 5em;
 }
 
 /* Footer End */
