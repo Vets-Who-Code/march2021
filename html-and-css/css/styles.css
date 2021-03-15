@@ -520,3 +520,9 @@ footer a:hover,
 		font-size: 1em;
 	}
 }
+
+/*Zombie Links HTML Page*/
+.links > ul > li {
+	display: block;
+	margin-top: 20px;
+}
