@@ -334,21 +334,22 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: white;
+	background-color: black;
 	padding: 1rem 1.5rem;
 	width: 75rem;
 	border-radius: 0.5rem;
-	color: black;
+	color: white;
 }
 
 .close-button {
 	float: right;
-	width: 1.5rem;
-	line-height: 1.5rem;
+	width: 2.5rem;
+	line-height: 3.5rem;
 	text-align: center;
 	cursor: pointer;
 	border-radius: 0.25rem;
-	background-color: lightgray;
+	background-color: black;
+	color: white;
 }
 
 .close-button:hover {
