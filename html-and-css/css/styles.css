@@ -526,3 +526,16 @@ footer a:hover,
 	display: block;
 	margin-top: 20px;
 }
+
+/*About.html*/
+#about {
+	text-align: center;
+}
+
+.name {
+	text-align: center;
+}
+
+.contact {
+	align-items: center;
+}
