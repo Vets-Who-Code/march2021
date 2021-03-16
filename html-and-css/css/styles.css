@@ -200,41 +200,6 @@ h1 {
 	}
 }
 
-.arrow {
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-}
-
-.arrow::after {
-	content: "";
-	width: 40px;
-	height: 40px;
-	margin: 70vh auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	border-right: 4px solid var(--light-green);
-	border-bottom: 4px solid var(--light-green);
-	transform: rotate(45deg);
-	animation: 3s arrow infinite ease;
-}
-
-@keyframes arrow {
-
-	0%,
-	100% {
-		top: 50px;
-	}
-
-	50% {
-		top: 100px;
-	}
-}
-
 /* Title End */
 
 /* Content Start */
@@ -481,10 +446,6 @@ a:visited {
 	.blood {
 		font-size: 1.6em;
 		padding-top: 0;
-	}
-
-	.arrow {
-		display: none;
 	}
 
 	nav {
