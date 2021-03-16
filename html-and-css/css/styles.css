@@ -203,31 +203,6 @@ h1 {
 /* Title End */
 
 /* Content Start */
-.zombie-tools {
-	text-align: center;
-}
-
-.zombie-button {
-	width: 7em;
-	margin: 2em .3em;
-	color: var(--light-green);
-	background-color: #575151;
-	font-size: 1em;
-	font-family: 'Creepster', cursive;
-	padding: 10px;
-}
-
-.zombie-button.dark-theme {
-	color: var(--light-mode);
-}
-
-.zombie-button:focus {
-	outline: rgb(24, 23, 23);
-}
-
-.zombie-button:hover {
-	color: var(--dark-mode);
-}
 
 img {
 	display: block;
@@ -250,24 +225,70 @@ p {
 
 /* Content End */
 
-/* Card Start */
-.card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	transition: 0.3s;
-	margin-left: 25%;
-	margin-right: 25%;
-	width: 50%;
-	height: 100%;
-	display: inline-block;
-	background-color: black;
-	margin-bottom: 90px;
+/*flex-box card start*/
+.flex-container {
+	display: flex;
+	flex-direction: row; 
 }
 
-.card:hover {
+.flex-container > div {
+	background-image: linear-gradient(#FF0000,#B00000, #300000);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	width: 33%;
+	height: 375px;
+	margin: 20px;
+}
+
+.flex-container > div:hover {
 	box-shadow: 0 8px 16px 0 var(--off-white);
 }
 
-/* Card End */
+.card-header {
+	margin-top: 0;
+	background: var(--dark-red);
+	opacity: 0.4;
+	height: auto;
+	width: auto;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+}
+
+/*Zombie Radar Start*/
+#zqanswer {
+	font-size: 12px;
+	text-indent: 0;
+	width: 200px;
+}
+
+.zombie-tools {
+	text-align: center;
+}
+
+.zombie-button {
+	width: 8em;
+	color: var(--light-green);
+	margin-top: 6%;
+	margin-left: 38%;
+	padding: 4px;
+	background: var(--dark-red);
+	opacity: 0.4;
+	font-size: .6 em;
+	font-family: 'Creepster', cursive;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.zombie-button.dark-theme {
+	color: var(--dark-mode);
+}
+
+.zombie-button:focus {
+	outline: rgb(24, 23, 23);
+}
+
+.zombie-button:hover {
+	background-color: var(--off-white);
+}
 
 /* Modal Start */
 .trigger {
@@ -328,15 +349,8 @@ p {
 	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-#jump-scare {
-	padding: 0 16px;
-	text-align: center;
-	font-size: 16px;
-	height: 740px;
-	background-color: black;
-}
-
 /* Modal End */
+/*Flex-box card end*/
 
 /* Footer Start */
 footer {
