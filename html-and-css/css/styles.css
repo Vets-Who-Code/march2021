@@ -110,6 +110,7 @@ a:visited {
 
 nav a:hover {
 	color: var(--light-green);
+	text-decoration: underline;
 }
 
 nav button {
@@ -243,7 +244,7 @@ h1 {
 
 .zombie-button {
 	width: 7em;
-	margin: .3em .3em;
+	margin: 2em .3em;
 	color: var(--light-green);
 	background-color: #575151;
 	font-size: 1em;
@@ -413,11 +414,18 @@ footer a,
 footer a:hover,
 .footer-link a:hover {
 	color: var(--light-green);
+	text-decoration: underline;
+}
+
+footer a:link,
+a:visited {
+	text-decoration: none;
+	color: var(--off-white);
 }
 
 .footer-images {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .VetsWhoCode-img {
@@ -425,6 +433,7 @@ footer a:hover,
 	height: 10%;
 	border-radius: 50%;
 	margin: 0;
+	margin-right: 5%;
 }
 
 .GitHub-img {
