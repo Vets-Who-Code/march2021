@@ -100,17 +100,24 @@
 						<p id="zqanswer"></p>
 					</span>
 				</div>
-				<div>
-					<!--DON'T PUSH!-->
+				<div><!--DON'T PUSH!-->
 					<h1 class="card-header">DON'T PUSH!</h1>
 					<span class="zombie-tools">
-						<button class="zombie-button" id="zombie-button" onclick="toggleModal()">
-							<img src="images/zombie.png">
+						<button class="trigger" onclick="screamSound()" value="DO NOT PRESS!">
+						<span class="modal">
+							<audio id="audio" src="sounds/132106__sironboy__woman-scream.wav"></audio>
+							<span class="modal-content">
+								<span class="close-button">&times;</span>
+								<img src="images/ceiling.gif" alt="zombie crawling on the ceiling">
+								<h1>THE ZOMBIE BIT YOU!</h1>
+							</span>
+						</span>
+						<img src="images/zombie.png">
 						</button>
 					</span>
 				</div>
+				<!--Zombie Survival Guide-->
 				<div>
-					<!--Zombie Survival Guide-->
 					<h1 class="card-header">Zombie Survival Guide</h1>
 					<span class="zombie-tools">
 						<a href="pubs/FM-999-3-Counter-Zombie-Operations-at-the-Fireteam-Level.pdf"><button class="zombie-button"
@@ -118,6 +125,7 @@
 					</span>
 				</div>
 			</div>
+		</div>
 
 			<footer id="foot">
 				Coded by the <a href="https://github.com/Vets-Who-Code/march2021" target="new">March 2021 Cohort</a>
