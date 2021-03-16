@@ -104,7 +104,16 @@
 				<div><!--DON'T PUSH!-->
 					<h1 class="card-header">DON'T PUSH!</h1>
 					<span class="zombie-tools">
-						<button class="zombie-button" id="zombie-button" onclick="toggleModal()">
+						<button class="trigger" onclick="screamSound()" value="DO NOT PRESS!">
+						<div class="modal">
+							<audio id="audio" src="sounds/132106__sironboy__woman-scream.wav"></audio>
+							<div class="modal-content">
+								<span class="close-button">&times;</span>
+								<img src="images/zombie-ceiling.gif" alt="zombie crawling on the ceiling">
+								<h2>THE ZOMBIE BIT YOU!</h2>
+							</div>
+						</div>
+						<div>
 						<img src="images/zombie.png">
 						</button>
 					</span>
@@ -112,7 +121,7 @@
 				<div><!--Zombie Survival Guide-->
 					<h1 class="card-header">Zombie Field Manual</h1>
 					<span class="zombie-tools">
-					<a href="https://www.balloon-juice.com/wp-content/uploads/2015/10/FM-999-3-Counter-Zombie-Operations-at-the-Fireteam-Level.pdf" target="_blank"><button class="zombie-button" id="zombie-button"><img src="images/army-soldier-walking.png"></button></a>
+					<a href="https://www.balloon-juice.com/wp-content/uploads/2015/10/FM-999-3-Counter-Zombie-Operations-at-the-Fireteam-Level.pdf" target="_blank" rel="noreferrer noopener"><button class="zombie-button" id="zombie-button"><img src="images/army-soldier-walking.png"></button></a>
 					</span>
 				</div>
 			</div>
