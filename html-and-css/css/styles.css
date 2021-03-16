@@ -439,7 +439,13 @@ footer a:hover,
 @media screen and (max-width: 1400px) {
 	.blood {
 		font-size: 3.5em;
+	
 	}
+
+	footer {
+		background-color: pink;
+	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -466,7 +472,12 @@ footer a:hover,
 		width: 90%;
 		margin: 0 auto 90px auto;
 	}
+	footer {
+		background-color: #145374;
+		font-family: 'DotGothic16', sans-serif;
+	}
 }
+
 
 @media screen and (max-width: 600px) {
 	.blood {
