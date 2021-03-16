@@ -292,15 +292,28 @@ p {
 
 /* Modal Start */
 .trigger {
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	border: 1px solid red;
-	background-color: black;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	color: white;
-	font-size: 30px;
+	width: 8em;
+	color: var(--light-green);
+	margin-top: 6%;
+	margin-left: 38%;
+	padding: 4px;
+	background: var(--dark-red);
+	opacity: 0.4;
+	font-size: .6 em;
+	font-family: 'Creepster', cursive;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.trigger.dark-theme {
+	color: var(--dark-mode);
+}
+
+.trigger:focus {
+	outline: rgb(24, 23, 23);
+}
+
+.trigger:hover {
+	background-color: var(--off-white);
 }
 
 .modal {
@@ -313,7 +326,7 @@ p {
 	opacity: 0;
 	visibility: hidden;
 	transform: scale(1.1);
-	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+	transition: visibility 0s linear 0.25s, opacity 0.5s 0s, transform 0.25s;
 }
 
 .modal-content {
@@ -343,7 +356,7 @@ p {
 }
 
 .show-modal {
-	opacity: 1;
+	opacity: 2;
 	visibility: visible;
 	transform: scale(1.0);
 	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
