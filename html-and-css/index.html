@@ -18,28 +18,29 @@
 	<div class="loading"></div>
 	<div class="hide-if-loading">
 		<header>
-			<div class="hidden">
+			<div class="hidden"> <!-- hide this on desktop and show on mobile, moves the header from below the nav to above it. -->
 				<h1 class="title blood">Zombies With #VetsWhoCode</h1>
 			</div>
-			<nav>
+			<!-- Mobile Nav -->
+			<button class="menu"></button>
+			<nav class="navbar">
+				<ul class="nav-list">
+					<li class="menu-link"><a href="#about">About</a></li>
+					<li class="menu-link"><a href="#cards">Projects</a></li>
+					<li class="menu-link"><a href="#foot">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- End Mobile Menu -->
+			<div class="desktop-nav">
 				<ul>
-					<li>
-						<a href="#">Home</a>
-					</li>
-					<li>
-						<a href="#about">About</a>
-					</li>
-					<li>
-						<a href="#card">Projects</a>
-					</li>
-					<li>
-						<a href="#foot">Contact</a>
-					</li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#card">Projects</a></li>
+					<li><a href="#foot">Contact</a></li>
 					<li><button class="button-toggle">
 							Go Dark
 						</button></li>
 				</ul>
-			</nav>
 		</header>
 
 		<div class="container">
@@ -90,7 +91,7 @@
 				</p>
 			</div>
 
-			<div class="flex-container">
+			<div class="flex-container" id="cards">
 				<div>
 					<!--Zombie Radar-->
 					<h1 class="card-header">Zombie Radar</h1>
