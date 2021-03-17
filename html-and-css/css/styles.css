@@ -276,32 +276,6 @@ p {
 	width: 25%;
 }
 
-.zombie-tools {
-	text-align: center;
-}
-
-.zombie-button {
-	width: 8em;
-	color: var(--light-green);
-	padding: 4px;
-	background: var(--dark-red);
-	opacity: 0.4;
-	font-size: .6 em;
-	font-family: 'Creepster', cursive;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.zombie-button.dark-theme {
-	color: var(--dark-mode);
-}
-
-.zombie-button:focus {
-	outline: rgb(24, 23, 23);
-}
-
-.zombie-button:hover {
-	background-color: var(--off-white);
-}
 
 /* Modal Start */
 
@@ -328,6 +302,7 @@ p {
 	width: 75rem;
 	border-radius: 0.5rem;
 	color: black;
+	opacity: 1;
 }
 
 .close-button {
