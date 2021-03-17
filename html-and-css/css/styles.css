@@ -235,9 +235,9 @@ p {
 .flex-container > div {
 	background-image: linear-gradient(#FF0000,#B00000, #300000);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-	width: 30%;
+	width: 40%;
 	height: 375px;
-	margin: 20px;
+	margin-left: 7%;
 	justify-content: space-between;
 	margin-bottom: 2em;
 }
@@ -264,6 +264,18 @@ p {
 	width: 200px;
 }
 
+#radar {
+	width: 25%;
+}
+
+#hand {
+	width: 25%;
+}
+
+#army {
+	width: 25%;
+}
+
 .zombie-tools {
 	text-align: center;
 }
@@ -271,8 +283,6 @@ p {
 .zombie-button {
 	width: 8em;
 	color: var(--light-green);
-	margin-top: 6%;
-	margin-left: 38%;
 	padding: 4px;
 	background: var(--dark-red);
 	opacity: 0.4;
@@ -294,30 +304,6 @@ p {
 }
 
 /* Modal Start */
-.trigger {
-	width: 8em;
-	color: var(--light-green);
-	margin-top: 6%;
-	margin-left: 38%;
-	padding: 4px;
-	background: var(--dark-red);
-	opacity: 0.4;
-	font-size: .6 em;
-	font-family: 'Creepster', cursive;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.trigger.dark-theme {
-	color: var(--dark-mode);
-}
-
-.trigger:focus {
-	outline: rgb(24, 23, 23);
-}
-
-.trigger:hover {
-	background-color: var(--off-white);
-}
 
 .modal {
 	position: fixed;
