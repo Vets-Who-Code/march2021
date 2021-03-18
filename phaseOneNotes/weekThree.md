@@ -18,56 +18,56 @@ homework:
 ### Adult Industries 
 - Considerations for the adult industry are that user added content can be illegal, ensuring safety of users is a top priority (crazy folks out there), content is often trademarked, volume of libraries is immense (consider different types of wifi, 3G, and other performace issues when developing), consider behavioral analysis of users, consider cultural differences and or requirements of different countries or regions. 
 - User interaction. 
-1. The first thing you see when you enter the site is a disclaimer (are you over 18?). This is in the form of a modal (soft challenge). 
-2. The average user between the ages of 18-24 spends 45min to 1 hr. on adult sites. Take this into consideration when thinking about design psychology. After age 24, the time spent on the site goes down considerably. 
-3. Make the search bar highly visible and available so the user can find what they want.
-4. Categories are another feature that can enhance the user experience. 
-5. uploading videos in a expeditious manner (get it as close to the user as possible) <ol>
+* The first thing you see when you enter the site is a disclaimer (are you over 18?). This is in the form of a modal (soft challenge). 
+* The average user between the ages of 18-24 spends 45min to 1 hr. on adult sites. Take this into consideration when thinking about design psychology. After age 24, the time spent on the site goes down considerably. 
+* Make the search bar highly visible and available so the user can find what they want.
+* Categories are another feature that can enhance the user experience. 
+* uploading videos in a expeditious manner (get it as close to the user as possible) <ol>
 - Monitizing. Ways to monitize this kind of site include: 
-1. implement ads to manke money 
-2. upsell to premium 
-3. show related content to keep user's attention longer
-4. fast previews of premium content can be used
-5. make the experience to upgrade to premium fast by auto completing several items on a sign-up form
-6. user has to fill in the most sensitive information to feel safe and secure
-7. another way to upsell is to have the user pay to get rid of ads. 
+* implement ads to manke money 
+* upsell to premium 
+* show related content to keep user's attention longer
+* fast previews of premium content can be used
+* make the experience to upgrade to premium fast by auto completing several items on a sign-up form
+* user has to fill in the most sensitive information to feel safe and secure
+* another way to upsell is to have the user pay to get rid of ads. 
 - Safeguards. 
-1. adult websites can institute moderators and design a machine learning feature that keeps content legal and non absuive (does not violate community standards or rules and regulations).
-2. use a filter or use a plugin(ex: plugin that has all the bad words that you dont want people to say)
+* adult websites can institute moderators and design a machine learning feature that keeps content legal and non absuive (does not violate community standards or rules and regulations).
+* use a filter or use a plugin(ex: plugin that has all the bad words that you dont want people to say)
 
 ### eCommerce 
 - The first thing the user experiences is a form to make the user enter their information like email, card number, etc. This is to provide more targeted advertising and to simplify and expedite the checkout process later on. 
 - Target marketing. 
-1. What are they buying in the user's area? Show them those products.
-2. What is the user's age?
-3. What are people in their age range buying?
-4. What are their likes and interests? Show them these products.
-5. What have they searched for in the past? Show them these products.
+* What are they buying in the user's area? Show them those products.
+* What is the user's age?
+* What are people in their age range buying?
+* What are their likes and interests? Show them these products.
+* What have they searched for in the past? Show them these products.
 - Search bar. 
-1. The search bar on the site shows stuff based on the area the user lives in. These items are listed at the top.
-2. They can also be based on the income of the shopper.
-3. If the person is shopping anonymously, they are assigned an id that displays products on the user profile that users data points collected about the person. These data points could come in the form of cookies, information entered in the website, searches conducted on the website, or information that the user has given the website access to.
-4. The site continues to create a user profile based on high probably niche vs low probably niche and shows them relevant items.
+* The search bar on the site shows stuff based on the area the user lives in. These items are listed at the top.
+* They can also be based on the income of the shopper.
+* If the person is shopping anonymously, they are assigned an id that displays products on the user profile that users data points collected about the person. These data points could come in the form of cookies, information entered in the website, searches conducted on the website, or information that the user has given the website access to.
+* The site continues to create a user profile based on high probably niche vs low probably niche and shows them relevant items.
 - The buy now button is patent free. It makes it convenient for the shopper to checkout.  
 - Show the user an upsell after they "buy now" and include "top picks" in email that is sent after purchase 
 
 ### Social
 - People want to go on these sites because they want connections
 - Monitizing. 
-1. Social network sites wants data to sell to ad companies to make money 
-2. Features that keeps a user there longer so they can see more ads and the ads can make more impressions
-3. Make the poeple in their "bubbles" close to them to keep them on longer
+* Social network sites wants data to sell to ad companies to make money 
+* Features that keeps a user there longer so they can see more ads and the ads can make more impressions
+* Make the poeple in their "bubbles" close to them to keep them on longer
 - Design features. 
-1. The color blue provides trust and tranquility
-2. Sans-serif fonts are friendlier 3. Make the site kind of bubbly (example: make slight bezel to form to portray trust)
-3. building forms of content that are easily digestable
-4. auto play videos
-5. "toilet engagement" simplicity keeps you engaged
-6. infinite scroll 
+* The color blue provides trust and tranquility
+* Sans-serif fonts are friendlier 3. Make the site kind of bubbly (example: make slight bezel to form to portray trust)
+* building forms of content that are easily digestable
+* auto play videos
+* "toilet engagement" simplicity keeps you engaged
+* infinite scroll 
 - Ads. Social network sites look through their database and starts suggesting people, target marketing, and they maximize ad spin 
 - Other features to maximize target mareting: 
-1. open cookies
-2. ad trackers
+* open cookies
+* ad trackers
 
 ### Healthcare Technology 
 - user wants privacy over all
