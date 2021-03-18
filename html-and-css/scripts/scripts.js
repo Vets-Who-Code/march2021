@@ -3,6 +3,8 @@
 // Select the button
 const btn = document.querySelector(".button-toggle");
 
+const arrow = document.querySelector(".arrow");
+
 //loading
 const loading = document.querySelector(".hide-if-loading");
 
@@ -22,6 +24,27 @@ btn.addEventListener("click", function () {
   btn.innerHTML = (btn.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
   btn.classList.toggle("dark-theme");
 });
+
+arrow.addEventListener("click",(e)=>{
+  console.log(window.pageYOffset)
+  if((window.innerHeight + window.pageYOffset) == document.body.scrollHeight){
+    arrow.classList.add("arrowUp");
+  }
+  else if (window.pageYOffset < 200){
+    arrow.classList.remove("arrowUp");
+  }
+
+  if((window.innerHeight + window.pageYOffset) < document.body.scrollHeight){
+    window.scrollBy(0, window.innerHeight);
+  }
+
+  for(let i = 0; i < arrow.classList.length; i++ ){
+      if(arrow.classList[i] == 'arrowUp'){
+        window.scrollBy(0, -window.innerHeight);
+      }
+  }
+
+})
 
 
 function zombieprompt() {
@@ -61,3 +84,15 @@ function screamSound() {
 }
 
 //Modal End//
+
+
+//scroll Start//
+
+document.addEventListener('scroll',()=>{
+  if (window.pageYOffset == 0){
+    arrow.classList.remove("arrowUp");
+  }
+  else if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
+    arrow.classList.toggle("arrowUp");
+  }
+})

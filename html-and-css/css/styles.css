@@ -202,6 +202,25 @@ h1 {
 
 /* Title End */
 
+/*Arrow Start*/
+.arrow {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+	width: 30px;
+	height: 30px;
+	margin: 0 3em 1em 0;
+	border-right: 4px solid var(--light-green);
+	border-bottom: 4px solid var(--light-green);
+	transform: rotate(45deg);
+	animation: 3s arrow infinite ease;
+}
+.arrowUp {
+	transform: rotate(225deg);
+}
+
+/* Arrow End*/
+
 /* Content Start */
 
 img {
