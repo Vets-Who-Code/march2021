@@ -15,7 +15,7 @@ homework:
 
 # Day 2
 ## Design Psychology 
-### adult industries 
+### Adult Industries 
 - Considerations for the adult industry are that user added content can be illegal, ensuring safety of users is a top priority (crazy folks out there), content is often trademarked, volume of libraries is immense (consider different types of wifi, 3G, and other performace issues when developing), consider behavioral analysis of users, consider cultural differences and or requirements of different countries or regions. 
 - User interaction. 1. The first thing you see when you enter the site is a disclaimer (are you over 18?). This is in the form of a modal (soft challenge). 2. The average user between the ages of 18-24 spends 45min to 1 hr. on adult sites. Take this into consideration when thinking about design psychology. After age 24, the time spent on the site goes down considerably. 3. Make the search bar highly visible and available so the user can find what they want. 4. Categories are another feature that can enhance the user experience. 5.uploading videos in a expeditious manner (get it as close to the user as possible)
 - Monitizing. Ways to monitize this kind of site include: 1. implement ads to manke money 2. upsell to premium 3. show related content to keep user's attention longer 4. fast previews of premium content can be used 5. make the experience to upgrade to premium fast by auto completing several items on a sign-up form 6. user has to fill in the most sensitive information to feel safe and secure 7. another way to upsell is to have the user pay to get rid of ads. 
@@ -28,14 +28,14 @@ homework:
 - The buy now button is patent free. It makes it convenient for the shopper to checkout.  
 - Show the user an upsell after they "buy now" and include "top picks" in email that is sent after purchase 
 
-### social
+### Social
 - People want to go on these sites because they want connections
 - Monitizing. 1. Social network sites wants data to sell to ad companies to make money 2. Features that keeps a user there longer so they can see more ads and the ads can make more impressions 3. Make the poeple in their "bubbles" close to them to keep them on longer
 - Design features. 1. The color blue provides trust and tranquility 2. Sans-serif fonts are friendlier 3. Make the site kind of bubbly (example: make slight bezel to form to portray trust) 3.building forms of content that are easily digestable 4. auto play videos 5. "toilet engagement" simplicity keeps you engaged  6. infinite scroll 
 - Ads. 1. Social network sites look through their database and starts suggesting people, target marketing, and they maximize ad spin 
 - Other features to maximize target mareting: 1. open cookies 2. ad trackers
 
-### healthcare technology 
+### Healthcare Technology 
 - user wants privacy over all
 - hosptial version of every app youve ever used
 - requires permission from doctor to signup from app and permission from the user to share with a third party (the tech company who hosts the app). This usually involves sending them a link that allows them to put in their email, select a very string password.
@@ -43,11 +43,12 @@ homework:
 - once inside the content there are files. To access these files there is usually another disclaimer letting you know about privacy etc.. Content is usually in the form of print only no download, filable pdf.
 - Prescriptions. There are more disclaimers again. If the prescriptions are opioids or narcotics, the disclaimers say that it needs your doctor approval. There is a message sent to your doctor if you try to fill it.  This also requires release of records authoization. 
 
-### media 
+### Media 
 - common features include tracking cookies, latest breaking content, SEO, long form content (5,000 - 7,000 words)
 - Should be optimized for bots on google 
 
-homework: identify the threee users of #vetswhocode.io
+### Homework
+- identify the threee users of #vetswhocode.io
 
 
 
