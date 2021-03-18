@@ -26,25 +26,22 @@ btn.addEventListener("click", function () {
 });
 
 arrow.addEventListener("click",(e)=>{
-  if((window.innerHeight + window.pageYOffset) < document.body.scrollHeight){
-    window.scrollBy(0, window.innerHeight);
-    console.log(window.innerHeight)
+  console.log(window.pageYOffset)
+  if((window.innerHeight + window.pageYOffset) == document.body.scrollHeight){
+    arrow.classList.add("arrowUp");
+  }
+  else if (window.pageYOffset < 200){
+    arrow.classList.remove("arrowUp");
   }
 
-  if((window.innerHeight + window.pageYOffset) == document.body.scrollHeight){
-    console.log(document.body.scrollHeight)
-    arrow.classList.toggle("arrowUp");
+  if((window.innerHeight + window.pageYOffset) < document.body.scrollHeight){
+    window.scrollBy(0, window.innerHeight);
   }
 
   for(let i = 0; i < arrow.classList.length; i++ ){
       if(arrow.classList[i] == 'arrowUp'){
         window.scrollBy(0, -window.innerHeight);
-        console.log('Arrow is up')
       }
-  }
-
-  if (window.pageYOffset == 0){
-      arrow.classList.toggle("arrowUp");
   }
 
 })
@@ -93,16 +90,9 @@ function screamSound() {
 
 document.addEventListener('scroll',()=>{
   if (window.pageYOffset == 0){
-    console.log("you're at the top of the page");
+    arrow.classList.remove("arrowUp");
   }
-  if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
+  else if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
     arrow.classList.toggle("arrowUp");
-    console.log("you're at the bottom of the page");
-}
-})
-
-window.onscroll = function(ev) {
-  if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-     // alert("you're at the bottom of the page");
   }
-};
+})
