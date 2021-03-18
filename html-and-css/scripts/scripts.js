@@ -26,13 +26,27 @@ btn.addEventListener("click", function () {
 });
 
 arrow.addEventListener("click",(e)=>{
+  if((window.innerHeight + window.pageYOffset) < document.body.scrollHeight){
     window.scrollBy(0, window.innerHeight);
     console.log(window.innerHeight)
+  }
 
   if((window.innerHeight + window.pageYOffset) == document.body.scrollHeight){
     console.log(document.body.scrollHeight)
     arrow.classList.toggle("arrowUp");
   }
+
+  for(let i = 0; i < arrow.classList.length; i++ ){
+      if(arrow.classList[i] == 'arrowUp'){
+        window.scrollBy(0, -window.innerHeight);
+        console.log('Arrow is up')
+      }
+  }
+
+  if (window.pageYOffset == 0){
+      arrow.classList.toggle("arrowUp");
+  }
+
 })
 
 
