@@ -3,6 +3,8 @@
 // Select the button
 const btn = document.querySelector(".button-toggle");
 
+const arrow = document.querySelector(".arrow");
+
 //loading
 const loading = document.querySelector(".hide-if-loading");
 
@@ -22,6 +24,15 @@ btn.addEventListener("click", function () {
   btn.innerHTML = (btn.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
   btn.classList.toggle("dark-theme");
 });
+
+arrow.addEventListener("click",(e)=>{
+    window.scrollBy(0, window.innerHeight);
+    console.log(window.innerHeight)
+
+  if((window.innerHeight + window.pageYOffset) <= document.body.scrollHeight){
+    console.log(document.body.scrollHeight)
+  }
+})
 
 
 function zombieprompt() {
