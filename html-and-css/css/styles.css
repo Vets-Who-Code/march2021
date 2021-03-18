@@ -235,9 +235,9 @@ p {
 .flex-container > div {
 	background-image: linear-gradient(#FF0000,#B00000, #300000);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-	width: 30%;
+	width: 40%;
 	height: 375px;
-	margin: 20px;
+	margin-left: 7%;
 	justify-content: space-between;
 	margin-bottom: 2em;
 }
@@ -264,60 +264,20 @@ p {
 	width: 200px;
 }
 
-.zombie-tools {
-	text-align: center;
+#radar {
+	width: 25%;
 }
 
-.zombie-button {
-	width: 8em;
-	color: var(--light-green);
-	margin-top: 6%;
-	margin-left: 38%;
-	padding: 4px;
-	background: var(--dark-red);
-	opacity: 0.4;
-	font-size: .6 em;
-	font-family: 'Creepster', cursive;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+#hand {
+	width: 25%;
 }
 
-.zombie-button.dark-theme {
-	color: var(--dark-mode);
+#army {
+	width: 25%;
 }
 
-.zombie-button:focus {
-	outline: rgb(24, 23, 23);
-}
-
-.zombie-button:hover {
-	background-color: var(--off-white);
-}
 
 /* Modal Start */
-.trigger {
-	width: 8em;
-	color: var(--light-green);
-	margin-top: 6%;
-	margin-left: 38%;
-	padding: 4px;
-	background: var(--dark-red);
-	opacity: 0.4;
-	font-size: .6 em;
-	font-family: 'Creepster', cursive;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.trigger.dark-theme {
-	color: var(--dark-mode);
-}
-
-.trigger:focus {
-	outline: rgb(24, 23, 23);
-}
-
-.trigger:hover {
-	background-color: var(--off-white);
-}
 
 .modal {
 	position: fixed;
@@ -342,6 +302,7 @@ p {
 	width: 75rem;
 	border-radius: 0.5rem;
 	color: black;
+	opacity: 1;
 }
 
 .close-button {
@@ -363,6 +324,10 @@ p {
 	visibility: visible;
 	transform: scale(1.0);
 	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+#ceiling {
+	width: 100%;
 }
 
 /* Modal End */
