@@ -17,17 +17,12 @@ homework:
 ## Design Psychology 
 ### Adult Industries 
 - Considerations for the adult industry are that user added content can be illegal, ensuring safety of users is a top priority (crazy folks out there), content is often trademarked, volume of libraries is immense (consider different types of wifi, 3G, and other performace issues when developing), consider behavioral analysis of users, consider cultural differences and or requirements of different countries or regions. 
-- User interaction. 
-* The first thing you see when you enter the site is a disclaimer (are you over 18?). This is in the form of a modal (soft challenge). 
+- User interaction. The first thing you see when you enter the site is a disclaimer (are you over 18?). This is in the form of a modal (soft challenge). 
 * The average user between the ages of 18-24 spends 45min to 1 hr. on adult sites. Take this into consideration when thinking about design psychology. After age 24, the time spent on the site goes down considerably. 
 * Make the search bar highly visible and available so the user can find what they want.
 * Categories are another feature that can enhance the user experience. 
 * uploading videos in a expeditious manner (get it as close to the user as possible) <ol>
-- Monitizing. Ways to monitize this kind of site include: 
-* implement ads to manke money 
-* upsell to premium 
-* show related content to keep user's attention longer
-* fast previews of premium content can be used
+- Monitizing. Ways to monitize this kind of site include: implement ads to make money, upsell to premium, show related content to keep user's attention longer, fast previews of premium content can be used
 * make the experience to upgrade to premium fast by auto completing several items on a sign-up form
 * user has to fill in the most sensitive information to feel safe and secure
 * another way to upsell is to have the user pay to get rid of ads. 
@@ -37,14 +32,8 @@ homework:
 
 ### eCommerce 
 - The first thing the user experiences is a form to make the user enter their information like email, card number, etc. This is to provide more targeted advertising and to simplify and expedite the checkout process later on. 
-- Target marketing. 
-* What are they buying in the user's area? Show them those products.
-* What is the user's age?
-* What are people in their age range buying?
-* What are their likes and interests? Show them these products.
-* What have they searched for in the past? Show them these products.
-- Search bar. 
-* The search bar on the site shows stuff based on the area the user lives in. These items are listed at the top.
+- Target marketing. What are they buying in the user's area? Show them those products.  What is the user's age? What are people in their age range buying? What are their likes and interests? Show them these products. What have they searched for in the past? Show them these products.
+- Search bar. The search bar on the site shows stuff based on the area the user lives in. These items are listed at the top.
 * They can also be based on the income of the shopper.
 * If the person is shopping anonymously, they are assigned an id that displays products on the user profile that users data points collected about the person. These data points could come in the form of cookies, information entered in the website, searches conducted on the website, or information that the user has given the website access to.
 * The site continues to create a user profile based on high probably niche vs low probably niche and shows them relevant items.
@@ -53,13 +42,10 @@ homework:
 
 ### Social
 - People want to go on these sites because they want connections
-- Monitizing. 
-* Social network sites wants data to sell to ad companies to make money 
+- Monitizing. Social network sites wants data to sell to ad companies to make money. 
 * Features that keeps a user there longer so they can see more ads and the ads can make more impressions
 * Make the poeple in their "bubbles" close to them to keep them on longer
-- Design features. 
-* The color blue provides trust and tranquility
-* Sans-serif fonts are friendlier 3. Make the site kind of bubbly (example: make slight bezel to form to portray trust)
+- Design features. The color blue provides trust and tranquility. Sans-serif fonts are friendlier 3. Make the site kind of bubbly (example: make slight bezel to form to portray trust)
 * building forms of content that are easily digestable
 * auto play videos
 * "toilet engagement" simplicity keeps you engaged
