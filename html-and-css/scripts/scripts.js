@@ -29,8 +29,9 @@ arrow.addEventListener("click",(e)=>{
     window.scrollBy(0, window.innerHeight);
     console.log(window.innerHeight)
 
-  if((window.innerHeight + window.pageYOffset) <= document.body.scrollHeight){
+  if((window.innerHeight + window.pageYOffset) == document.body.scrollHeight){
     console.log(document.body.scrollHeight)
+    arrow.classList.toggle("arrowUp");
   }
 })
 
@@ -81,6 +82,7 @@ document.addEventListener('scroll',()=>{
     console.log("you're at the top of the page");
   }
   if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
+    arrow.classList.toggle("arrowUp");
     console.log("you're at the bottom of the page");
 }
 })

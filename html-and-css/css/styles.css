@@ -215,6 +215,9 @@ h1 {
 	transform: rotate(45deg);
 	animation: 3s arrow infinite ease;
 }
+.arrowUp {
+	transform: rotate(225deg);
+}
 
 /* Arrow End*/
 
