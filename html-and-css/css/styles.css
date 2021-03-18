@@ -501,6 +501,7 @@ a:visited {
 
 	.showClose {
 		background-image: url("../images/close.png");
+		position: absolute;
 	}
 
 	.showNav {
