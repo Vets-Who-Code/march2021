@@ -19,33 +19,34 @@ btn.addEventListener("click", function () {
   // Then toggle (add/remove) the .dark-theme class to the body
   document.body.classList.toggle("dark-theme");
   document.getElementById("foot").classList.toggle("dark-theme");
-  document.getElementById("zombie-button").classList.toggle("dark-theme");
   //on click swap out btn text
   btn.innerHTML = (btn.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
   btn.classList.toggle("dark-theme");
 });
 
-arrow.addEventListener("click",(e)=>{
+// Arrow
+
+arrow.addEventListener("click", (e) => {
   console.log(window.pageYOffset)
-  if((window.innerHeight + window.pageYOffset) == document.body.scrollHeight){
+  if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
     arrow.classList.add("arrowUp");
-  }
-  else if (window.pageYOffset < 200){
+  } else if (window.pageYOffset < 200) {
     arrow.classList.remove("arrowUp");
   }
 
-  if((window.innerHeight + window.pageYOffset) < document.body.scrollHeight){
+  if ((window.innerHeight + window.pageYOffset) < document.body.scrollHeight) {
     window.scrollBy(0, window.innerHeight);
   }
 
-  for(let i = 0; i < arrow.classList.length; i++ ){
-      if(arrow.classList[i] == 'arrowUp'){
-        window.scrollBy(0, -window.innerHeight);
-      }
+  for (let i = 0; i < arrow.classList.length; i++) {
+    if (arrow.classList[i] == 'arrowUp') {
+      window.scrollBy(0, -window.innerHeight);
+    }
   }
 
 })
 
+// Zombie Radar
 
 function zombieprompt() {
   let txt;
@@ -63,7 +64,7 @@ function zombieprompt() {
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");
-closeButton.addEventListener("click", ()=> modal.classList.remove("show_modal"));
+closeButton.addEventListener("click", () => modal.classList.remove("show_modal"));
 
 function toggleModal() {
   modal.classList.toggle("show-modal");
@@ -83,16 +84,32 @@ function screamSound() {
   audio.play();
 }
 
-//Modal End//
+// Scroll Start
 
-
-//scroll Start//
-
-document.addEventListener('scroll',()=>{
-  if (window.pageYOffset == 0){
+document.addEventListener('scroll', () => {
+  if (window.pageYOffset == 0) {
     arrow.classList.remove("arrowUp");
-  }
-  else if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
+  } else if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
     arrow.classList.toggle("arrowUp");
   }
 })
+
+// Hamburger Menu
+
+const navbar = document.querySelector(".navbar");
+const menu = document.querySelector(".menu");
+
+menu.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  navbar.classList.toggle("showNav");
+  menu.classList.toggle("showClose");
+}
+
+const menuLinks = document.querySelectorAll(".menu-link");
+
+menuLinks.forEach(
+  function (menuLink) {
+    menuLink.addEventListener("click", toggleMenu);
+  }
+);

@@ -64,7 +64,8 @@ body.dark-theme {
 	background-color: var(--dark-mode)
 }
 
-/*Loading Classes*/
+/* Loading Classes*/
+
 .loading {
 	background: url('../images/cute-zombie.gif') no-repeat center center;
 	position: absolute;
@@ -86,14 +87,15 @@ body.dark-theme {
 /*End Loading*/
 
 /* Nav Start */
-nav {
+
+.desktop-nav {
 	display: flex;
 	overflow: hidden;
 	justify-content: center;
 	padding-top: 20px;
 }
 
-nav a {
+.desktop-nav a {
 	float: left;
 	text-align: center;
 	padding: 15px 18px;
@@ -102,18 +104,18 @@ nav a {
 	font-size: 1.2em;
 }
 
-nav a:link,
-a:visited {
+.desktop-nav a:link,
+.desktop-nav a:visited {
 	text-decoration: none;
 	color: var(--off-white);
 }
 
-nav a:hover {
+.desktop-nav a:hover {
 	color: var(--light-green);
 	text-decoration: underline;
 }
 
-nav button {
+.desktop-nav button {
 	width: 5em;
 	color: var(--light-green);
 	margin-top: 6px;
@@ -124,19 +126,19 @@ nav button {
 	font-family: 'Creepster', cursive;
 }
 
-nav button.dark-theme {
+.desktop-nav button.dark-theme {
 	color: var(--light-mode);
 }
 
-nav button.dark-theme:hover {
+.desktop-nav button.dark-theme:hover {
 	color: white;
 }
 
-nav button:focus {
+.desktop-nav button:focus {
 	outline: rgb(24, 23, 23);
 }
 
-nav button:hover {
+.desktop-nav button:hover {
 	color: var(--dark-mode);
 }
 
@@ -152,9 +154,18 @@ li {
 	display: none;
 }
 
+.menu {
+	display: none;
+}
+
+.navbar {
+	display: none;
+}
+
 /* Nav End */
 
 /* Title Start */
+
 h1 {
 	font-family: 'Creepster', cursive;
 	color: var(--off-white);
@@ -165,7 +176,7 @@ h1 {
 .blood {
 	font-family: nosifer;
 	font-size: 6em;
-	padding-top: 1em;
+	padding-top: .5em;
 	transition: all .25s ease;
 	-webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
 	animation: drip 2.5s infinite alternate;
@@ -203,10 +214,11 @@ h1 {
 /* Title End */
 
 /*Arrow Start*/
+
 .arrow {
 	position: fixed;
-    bottom: 0;
-    right: 0;
+	bottom: 0;
+	right: 0;
 	width: 30px;
 	height: 30px;
 	margin: 0 3em 1em 0;
@@ -215,6 +227,7 @@ h1 {
 	transform: rotate(45deg);
 	animation: 3s arrow infinite ease;
 }
+
 .arrowUp {
 	transform: rotate(225deg);
 }
@@ -226,7 +239,7 @@ h1 {
 img {
 	display: block;
 	margin: 0 auto;
-	width: 50%;
+	width: 60%;
 	padding: 50px 0;
 }
 
@@ -234,7 +247,7 @@ p {
 	line-height: 30px;
 	color: var(--off-white);
 	margin: 20px;
-	padding: 0 11em;
+	padding: 0 9em;
 	text-indent: 20px;
 }
 
@@ -245,14 +258,19 @@ p {
 /* Content End */
 
 /*flex-box card start*/
+
 .flex-container {
 	display: flex;
-	flex-direction: row; 
+	flex-direction: row;
 	flex-wrap: wrap;
 }
 
+.radar {
+	margin-top: 6%;
+}
+
 .flex-container > div {
-	background-image: linear-gradient(#FF0000,#B00000, #300000);
+	background-image: linear-gradient(#FF0000,#B00000,#300000);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 	width: 40%;
 	height: 375px;
@@ -276,6 +294,7 @@ p {
 }
 
 /*Zombie Radar Start*/
+
 #zqanswer {
 	font-size: 12px;
 	text-indent: 0;
@@ -296,6 +315,31 @@ p {
 
 
 /* Modal Start */
+
+.trigger {
+	width: 8em;
+	color: var(--light-green);
+	margin-top: 6%;
+	margin-left: 38%;
+	padding: 4px;
+	background: var(--dark-red);
+	opacity: 0.4;
+	font-size: .6 em;
+	font-family: 'Creepster', cursive;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.trigger.dark-theme {
+	color: var(--dark-mode);
+}
+
+.trigger:focus {
+	outline: rgb(24, 23, 23);
+}
+
+.trigger:hover {
+	background-color: var(--off-white);
+}
 
 .modal {
 	position: fixed;
@@ -349,9 +393,11 @@ p {
 }
 
 /* Modal End */
+
 /*Flex-box card end*/
 
 /* Footer Start */
+
 footer {
 	background-color: var(--dark-mode);
 	color: var(--off-white);
@@ -423,21 +469,102 @@ a:visited {
 /* Footer End */
 
 /* Media Queries Start */
+
 @media screen and (max-width: 1400px) {
 	.blood {
 		font-size: 3.5em;
-	
 	}
 
-	footer {
-		background-color: pink;
+	p {
+		padding: 0 8em;
 	}
+}
 
+@media screen and (max-width: 1000px) {
+	.blood {
+		font-size: 3.3em;
+	}
+	p {
+		padding: 0 6em;
+
+	}
 }
 
 @media screen and (max-width: 800px) {
 	.blood {
-		font-size: 2em;
+		font-size: 2.7em;
+		padding-top: 0;
+	}
+	.desktop-nav {
+		display: none;
+	}
+
+	.hamburg {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.menu {
+		z-index: 1000;
+		display: initial;
+		width: 36px;
+		height: 36px;
+		border: none;
+		cursor: pointer;
+		background-color: transparent;
+		background-image: url("../images/menu.png");
+		background-size: 100%;
+		margin-top: 20px;
+		margin-right: 10px;
+	}
+
+	.navbar {
+		position: absolute;
+		display: initial;
+		top: 0;
+		left: 0;
+		background: var(--dark-mode);
+		width: 100%;
+		height: 30%;
+		z-index: 999;
+		overflow: hidden;
+		color: var(--light-green);
+		transform: translateX(100%);
+		transition: transform 0.3s ease;
+	}
+
+	.showClose {
+		background-image: url("../images/close.svg");
+		position: absolute;
+		height: 36px;
+		width: 36px;
+		margin-top: 20px;
+		margin-right: 10px;
+	}
+
+	.showNav {
+		transform: translateY(0);
+	}
+
+	.navbar ul {
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.menu-link a,
+	.menu-link a:visited,
+	.menu-link a:active {
+		color: var(--light-mode);
+		text-decoration: none;
+	}
+
+	.menu-link a:hover {
+		color: var(--light-green);
 	}
 
 	.container {
@@ -445,7 +572,7 @@ a:visited {
 	}
 
 	img {
-		width: 75%;
+		width: 70%;
 	}
 
 	p {
@@ -455,51 +582,20 @@ a:visited {
 	.flex-container {
 		text-align: center;
 	}
+
 	.card {
 		width: 90%;
 		margin: 0 auto 90px auto;
 	}
-	footer {
-		background-color: #145374;
-		font-family: 'DotGothic16', sans-serif;
-	}
 }
 
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
 	.blood {
-		font-size: 1.6em;
-		padding-top: 0;
-	}
-
-	nav {
-		padding: 0;
-	}
-
-	nav a {
-		font-size: 1em;
-	}
-
-	nav ul li {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	nav button {
-		margin: 15px auto 0 auto;
+		font-size: 2em;
 	}
 
 	.zombie-tools {
 		margin-top: 200px;
-	}
-
-	.container h1 {
-		display: none;
-	}
-
-	.hidden {
-		display: initial;
 	}
 
 	p {
@@ -508,8 +604,14 @@ a:visited {
 	}
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 470px) {
 	.blood {
-		font-size: 1em;
+		font-size: 1.7em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.blood {
+		font-size: 1.2em;
 	}
 }
