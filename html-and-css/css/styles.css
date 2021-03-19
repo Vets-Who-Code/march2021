@@ -135,8 +135,8 @@ body.dark-theme {
 }
 
 .desktop-nav button.dark-theme:hover,
-.button-toggle-mobile:hover {
-	color: white;
+.button-toggle-mobile.dark-theme:hover {
+	color: var(--off-white);
 }
 
 .desktop-nav button:focus,
@@ -583,7 +583,7 @@ a:visited {
 	}
 
 	p {
-		padding: 0;
+		padding: 0 2em;
 	}
 
 	.flex-container {
