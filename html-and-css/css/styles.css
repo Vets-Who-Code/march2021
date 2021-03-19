@@ -309,7 +309,6 @@ p {
 
 
 /* Modal Start */
-<<<<<<< HEAD
 
 .trigger {
 	width: 8em;
@@ -335,8 +334,6 @@ p {
 .trigger:hover {
 	background-color: var(--off-white);
 }
-=======
->>>>>>> main
 
 .modal {
 	position: fixed;
@@ -485,8 +482,8 @@ a:visited {
 	.menu {
 		z-index: 1000;
 		display: initial;
-		width: 36px;
-		height: 36px;
+		width: 48px;
+		height: 48px;
 		border: none;
 		cursor: pointer;
 		background-color: transparent;
@@ -505,13 +502,15 @@ a:visited {
 		z-index: 999;
 		overflow: hidden;
 		color: var(--light-green);
-		transform: translateY(-100%);
-		transition: transform 0.2s ease;
+		transform: translateX(100%);
+		transition: transform 0.3s ease;
 	}
 
 	.showClose {
-		background-image: url("../images/close.png");
+		background-image: url("../images/close.svg");
 		position: absolute;
+		height: 24px;
+		width: 24px;
 	}
 
 	.showNav {

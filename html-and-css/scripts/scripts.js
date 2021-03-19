@@ -25,6 +25,8 @@ btn.addEventListener("click", function () {
   btn.classList.toggle("dark-theme");
 });
 
+// Arrow
+
 arrow.addEventListener("click",(e)=>{
   console.log(window.pageYOffset)
   if((window.innerHeight + window.pageYOffset) == document.body.scrollHeight){
@@ -46,6 +48,7 @@ arrow.addEventListener("click",(e)=>{
 
 })
 
+// Zombie Radar
 
 function zombieprompt() {
   let txt;
@@ -83,10 +86,7 @@ function screamSound() {
   audio.play();
 }
 
-//Modal End//
-
-
-//scroll Start//
+// Scroll Start
 
 document.addEventListener('scroll',()=>{
   if (window.pageYOffset == 0){
