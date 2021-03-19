@@ -30,6 +30,7 @@ btn2.addEventListener("click", function () {
   // Then toggle (add/remove) the .dark-theme class to the body
   document.body.classList.toggle("dark-theme");
   document.getElementById("foot").classList.toggle("dark-theme");
+  document.getElementById("navbar").classList.toggle("dark-theme");
   //on click swap out btn text
   btn2.innerHTML = (btn2.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
   btn2.classList.toggle("dark-theme");

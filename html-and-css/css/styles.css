@@ -526,6 +526,21 @@ a:visited {
 		transition: transform 0.3s ease;
 	}
 
+	.navbar.dark-theme {
+		background-color: var(--light-mode);
+	}
+
+	.navbar.dark-theme a:link,
+	.navbar.dark-theme a:visited,
+	.navbar.dark-theme a:active {
+		color: var(--off-white);
+	}
+
+	.navbar.dark-theme a:hover {
+		padding: 5px;
+		border: 2px solid var(--off-white);
+	}
+
 	.showClose {
 		background-image: url("../images/close.png");
 		position: absolute;
