@@ -42,7 +42,7 @@
 						</button></li>
 				</ul>
 		</header>
-
+		<div class="arrow"></div>
 		<div class="container">
 			<h1 class="title blood">Zombies With #VetsWhoCode</h1>
 			<img src="https://st2.depositphotos.com/1606463/8079/i/600/depositphotos_80792684-stock-photo-toothy-zombie.jpg"
@@ -91,55 +91,38 @@
 				</p>
 			</div>
 
+<<<<<<< HEAD
 			<div class="flex-container" id="cards">
 				<div>
+=======
+			<div class="flex-container">
+				<div onclick="zombieprompt()">
+>>>>>>> main
 					<!--Zombie Radar-->
 					<h1 class="card-header">Zombie Radar</h1>
-					<span class="zombie-tools">
-						<button class="zombie-button" id="zombie-button" onclick="zombieprompt()"><img
-								src="images/radar.png"></img></button>
-						<p id="zqanswer"></p>
+					<img id="radar" src="images/radar.png"></img>
+					<p id="zqanswer"></p>
+				</div>
+				<div class="trigger" onclick="screamSound()"><!--DON'T PUSH!-->
+					<h1 class="card-header">DON'T PUSH!</h1>
+					<img id="hand" src="images/zombie.png">
+					<span class="modal">
+						<audio id="audio" src="sounds/132106__sironboy__woman-scream.wav"></audio>
+						<span class="modal-content">
+						<span class="close-button">&times;</span>
+								<img src="images/ceiling.gif" id="ceiling" alt="zombie crawling on the ceiling">
+								<h1>THE ZOMBIE BIT YOU!</h1>
+						</span>
 					</span>
 				</div>
 				<div><!--DON'T PUSH!-->
-					<h1 class="card-header">DON'T PUSH!</h1>
-					<span class="zombie-tools">
-						<button class="trigger" onclick="screamSound()" value="DO NOT PRESS!">
-						<span class="modal">
-							<audio id="audio" src="sounds/132106__sironboy__woman-scream.wav"></audio>
-							<span class="modal-content">
-								<span class="close-button">&times;</span>
-								<img src="images/ceiling.gif" alt="zombie crawling on the ceiling">
-								<h1>THE ZOMBIE BIT YOU!</h1>
-							</span>
-						</span>
-						<img src="images/zombie.png">
-						</button>
-					</span>
+					<h1 class="card-header">Empty Tool</h1>
 				</div>
-				<!--Zombie Survival Guide-->
-				<div><!--DON'T PUSH!-->
-					<h1 class="card-header">DON'T PUSH!</h1>
-					<span class="zombie-tools">
-						<button class="trigger" onclick="screamSound()" value="DO NOT PRESS!">
-						<span class="modal">
-							<audio id="audio" src="sounds/132106__sironboy__woman-scream.wav"></audio>
-							<span class="modal-content">
-								<span class="close-button">&times;</span>
-								<img src="images/ceiling.gif" alt="zombie crawling on the ceiling">
-								<h1>THE ZOMBIE BIT YOU!</h1>
-							</span>
-						</span>
-						<img src="images/zombie.png">
-						</button>
-					</span>
-				</div>
+				
 				<div>
-					<h1 class="card-header">Zombie Survival Guide</h1>
-					<span class="zombie-tools">
-						<a href="pubs/FM-999-3-Counter-Zombie-Operations-at-the-Fireteam-Level.pdf"><button class="zombie-button"
-								id="zombie-button"></a><img src="images/army-soldier-walking.png"></button>
-					</span>
+					<!--Zombie Field Manual-->
+					<h1 class="card-header">Zombie Field Manual</h1>
+					<a href="https://www.balloon-juice.com/wp-content/uploads/2015/10/FM-999-3-Counter-Zombie-Operations-at-the-Fireteam-Level.pdf" target="_blank"><img id= "army" src="images/army-soldier-walking.png"></a>
 				</div>
 			</div>
 
