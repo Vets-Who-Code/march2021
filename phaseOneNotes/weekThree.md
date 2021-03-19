@@ -70,6 +70,12 @@ homework:
 ### Homework
 - identify the threee users of #vetswhocode.io
 
+# Day 3
+## Color Theory 
+- Focus on https://www.colormatters.com/color-and-design/basic-color-theory
+
+# Day 4
+
 
 
 
