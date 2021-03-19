@@ -176,7 +176,7 @@ h1 {
 .blood {
 	font-family: nosifer;
 	font-size: 6em;
-	padding-top: 1em;
+	padding-top: .5em;
 	transition: all .25s ease;
 	-webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
 	animation: drip 2.5s infinite alternate;
@@ -239,7 +239,7 @@ h1 {
 img {
 	display: block;
 	margin: 0 auto;
-	width: 50%;
+	width: 60%;
 	padding: 50px 0;
 }
 
@@ -247,7 +247,7 @@ p {
 	line-height: 30px;
 	color: var(--off-white);
 	margin: 20px;
-	padding: 0 11em;
+	padding: 0 9em;
 	text-indent: 20px;
 }
 
@@ -469,6 +469,17 @@ a:visited {
 @media screen and (max-width: 1400px) {
 	.blood {
 		font-size: 3.5em;
+	}
+
+	p {
+		padding: 0 8em;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	p {
+		padding: 0 6em;
+
 	}
 }
 
