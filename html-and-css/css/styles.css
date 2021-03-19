@@ -265,6 +265,10 @@ p {
 	flex-wrap: wrap;
 }
 
+.radar {
+	margin-top: 6%;
+}
+
 .flex-container > div {
 	background-image: linear-gradient(#FF0000,#B00000,#300000);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -503,8 +507,8 @@ a:visited {
 	.menu {
 		z-index: 1000;
 		display: initial;
-		width: 48px;
-		height: 48px;
+		width: 36px;
+		height: 36px;
 		border: none;
 		cursor: pointer;
 		background-color: transparent;
@@ -532,8 +536,10 @@ a:visited {
 	.showClose {
 		background-image: url("../images/close.svg");
 		position: absolute;
-		height: 28px;
-		width: 28px;
+		height: 36px;
+		width: 36px;
+		margin-top: 20px;
+		margin-right: 10px;
 	}
 
 	.showNav {
