@@ -1,10 +1,3 @@
-/* Dark Mode */
-
-// Select the button
-const btn = document.querySelector(".button-toggle");
-
-const arrow = document.querySelector(".arrow");
-
 //loading
 const loading = document.querySelector(".hide-if-loading");
 
@@ -13,6 +6,14 @@ setTimeout(() => {
   loading.classList.remove("hide-if-loading");
   document.querySelector(".loading").classList.remove("loading");
 }, 3000)
+
+
+/* Dark Mode */
+
+// Select the button
+const btn = document.querySelector(".button-toggle");
+const btn2 = document.querySelector(".button-toggle-mobile");
+const arrow = document.querySelector(".arrow");
 
 // Listen for a click on the button
 btn.addEventListener("click", function () {
@@ -23,6 +24,18 @@ btn.addEventListener("click", function () {
   btn.innerHTML = (btn.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
   btn.classList.toggle("dark-theme");
 });
+
+//same as above, but for hamburger menu
+btn2.addEventListener("click", function () {
+  // Then toggle (add/remove) the .dark-theme class to the body
+  document.body.classList.toggle("dark-theme");
+  document.getElementById("foot").classList.toggle("dark-theme");
+  document.getElementById("navbar").classList.toggle("dark-theme");
+  //on click swap out btn text
+  btn2.innerHTML = (btn2.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
+  btn2.classList.toggle("dark-theme");
+});
+
 
 // Arrow
 
@@ -59,7 +72,7 @@ function zombieprompt() {
   document.getElementById("zqanswer").innerHTML = txt;
 }
 
-//Modal Start//
+// Modal Start
 
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
