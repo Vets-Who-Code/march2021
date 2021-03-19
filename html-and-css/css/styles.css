@@ -180,7 +180,7 @@ h1 {
 
 .blood {
 	font-family: nosifer;
-	font-size: 6em;
+	font-size: 5.5em;
 	padding-top: .5em;
 	transition: all .25s ease;
 	-webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
@@ -240,20 +240,17 @@ h1 {
 img {
 	display: block;
 	margin: 0 auto;
-	width: 60%;
+	width: 55%;
 	padding: 50px 0;
 }
 
 p {
 	line-height: 30px;
 	color: var(--off-white);
-	margin: 20px;
+	margin: 20px 20px 0 20px;
 	padding: 0 9em;
 	text-indent: 20px;
-}
-
-.intro {
-	padding-bottom: 70px;
+	font-size: 1.1em;
 }
 
 /* Cards */
@@ -469,7 +466,7 @@ a:visited {
 	}
 
 	p {
-		padding: 0 8em;
+		padding: 0 4em;
 	}
 }
 
@@ -477,9 +474,9 @@ a:visited {
 	.blood {
 		font-size: 3.3em;
 	}
-	p {
-		padding: 0 6em;
 
+	p {
+		padding: 0 2em;
 	}
 }
 
