@@ -479,6 +479,11 @@ a:visited {
 		display: none;
 	}
 
+	.hamburg {
+		display: flex;
+		justify-content: flex-end;
+	}
+
 	.menu {
 		z-index: 1000;
 		display: initial;
@@ -489,6 +494,8 @@ a:visited {
 		background-color: transparent;
 		background-image: url("../images/menu.png");
 		background-size: 100%;
+		margin-top: 20px;
+		margin-right: 10px;
 	}
 
 	.navbar {
@@ -509,8 +516,8 @@ a:visited {
 	.showClose {
 		background-image: url("../images/close.svg");
 		position: absolute;
-		height: 24px;
-		width: 24px;
+		height: 28px;
+		width: 28px;
 	}
 
 	.showNav {
@@ -597,14 +604,6 @@ a:visited {
 
 	.zombie-tools {
 		margin-top: 200px;
-	}
-
-	.container h1 {
-		display: none;
-	}
-
-	.hidden {
-		display: initial;
 	}
 
 	p {
