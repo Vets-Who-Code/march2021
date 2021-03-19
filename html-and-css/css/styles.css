@@ -64,7 +64,7 @@ body.dark-theme {
 	background-color: var(--dark-mode)
 }
 
-/* Loading Classes*/
+/* Loading */
 
 .loading {
 	background: url('../images/cute-zombie.gif') no-repeat center center;
@@ -84,9 +84,7 @@ body.dark-theme {
 	display: none;
 }
 
-/*End Loading*/
-
-/* Nav Start */
+/* Nav Menu */
 
 .desktop-nav {
 	display: flex;
@@ -115,7 +113,8 @@ body.dark-theme {
 	text-decoration: underline;
 }
 
-.desktop-nav button {
+.desktop-nav button,
+.button-toggle-mobile {
 	width: 5em;
 	color: var(--light-green);
 	margin-top: 6px;
@@ -126,19 +125,27 @@ body.dark-theme {
 	font-family: 'Creepster', cursive;
 }
 
-.desktop-nav button.dark-theme {
+.dark-mobile button {
+	margin: 0;
+}
+
+.desktop-nav button.dark-theme,
+.button-toggle-mobile.dark-theme {
 	color: var(--light-mode);
 }
 
-.desktop-nav button.dark-theme:hover {
+.desktop-nav button.dark-theme:hover,
+.button-toggle-mobile:hover {
 	color: white;
 }
 
-.desktop-nav button:focus {
+.desktop-nav button:focus,
+.button-toggle-mobile:focus {
 	outline: rgb(24, 23, 23);
 }
 
-.desktop-nav button:hover {
+.desktop-nav button:hover,
+.button-toggle-mobile:hover {
 	color: var(--dark-mode);
 }
 
@@ -162,9 +169,7 @@ li {
 	display: none;
 }
 
-/* Nav End */
-
-/* Title Start */
+/* Title */
 
 h1 {
 	font-family: 'Creepster', cursive;
@@ -211,9 +216,7 @@ h1 {
 	}
 }
 
-/* Title End */
-
-/*Arrow Start*/
+/* Arrow */
 
 .arrow {
 	position: fixed;
@@ -232,9 +235,7 @@ h1 {
 	transform: rotate(225deg);
 }
 
-/* Arrow End*/
-
-/* Content Start */
+/* Content */
 
 img {
 	display: block;
@@ -255,9 +256,7 @@ p {
 	padding-bottom: 70px;
 }
 
-/* Content End */
-
-/*flex-box card start*/
+/* Cards */
 
 .flex-container {
 	display: flex;
@@ -293,7 +292,7 @@ p {
 	color: white;
 }
 
-/*Zombie Radar Start*/
+/* Zombie Radar */
 
 #zqanswer {
 	font-size: 12px;
@@ -314,7 +313,7 @@ p {
 }
 
 
-/* Modal Start */
+/* Modal */
 
 .trigger {
 	width: 8em;
@@ -392,11 +391,7 @@ p {
 	width: 100%;
 }
 
-/* Modal End */
-
-/*Flex-box card end*/
-
-/* Footer Start */
+/* Footer */
 
 footer {
 	background-color: var(--dark-mode);
@@ -466,9 +461,7 @@ a:visited {
 	margin: 0;
 }
 
-/* Footer End */
-
-/* Media Queries Start */
+/* Media Queries */
 
 @media screen and (max-width: 1400px) {
 	.blood {
@@ -529,12 +522,12 @@ a:visited {
 		z-index: 999;
 		overflow: hidden;
 		color: var(--light-green);
-		transform: translateX(100%);
+		transform: translateX(-100%);
 		transition: transform 0.3s ease;
 	}
 
 	.showClose {
-		background-image: url("../images/close.svg");
+		background-image: url("../images/close.png");
 		position: absolute;
 		height: 36px;
 		width: 36px;
@@ -559,12 +552,13 @@ a:visited {
 	.menu-link a,
 	.menu-link a:visited,
 	.menu-link a:active {
-		color: var(--light-mode);
+		color: var(--light-green);
 		text-decoration: none;
 	}
 
 	.menu-link a:hover {
-		color: var(--light-green);
+		border: 2px solid purple;
+		padding: 5px;
 	}
 
 	.container {
