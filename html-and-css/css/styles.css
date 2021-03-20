@@ -171,7 +171,7 @@ li {
 	display: inline;
 }
 
- .hidden {
+.hidden {
 	display: none;
 }
 
@@ -190,7 +190,6 @@ h1 {
 	text-align: center;
 	margin: 20px 0;
 }
-
 
 body.dark-theme .blood {
 	color: var(--off-white);
@@ -285,8 +284,8 @@ p {
 	margin-top: 6%;
 }
 
-.flex-container > div {
-	background-image: linear-gradient(#FF0000,#B00000,#300000);
+.flex-container>div {
+	background-image: linear-gradient(#FF0000, #B00000, #300000);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 	width: 40%;
 	height: 375px;
@@ -295,7 +294,7 @@ p {
 	margin-bottom: 2em;
 }
 
-.flex-container > div:hover {
+.flex-container>div:hover {
 	box-shadow: 0 8px 16px 0 var(--black);
 }
 
@@ -526,12 +525,12 @@ a:visited {
 	}
 
 	.flex-container {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.flex-container > div {
+	.flex-container>div {
 		width: 75%;
 		margin: 0 auto 2em auto;
 	}
