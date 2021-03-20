@@ -1,4 +1,3 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -68,6 +67,16 @@ body.dark-theme {
 	color: var(--off-white)
 }
 
+body.dark-theme .desktop-nav a:link,
+body.dark-theme .desktop-nav a:visited,
+body.dark-theme .desktop-nav a:active {
+	color: var(--Tangerine);
+}
+
+body.dark-theme .desktop-nav a:hover {
+	color: var(--off-white);
+}
+
 /* Loading */
 
 .loading {
@@ -107,13 +116,14 @@ body.dark-theme {
 }
 
 .desktop-nav a:link,
-.desktop-nav a:visited {
+.desktop-nav a:visited,
+.desktop-nav a:active {
 	text-decoration: none;
 	color: var(--kimberly);
 }
 
 .desktop-nav a:hover {
-	color: var(--Tangerine);
+	color: var(--dark-mode);
 	text-decoration: underline;
 }
 
@@ -135,12 +145,12 @@ body.dark-theme {
 
 .desktop-nav button.dark-theme,
 .button-toggle-mobile.dark-theme {
-	color: var(--off-white);
+	color: var(--Tangerine);
 }
 
 .desktop-nav button.dark-theme:hover,
 .button-toggle-mobile.dark-theme:hover {
-	color: var(--kimberly);
+	color: var(--off-white);
 }
 
 .desktop-nav button:focus,
@@ -161,7 +171,7 @@ li {
 	display: inline;
 }
 
- .hidden {
+.hidden {
 	display: none;
 }
 
@@ -181,13 +191,18 @@ h1 {
 	margin: 20px 0;
 }
 
+body.dark-theme .blood {
+	color: var(--off-white);
+}
+
 .blood {
 	font-family: nosifer;
 	font-size: 5.5em;
 	padding-top: .5em;
 	transition: all .25s ease;
-	-webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
+	-webkit-text-stroke: 0.35px rgba(246, 186, 74, 1);
 	animation: drip 2.5s infinite alternate;
+	color: var(--dark-mode);
 }
 
 .container {
@@ -269,8 +284,8 @@ p {
 	margin-top: 6%;
 }
 
-.flex-container > div {
-	background-image: linear-gradient(#FF0000,#B00000,#300000);
+.flex-container>div {
+	background-image: linear-gradient(#FF0000, #B00000, #300000);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 	width: 40%;
 	height: 375px;
@@ -279,8 +294,12 @@ p {
 	margin-bottom: 2em;
 }
 
-.flex-container > div:hover {
+.flex-container>div:hover {
 	box-shadow: 0 8px 16px 0 var(--black);
+}
+
+.flex-container h1 {
+	padding: 10px 0;
 }
 
 .card-header {
@@ -401,7 +420,17 @@ footer {
 
 footer.dark-theme {
 	background-color: var(--light-mode);
+	color: var(--dark-mode);
+}
+
+footer.dark-theme a:link,
+footer.dark-theme a:visited,
+footer.dark-theme a:active {
 	color: var(--kimberly);
+}
+
+footer.dark-theme a:hover {
+	color: var(--black);
 }
 
 .footer-container {
@@ -410,8 +439,13 @@ footer.dark-theme {
 	padding: 10px 0;
 }
 
-.footer-container.dark-theme > a:link {
-	color: var(--dark-mode);
+.footer-p {
+	font-size: 1em;
+	text-indent: 0;
+}
+
+.footer-p a:hover {
+	text-decoration: underline;
 }
 
 .footer-col-1,
@@ -436,14 +470,14 @@ footer a,
 
 footer a:hover,
 .footer-link a:hover {
-	color: var(--Tangerine);
+	color: var(--off-white);
 	text-decoration: underline;
 }
 
 footer a:link,
 a:visited {
 	text-decoration: none;
-	color: var(--kimberly);
+	color: var(--Tangerine);
 }
 
 .footer-images {
@@ -491,12 +525,12 @@ a:visited {
 	}
 
 	.flex-container {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.flex-container > div {
+	.flex-container>div {
 		width: 75%;
 		margin: 0 auto 2em auto;
 	}
@@ -557,8 +591,8 @@ a:visited {
 	}
 
 	.navbar.dark-theme a:hover {
-		padding: 5px;
-		border: 2px solid var(--black);
+		padding: 8px;
+		border: 3px solid var(--dark-mode);
 	}
 
 	.showClose {
@@ -592,8 +626,8 @@ a:visited {
 	}
 
 	.menu-link a:hover {
-		border: 2px solid var(--kimberly);
-		padding: 5px;
+		border: 3px solid var(--off-white);
+		padding: 8px;
 	}
 
 	.container {
