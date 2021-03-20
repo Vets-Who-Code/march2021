@@ -393,10 +393,10 @@ p {
 /* Footer */
 
 footer {
-	background-color: var(--dark-mode);
 	color: var(--off-white);
 	text-align: center;
-	padding: 50px 0 20px 0;
+	padding-top: 1em;
+	
 }
 
 footer.dark-theme {
@@ -407,7 +407,7 @@ footer.dark-theme {
 .footer-container {
 	display: flex;
 	justify-content: center;
-	padding: 10px 0;
+	padding: 0 0 2em 0;
 }
 
 .footer-container.dark-theme > a:link {
