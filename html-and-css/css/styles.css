@@ -675,13 +675,12 @@ q:before, q:after {
 
 :root {
 
-	--light-mode: #eb6123;
+	--light-mode: #CCCCCC;
 	--dark-mode: #191919;
-	--dark-red: #8a0303;
-	--light-green: #60D88E;
-	--off-white: #f8f8f8;
-	font-size: 10px;
-	scroll-behavior: smooth;
+	--kimberly: #666699;
+	--Tangerine: #FFCC00;
+	--black: black;
+	--off-white: #f8f8ff;
 }
 
 body {
@@ -1216,7 +1215,7 @@ a:visited {
 	}
 
 	.menu-link a:hover {
-		border: 2px solid purple;
+		border: 2px solid var(--kimberly);
 		padding: 5px;
 	}
 
