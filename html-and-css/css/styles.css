@@ -109,7 +109,7 @@ body.dark-theme {
 .desktop-nav a:link,
 .desktop-nav a:visited {
 	text-decoration: none;
-	color: var(--Tangerine);
+	color: var(--kimberly);
 }
 
 .desktop-nav a:hover {
@@ -230,8 +230,8 @@ h1 {
 	width: 30px;
 	height: 30px;
 	margin: 0 3em 1em 0;
-	border-right: 4px solid var(--Tangerine);
-	border-bottom: 4px solid var(--Tangerine);
+	border-right: 4px solid var(--kimberly);
+	border-bottom: 4px solid var(--kimberly);
 	transform: rotate(45deg);
 	animation: 3s arrow infinite ease;
 }
@@ -400,13 +400,18 @@ footer {
 }
 
 footer.dark-theme {
-	background-color: var(--dark-mode);
+	background-color: var(--light-mode);
+	color: var(--kimberly);
 }
 
 .footer-container {
 	display: flex;
 	justify-content: center;
 	padding: 10px 0;
+}
+
+.footer-container.dark-theme > a:link {
+	color: black;
 }
 
 .footer-col-1,
@@ -438,7 +443,7 @@ footer a:hover,
 footer a:link,
 a:visited {
 	text-decoration: none;
-	color: var(--off-white);
+	color: var(--kimberly);
 }
 
 .footer-images {
