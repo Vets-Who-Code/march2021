@@ -201,7 +201,7 @@ body.dark-theme .blood {
 	font-size: 5.5em;
 	padding-top: .5em;
 	transition: all .25s ease;
-	-webkit-text-stroke: 0.5px rgba(246, 186, 74, 1);
+	-webkit-text-stroke: 0.4px rgba(246, 186, 74, 1);
 	animation: drip 2.5s infinite alternate;
 	color: var(--dark-mode);
 }
