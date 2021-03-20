@@ -106,13 +106,14 @@ body.dark-theme {
 }
 
 .desktop-nav a:link,
-.desktop-nav a:visited {
+.desktop-nav a:visited,
+.desktop-nav a:active {
 	text-decoration: none;
 	color: var(--kimberly);
 }
 
 .desktop-nav a:hover {
-	color: var(--Tangerine);
+	color: var(--dark-mode);
 	text-decoration: underline;
 }
 
@@ -400,7 +401,17 @@ footer {
 
 footer.dark-theme {
 	background-color: var(--light-mode);
+	color: var(--dark-mode);
+}
+
+footer.dark-theme a:link,
+footer.dark-theme a:visited,
+footer.dark-theme a:active {
 	color: var(--kimberly);
+}
+
+footer.dark-theme a:hover {
+	color: var(--black);
 }
 
 .footer-container {
@@ -409,8 +420,13 @@ footer.dark-theme {
 	padding: 10px 0;
 }
 
-.footer-container.dark-theme > a:link {
-	color: var(--dark-mode);
+.footer-p {
+	font-size: 1em;
+	text-indent: 0;
+}
+
+.footer-p a:hover {
+	text-decoration: underline;
 }
 
 .footer-col-1,
@@ -435,14 +451,14 @@ footer a,
 
 footer a:hover,
 .footer-link a:hover {
-	color: var(--Tangerine);
+	color: var(--off-white);
 	text-decoration: underline;
 }
 
 footer a:link,
 a:visited {
 	text-decoration: none;
-	color: var(--kimberly);
+	color: var(--Tangerine);
 }
 
 .footer-images {
@@ -591,7 +607,7 @@ a:visited {
 	}
 
 	.menu-link a:hover {
-		border: 2px solid var(--kimberly);
+		border: 2px solid var(--off-white);
 		padding: 5px;
 	}
 
