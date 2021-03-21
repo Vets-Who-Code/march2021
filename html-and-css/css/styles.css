@@ -208,7 +208,6 @@ body.dark-theme .blood {
 .container {
 	height: 65vh;
 	position: absolute;
-	top: 50px;
 }
 
 @keyframes drip {
