@@ -7,8 +7,7 @@ Welcome to Vets Who Code play repo for the new troops.
 ## Instructors
 
 - [Jay](https://twitter.com/JeromeHardaway)
--
--
+- [Michael](https://twitter.com/MuddyBootsCode)
 
 ## Students
 
@@ -21,4 +20,3 @@ Welcome to Vets Who Code play repo for the new troops.
 - [Clinton](https://twitter.com/ClintonHerndon3)
 - [Trevon](https://twitter.com/Trey41741256)
 - [Seneca](https://twitter.com/BrigadeChess)
--

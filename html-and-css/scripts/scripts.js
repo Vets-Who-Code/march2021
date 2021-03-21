@@ -66,7 +66,7 @@ function zombieprompt() {
   if (location == null || location == "") {
     txt = "We tried to warn you...";
   } else {
-    txt = "Please evacuate immediately, there are " + Math.ceil(Math.random() * 100000) + " zombies in your area!";
+    txt = "Please evacuate! There are " + Math.ceil(Math.random() * 100000) + " zombies in your area!";
   }
   document.getElementById("zqanswer").innerHTML = txt;
 }
