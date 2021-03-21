@@ -215,7 +215,6 @@ body.dark-theme .blood {
 .container {
 	height: 65vh;
 	position: absolute;
-	top: 50px;
 }
 
 @keyframes drip {
@@ -419,16 +418,22 @@ p {
 /* Footer */
 
 footer {
-	background-color: var(--dark-mode);
 	color: var(--off-white);
 	text-align: center;
-	padding: 50px 0 20px 0;
+	padding-top: 1em;
+	
+}
+
+footer.footer-light-theme {
+	background-color: var(--dark-mode);
+	color: var(--light-mode);
 }
 
 footer.dark-theme {
 	background-color: var(--light-mode);
 	color: var(--dark-mode);
 }
+
 
 footer.dark-theme a:link,
 footer.dark-theme a:visited,
@@ -443,7 +448,7 @@ footer.dark-theme a:hover {
 .footer-container {
 	display: flex;
 	justify-content: center;
-	padding: 10px 0;
+	padding: 0 0 2em 0;
 }
 
 .footer-p {

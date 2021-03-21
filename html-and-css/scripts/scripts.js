@@ -19,17 +19,18 @@ const arrow = document.querySelector(".arrow");
 btn.addEventListener("click", function () {
   // Then toggle (add/remove) the .dark-theme class to the body
   document.body.classList.toggle("dark-theme");
-  document.getElementById("foot").classList.toggle("dark-theme");
+
+  document.getElementById("foot").classList.toggle('dark-theme');
   //on click swap out btn text
   btn.innerHTML = (btn.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
-  btn.classList.toggle("dark-theme");
+  //btn.classList.toggle("dark-theme");
 });
 
 //same as above, but for hamburger menu
 btn2.addEventListener("click", function () {
   // Then toggle (add/remove) the .dark-theme class to the body
   document.body.classList.toggle("dark-theme");
-  document.getElementById("foot").classList.toggle("dark-theme");
+  document.querySelector("footer").classList.toggle("dark-theme");
   document.getElementById("navbar").classList.toggle("dark-theme");
   //on click swap out btn text
   btn2.innerHTML = (btn2.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
@@ -40,21 +41,20 @@ btn2.addEventListener("click", function () {
 // Arrow
 
 arrow.addEventListener("click", (e) => {
-  console.log(window.pageYOffset)
-  if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
-    arrow.classList.add("arrowUp");
-  } else if (window.pageYOffset < 200) {
-    arrow.classList.remove("arrowUp");
-  }
-
   if ((window.innerHeight + window.pageYOffset) < document.body.scrollHeight) {
     window.scrollBy(0, window.innerHeight);
   }
-
+  var arrowUpOn = false;
   for (let i = 0; i < arrow.classList.length; i++) {
     if (arrow.classList[i] == 'arrowUp') {
-      window.scrollBy(0, -window.innerHeight);
+      arrowUpOn = true;
     }
+  }
+  if (arrowUpOn == true){
+    window.scrollBy(0, -window.innerHeight);
+  }
+  else{
+    window.scrollBy(0, +window.innerHeight);
   }
 
 })
@@ -99,13 +99,13 @@ function screamSound() {
 
 // Scroll Start
 
-document.addEventListener('scroll', () => {
-  if (window.pageYOffset == 0) {
-    arrow.classList.remove("arrowUp");
-  } else if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
-    arrow.classList.toggle("arrowUp");
-  }
-})
+// document.addEventListener('scroll', () => {
+//   if (window.pageYOffset == 0) {
+//     arrow.classList.remove("arrowUp");
+//   } else if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
+//     arrow.classList.toggle("arrowUp");
+//   }
+// })
 
 // Hamburger Menu
 
@@ -126,3 +126,14 @@ menuLinks.forEach(
     menuLink.addEventListener("click", toggleMenu);
   }
 );
+
+document.addEventListener('scroll', function () {
+  var fam = document.getElementById("foot").getBoundingClientRect();
+  //alert(fam.y);
+  if(fam.y < 600){
+    arrow.classList.add("arrowUp");
+  }
+  else if (window.pageYOffset < 99) {
+         arrow.classList.remove("arrowUp");
+  } 
+});
