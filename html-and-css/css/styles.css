@@ -284,7 +284,7 @@ p {
 	margin-top: 6%;
 }
 
-.flex-container>div {
+.flex-container > div {
 	background-image: linear-gradient(#FF0000, #B00000, #300000);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 	width: 40%;
@@ -294,7 +294,7 @@ p {
 	margin-bottom: 2em;
 }
 
-.flex-container>div:hover {
+.flex-container > div:hover {
 	box-shadow: 0 8px 16px 0 var(--black);
 }
 
