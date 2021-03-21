@@ -418,10 +418,16 @@ footer {
 	
 }
 
+footer.footer-light-theme {
+	background-color: var(--dark-mode);
+	color: var(--light-mode);
+}
+
 footer.dark-theme {
 	background-color: var(--light-mode);
 	color: var(--dark-mode);
 }
+
 
 footer.dark-theme a:link,
 footer.dark-theme a:visited,

@@ -19,17 +19,18 @@ const arrow = document.querySelector(".arrow");
 btn.addEventListener("click", function () {
   // Then toggle (add/remove) the .dark-theme class to the body
   document.body.classList.toggle("dark-theme");
-  document.getElementById("foot").classList.toggle("dark-theme");
+
+  document.getElementById("foot").classList.toggle('dark-theme');
   //on click swap out btn text
   btn.innerHTML = (btn.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
-  btn.classList.toggle("dark-theme");
+  //btn.classList.toggle("dark-theme");
 });
 
 //same as above, but for hamburger menu
 btn2.addEventListener("click", function () {
   // Then toggle (add/remove) the .dark-theme class to the body
   document.body.classList.toggle("dark-theme");
-  document.getElementById("foot").classList.toggle("dark-theme");
+  document.querySelector("footer").classList.toggle("dark-theme");
   document.getElementById("navbar").classList.toggle("dark-theme");
   //on click swap out btn text
   btn2.innerHTML = (btn2.innerHTML.indexOf('Go Light') > -1) ? 'Go Dark' : 'Go Light';
