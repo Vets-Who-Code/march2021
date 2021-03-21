@@ -40,21 +40,20 @@ btn2.addEventListener("click", function () {
 // Arrow
 
 arrow.addEventListener("click", (e) => {
-  console.log(window.pageYOffset)
-  if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
-    arrow.classList.add("arrowUp");
-  } else if (window.pageYOffset < 200) {
-    arrow.classList.remove("arrowUp");
-  }
-
   if ((window.innerHeight + window.pageYOffset) < document.body.scrollHeight) {
     window.scrollBy(0, window.innerHeight);
   }
-
+  var arrowUpOn = false;
   for (let i = 0; i < arrow.classList.length; i++) {
     if (arrow.classList[i] == 'arrowUp') {
-      window.scrollBy(0, -window.innerHeight);
+      arrowUpOn = true;
     }
+  }
+  if (arrowUpOn == true){
+    window.scrollBy(0, -window.innerHeight);
+  }
+  else{
+    window.scrollBy(0, +window.innerHeight);
   }
 
 })
@@ -129,7 +128,8 @@ menuLinks.forEach(
 
 document.addEventListener('scroll', function () {
   var fam = document.getElementById("foot").getBoundingClientRect();
-  if(fam.y < 100){
+  //alert(fam.y);
+  if(fam.y < 600){
     arrow.classList.add("arrowUp");
   }
   else if (window.pageYOffset < 99) {
