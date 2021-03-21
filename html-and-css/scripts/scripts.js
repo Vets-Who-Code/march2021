@@ -99,13 +99,13 @@ function screamSound() {
 
 // Scroll Start
 
-document.addEventListener('scroll', () => {
-  if (window.pageYOffset == 0) {
-    arrow.classList.remove("arrowUp");
-  } else if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
-    arrow.classList.toggle("arrowUp");
-  }
-})
+// document.addEventListener('scroll', () => {
+//   if (window.pageYOffset == 0) {
+//     arrow.classList.remove("arrowUp");
+//   } else if ((window.innerHeight + window.pageYOffset) == document.body.scrollHeight) {
+//     arrow.classList.toggle("arrowUp");
+//   }
+// })
 
 // Hamburger Menu
 
@@ -126,3 +126,13 @@ menuLinks.forEach(
     menuLink.addEventListener("click", toggleMenu);
   }
 );
+
+document.addEventListener('scroll', function () {
+  var fam = document.getElementById("foot").getBoundingClientRect();
+  if(fam.y < 100){
+    arrow.classList.add("arrowUp");
+  }
+  else if (window.pageYOffset < 99) {
+         arrow.classList.remove("arrowUp");
+  } 
+});
