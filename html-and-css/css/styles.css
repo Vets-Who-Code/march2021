@@ -550,6 +550,7 @@ a:visited {
 	.blood {
 		font-size: 2.7em;
 		padding-top: 0;
+		margin-top: -30px;
 	}
 
 	.desktop-nav {
@@ -677,14 +678,26 @@ a:visited {
 	}
 }
 
+@media screen and (max-width: 540px) {
+	.blood {
+		font-size: 1.8em;
+	}
+}
+
 @media screen and (max-width: 470px) {
 	.blood {
-		font-size: 1.7em;
+		font-size: 1.55em;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.blood {
+		font-size: 1.3em;
 	}
 }
 
 @media screen and (max-width: 360px) {
 	.blood {
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 }
