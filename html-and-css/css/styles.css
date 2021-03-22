@@ -222,7 +222,7 @@ body.dark-theme .blood {
 
 .container {
 	height: 65vh;
-	position: absolute;
+
 }
 
 @keyframes drip {
@@ -465,6 +465,7 @@ footer.dark-theme a:hover {
 
 .footer-p a:hover {
 	text-decoration: underline;
+	color: var(--off-white);
 }
 
 .footer-col-1,
@@ -494,9 +495,10 @@ footer a:hover,
 }
 
 footer a:link,
-a:visited {
+footer a:visited,
+footer a:active {
 	text-decoration: none;
-	color: var(--Tangerine);
+	color: var(--kimberly);
 }
 
 .footer-images {
@@ -556,6 +558,11 @@ a:visited {
 }
 
 @media screen and (max-width: 800px) {
+	.container {
+		position: absolute;
+		top: 50px;
+	}
+
 	.blood {
 		font-size: 2.7em;
 		padding-top: 0;
