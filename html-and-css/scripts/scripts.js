@@ -85,7 +85,7 @@ function toggleModal() {
 
 
 trigger.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+//window.addEventListener("click", windowOnClick);
 
 function screamSound() {
   let audio = document.getElementById("audio");
