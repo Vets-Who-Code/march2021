@@ -70,11 +70,11 @@ body.dark-theme {
 body.dark-theme .desktop-nav a:link,
 body.dark-theme .desktop-nav a:visited,
 body.dark-theme .desktop-nav a:active {
-	color: var(--Tangerine);
+	color: var(--kimberly);
 }
 
 body.dark-theme .button-toggle {
-	color: var(--kimberly);
+	color: var(--Tangerine);
 }
 
 body.dark-theme .button-toggle:hover {
