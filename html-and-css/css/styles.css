@@ -494,9 +494,10 @@ footer a:hover,
 }
 
 footer a:link,
-a:visited {
+footer a:visited,
+footer a:active {
 	text-decoration: none;
-	color: var(--Tangerine);
+	color: var(--kimberly);
 }
 
 .footer-images {
