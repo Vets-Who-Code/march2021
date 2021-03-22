@@ -344,6 +344,8 @@ p {
 	color: var(--off-white);
 }
 
+/*Icons*/
+
 #radar {
 	width: 25%;
 }
@@ -353,6 +355,10 @@ p {
 }
 
 #army {
+	width: 25%;
+}
+
+#explosion {
 	width: 25%;
 }
 
