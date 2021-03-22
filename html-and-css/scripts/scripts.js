@@ -131,7 +131,7 @@ document.addEventListener('scroll', function () {
   var fam = document.getElementById("foot").getBoundingClientRect();
   //alert(fam.y);
   if(document.documentElement.scrollHeight == window.pageYOffset + window.innerHeight){
-    console.log(window.pageYOffset);
+ //   console.log(window.pageYOffset);
     arrow.classList.add("arrowUp");
   }
   else if (window.pageYOffset < 99) {
