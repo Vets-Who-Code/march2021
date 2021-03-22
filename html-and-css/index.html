@@ -41,7 +41,7 @@
 				</ul>
 			</div>
 		</header>
-		<div class="container">
+		<div class="container" id="container">
 			<div class="arrow"></div>
 			<h1 class="title blood">Zombies With #VetsWhoCode</h1>
 			<img src="https://st2.depositphotos.com/1606463/8079/i/600/depositphotos_80792684-stock-photo-toothy-zombie.jpg"
@@ -112,9 +112,11 @@
 					</span>
 				</div>
 
-				<div onclick="window.close()">
-					<h1 class="card-header">Self Destruct</h1>
+				<div onclick = "overRunMessage()">
+					<h1 class="card-header">Air Strike</h1>
 					<img src="images/nuclear-explosion.png" id="explosion" alt="nuclear mushroom cloud">
+					<div class="center" id="status"></div>
+					<audio id="bomb-sound" src="sounds/194623__qubodup__nuclear-explosion.flac"></audio>
 				</div>
 
 				<div>
