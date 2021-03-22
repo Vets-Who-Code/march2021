@@ -465,6 +465,7 @@ footer.dark-theme a:hover {
 
 .footer-p a:hover {
 	text-decoration: underline;
+	color: var(--off-white);
 }
 
 .footer-col-1,
