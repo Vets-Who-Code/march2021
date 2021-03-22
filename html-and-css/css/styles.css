@@ -139,13 +139,20 @@ body.dark-theme .desktop-nav a:hover {
 	font-family: 'Creepster', cursive;
 }
 
+.button-toggle-mobile {
+	color: var(--off-white);
+}
+
 .dark-mobile button {
 	margin: 0;
 }
 
-.desktop-nav button.dark-theme,
-.button-toggle-mobile.dark-theme {
+.desktop-nav button.dark-theme {
 	color: var(--kimberly);
+}
+
+.button-toggle-mobile.dark-theme {
+	color: var(--Tangerine);
 }
 
 .desktop-nav button.dark-theme:hover,
