@@ -339,10 +339,11 @@ p {
 }
 
 #zqanswer {
-	font-size: 12px;
 	text-indent: 0;
 	color: var(--off-white);
 }
+
+/*Icons*/
 
 #radar {
 	width: 25%;
@@ -356,6 +357,9 @@ p {
 	width: 25%;
 }
 
+#explosion {
+	width: 25%;
+}
 
 /* Modal */
 

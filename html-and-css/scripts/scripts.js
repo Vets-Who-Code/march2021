@@ -70,6 +70,7 @@ function zombieprompt() {
     txt = "Please evacuate! There are " + Math.ceil(Math.random() * 100000) + " zombies in your area!";
   }
   document.getElementById("zqanswer").innerHTML = txt;
+
 }
 
 // Modal Start
@@ -95,6 +96,12 @@ window.addEventListener("click", windowOnClick);
 function screamSound() {
   let audio = document.getElementById("audio");
   audio.play();
+}
+
+//Self Destruct Start
+
+function closeWin() {
+  Window.close();
 }
 
 // Scroll Start
