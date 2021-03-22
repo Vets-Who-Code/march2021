@@ -334,6 +334,10 @@ p {
 
 /* Zombie Radar */
 
+.center {
+	text-align: center;
+}
+
 #zqanswer {
 	font-size: 12px;
 	text-indent: 0;
