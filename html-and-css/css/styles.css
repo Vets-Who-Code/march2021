@@ -439,6 +439,11 @@ p {
 	width: 100%;
 }
 
+/*Self Destruct*/
+#status {
+	color: var(--off-white);
+}
+
 /* Footer */
 
 footer {

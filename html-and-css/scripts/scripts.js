@@ -83,11 +83,6 @@ function toggleModal() {
   modal.classList.toggle("show-modal");
 }
 
-function windowOnClick(event) {
-  if (event.target === modal) {
-    toggleModal();
-  }
-}
 
 trigger.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
@@ -96,6 +91,21 @@ function screamSound() {
   let audio = document.getElementById("audio");
   audio.play();
 }
+
+//Self Destruct
+function overRunMessage() {
+  let status = document.getElementById("status");
+  let bombSound = document.getElementById("bomb-sound");
+  status.style.color = 'var(--off-white)';
+  status.innerHTML = "The zombies have overrun us. Fire for effect."
+  bombSound.play();
+  setTimeout(function() {
+    let container = document.getElementById("container");
+    container.remove();
+  }, 12000)
+
+}
+
 
 // Scroll Start
 
