@@ -103,7 +103,8 @@ body.dark-theme .desktop-nav a:hover {
 	display: flex;
 	overflow: hidden;
 	justify-content: center;
-	padding-top: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
 }
 
 .desktop-nav a {
@@ -205,7 +206,6 @@ body.dark-theme .blood {
 .blood {
 	font-family: nosifer;
 	font-size: 5.5em;
-	padding-top: .5em;
 	transition: all .25s ease;
 	-webkit-text-stroke: 0.35px rgba(246, 186, 74, 1);
 	animation: drip 2.5s infinite alternate;
@@ -421,7 +421,6 @@ footer {
 	color: var(--off-white);
 	text-align: center;
 	padding-top: 1em;
-	
 }
 
 footer.footer-light-theme {
@@ -448,7 +447,6 @@ footer.dark-theme a:hover {
 .footer-container {
 	display: flex;
 	justify-content: center;
-	padding: 0 0 2em 0;
 }
 
 .footer-p {
