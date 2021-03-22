@@ -102,6 +102,9 @@ function overRunMessage() {
   setTimeout(function() {
     let container = document.getElementById("container");
     container.remove();
+    let zombieParts = document.createElement("img");
+    zombieParts.src = "images/zombieParts.gif";
+    document.body.appendChild(zombieParts)
   }, 12000)
 
 }
