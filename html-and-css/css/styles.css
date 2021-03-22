@@ -73,6 +73,15 @@ body.dark-theme .desktop-nav a:active {
 	color: var(--Tangerine);
 }
 
+body.dark-theme .button-toggle {
+	color: var(--kimberly);
+}
+
+body.dark-theme .button-toggle:hover {
+	color: var(--off-white);
+}
+
+body.dark-theme .button
 body.dark-theme .desktop-nav a:hover {
 	color: var(--off-white);
 }
