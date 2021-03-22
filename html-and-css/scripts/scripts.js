@@ -51,7 +51,7 @@ arrow.addEventListener("click", (e) => {
     }
   }
   if (arrowUpOn == true){
-    window.scrollBy(0, -window.pageYOffset);
+    window.scrollBy(0, -window.innerHeight);
   }
   else{
     window.scrollBy(0, +window.innerHeight);
