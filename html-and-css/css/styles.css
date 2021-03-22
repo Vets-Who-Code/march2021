@@ -215,11 +215,17 @@ body.dark-theme .blood {
 	font-family: nosifer;
 	font-size: 5.5em;
 	transition: all .25s ease;
-	-webkit-text-stroke: 0.35px rgba(246, 186, 74, 1);
+	-webkit-text-stroke: 0.20px rgba(246, 186, 74, 1);
 	animation: drip 2.5s infinite alternate;
 	color: var(--dark-mode);
 }
 
+/* adjust only in firefox */
+@-moz-document url-prefix() {
+	.blood {
+		-webkit-text-stroke: 0.35px rgba(246, 186, 74, 1);
+	}
+}
 .container {
 	height: 65vh;
 
