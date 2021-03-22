@@ -226,9 +226,9 @@ body.dark-theme .blood {
 		-webkit-text-stroke: 0.35px rgba(246, 186, 74, 1);
 	}
 }
+
 .container {
 	height: 65vh;
-
 }
 
 @keyframes drip {
