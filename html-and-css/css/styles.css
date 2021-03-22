@@ -81,7 +81,6 @@ body.dark-theme .button-toggle:hover {
 	color: var(--off-white);
 }
 
-body.dark-theme .button
 body.dark-theme .desktop-nav a:hover {
 	color: var(--off-white);
 }
@@ -456,6 +455,7 @@ footer.dark-theme a:hover {
 .footer-container {
 	display: flex;
 	justify-content: center;
+	padding-top: 20px;
 }
 
 .footer-p {
