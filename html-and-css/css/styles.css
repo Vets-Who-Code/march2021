@@ -281,7 +281,14 @@ img {
 	display: block;
 	margin: 0 auto;
 	width: 55%;
-	padding: 50px 0;
+}
+
+figcaption {
+	margin-left: 22%;
+	font-style: italic;
+	padding: 2px;
+	font-size: 13px;
+	padding-top: 4px;
 }
 
 p {
