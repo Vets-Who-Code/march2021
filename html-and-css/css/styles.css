@@ -146,6 +146,7 @@ body.dark-theme .desktop-nav a:hover {
 	background-color: #575151;
 	font-size: 1em;
 	font-family: 'Creepster', cursive;
+	border-radius: 5px;
 }
 
 .button-toggle-mobile {
