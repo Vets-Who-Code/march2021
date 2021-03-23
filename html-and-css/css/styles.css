@@ -281,19 +281,6 @@ img {
 	display: block;
 	margin: 0 auto;
 	width: 55%;
-	padding-top: 20px;
-}
-
-figure {
-	padding-bottom: 40px;
-}
-
-figcaption {
-	margin-left: 22%;
-	font-style: italic;
-	padding: 2px;
-	font-size: 13px;
-	padding-top: 4px;
 }
 
 p {
@@ -464,7 +451,7 @@ p {
 footer {
 	color: var(--off-white);
 	text-align: center;
-	padding-top: 1em;
+	padding: 1em 1em;
 }
 
 footer.footer-light-theme {
@@ -545,10 +532,9 @@ footer a:active {
 
 .VetsWhoCode-img {
 	width: 10%;
-	height: 10%;
 	border-radius: 50%;
 	margin: 0;
-	margin-right: 5%;
+	margin-right: 5em;
 }
 
 .GitHub-img {
