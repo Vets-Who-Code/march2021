@@ -55,9 +55,10 @@ Memory principles
 ### Color Contrast 
 - Color contrast ratio is the numerical value assigned to the difference in light between the foreground and the background 
 ### Color Balance 
-- Is the perceived visual weight (the amount that colors stand out) sans serif vs. serif fonts
-- We don't want our users to think. Elements, contents, and interactions shouldn't require much thinking. 
-- Contrast consistency  
+- Is the perceived visual weight (the amount that colors stand out). An example is sans serif vs. serif fonts. 
+- We don't want our users to think. Make it easy for them. Elements, contents, and interactions shouldn't require much thinking. 
+### Consistency
+- Patterns including, header, footer, sidebar, and navigation bar. Web elements are the core framework of your website and they should be kept in the same place to ensure a consistent user experience. Usability of your website should be logical and this can be accomplished with consistency.
 ### Resources Include
 1. [Color Contrast](https://colourcontrast.cc/) 
 2. [Bureau of Internet Accessibility](https://uxengineer.com/principles-of-design/balance/#:~:text=Balance%20in%20design%20refers%20to,%2C%20radial%2C%20or%20mosaic%20approaches)
