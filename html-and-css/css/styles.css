@@ -56,7 +56,7 @@ q:before, q:after {
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Syne Mono', monospace;
 	color: var(--black);
 	background-color: var(--light-mode);
 	font-size: 2em;
@@ -121,18 +121,18 @@ body.dark-theme .desktop-nav a:hover {
 	padding: 15px 18px;
 	text-decoration: none;
 	text-decoration-style: none;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 .desktop-nav a:link,
 .desktop-nav a:visited,
 .desktop-nav a:active {
 	text-decoration: none;
-	color: var(--kimberly);
+	color: var(--dark-mode);
 }
 
 .desktop-nav a:hover {
-	color: var(--dark-mode);
+	color: var(--off-white);
 	text-decoration: underline;
 }
 

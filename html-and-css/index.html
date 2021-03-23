@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css?family=Creepster|Source+Sans+Pro|Nosifer" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 	<title>HTML && CSS Basics</title>
 </head>
 
@@ -44,8 +45,13 @@
 		<div class="container" id="container">
 			<div class="arrow"></div>
 			<h1 class="title blood">Zombies With #VetsWhoCode</h1>
-			<img src="https://st2.depositphotos.com/1606463/8079/i/600/depositphotos_80792684-stock-photo-toothy-zombie.jpg"
-				alt="image of zombie" title="Toothy Zombie">
+			<figure>
+				<img src="https://st2.depositphotos.com/1606463/8079/i/600/depositphotos_80792684-stock-photo-toothy-zombie.jpg"
+					alt="image of zombie" title="Toothy Zombie">
+				<figcaption><a href=https://ru.depositphotos.com/80792684/stock-photo-toothy-zombie.html> 'Toothed zombie' </a>,
+						by <a href="https://ru.depositphotos.com/portfolio-1606463.html">prometeus</a>, licensed under Royalty-free
+					license for personal and commercial purposes.</figcaption>
+			</figure>
 			<div class="intro" id="about">
 				<p>
 					nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis.
@@ -95,7 +101,9 @@
 					<!--Zombie Radar-->
 					<h1 class="card-header">Zombie Radar</h1>
 					<img id="radar" src="images/radar.png"></img>
-					<div class="center"><p id="zqanswer"></p></div>
+					<div class="center">
+						<p id="zqanswer"></p>
+					</div>
 				</div>
 
 				<div class="trigger" onclick="screamSound()">

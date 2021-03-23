@@ -50,3 +50,27 @@ Memory principles
 1. https://webaim.org/resources/contrastchecker/
 2. Apply concepts of UX design and user focused coding to capstones and zombie site. Who are the users? 
 
+# Day 2
+## Design Strategy
+### Color Contrast 
+- Color contrast ratio is the numerical value assigned to the difference in light between the foreground and the background 
+### Color Balance 
+- Is the perceived visual weight (the amount that colors stand out). An example is sans serif vs. serif fonts. 
+- We don't want our users to think. Make it easy for them. Elements, contents, and interactions shouldn't require much thinking. 
+### Consistency
+- Patterns including, header, footer, sidebar, and navigation bar. Web elements are the core framework of your website and they should be kept in the same place to ensure a consistent user experience. Usability of your website should be logical and this can be accomplished with consistency.
+### Resources Include
+1. [Color Contrast](https://colourcontrast.cc/) 
+2. [Bureau of Internet Accessibility](https://uxengineer.com/principles-of-design/balance/#:~:text=Balance%20in%20design%20refers%20to,%2C%20radial%2C%20or%20mosaic%20approaches)
+3. [Medium](https://uxdesign.cc/fundamentals-of-typography-in-user-interface-design-ui-67cdd13bfa24)
+4. [WAVE](https://wave.webaim.org/)
+5. [Fonts](https://fonts.google.com/specimen/Syne+Mono?preview.text_type=custom)
+### Suggestions For Site
+- Different paragraph font (Creepster, etc.) to promote consistency
+- Move cards to the top under title (Featured items on top) to promote balance 
+- Move toothy zombie to the bottom and possibly float it to the left so the text is on the right to promote balance
+- Work with color contrast
+### Homework
+- Implement four suggestions in the zombie app
+
+
