@@ -5,26 +5,26 @@
 - Intersection of computer science, behavioral science, media studies, physchology, cognitive science
 ### ASPECTS OF LOOP OF INTERACTION IN HCI
 - The loop of interaction has several aspects to it including:
-* Visual Based :The visual based human computer interaction is probably the most widespread area in Human Computer Interaction (HCI) research.
-* Audio Based : The audio based interaction between a computer and a human is another important area of in HCI systems. This area deals with information acquired by different audio signals.
-* Task environment: The conditions and goals set upon the user.
-* Machine environment: The environment that the computer is connected to, e.g. a laptop in a college student's dorm room.
-* Areas of the interface: Non-overlapping areas involve processes of the human and computer not pertaining to their interaction. Meanwhile, the overlapping areas only concern themselves with the processes pertaining to their interaction.
-* Input flow: The flow of information that begins in the task environment, when the user has some task that requires using their computer.
-* Output: The flow of information that originates in the machine environment.
-* Feedback: Loops through the interface that evaluate, moderate, and confirm processes as they pass from the human through the interface to the computer and back.
-* Fit: This is the match between the computer design, the user and the task to optimize the human resources needed to accomplish the task.
+1. Visual Based :The visual based human computer interaction is probably the most widespread area in Human Computer Interaction (HCI) research.
+2. Audio Based : The audio based interaction between a computer and a human is another important area of in HCI systems. This area deals with information acquired by different audio signals.
+3. Task environment: The conditions and goals set upon the user.
+4. Machine environment: The environment that the computer is connected to, e.g. a laptop in a college student's dorm room.
+5. Areas of the interface: Non-overlapping areas involve processes of the human and computer not pertaining to their interaction. Meanwhile, the overlapping areas only concern themselves with the processes pertaining to their interaction.
+6. Input flow: The flow of information that begins in the task environment, when the user has some task that requires using their computer.
+7. Output: The flow of information that originates in the machine environment.
+8. Feedback: Loops through the interface that evaluate, moderate, and confirm processes as they pass from the human through the interface to the computer and back.
+9. Fit: This is the match between the computer design, the user and the task to optimize the human resources needed to accomplish the task.
 - Methodologies
-* Based on user activity it should be more streamlined
-* User focused design. Who is the user? Diversity and inclusion should be considered. Accessibility issues should be considered (example: contrast checker). 
-* Consistency 
-* Structure - one input simple 
-* How do we get feedback from the user? Is the form easy to find? 
+1. Based on user activity it should be more streamlined
+2. User focused design. Who is the user? Diversity and inclusion should be considered. Accessibility issues should be considered (example: contrast checker). 
+3. Consistency 
+4. Structure - one input simple 
+5. How do we get feedback from the user? Is the form easy to find? 
 
 - Thirteen Principles Of Design
-* Christopher Wickens et al. defined 13 principles of display design in their book An Introduction to Human Factors Engineering.[19]
-* These principles of human perception and information processing can be utilized to create an effective display design. A reduction in errors, a reduction in required training time, an increase in efficiency, and an increase in user satisfaction are a few of the many potential benefits that can be achieved through utilization of these principles.
-* Certain principles may not be applicable to different displays or situations. Some principles may seem to be conflicting, and there is no simple solution to say that one principle is more important than another. The principles may be tailored to a specific design or situation. Striking a functional balance among the principles is critical for an effective design.[20]
+1. Christopher Wickens et al. defined 13 principles of display design in their book An Introduction to Human Factors Engineering.[19]
+2. These principles of human perception and information processing can be utilized to create an effective display design. A reduction in errors, a reduction in required training time, an increase in efficiency, and an increase in user satisfaction are a few of the many potential benefits that can be achieved through utilization of these principles.
+3. Certain principles may not be applicable to different displays or situations. Some principles may seem to be conflicting, and there is no simple solution to say that one principle is more important than another. The principles may be tailored to a specific design or situation. Striking a functional balance among the principles is critical for an effective design.[20]
 - Perceptual principles
 1. Make displays legible (or audible). A display's legibility is critical and necessary for designing a usable display. If the characters or objects being displayed cannot be discernible, then the operator cannot effectively make use of them.
 2. Avoid absolute judgment limits. Do not ask the user to determine the level of a variable on the basis of a single sensory variable (e.g. color, size, loudness). These sensory variables can contain many possible levels.
@@ -44,9 +44,9 @@ Memory principles
 13. Principle of consistency. Old habits from other displays will easily transfer to support processing of new displays if they are designed consistently. A user's long-term memory will trigger actions that are expected to be appropriate. A design must accept this fact and utilize consistency among different displays.
 
 - Helpful links: 
-* https://sensible.com/dont-make-me-think/
+1. https://sensible.com/dont-make-me-think/
 
 - Homework: 
-* https://webaim.org/resources/contrastchecker/
-* Apply concepts of UX design and user focused coding to capstones and zombie site. Who are the users? 
+1. https://webaim.org/resources/contrastchecker/
+2. Apply concepts of UX design and user focused coding to capstones and zombie site. Who are the users? 
 
