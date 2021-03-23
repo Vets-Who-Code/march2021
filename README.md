@@ -23,12 +23,12 @@ Welcome to Vets Who Code play repo for the new troops.
 
 ## Credits
 
-Photo name: "Toothed zombie"
-Date: 15 Aug 2015
-URL: https://ru.depositphotos.com/80792684/stock-photo-toothy-zombie.html
-Image ID:	80792684
-Author:	prometeus
-Usage Information: Photo "Toothed zombie" can be used for personal and commercial purposes according to the conditions of the purchased Royalty-free license. The image is available for download in high quality with resolution up to 4000x2670.
+> blockquote Photo name: "Toothed zombie"
+> blockquote Date: 15 Aug 2015
+> blockquote URL: https://ru.depositphotos.com/80792684/stock-photo-toothy-zombie.html
+> blockquote Image ID:	80792684
+> blockquote Author:	prometeus
+> blockquote Usage Information: Photo "Toothed zombie" can be used for personal and commercial purposes according to the conditions of the purchased Royalty-free license. The image is available for download in high quality with resolution up to 4000x2670.
 
 
 
