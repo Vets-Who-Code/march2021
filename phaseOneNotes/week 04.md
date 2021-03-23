@@ -1,3 +1,4 @@
+<span style="font-size: 20px">📓</span>
 # Day 1
 ## Human/Computer Interaction & Interaction Design Methodologies: Goal Driven Design, Usability, The Five Dimensions, Cognitive Psychology, and Human Interface Guidelines
 - standups
