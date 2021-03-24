@@ -292,14 +292,15 @@ img {
 
 p {
 	line-height: 30px;
-	margin: 20px 20px 0 20px;
-	padding: 0 4em;
+	margin: 20px 0 0 0;
+	padding: 0;
 	text-indent: 20px;
 	font-size: 1.1em;
 }
 
 .intro {
 	padding-bottom: 60px;
+	margin: 0 7%;
 }
 
 /* Cards */
@@ -701,17 +702,15 @@ footer a:active {
 		height: 80vh;
 	}
 
-	.intro {
-		margin: 0 30px;
-	}
-
 	.zombie-img {
-		width: 100%;
-		padding-bottom: 20px;
+		width: 87%;
+		padding: 0 1em 20px 1em;
+		float: none;
+		text-align: center;
 	}
 
 	p {
-		padding: 0 2em;
+		padding: 0;
 		text-align: center;
 	}
 
@@ -734,27 +733,20 @@ footer a:active {
 		margin-top: 200px;
 	}
 
-	.zombie-img{
-		width: 100%;
-	}
-
 	p {
-		text-indent: 0;
 		text-align: center;
 	}
 
-	.intro {
-		margin: 0;
+	.zombie-img {
+		width: 85%;
+		display: block;
+		text-align: center;
 	}
 }
 
 @media screen and (max-width: 540px) {
 	.blood {
 		font-size: 1.8em;
-	}
-
-	.zombie-img{
-		width: 100%;
 	}
 
 	.footer-p {
@@ -766,11 +758,6 @@ footer a:active {
 	.blood {
 		font-size: 1.55em;
 	}
-
-	.zombie-img {
-		width: 100%;
-	}
-
 }
 
 @media screen and (max-width: 410px) {
