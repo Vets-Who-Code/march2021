@@ -304,6 +304,18 @@ h2{
 	font-family: 'Syne Mono', monospace;
 }
 
+p a:link,
+p a:visited,
+p a:active {
+	color: var(--dark-mode);
+}
+
+body.dark-theme p a:link,
+body.dark-theme p a:visited,
+body.dark-theme p a:active {
+	color: var(--kimberly);
+}
+
 .intro {
 	padding-bottom: 60px;
 	margin: 0 7%;
