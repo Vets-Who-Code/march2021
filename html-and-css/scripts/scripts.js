@@ -111,14 +111,14 @@ function overRunMessage() {
     txt.textContent = "The zombies have been destroyed. But your page has too! Please refresh."
     txt.style.textAlign = "center";
     txt.style.marginBottom = "100px";
-    zombieParts.style.width = "50%";
-    zombieParts.style.height = "30%";
+    zombieParts.style.width = "80%";
+    zombieParts.style.height = "40%";
     zombieParts.style.margin = "auto";
     document.body.appendChild(zombieParts);
     document.body.appendChild(bombSound);
     document.body.appendChild(txt);
       setTimeout(function() {
-      document.body.remove(zombieParts);
+      document.body.removeChild(zombieParts);
     }, 4000)
   }, 12000)
 
