@@ -298,6 +298,12 @@ p {
 	font-size: 1.1em;
 }
 
+h2{
+	font-size: 2.1em;
+	text-align: left;
+	font-family: 'Syne Mono', monospace;
+}
+
 .intro {
 	padding-bottom: 60px;
 	margin: 0 7%;
