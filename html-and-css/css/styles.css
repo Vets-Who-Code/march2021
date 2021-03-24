@@ -706,7 +706,9 @@ footer a:active {
 		width: 87%;
 		padding: 0 1em 20px 1em;
 		float: none;
+		display: block;
 		text-align: center;
+		margin: 0 auto;
 	}
 
 	p {
@@ -734,12 +736,6 @@ footer a:active {
 	}
 
 	p {
-		text-align: center;
-	}
-
-	.zombie-img {
-		width: 85%;
-		display: block;
 		text-align: center;
 	}
 }
