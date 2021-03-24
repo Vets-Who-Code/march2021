@@ -48,7 +48,6 @@ q:before, q:after {
 	--dark-mode: #121212;
 	--kimberly: #7272A1;
 	--Tangerine: #FFCC00;
-	--black: var(--dark-mode);
 	--off-white: #f8f8ff;
 
 	font-size: 10px;
@@ -57,7 +56,7 @@ q:before, q:after {
 
 body {
 	font-family: 'Syne Mono', monospace;
-	color: var(--black);
+	color: var(--dark-mode);
 	background-color: var(--light-mode);
 	font-size: 2em;
 }
@@ -132,7 +131,6 @@ body.dark-theme .desktop-nav a:hover {
 }
 
 .desktop-nav a:hover {
-	color: var(--off-white);
 	text-decoration: underline;
 }
 
@@ -327,7 +325,7 @@ p {
 }
 
 .flex-container > div:hover {
-	box-shadow: 0 8px 16px 0 var(--black);
+	box-shadow: 0 8px 16px 0 var(--dark-mode);
 }
 
 .flex-container h1 {
@@ -400,7 +398,7 @@ p {
 }
 
 .trigger:hover {
-	background-color: var(--black);
+	background-color: var(--dark-mode);
 }
 
 .modal {
@@ -485,7 +483,7 @@ footer.dark-theme a:active {
 }
 
 footer.dark-theme a:hover {
-	color: var(--black);
+	color: var(--dark-mode);
 }
 
 .footer-container {
@@ -656,12 +654,12 @@ footer a:active {
 	.navbar.dark-theme a:link,
 	.navbar.dark-theme a:visited,
 	.navbar.dark-theme a:active {
-		color: var(--black);
+		color: var(--dark-mode);
 	}
 
 	.navbar.dark-theme a:hover {
 		padding: 8px;
-		border: 3px solid var(--dark-mode);
+		border: 2px solid var(--dark-mode);
 	}
 
 	.showClose {
@@ -695,7 +693,7 @@ footer a:active {
 	}
 
 	.menu-link a:hover {
-		border: 3px solid var(--off-white);
+		border: 2px solid var(--off-white);
 		padding: 8px;
 	}
 
@@ -735,6 +733,7 @@ footer a:active {
 	.zombie-tools {
 		margin-top: 200px;
 	}
+
 	.zombie-img{
 		width: 100%;
 	}
@@ -757,13 +756,18 @@ footer a:active {
 	.zombie-img{
 		width: 100%;
 	}
+
+	.footer-p {
+		font-size: .9em;
+	}
 }
 
 @media screen and (max-width: 470px) {
 	.blood {
 		font-size: 1.55em;
 	}
-	.zombie-img{
+
+	.zombie-img {
 		width: 100%;
 	}
 
