@@ -92,7 +92,8 @@ function screamSound() {
   audio.play();
 }
 
-//Self Destruct
+
+//Air strike
 function overRunMessage() {
   let status = document.getElementById("status");
   let bombSound = document.getElementById("bomb-sound");
@@ -106,9 +107,10 @@ function overRunMessage() {
     let bombSound = document.createElement("audio");
     let txt = document.createElement("p");
     zombieParts.src = "images/zombieParts.gif";
+    zombieParts.id = "zombie-parts"
     bombSound.src= "sounds/6722__noisecollector__boom4.wav";
     bombSound.autoplay = "true";
-    txt.textContent = "The zombies have been destroyed. But your page has too! Please refresh."
+    txt.textContent = "The zombies have been destroyed. But the page has too! Please refresh."
     txt.style.textAlign = "center";
     txt.style.marginBottom = "100px";
     zombieParts.style.width = "80%";
@@ -122,8 +124,7 @@ function overRunMessage() {
     }, 4000)
   }, 12000)
 
-}
-
+} 
 
 // Scroll Start
 
