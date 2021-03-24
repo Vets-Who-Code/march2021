@@ -48,7 +48,6 @@ q:before, q:after {
 	--dark-mode: #121212;
 	--kimberly: #7272A1;
 	--Tangerine: #FFCC00;
-	--black: var(--dark-mode);
 	--off-white: #f8f8ff;
 
 	font-size: 10px;
@@ -57,7 +56,7 @@ q:before, q:after {
 
 body {
 	font-family: 'Syne Mono', monospace;
-	color: var(--black);
+	color: var(--dark-mode);
 	background-color: var(--light-mode);
 	font-size: 2em;
 }
@@ -132,7 +131,6 @@ body.dark-theme .desktop-nav a:hover {
 }
 
 .desktop-nav a:hover {
-	color: var(--off-white);
 	text-decoration: underline;
 }
 
@@ -294,14 +292,15 @@ img {
 
 p {
 	line-height: 30px;
-	margin: 20px 20px 0 20px;
-	padding: 0 4em;
+	margin: 20px 0 0 0;
+	padding: 0;
 	text-indent: 20px;
 	font-size: 1.1em;
 }
 
 .intro {
 	padding-bottom: 60px;
+	margin: 0 7%;
 }
 
 /* Cards */
@@ -327,7 +326,7 @@ p {
 }
 
 .flex-container > div:hover {
-	box-shadow: 0 8px 16px 0 var(--black);
+	box-shadow: 0 8px 16px 0 var(--dark-mode);
 }
 
 .flex-container h1 {
@@ -400,7 +399,7 @@ p {
 }
 
 .trigger:hover {
-	background-color: var(--black);
+	background-color: var(--dark-mode);
 }
 
 .modal {
@@ -485,7 +484,7 @@ footer.dark-theme a:active {
 }
 
 footer.dark-theme a:hover {
-	color: var(--black);
+	color: var(--dark-mode);
 }
 
 .footer-container {
@@ -656,12 +655,12 @@ footer a:active {
 	.navbar.dark-theme a:link,
 	.navbar.dark-theme a:visited,
 	.navbar.dark-theme a:active {
-		color: var(--black);
+		color: var(--dark-mode);
 	}
 
 	.navbar.dark-theme a:hover {
 		padding: 8px;
-		border: 3px solid var(--dark-mode);
+		border: 2px solid var(--dark-mode);
 	}
 
 	.showClose {
@@ -695,7 +694,7 @@ footer a:active {
 	}
 
 	.menu-link a:hover {
-		border: 3px solid var(--off-white);
+		border: 2px solid var(--off-white);
 		padding: 8px;
 	}
 
@@ -703,17 +702,15 @@ footer a:active {
 		height: 80vh;
 	}
 
-	.intro {
-		margin: 0 30px;
-	}
-
 	.zombie-img {
-		width: 100%;
-		padding-bottom: 20px;
+		width: 87%;
+		padding: 0 1em 20px 1em;
+		float: none;
+		text-align: center;
 	}
 
 	p {
-		padding: 0 2em;
+		padding: 0;
 		text-align: center;
 	}
 
@@ -735,17 +732,15 @@ footer a:active {
 	.zombie-tools {
 		margin-top: 200px;
 	}
-	.zombie-img{
-		width: 100%;
-	}
 
 	p {
-		text-indent: 0;
 		text-align: center;
 	}
 
-	.intro {
-		margin: 0;
+	.zombie-img {
+		width: 85%;
+		display: block;
+		text-align: center;
 	}
 }
 
@@ -754,8 +749,8 @@ footer a:active {
 		font-size: 1.8em;
 	}
 
-	.zombie-img{
-		width: 100%;
+	.footer-p {
+		font-size: .9em;
 	}
 }
 
@@ -763,10 +758,6 @@ footer a:active {
 	.blood {
 		font-size: 1.55em;
 	}
-	.zombie-img{
-		width: 100%;
-	}
-
 }
 
 @media screen and (max-width: 410px) {
