@@ -278,10 +278,17 @@ body.dark-theme .blood {
 
 /* Content */
 
+.zombie-img{
+	display: inline;
+	float: left;
+	margin-right: 1em;
+	border-radius: 3px;
+}
+
 img {
 	display: block;
 	margin: 0 auto;
-	width: 55%;
+	width: 15%;
 }
 
 p {
