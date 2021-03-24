@@ -103,8 +103,23 @@ function overRunMessage() {
     let container = document.getElementById("container");
     container.remove();
     let zombieParts = document.createElement("img");
+    let bombSound = document.createElement("audio");
+    let txt = document.createElement("p");
     zombieParts.src = "images/zombieParts.gif";
-    document.body.appendChild(zombieParts)
+    bombSound.src= "sounds/6722__noisecollector__boom4.wav";
+    bombSound.autoplay = "true";
+    txt.textContent = "The zombies have been destroyed. But your page has too! Please refresh."
+    txt.style.textAlign = "center";
+    txt.style.marginBottom = "100px";
+    zombieParts.style.width = "80%";
+    zombieParts.style.height = "40%";
+    zombieParts.style.margin = "auto";
+    document.body.appendChild(zombieParts);
+    document.body.appendChild(bombSound);
+    document.body.appendChild(txt);
+      setTimeout(function() {
+      document.body.removeChild(zombieParts);
+    }, 4000)
   }, 12000)
 
 }
