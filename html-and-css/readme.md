@@ -11,7 +11,7 @@
 ### Image of zombies crawling on the ceiling adapted from the motion picture "Cabin in the Woods"
 - Author: [Tumblr]https://lips-of-evil666.tumblr.com/post/70006916623 (this account is now inactive)
 
-## Icons [flaticon](https://www.flaticon.com/)
+## Icons
 ### Radar free icon
 - Icon made by [Roundicons](https://www.flaticon.com/authors/roundicons)
 - For commercial and personal projects, on digital or printed media, for an unlimited number of times and perpetually, anywhere in the world, to make modifications and derived works
