@@ -680,10 +680,14 @@ footer a:active {
 		border: none;
 		cursor: pointer;
 		background-color: transparent;
-		background-image: url("../images/menu.png");
+		background-image: url("../images/menu-dark.png");
 		background-size: 100%;
 		margin-top: 20px;
 		margin-right: 10px;
+	}
+
+	.menu.dark-theme{
+		background-image: url("../images/menu.png");
 	}
 
 	.navbar {
@@ -724,7 +728,9 @@ footer a:active {
 		margin-top: 20px;
 		margin-right: 10px;
 	}
-
+	.showClose.menu.dark-theme {
+		background-image: url("../images/close-dark.png");
+	}
 	.showNav {
 		transform: translateY(0);
 	}
