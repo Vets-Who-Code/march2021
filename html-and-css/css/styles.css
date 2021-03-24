@@ -45,8 +45,8 @@ q:before, q:after {
 :root {
 
 	--light-mode: #CCCCCC;
-	--dark-mode: #191919;
-	--kimberly: #666699;
+	--dark-mode: #121212;
+	--kimberly: #7272A1;
 	--Tangerine: #FFCC00;
 	--black: var(--dark-mode);
 	--off-white: #f8f8ff;
@@ -469,7 +469,6 @@ footer {
 
 footer.footer-light-theme {
 	background-color: var(--dark-mode);
-	color: var(--light-mode);
 }
 
 footer.dark-theme {
@@ -482,6 +481,7 @@ footer.dark-theme a:link,
 footer.dark-theme a:visited,
 footer.dark-theme a:active {
 	color: var(--kimberly);
+	color: var(--dark-mode);
 }
 
 footer.dark-theme a:hover {
