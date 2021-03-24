@@ -726,7 +726,9 @@ footer a:active {
 		margin-top: 20px;
 		margin-right: 10px;
 	}
-
+	.showClose.menu.dark-theme {
+		background-image: url("../images/close-dark.png");
+	}
 	.showNav {
 		transform: translateY(0);
 	}
