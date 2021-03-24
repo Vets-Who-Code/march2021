@@ -593,6 +593,13 @@ footer a:active {
 		width: 75%;
 		margin: 0 auto 2em auto;
 	}
+	.zombie-img{
+		display: inline;
+		float: left;
+		margin-right: 1em;
+		border-radius: 3px;
+		width: 60%;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -715,6 +722,10 @@ footer a:active {
 		width: 90%;
 		margin: 0 auto 90px auto;
 	}
+
+	.zombie-img{
+		width: 60%;
+	}
 }
 
 @media screen and (max-width: 660px) {
@@ -724,6 +735,9 @@ footer a:active {
 
 	.zombie-tools {
 		margin-top: 200px;
+	}
+	.zombie-img{
+		width: 60%;
 	}
 
 	p {
@@ -736,22 +750,35 @@ footer a:active {
 	.blood {
 		font-size: 1.8em;
 	}
+	.zombie-img{
+		width: 60%;
+	}
 }
 
 @media screen and (max-width: 470px) {
 	.blood {
 		font-size: 1.55em;
 	}
+	.zombie-img{
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 410px) {
 	.blood {
 		font-size: 1.3em;
 	}
+	.zombie-img{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 360px) {
 	.blood {
 		font-size: 1.1em;
+	}
+	.zombie-img{
+		width: 100%;
 	}
 }
