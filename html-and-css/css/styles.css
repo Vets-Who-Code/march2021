@@ -283,6 +283,7 @@ body.dark-theme .blood {
 	float: left;
 	margin-right: 1em;
 	border-radius: 3px;
+	width: 40%;
 }
 
 img {
@@ -297,6 +298,10 @@ p {
 	padding: 0 9em;
 	text-indent: 20px;
 	font-size: 1.1em;
+}
+
+.intro {
+	padding-bottom: 60px;
 }
 
 /* Cards */
@@ -487,6 +492,7 @@ footer.dark-theme a:hover {
 	display: flex;
 	justify-content: center;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .footer-p {
@@ -583,7 +589,7 @@ footer a:active {
 		margin-top: 80px;
 	}
 
-	.flex-container>div {
+	.flex-container > div {
 		width: 75%;
 		margin: 0 auto 2em auto;
 	}
