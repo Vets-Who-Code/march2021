@@ -9,7 +9,7 @@
 - Author: prometeus
 - Usage Information: Photo "Toothed zombie" can be used for personal and commercial purposes according to the conditions of the purchased Royalty-free license. The image is available for download in high quality with resolution up to 4000x2670.
 ### Image of zombies crawling on the ceiling adapted from the motion picture "Cabin in the Woods"
-- Author: [Tumblr]https://lips-of-evil666.tumblr.com/post/70006916623 (this account is now inactive)
+- Author: [Tumblr](https://lips-of-evil666.tumblr.com/post/70006916623) (this account is now inactive)
 
 ## Icons
 ### "Radar free icon"
