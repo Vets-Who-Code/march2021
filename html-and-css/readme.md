@@ -12,16 +12,16 @@
 - Author: [Tumblr]https://lips-of-evil666.tumblr.com/post/70006916623 (this account is now inactive)
 
 ## Icons
-### Radar free icon
+### "Radar free icon"
 - Icon made by [Roundicons](https://www.flaticon.com/authors/roundicons)
 - For commercial and personal projects, on digital or printed media, for an unlimited number of times and perpetually, anywhere in the world, to make modifications and derived works
-### Zombie free icon
+### "Zombie free icon"
 - Icon made by [Linector](https://www.flaticon.com/authors/linector)
 - For commercial and personal projects, on digital or printed media, for an unlimited number of times and perpetually, anywhere in the world, to make modifications and derived works
-### Explosion free icon
+### "Explosion free icon"
 - Icon made by [Freepik](https://www.freepik.com)
 - For commercial and personal projects, on digital or printed media, for an unlimited number of times and perpetually, anywhere in the world, to make modifications and derived works
-### Army Soldier Walking free icon
+### "Army Soldier Walking free icon"
 - Icon made by [Freepik](https://www.freepik.com)
 - For commercial and personal projects, on digital or printed media, for an unlimited number of times and perpetually, anywhere in the world, to make modifications and derived works
 
