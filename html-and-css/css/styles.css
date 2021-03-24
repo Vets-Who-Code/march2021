@@ -281,6 +281,11 @@ img {
 	display: block;
 	margin: 0 auto;
 	width: 55%;
+	padding-top: 20px;
+}
+
+figure {
+	padding-bottom: 40px;
 }
 
 figcaption {
@@ -535,6 +540,7 @@ footer a:active {
 .footer-images {
 	display: flex;
 	justify-content: center;
+	padding-top: 10px;
 }
 
 .VetsWhoCode-img {
