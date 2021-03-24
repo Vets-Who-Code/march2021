@@ -1,7 +1,7 @@
 //advisory//
 const advisory = () => {
   if(window.confirm("WARNING! CONTENT MAY UPSET SOME VIEWERS!")) {
-    window.close();
+    
   } else {
     window.location.replace("https://vetswhocode.io/");
   }
