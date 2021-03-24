@@ -46,32 +46,38 @@
 			<div class="arrow"></div>
 			<h1 class="title blood">Zombies With #VetsWhoCode</h1>
 			<div class="flex-container" id="cards">
-				<div onclick="zombieprompt()" class="radar">
+				<div onclick="zombieprompt()" class="radar" id="radar-div">
 					<!--Zombie Radar-->
 					<h1 class="card-header">Zombie Radar</h1>
+					<a href="#radar-div"; return false; title="Zombie Radar Tool">
 					<img id="radar" src="images/radar.png" alt="radar screen"></img>
+					</a>
 					<div class="center">
 						<p id="zqanswer"></p>
 					</div>
 				</div>
 
-				<div class="trigger" onclick="screamSound()">
+				<div class="trigger" onclick="screamSound()" id="dont-touch-div">
 					<!--DON'T PUSH!-->
 					<h1 class="card-header">DON'T PUSH!</h1>
+					<a href="#dont-touch-div" onclick="screamSound()"; return false; title="Do not touch this button!">
 					<img id="hand" src="images/zombie.png" alt="zombie hand">
+					</a>
 					<span class="modal">
 						<audio id="audio" src="sounds/132106__sironboy__woman-scream.wav"></audio>
 						<span class="modal-content">
-							<span class="close-button">&times;</span>
+							<a href="#dont-touch-div"><span class="close-button">&times;</span></a>
 							<img src="images/ceiling.gif" id="ceiling" alt="zombie crawling on the ceiling">
 							<h1>THE ZOMBIE BIT YOU!</h1>
 						</span>
 					</span>
 				</div>
 
-				<div onclick="overRunMessage()">
+				<div onclick="overRunMessage()" id="air-strike-div">
 					<h1 class="card-header">Air Strike</h1>
+					<a href="#air-strike-div" onclick="overRunMessage()"; return false; title="Air Strike Tool">
 					<img src="images/nuclear-explosion.png" id="explosion" alt="nuclear mushroom cloud">
+					</a>
 					<div class="center" id="status"></div>
 					<audio id="bomb-sound" src="sounds/194623__qubodup__nuclear-explosion.flac"></audio>
 				</div>
@@ -80,7 +86,7 @@
 					<!--Zombie Field Manual-->
 					<h1 class="card-header">Zombie Field Manual</h1>
 					<a href="https://www.balloon-juice.com/wp-content/uploads/2015/10/FM-999-3-Counter-Zombie-Operations-at-the-Fireteam-Level.pdf"
-						target="_blank"><img id="army" src="images/army-soldier-walking.png" alt="army soldier walking"></a>
+						target="_blank"><img id="army" src="images/army-soldier-walking.png" alt="army soldier walking" title="Zombie Field Manual"></a>
 				</div>
 			</div>
 
