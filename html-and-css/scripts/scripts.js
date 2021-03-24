@@ -1,7 +1,7 @@
 //advisory//
 const advisory = () => {
   if(window.confirm("WARNING! CONTENT MAY UPSET SOME VIEWERS!")) {
-    
+
   } else {
     window.location.replace("https://vetswhocode.io/");
   }
@@ -120,7 +120,7 @@ function overRunMessage() {
     zombieParts.id = "zombie-parts"
     bombSound.src= "sounds/6722__noisecollector__boom4.wav";
     bombSound.autoplay = "true";
-    txt.textContent = "The zombies have been destroyed. But the page has too! Please refresh."
+    txt.textContent = "The zombies have been destroyed, but the page has too! Please refresh."
     txt.style.textAlign = "center";
     txt.style.marginBottom = "100px";
     zombieParts.style.width = "80%";
