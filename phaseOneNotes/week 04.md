@@ -73,4 +73,21 @@ Memory principles
 ### Homework
 - Implement four suggestions in the zombie app
 
-
+# Day 3
+## Design Thinking 
+### Design Thinking Principles
+1. Empathize with your users
+* users dont like to wait 
+* an example is the Uber app. How much more difficult is it to use the uber app than other apps? 
+* put yourself in their shoes
+2. Define your users' needs, their problem, and your insights
+3. Ideate by challenging assumptions and creating ideas for innovative solutions
+4. Prototype to start creating solutions
+* some start building 
+* some do mock ups using tools like draw.io
+* MVP means minimal viable product. Solve business problems, developer problems, and user problems. Do this while taking the shortest amount of time.  Do what makes the most financial sense. 
+5. Test solutions
+* does it solve the problem?
+* does it work? 
+### Homework
+- Homework: Apply the five principles of Design Thinking to the zombie app. What do your users want? What does the "business" want? lets try to solve those.
