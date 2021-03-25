@@ -644,6 +644,10 @@ footer a:active {
 		padding: 0 2em;
 	}
 
+	h2{
+		text-align: center;
+	}
+
 
 	.flex-container {
 		flex-direction: column;
@@ -789,6 +793,10 @@ footer a:active {
 		padding: 0;
 		text-align: center;
 	}
+	
+	h2{
+		text-align: center;
+	}
 
 	.flex-container {
 		text-align: center;
@@ -812,6 +820,9 @@ footer a:active {
 	p {
 		text-align: center;
 	}
+	h2{
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 540px) {
@@ -822,11 +833,17 @@ footer a:active {
 	.footer-p {
 		font-size: .9em;
 	}
+	h2{
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 470px) {
 	.blood {
 		font-size: 1.55em;
+	}
+	h2{
+		text-align: center;
 	}
 }
 
@@ -834,10 +851,16 @@ footer a:active {
 	.blood {
 		font-size: 1.3em;
 	}
+	h2{
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 360px) {
 	.blood {
 		font-size: 1.1em;
+	}
+	h2{
+		text-align: center;
 	}
 }
