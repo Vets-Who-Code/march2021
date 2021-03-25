@@ -61,7 +61,7 @@ arrow.addEventListener("click", (e) => {
     }
   }
   if (arrowUpOn == true){
-    window.scrollBy(0, -window.innerHeight);
+    window.scrollBy(0, -window.pageYOffset);
   }
   else{
     window.scrollBy(0, +window.innerHeight);
@@ -155,7 +155,7 @@ menu.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   navbar.classList.toggle("showNav");
-  menu.classList.toggle("showClose");
+  menu.classList.toggle("showClose");j
 }
 
 const menuLinks = document.querySelectorAll(".menu-link");
