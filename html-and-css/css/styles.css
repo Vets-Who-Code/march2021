@@ -352,6 +352,8 @@ p {
 #zqanswer {
 	color: var(--off-white);
 	font-size: 18px;
+	text-align: center;
+	text-indent: 0;
 }
 
 /*Icons*/
