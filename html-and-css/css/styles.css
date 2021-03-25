@@ -298,6 +298,24 @@ p {
 	font-size: 1.1em;
 }
 
+h2{
+	font-size: 2.1em;
+	text-align: left;
+	font-family: 'Syne Mono', monospace;
+}
+
+p a:link,
+p a:visited,
+p a:active {
+	color: var(--dark-mode);
+}
+
+body.dark-theme p a:link,
+body.dark-theme p a:visited,
+body.dark-theme p a:active {
+	color: var(--kimberly);
+}
+
 .intro {
 	padding-bottom: 60px;
 	margin: 0 7%;
@@ -626,9 +644,10 @@ footer a:active {
 		padding: 0 2em;
 	}
 
-	p:nth-of-type(3) {
-		padding-bottom: 2em;
+	h2{
+		text-align: center;
 	}
+
 
 	.flex-container {
 		flex-direction: column;
@@ -774,6 +793,10 @@ footer a:active {
 		padding: 0;
 		text-align: center;
 	}
+	
+	h2{
+		text-align: center;
+	}
 
 	.flex-container {
 		text-align: center;
@@ -797,6 +820,9 @@ footer a:active {
 	p {
 		text-align: center;
 	}
+	h2{
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 540px) {
@@ -807,11 +833,17 @@ footer a:active {
 	.footer-p {
 		font-size: .9em;
 	}
+	h2{
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 470px) {
 	.blood {
 		font-size: 1.55em;
+	}
+	h2{
+		text-align: center;
 	}
 }
 
@@ -819,10 +851,16 @@ footer a:active {
 	.blood {
 		font-size: 1.3em;
 	}
+	h2{
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 360px) {
 	.blood {
 		font-size: 1.1em;
+	}
+	h2{
+		text-align: center;
 	}
 }
