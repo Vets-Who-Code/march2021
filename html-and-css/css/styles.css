@@ -644,9 +644,6 @@ footer a:active {
 		padding: 0 2em;
 	}
 
-	p:nth-of-type(3) {
-		padding-bottom: 2em;
-	}
 
 	.flex-container {
 		flex-direction: column;
