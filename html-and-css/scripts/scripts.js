@@ -169,7 +169,7 @@ menuLinks.forEach(
 document.addEventListener('scroll', function () {
   var fam = document.getElementById("foot").getBoundingClientRect();
   //alert(fam.y);
-  if(document.documentElement.scrollHeight == window.pageYOffset + window.innerHeight){
+  if(document.documentElement.scrollHeight <= window.pageYOffset + window.innerHeight + 2){
  //   console.log(window.pageYOffset);
     arrow.classList.add("arrowUp");
   }
