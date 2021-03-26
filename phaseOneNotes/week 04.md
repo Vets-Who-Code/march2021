@@ -91,3 +91,32 @@ Memory principles
 * does it work? 
 ### Homework
 - Homework: Apply the five principles of Design Thinking to the zombie app. What do your users want? What does the "business" want? lets try to solve those.
+
+# Day 4
+## Dimensions of Interaction Design
+- Standups: 
+- What is a chron job? :
+1. service set up with a timer 
+2. if an event happens launches javascript
+3. wgit from website
+4. set up a service that goes out and does something on the computer or the web
+5. schedule a service to run that runs a script
+6. basic trick. write a script to run code to do a certain thing at an alloted amount of time 
+### Five dimensions of interaction design
+1.  words
+2.  visual presentation
+3.  physical objects or space
+4.  time
+5.  behavior
+- Words covers the direct communication with users. This happens by conveying useful information that should be clear and concise.
+- Visual presentation includes UI elements such as images, typography, and icons, etc. These supplement what is communicated with words.
+- Physical objects or space usually means the actual device or environment that users interact with. This could be a smartphone or laptop, and the environment can vary depending on where the user is.
+- Time is a dimension that used to measure how long the users spent interacting with the interface through words and animation, or any progress they made through their interaction.
+- Behavior refers to the ways in which users respond to a product, based on the previous four dimensions. Studying users' different reactions enables programmers to create better interactions for them.
+- Resources: 
+http://smacss.com/
+https://storybook.js.org/
+https://loading.io/flexbox/
+https://storybook.js.org/
+http://smacss.com/
+https://trackthis.link/social/social_card.png
