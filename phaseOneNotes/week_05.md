@@ -27,6 +27,10 @@
 2. Providing visible links elsewhere on the page
 3. Making the link invisible
 4. Making the link invisible until it receives keyboard focus
+### Color Ratio
+- Ratio: Text and interactive elements should have a color contrast ratio of at least 4.5:1.
+- Color as indicator: Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk.
+- Color blindness: Red/green color blindness is the most common, so avoid green on red or red on green. (Think especially about avoiding using red and green for “bad” and “good” indicators).
 ### Resources:
 - [David Walsh Blog A blog featuring tutorials about JavaScript, HTML5, AJAX, PHP, CSS, WordPress, and everything else development.](https://davidwalsh.name/)
 - [Scalable and Modular Architecture for CSS](http://smacss.com/)
