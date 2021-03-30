@@ -19,7 +19,7 @@
 - Some of the elements that will take a focus are:
 1. HTMLAnchorElement/HTMLAreaElement with an href
 2. HTMLInputElement/HTMLSelectElement/HTMLTextAreaElement/HTMLButtonElement but not with disabled (IE actually gives you an error if you try), and file uploads have unusual behaviour for security reasons
-3. HTMLIFrameElement (though focusing it doesn't do anything useful). Other embedding elements also, maybe, I haven't tested them all.
+3. HTMLIFrameElement (though focusing it doesn't do anything useful). 
 4. Any element with a tabindex
 ### Skip Links
 - provide a link at the top of the page which jumps the user down to an anchor or target at the beginning of the main content. Can be accomplished by:
