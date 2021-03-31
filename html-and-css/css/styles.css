@@ -432,14 +432,7 @@ body.dark-theme p a:active {
 /* Modal */
 
 .trigger {
-	width: 8em;
-	color: var(--Tangerine);
 	margin-top: 6%;
-	margin-left: 38%;
-	background: var(--kimberly);
-	font-size: .6 em;
-	font-family: 'Creepster', cursive;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .trigger.dark-theme {
@@ -453,7 +446,9 @@ body.dark-theme p a:active {
 .trigger:hover {
 	background-color: var(--dark-mode);
 }
-
+.modal-shell{
+	display: none;
+}
 .modal {
 	position: fixed;
 	left: 0;
