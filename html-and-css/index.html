@@ -50,48 +50,34 @@
 			<div class="arrowhovertext">Click here to scroll</div>
 			<h1 class="title blood">Zombies With #VetsWhoCode</h1>
 			<div class="flex-container" id="cards">
-				<div onclick="zombieprompt()" class="radar" id="radar-div">
-					<!--Zombie Radar-->
-					<h1 class="card-header">Zombie Radar</h1>
-					<a href="#radar-div"; return false; title="Zombie Radar Tool">
-					<img id="radar" src="images/radar.png" alt="radar screen"></img>
-					</a>
-					<div class="center">
-						<p id="zqanswer"></p>
-					</div>
-				</div>
-
-				<div class="trigger" onclick="screamSound()" id="dont-touch-div">
+				<a href="#" onclick="zombieprompt()" class="radar" id="radar-div">
+						<!--Zombie Radar-->
+						<h1 class="card-header">Zombie Radar</h1>
+					
+						<img id="radar" src="images/radar.png" alt="radar screen"></img>
+						
+						<div class="center">
+							<p id="zqanswer"></p>
+						</div>
+				</a>
+				<a href="#" class="trigger" id="dont-touch-div">
 					<!--DON'T PUSH!-->
 					<h1 class="card-header">DON'T PUSH!</h1>
-					<a href="#dont-touch-div" onclick="screamSound()"; return false; title="Do not touch this button!">
 					<img id="hand" src="images/zombie.png" alt="zombie hand">
-					</a>
-					<span class="modal">
-						<audio id="audio" src="sounds/132106__sironboy__woman-scream.wav"></audio>
-						<span class="modal-content">
-							<a href="#dont-touch-div"><span class="close-button">&times;</span></a>
-							<img src="images/ceiling.gif" id="ceiling" alt="zombie crawling on the ceiling">
-							<h1>You're Infected!</h1>
-						</span>
-					</span>
-				</div>
+				</a>
 
-				<div onclick="overRunMessage(); quake()" id="air-strike-div">
+				<a href="#" onclick="overRunMessage(); quake()" id="air-strike-div">
 					<h1 class="card-header">The Cure</h1>
-					<a href="#air-strike-div" onclick="overRunMessage()"; return false; title="Air Strike Tool">
 					<img src="images/nuclear-explosion.png" id="explosion" alt="nuclear mushroom cloud">
-					</a>
 					<div class="center" id="status"></div>
 					<audio id="bomb-sound" src="sounds/194623__qubodup__nuclear-explosion.flac"></audio>
-				</div>
+				</a>
 
-				<div>
+				<a href="https://www.balloon-juice.com/wp-content/uploads/2015/10/FM-999-3-Counter-Zombie-Operations-at-the-Fireteam-Level.pdf" target="_blank" rel="noopener noreferrer">
 					<!--Zombie Field Manual-->
 					<h1 class="card-header">Zombie Field Manual</h1>
-					<a href="https://www.balloon-juice.com/wp-content/uploads/2015/10/FM-999-3-Counter-Zombie-Operations-at-the-Fireteam-Level.pdf"
-						target="_blank" rel="noopener noreferrer"><img id="army" src="images/army-soldier-walking.png" alt="army soldier walking" title="Zombie Field Manual"></a>
-				</div>
+					<img id="army" src="images/army-soldier-walking.png" alt="army soldier walking" title="Zombie Field Manual"></a>
+				</a>
 			</div>
 
 			<div class="intro" id="about">
