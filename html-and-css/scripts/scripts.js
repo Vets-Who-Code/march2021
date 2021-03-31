@@ -69,6 +69,25 @@ arrow.addEventListener("click", (e) => {
 
 })
 
+arrow.addEventListener("keydown", (e) => {
+  if ((window.innerHeight + window.pageYOffset) < document.body.scrollHeight) {
+    window.scrollBy(0, window.innerHeight);
+  }
+  var arrowUpOn = false;
+  for (let i = 0; i < arrow.classList.length; i++) {
+    if (arrow.classList[i] == 'arrowUp') {
+      arrowUpOn = true;
+    }
+  }
+  if (arrowUpOn == true){
+    window.scrollBy(0, -window.pageYOffset);
+  }
+  else{
+    window.scrollBy(0, +window.innerHeight);
+  }
+
+})
+
 // Zombie Radar
 
 function zombieprompt() {
