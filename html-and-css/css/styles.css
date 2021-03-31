@@ -365,7 +365,7 @@ body.dark-theme p a:active {
 	margin-top: 6%;
 }
 
-.flex-container > div {
+.flex-container > a {
 	background-image: linear-gradient(#FF0000, #B00000, #300000);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 	width: 40%;
@@ -375,7 +375,7 @@ body.dark-theme p a:active {
 	margin-bottom: 2em;
 }
 
-.flex-container > div:hover {
+.flex-container > a:hover {
 	box-shadow: 0 8px 16px 0 var(--dark-mode);
 }
 
@@ -432,28 +432,19 @@ body.dark-theme p a:active {
 /* Modal */
 
 .trigger {
-	width: 8em;
-	color: var(--Tangerine);
 	margin-top: 6%;
-	margin-left: 38%;
-	background: var(--kimberly);
-	font-size: .6 em;
-	font-family: 'Creepster', cursive;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .trigger.dark-theme {
 	color: var(--dark-mode);
 }
 
-.trigger:focus {
-	outline: rgb(24, 23, 23);
-}
-
 .trigger:hover {
 	background-color: var(--dark-mode);
 }
-
+.modal-shell{
+	display: none;
+}
 .modal {
 	position: fixed;
 	left: 0;
