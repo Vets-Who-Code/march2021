@@ -38,3 +38,38 @@
 - [WebAim - With Accessibility in Mind](https://webaim.org/)
 - [developers.google](https://developers.google.com/web/fundamentals/accessibility/focus)
 - [css-tricks](https://css-tricks.com/almanac/selectors/f/focus-within/)
+
+# Day 2
+## Aria, Color Ratio, Live Regions
+### Dynamic Content  and Live Regions 
+- Dynamic content live regions creates accessible areas based upon the update 
+for areas that update without a page reload (only a section of the page). Ex: you have a 
+status or a comment section that updates, this interacts with aria-live attribute to update those sections on assistive devices without a page reload. It is something that is always updating without having to reload the entire page. 
+- Aria-live attribute is used to set the priority the screen reader. Dynamic content which updates without a page reload is generally either a region or a widget. Simple content changes which are not interactive should be marked as live regions. A live region is explicitly denoted using the aria-live attribute.
+### Aria
+- supplements HTML. 
+- Accessible Rich Internet Applications (ARIA) is a set of attributes that 
+define ways to make web content and web applications (especially those developed 
+with JavaScript) more accessible to people with disabilities.
+- Aria labels 
+- Keyboard navigation. 
+## SMACCS 
+-  Way to examine your design process and as a way to fit those rigid frameworks 
+into a flexible thought process. It is an attempt to document a consistent approach to site development when using CSS
+- Base (defaults, body, ul, ol, li, layouts like margin border that define your pages, module and modularity , specific components)
+- Buttons are reuseable, forms are too 
+- State (like hidden), dark mode, typographic element or treatment, 
+- When you're making a class to style something and youre on a base layer make a class as you see fit
+- Layout you have to prefix with an "l". Ex: 
+- Base n just make the class name as you see fit.
+- Layout You have to prefix with an i. example: l-header
+- State prefix with is-
+- Module prefix with the module name . Example : zombie-card (edited) 
+## Resources:
+- https://dequeuniversity.com/library/aria/liveregion-playground
+- https://developer.mozilla.org/enUS/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions
+- https://developer.mozilla.org/en-US/docs/Web/Accessibility/An_overview_of_accessible_web_applications_and_widgets
+## homework 
+- Make Project accesible. Add reoles, and make important sections tabbable. Use tab index. 
+- Look at your capstone and see where are the areas for improved accessibility
+- Use aria-label role and tabindex correctly
