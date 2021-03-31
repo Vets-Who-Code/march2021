@@ -85,18 +85,15 @@ function zombieprompt() {
 // Modal Start
 
 const modal = document.querySelector(".modal");
-const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");
 closeButton.addEventListener("click", () => {
   modal.classList.remove("show-modal");
 });
 
-function toggleModal() {
+function trigger() {
   modal.classList.toggle("show-modal");
 }
 
-
-trigger.addEventListener("click", toggleModal);
 //window.addEventListener("click", windowOnClick);
 
 function screamSound() {

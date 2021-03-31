@@ -439,10 +439,6 @@ body.dark-theme p a:active {
 	color: var(--dark-mode);
 }
 
-.trigger:focus {
-	outline: rgb(24, 23, 23);
-}
-
 .trigger:hover {
 	background-color: var(--dark-mode);
 }
