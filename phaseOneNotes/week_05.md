@@ -7,12 +7,12 @@
 3. Level AAA includes all Level A, AA, and AAA requirements.
 ### Keyboard Shortcuts
 - Tab and shift+tab are the most important buttons regarding web accessibility. Keyboard accessibility is one of the most important aspects of web accessibility. Many users with motor disabilities rely on a keyboard. A keyboard user typically uses the Tab key to navigate through interactive elements on a web page—links, buttons, fields for inputting text, etc. When an item is tabbed to, it has keyboard "focus" and can be activated or manipulated with the keyboard. Are you able to reach all of the interactive controls on the page? If not, you may need to use tabindex to improve the focusability of those controls. The general rule of thumb is that any control a user can interact with or provide input to should aim to be focusable and display a focus indicator. If a keyboard user can't see what's focused, they have no way of interacting with the page. A tabindex can make an element that is not naturally tabbable, able to be tabbable. An example of an element you could use tab index on that is no otherwise tabbable is a div. Elements that are naturally tabbable are:
-1. elements that have an href attribute
-2. link elements that have an href attribute
-3. button elements
-4. input elements whose type attribute are not in the Hidden state
-5. select elements
-6. textarea elements
+1. Elements that have an href attribute
+2. Link elements that have an href attribute
+3. Button elements
+4. Input elements whose type attribute are not in the Hidden state
+5. Select elements
+6. Textarea elements
 7. Editing hosts
 8. Browsing context containers
 ### Focus Based Elements
@@ -22,7 +22,7 @@
 3. HTMLIFrameElement (though focusing it doesn't do anything useful). 
 4. Any element with a tabindex
 ### Skip Links
-- provide a link at the top of the page which jumps the user down to an anchor or target at the beginning of the main content. Can be accomplished by:
+- Provide a link at the top of the page which jumps the user down to an anchor or target at the beginning of the main content. Can be accomplished by:
 1. Providing visible links at the top of the page
 2. Providing visible links elsewhere on the page
 3. Making the link invisible
@@ -47,14 +47,14 @@ for areas that update without a page reload (only a section of the page). Ex: yo
 status or a comment section that updates, this interacts with aria-live attribute to update those sections on assistive devices without a page reload. It is something that is always updating without having to reload the entire page. 
 - Aria-live attribute is used to set the priority the screen reader. Dynamic content which updates without a page reload is generally either a region or a widget. Simple content changes which are not interactive should be marked as live regions. A live region is explicitly denoted using the aria-live attribute.
 ### Aria
-- supplements HTML. 
+- Supplements HTML. 
 - Accessible Rich Internet Applications (ARIA) is a set of attributes that 
 define ways to make web content and web applications (especially those developed 
 with JavaScript) more accessible to people with disabilities.
 - Aria labels 
 - Keyboard navigation. 
-## SMACCS 
--  Way to examine your design process and as a way to fit those rigid frameworks 
+### SMACCS 
+- Way to examine your design process and as a way to fit those rigid frameworks 
 into a flexible thought process. It is an attempt to document a consistent approach to site development when using CSS
 - Base (defaults, body, ul, ol, li, layouts like margin border that define your pages, module and modularity , specific components)
 - Buttons are reuseable, forms are too 
@@ -65,11 +65,11 @@ into a flexible thought process. It is an attempt to document a consistent appro
 - Layout You have to prefix with an i. example: l-header
 - State prefix with is-
 - Module prefix with the module name . Example : zombie-card (edited) 
-## Resources:
+### Resources:
 - https://dequeuniversity.com/library/aria/liveregion-playground
 - https://developer.mozilla.org/enUS/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions
 - https://developer.mozilla.org/en-US/docs/Web/Accessibility/An_overview_of_accessible_web_applications_and_widgets
-## homework 
+### Homework 
 - Make Project accesible. Add reoles, and make important sections tabbable. Use tab index. 
 - Look at your capstone and see where are the areas for improved accessibility
 - Use aria-label role and tabindex correctly
