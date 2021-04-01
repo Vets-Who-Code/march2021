@@ -73,3 +73,40 @@ into a flexible thought process. It is an attempt to document a consistent appro
 - Make Project accesible. Add reoles, and make important sections tabbable. Use tab index. 
 - Look at your capstone and see where are the areas for improved accessibility
 - Use aria-label role and tabindex correctly
+
+# Day 3
+## Misc. Topics on Being Successful in Tech
+- learn how to learn, this is a skill, ask questions, sign up on Twitter and other communities and stay involved in the dev community.
+- research serverless and apis how to best serve the data to the front end 
+- research whats the purpose of a jpeg(static and web), png(web), svg(scalable on the web, text focused) etc whats the best time to use
+- research whats the difference between smaccs and vim
+- research front end data layer and serving it to the web api layers and serverless lambda functions
+- look at javascript promises
+- being successful involves building a thing, talking about it, blog about it, documenting your journey, and adding to your professional portfolio
+- brief overview of rss feeds. Mainly for podcast and blog post updates to be sent to subscribers 
+- we will build an app with contraints
+- we will rebuild our product in Gatsby 
+### Resources (productivity and others:
+- [Wakatime](https://wakatime.com/)
+- Notion
+- Use Bullet Mockups 
+- [Grammarly extension](tell grammarly what reading level you want)
+- [Top 10 Best Job APIs](https://blog.api.rakuten.net/top-10-best-jobs-apis-linkedin-indeed-glassdoor-and-others/)
+- "Superhuman" for email
+- [InMotion for Chrome](https://inmotion.app/meet/jerome-hardaway/9gxy6)
+- "Buffer" for Social Media 
+- [EmailJS](https://www.emailjs.com/)
+- [DailyDev blog aggregator/news reader](https://daily.dev/)
+- [CSS-Tricks](https://serverless.css-tricks.com/)
+- [Hashnode](https://hashnode.com/)
+- [frontendmasters](https://frontendmasters.com/guides/learning-roadmap/)
+- [Jerome Hardaway DEV Community](https://dev.to/jeromehardaway)
+- [CodePen](https://codepen.io/)
+- [RunJS](https://runjs.app/)
+- [Carbon - Use Code in Blogs](https://carbon.now.sh/) 
+- [Remix App - for syndication to Instagram](https://buffer.com/remix) 
+- [Project Euler](https://projecteuler.net/)
+
+### Homework
+- 30, 60, and 90 day plan push content building things, build your skills, showcase skills externally
+in the community
