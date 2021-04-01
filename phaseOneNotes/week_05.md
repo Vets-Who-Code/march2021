@@ -76,16 +76,16 @@ into a flexible thought process. It is an attempt to document a consistent appro
 
 # Day 3
 ## Misc. Topics on Being Successful in Tech
-- learn how to learn, this is a skill, ask questions, sign up on Twitter and other communities and stay involved in the dev community.
-- research serverless and apis how to best serve the data to the front end 
-- research whats the purpose of a jpeg(static and web), png(web), svg(scalable on the web, text focused) etc whats the best time to use
-- research whats the difference between smaccs and vim
-- research front end data layer and serving it to the web api layers and serverless lambda functions
-- look at javascript promises
-- being successful involves building a thing, talking about it, blog about it, documenting your journey, and adding to your professional portfolio
-- brief overview of rss feeds. Mainly for podcast and blog post updates to be sent to subscribers 
-- we will build an app with contraints
-- we will rebuild our product in Gatsby 
+- Learn how to learn, this is a skill, ask questions, sign up on Twitter and other communities and stay involved in the dev community.
+- Research serverless and apis how to best serve the data to the front end 
+- Research whats the purpose of a jpeg(static and web), png(web), svg(scalable on the web, text focused) etc whats the best time to use
+- Research whats the difference between smaccs and vim
+- Research front end data layer and serving it to the web api layers and serverless lambda functions
+- Look at javascript promises
+- Being successful involves building a thing, talking about it, blog about it, documenting your journey, and adding to your professional portfolio
+- Brief overview of rss feeds. Mainly for podcast and blog post updates to be sent to subscribers 
+- We will build an app with contraints
+- We will rebuild our product in Gatsby 
 ### Resources (productivity and others:
 - [Wakatime](https://wakatime.com/)
 - Notion
