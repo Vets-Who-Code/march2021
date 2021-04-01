@@ -82,7 +82,7 @@ into a flexible thought process. It is an attempt to document a consistent appro
 - Research whats the difference between smaccs and vim
 - Research front end data layer and serving it to the web api layers and serverless lambda functions
 - Look at javascript promises
-- Being successful involves building a thing, talking about it, blog about it, documenting your journey, and adding to your professional portfolio
+- Being successful involves building a thing, talking about it, blogging about it, documenting your journey, and adding to your professional portfolio
 - Brief overview of rss feeds. Mainly for podcast and blog post updates to be sent to subscribers 
 - We will build an app with contraints
 - We will rebuild our product in Gatsby 
