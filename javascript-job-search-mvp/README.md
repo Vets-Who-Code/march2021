@@ -1,4 +1,4 @@
-# Day 4
+# VWC Job Finder
 ## Project Planning Meeting for "VWC Job Finder"
 ### User Story
 - User's name is Jodi
