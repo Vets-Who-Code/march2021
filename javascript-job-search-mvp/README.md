@@ -37,5 +37,7 @@
 -
 -
 ### Mockup
-![job project](https://user-images.githubusercontent.com/57218090/113416394-d9912180-9386-11eb-8f5f-3e0825f36c40.PNG)
+![job project](images/mockup.jpg)
+
+
 
