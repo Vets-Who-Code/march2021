@@ -18,8 +18,8 @@
 - The user is tech adjacent looking to get into tech with minimal experience (one to two years)
 - The average age for this user is 28-37 and they are male
 ### Requirements
-- The app will pass paramters in real time 
-- Will will set things that we need to feed in the jobs 
+- The app will pass parameters in real time 
+- We will set things that we need to feed in the jobs 
 - Header, footer, body 
 - Use draw.io for the mockup
 - Jobs need to be relevant to the skills #VetsWhoCode teaches
