@@ -5,8 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="icon" type="image/jpg" href="images/favicon.png" />
+	<link rel="icon" type="image/jpg" href="images/favicon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css?family=Creepster|Source+Sans+Pro|Nosifer" rel="stylesheet">
@@ -18,10 +19,9 @@
 <body onload="advisory()">
 	<div class="loading"></div>
 	<div class="hide-if-loading">
+
 		<header>
-			<a class="skip-to-content-link" href="#arrow">
-				Skip to Content
-			</a>
+			<a class="skip-to-content-link" href="#about">Skip to Content</a>
 			<!-- Mobile Nav -->
 			<div class="hamburg">
 				<button class="menu" id="ham-menu"></button>
@@ -45,21 +45,23 @@
 				</ul>
 			</div>
 		</header>
+
+		<!-- Cards -->
 		<div class="container" id="container">
 			<div id="arrow" tabindex="0" class="arrow" role="scrollbar" aria-label="arrow scroll bar"></div>
 			<div class="arrowhovertext">Click here to scroll</div>
 			<h1 class="title blood">Zombies With #VetsWhoCode</h1>
 			<div class="flex-container" id="cards">
+
 				<a href="#" onclick="zombieprompt()" class="radar" id="radar-div">
 					<!--Zombie Radar-->
 					<h1 class="card-header">Zombie Radar</h1>
-
 					<img id="radar" src="images/radar.png" alt="radar screen"></img>
-
 					<div class="center">
 						<p id="zqanswer"></p>
 					</div>
 				</a>
+
 				<a href="#" onclick="trigger(); screamSound()" class="trigger">
 					<!--DON'T PUSH!-->
 					<h1 class="card-header">DON'T PUSH!</h1>
@@ -79,7 +81,7 @@
 					<h1 class="card-header">Zombie Field Manual</h1>
 					<img id="army" src="images/army-soldier-walking.png" alt="army soldier walking" title="Zombie Field Manual">
 				</a>
-				</a>
+
 				<div class="modal">
 					<span class="modal"></span>
 					<audio id="audio" src="sounds/132106__sironboy__woman-scream.wav"></audio>
@@ -89,11 +91,11 @@
 						<img src="images/ceiling.gif" id="ceiling" alt="zombie crawling on the ceiling">
 						<h1>You're Infected!</h1>
 					</span>
-					</span>
 				</div>
-
 			</div>
+			<!-- Cards End -->
 
+			<!-- About Section -->
 			<div class="intro" id="about">
 				<article>
 					<img class="zombie-img"
@@ -135,6 +137,7 @@
 							href="https://en.wikipedia.org/wiki/Kuru_(disease)" target="_blank">source</a>]</p>
 				</article>
 			</div>
+			<!-- About Section End -->
 
 			<footer id="foot" class="footer-light-theme">
 				<p class="footer-p">Coded by the <a href="https://github.com/Vets-Who-Code/march2021" target="_blank"

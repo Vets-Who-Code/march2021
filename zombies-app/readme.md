@@ -1,5 +1,4 @@
-
-# Credits 
+# Credits
 
 ## Images
 ### "Toothed zombie"
