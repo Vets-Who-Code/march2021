@@ -1,7 +1,7 @@
 //advisory//
 const advisory = () => {
-  if(window.confirm("WARNING! CONTENT MAY UPSET SOME VIEWERS!")) {
-    
+  if (window.confirm("WARNING! CONTENT MAY UPSET SOME VIEWERS!")) {
+
   } else {
     window.location.replace("https://vetswhocode.io/");
   }
@@ -60,10 +60,9 @@ arrow.addEventListener("click", (e) => {
       arrowUpOn = true;
     }
   }
-  if (arrowUpOn == true){
+  if (arrowUpOn == true) {
     window.scrollBy(0, -window.pageYOffset);
-  }
-  else{
+  } else {
     window.scrollBy(0, +window.innerHeight);
   }
 
@@ -79,10 +78,9 @@ arrow.addEventListener("keydown", (e) => {
       arrowUpOn = true;
     }
   }
-  if (arrowUpOn == true){
+  if (arrowUpOn == true) {
     window.scrollBy(0, -window.pageYOffset);
-  }
-  else{
+  } else {
     window.scrollBy(0, +window.innerHeight);
   }
 
@@ -128,7 +126,7 @@ function overRunMessage() {
   status.style.color = 'var(--off-white)';
   status.innerHTML = "The zombies have overrun us. Fire for effect."
   bombSound.play();
-  setTimeout(function() {
+  setTimeout(function () {
     let container = document.getElementById("container");
     container.remove();
     let zombieParts = document.createElement("img");
@@ -136,7 +134,7 @@ function overRunMessage() {
     let txt = document.createElement("p");
     zombieParts.src = "images/zombieParts.gif";
     zombieParts.id = "zombie-parts"
-    bombSound.src= "sounds/6722__noisecollector__boom4.wav";
+    bombSound.src = "sounds/6722__noisecollector__boom4.wav";
     bombSound.autoplay = "true";
     txt.textContent = "The zombies have been destroyed, but the page has too! Please refresh."
     txt.style.textAlign = "center";
@@ -147,12 +145,12 @@ function overRunMessage() {
     document.body.appendChild(zombieParts);
     document.body.appendChild(bombSound);
     document.body.appendChild(txt);
-      setTimeout(function() {
+    setTimeout(function () {
       document.body.removeChild(zombieParts);
     }, 4000)
   }, 12000)
 
-} 
+}
 
 // Scroll Start
 
@@ -173,7 +171,8 @@ menu.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   navbar.classList.toggle("showNav");
-  menu.classList.toggle("showClose");j
+  menu.classList.toggle("showClose");
+  j
 }
 
 const menuLinks = document.querySelectorAll(".menu-link");
@@ -187,11 +186,10 @@ menuLinks.forEach(
 document.addEventListener('scroll', function () {
   var fam = document.getElementById("foot").getBoundingClientRect();
   //alert(fam.y);
-  if(document.documentElement.scrollHeight <= window.pageYOffset + window.innerHeight + 2){
- //   console.log(window.pageYOffset);
+  if (document.documentElement.scrollHeight <= window.pageYOffset + window.innerHeight + 2) {
+    //   console.log(window.pageYOffset);
     arrow.classList.add("arrowUp");
+  } else if (window.pageYOffset < 99) {
+    arrow.classList.remove("arrowUp");
   }
-  else if (window.pageYOffset < 99) {
-         arrow.classList.remove("arrowUp");
-  } 
 });
