@@ -110,3 +110,7 @@ into a flexible thought process. It is an attempt to document a consistent appro
 ### Homework
 - 30, 60, and 90 day plan push content building things, build your skills, showcase skills externally
 in the community
+
+# Day 4
+## Project Planning Meeting 
+### See the new project [README](https://github.com/Vets-Who-Code/march2021/edit/main/javascript-job-search-mvp/README.md)
