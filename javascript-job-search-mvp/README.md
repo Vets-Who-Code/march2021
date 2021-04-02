@@ -1,5 +1,5 @@
 # VWC Job Finder
-## Project Planning Meeting for "VWC Job Finder"
+## Project Planning Meeting for "VWC Job Finder" a.k.a. "Javascript Job Search"
 ### User Story
 - User's name is Jodi
 - Former Army enlisted
