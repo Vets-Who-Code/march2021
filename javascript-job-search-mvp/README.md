@@ -30,6 +30,12 @@
 - We can use the VWC design system we can start the migration from bootstrap with our own dseign system 
 - The table for the site will be done is css grid 
 - Bootstrap 3.3.6 for the layout
+### Javascript Functional Programming 
+-
+-
+-
+-
+-
 ### Mockup
 ![job project](https://user-images.githubusercontent.com/57218090/113416394-d9912180-9386-11eb-8f5f-3e0825f36c40.PNG)
 
