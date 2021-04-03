@@ -244,7 +244,8 @@ body.dark-theme .blood {
 	border-bottom: 4px solid var(--kimberly);
 	transform: rotate(45deg);
 	animation: 3s arrow infinite ease;
-
+	background-color: transparent;
+	text-decoration: none;
 }
 
 .arrowUp {
@@ -262,6 +263,7 @@ body.dark-theme .blood {
 .arrow:hover+.arrowhovertext {
 	display: block;
 }
+
 
 /* Content */
 
