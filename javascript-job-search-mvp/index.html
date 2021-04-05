@@ -36,7 +36,7 @@
 			corporis facilis!
 		</p>
 		<form action="">
-			<label for="zipcode"><input type="number" pattern="[0-9]{5}" name="zipcode" placeholder="Zipcode" required></label>
+			<label for="zipcode"><input type="number" min="00000" max="99999" name="zipcode" placeholder="Zipcode" required></label>
 			<label for="remote"><input type="checkbox" name="remote">Remote</label>
 			<label for="range"><input type="text" name="range" placeholder="Range"></label>
 			<button type="submit">Submit</button>
