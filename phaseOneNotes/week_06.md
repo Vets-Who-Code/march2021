@@ -1,7 +1,6 @@
 # Day 1
 ## Primitives, Datatypes, and Hoisting 
-- new requirement hotreload on the click of a button change to Korean switching Google API language on the hot reload keep the data saved in browser cache or local storage
-- Javascript used the name because it was a marketing ploy 
+- Javascript used the name because it was a marketing ploy using the Java name 
 - Javascript was a scripting language that was created to compete with aplets
 - Ecmascript is the offical name 
 - REST API for datalayer, serverless technology, etc
