@@ -11,20 +11,14 @@
 
 .btn-primary:hover {
     text-decoration: underline;
-    background-color: #123f83 !important;
-    color: white !important;
 }
 
 .navbar-btn {
-    background-color: #c5203e !important;
-    color: #fff;
-    background-image: none;
     border-radius: 2px;
     margin-right: 5px;
+    border: 1px solid black;
 }
 
 .navbar-btn:hover {
     text-decoration: underline;
-    background-color: #123f83 !important;
-    color: #fff !important;
 }
