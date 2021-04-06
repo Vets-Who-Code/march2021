@@ -1,13 +1,3 @@
-/* .row {
-    display: grid;
-      grid-template-columns: auto auto auto auto auto auto;
-    grid-gap: 10px;
-    background-color: #78cbda;
-    padding: 10px;
-    border-radius: 10px;
-    border-color: red;
-} */
-
 .row {
     border: 3px solid navy;
 }
