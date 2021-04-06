@@ -51,3 +51,42 @@ Window.localStorage - Web APIs | MDN
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
 developer.mozilla.orgdeveloper.mozilla.org
 Window.sessionStorage - Web APIs | MDN
+
+# Day 2
+## Conditionals, Operators
+### Conditionals
+- if this, then do this 
+- format is:
+```
+if (name === "John) {
+   console.log("red")
+} else if (name === "Aaron") {
+   console.log("blue")
+} else {
+    console.log("green")
+}
+```
+### Switch statement is used instead of using a long line of conditionals
+The format of it is below:
+```
+// switch
+const fruit = 'Pears';
+switch (fruit) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Mangoes':
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    // expected output: "Mangoes and papayas are $2.79 a pound."
+    break;
+  default:
+    console.log(`Sorry, we are out of ${fruit}.`);
+}
+```
+### Equals Signs 
+- one equal sign is assigning something to a variable
+- two equals signs is comparing something but not data types  
+- explicit equals is === 
+It also compares data types
+
