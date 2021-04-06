@@ -14,3 +14,11 @@
 .navbar-btn:hover {
     text-decoration: underline;
 }
+
+.form-group {
+    margin: 0 auto !important;
+}
+
+.form-inline {
+    margin: 100px 0;
+}

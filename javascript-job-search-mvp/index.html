@@ -61,20 +61,28 @@
 			<div class="container">
 				<div class="page-header">
 					<h1>Job Search</h1>
-				</div>
 				<p>
 					VetsWhoCode prepares veterans and military spouses to enter the civilian work force with tangible skills for new careers.
 					In addition to the training veterans will receive, this job search tool will assist them in searching for 
 					the perfect career that matches their unique skill sets. These skill sets are desperately needed to enhance 
 					local economies and drive innovation. VetsWhoCode serves as a launching pad for our veterans and military spouses. 
 				</p>
-				<form action="">
+				</div>
+				<div>
+				<form class="form-inline text-center" action="">
 					<div class="form-group">
-					<label for="zipcode"><input aria-label="zip code entry" class="form-control" type="number" min="00000" max="99999" name="zipcode" placeholder="Zipcode" required></label>
-					<label class="form-check-label" for="remote"><input aria-label="checkbox for remote option" class="form-check-input" type="checkbox" name="remote"> remote?</input></label>
-					<label for="range"><input aria-label="range from zip code" class="form-control" type="dropdown" name="range" placeholder="Range"></label>
-					<button class="btn btn-primary" type="submit">Submit</button>
+						<label for="zipcode"></label>
+						<input id="zipcode" aria-label="zip code entry" class="form-control" type="number" min="00000" max="99999" name="zipcode" placeholder="Zipcode" required>
 					</div>
+					<div class="form-group">
+						<label class="form-check-label" for="remote"></label>
+						<input id="remote" aria-label="checkbox for remote option" class="form-check-input" type="checkbox" name="remote"> remote?</input>
+					</div>
+					<div class="checkbox">
+						<label for="range"><input id="range" aria-label="range from zip code" class="form-control" type="dropdown" name="range" placeholder="Range"></label>
+					</div>
+					<button class="btn btn-primary" type="submit">Submit</button>
+				</div>
 				</form>
 				<table class="table table-hover">
 					<caption style="text-align:right">Job Findings</caption>
