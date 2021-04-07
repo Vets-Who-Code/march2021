@@ -203,3 +203,7 @@
     /* charcoal */
     --tertiary-18: #eba31d;
 }
+
+.form-inline {
+    margin 0 auto;
+}
