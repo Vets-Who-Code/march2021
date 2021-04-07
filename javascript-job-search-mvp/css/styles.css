@@ -481,6 +481,7 @@ li a {
 	color: white;
 }
 
+
 @media (max-width: 1199px) {
 	.navbar-header {
 		float: none;
@@ -580,3 +581,8 @@ h1 {
     line-height: 1.1;
     font-weight: 900;
 }
+
+.row {
+    border: 1px solid lightgrey;
+}
+
