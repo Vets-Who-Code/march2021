@@ -527,5 +527,7 @@ li a {
 	.collapse.in {
 		display: block !important;
 	}
-
+  
+.row {
+    border: 1px solid lightgrey;
 }
