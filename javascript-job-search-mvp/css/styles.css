@@ -207,3 +207,7 @@
 .form-inline {
     margin: 50px 0;
 }
+
+.form-group {
+    margin: 0 5px;
+}
