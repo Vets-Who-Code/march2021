@@ -481,6 +481,14 @@ li a {
 	color: white;
 }
 
+ul.donate {
+    border-radius: 2px;
+    transition: all .3s;
+    background-color: var(--primary-1) !important;
+    color: #fff;
+    vertical-align: middle;
+}
+
 @media (max-width: 1199px) {
 	.navbar-header {
 		float: none;
@@ -527,3 +535,15 @@ li a {
 		display: block !important;
 	}
 }
+
+/*dark mode*/
+.dark-mode {
+    background-color: #091f40;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: var(--primary-1) !important;
+    color: #fff;
+}
+
