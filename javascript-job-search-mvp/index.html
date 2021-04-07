@@ -76,8 +76,15 @@
 				totam numquam suscipit quod iste doloribus quibusdam labore eligendi nostrum explicabo eaque ut nobis
 				corporis facilis!
 			</p>
-			<form action="">
+
+			<form class="form-inline" action="">
 				<div class="form-group">
+					<label for="zipcode"></label>
+					<input aria-label="zip code entry" class="form-control" type="number" min="00000"
+							max="99999" name="zipcode" placeholder="Zipcode" required>
+				</div>
+				<div class="form-group">
+
 					<label for="zipcode"><input aria-label="zip code entry" class="form-control" type="number" min="00000"
 							max="99999" name="zipcode" placeholder="Zipcode" required></label>
 					<label class="form-check-label" for="remote"><input aria-label="checkbox for remote option"
@@ -86,7 +93,14 @@
 						'99999' name="range" placeholder="Range"></label>
 					<button class="btn btn-primary" type="submit">Submit</button>
 				</div>
+				<div class = "form-group">
+					<label for="range"></label>
+					<input aria-label="range from zip code" class="form-control" type="dropdown" name="range"
+							placeholder="Range">
+				</div>
+				<button class="btn btn-primary" type="submit">Submit</button>
 			</form>
+
 			<table class="table table-hover">
 				<caption style="text-align:right">Job Findings</caption>
 				<thead>
