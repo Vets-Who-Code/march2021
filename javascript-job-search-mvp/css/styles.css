@@ -53,3 +53,8 @@ li a {
 .moon:hover {
 	color: white;
 }
+
+/*form*/
+.form-inline {
+    margin: 0 auto;
+}
