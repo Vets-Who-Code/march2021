@@ -16,6 +16,8 @@ nav {
 	background-repeat: no-repeat;
 	filter: none;
 	background-color: #091F40;
+	border: none;
+	border-radius: 0;
 }
 
 .brand-img {
@@ -45,5 +47,9 @@ li a {
 
 .moon {
 	background-color: #091F40;
+	color: white;
+}
+
+.moon:hover {
 	color: white;
 }
