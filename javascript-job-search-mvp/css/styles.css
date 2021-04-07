@@ -562,3 +562,21 @@ li a {
 .form-group {
     margin: 50px 0;
 }
+
+.lead-in {
+    color: var(--primary-3) !important;
+    font-style: italic;
+}
+
+p {
+    font-size: .9375rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.75rem;
+    text-align: center;
+    margin: .67em 0;
+    line-height: 1.1;
+    font-weight: 900;
+}
