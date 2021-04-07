@@ -1,0 +1,50 @@
+body {
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+
+nav {
+	padding: 15px 0;
+}
+
+.navbar-default {
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+	background-color: #091F40;
+}
+
+.brand-img {
+	border-radius: 50%;
+	width: 50px;
+}
+
+.navbar-brand {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.vwc-header {
+	padding-left: 10px;
+	color: white;
+}
+
+.navbar-btn {
+	border-radius: 2px;
+	margin-right: 5px;
+}
+
+li a {
+	color: white !important;
+}
+
+.moon {
+	background-color: #091F40;
+	color: white;
+}
