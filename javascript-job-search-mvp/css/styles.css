@@ -447,6 +447,7 @@ nav {
     background-color: #091F40;
     border: none;
     border-radius: 0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
 .brand-img {
