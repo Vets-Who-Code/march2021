@@ -84,54 +84,124 @@
 						placeholder="Zipcode" required>
 				</div>
 				<div class="form-group">
-					<label class="form-check-label" for="remote"></label>
-					<input aria-label="checkbox for remote option" class="form-check-input" type="checkbox" name="remote">
-					remote?</input>
-				</div>
+					<label for="zipcode"><input aria-label="zip code entry" class="form-control" type="number" min="00000"
+							max="99999" name="zipcode" placeholder="Zipcode" required></label>
+					<label class="form-check-label" for="remote"><input aria-label="checkbox for remote option"
+							class="form-check-input" type="checkbox" name="remote"> remote?</input></label>
+					<label for="range"><input aria-label="range from zip code" class="form-control" type="number" min="00000"
+							max='99999' name="range" placeholder="Range"></label>
+					<button class="btn btn-primary" type="submit">Submit</button>
+<p></p>				</div>
 				<div class="form-group">
 					<label for="range"></label>
 					<input aria-label="range from zip code" class="form-control" type="dropdown" name="range" placeholder="Range">
 				</div>
 				<button class="btn btn-primary" type="submit">Submit</button>
 			</form>
-
-			<table class="table table-hover">
-				<caption style="text-align:right">Job Findings</caption>
-				<thead>
-					<tr>
-						<th scope="col">#</th>
-						<th scope="col">Title</th>
-						<th scope="col">Company</th>
-						<th scope="col">Location</th>
-						<th scope="col">Last Posted</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">1</th>
-						<th scope="col">AWS Application Developer</th>
-						<th scope="col">Pellucid Technologies</th>
-						<th scope="col">Remote</th>
-						<th scope="col">5 days ago</th>
-					</tr>
-					<tr>
-						<th scope="row">2</th>
-						<th scope="col">Engineering Manager - Developer</th>
-						<th scope="col">Google</th>
-						<th scope="col">San Francisco</th>
-						<th scope="col">18 Hours ago</th>
-					</tr>
-					<tr>
-						<th scope="row">3</th>
-						<th scope="col">Software Engineer</th>
-						<th scope="col">Whistle Charge Inc</th>
-						<th scope="col">Houston</th>
-						<th scope="col">30 Days ago</th>
-					</tr>
-				</tbody>
-			</table>
+			<!-- Grid -->
+			<div class="jobgrid">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<!-- First column with Icon -->
+							<div class="col-sm-2 grid-icon-column">
+								Company Icon
+							</div>
+							<!-- Middle Content Column of Grid -->
+							<div class="col-sm-8 grid-content-column">
+								<div class="row">Engineering Manager</div> <!-- Title -->
+								<div class="row">Google</div> <!-- Company -->
+								<div class="row">San Francisco</div> <!-- Location -->
+								<div class="row">https://google.com/careers/</div> <!-- Application Site -->
+								<div class="row">
+									<div class="col-12">
+										<div class="col-md-6">18 Hours ago</div> <!-- Date Since Posted -->
+										<div class="col-md-6">Full time</div> <!-- Full or Part Time-->
+									</div>
+								</div>
+							</div>
+							<!-- Last Column, should be small for bookmark -->
+							<div class="col-sm-2 grid-bookmark-column">
+								<div class="col-md-1"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span></div>
+								<!-- Bookmark Icon -->
+								<br>
+								<div class="col-md-1"><iframe src="" frameborder="0" scrolling="no"
+										title="Follow Life at Google on Twitter" allowtransparency="true" width="250" height="30"></iframe>
+								</div> <!-- Follow Twitter -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<!-- First column with Icon -->
+							<div class="col-sm-2 grid-icon-column">
+								Company Icon
+							</div>
+							<!-- Middle Content Column of Grid -->
+							<div class="col-sm-8 grid-content-column">
+								<div class="row">AWS Application Developer</div> <!-- Title -->
+								<div class="row">Pellucid Technologies</div> <!-- Company -->
+								<div class="row">Remote</div> <!-- Location -->
+								<div class="row"><a href="">https://pellucidtechnologies.com/careers/</a></div>
+								<!-- Application Site -->
+								<div class="row">
+									<div class="col-12">
+										<div class="col-md-6">5 days ago</div> <!-- Date Since Posted -->
+										<div class="col-md-6">Part time</div> <!-- Full or Part Time-->
+									</div>
+								</div>
+							</div>
+							<!-- Last Column, should be small for bookmark -->
+							<div class="col-sm-2 grid-bookmark-column">
+								<div class="col-md-1"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span></div>
+								<!-- Bookmark Icon -->
+								<br>
+								<div class="col-md-1"><iframe src="" frameborder="0" scrolling="no"
+										title="Follow Pellucid Tec on Twitter" allowtransparency="true" width="250" height="30"></iframe>
+								</div> <!-- Follow Twitter -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<!-- First column with Icon -->
+							<div class="col-sm-2 grid-icon-column">
+								Company Icon
+							</div>
+							<!-- Middle Content Column of Grid -->
+							<div class="col-sm-8 grid-content-column">
+								<div class="row">Software Engineer</div> <!-- Title -->
+								<div class="row">Bootstrap</div> <!-- Company -->
+								<div class="row">Houston</div> <!-- Location -->
+								<div class="row">https://getbootstrap.com/docs/5.0/about/team/</div> <!-- Application Site -->
+								<div class="row">
+									<div class="col-12">
+										<div class="col-md-6">30 days ago</div> <!-- Date Since Posted -->
+										<div class="col-md-6">Full time</div> <!-- Full or Part Time-->
+									</div>
+								</div>
+							</div>
+							<!-- Last Column, should be small for bookmark -->
+							<div class="col-sm-2 grid-bookmark-column">
+								<div class="col-md-1"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span></div>
+								<!-- Bookmark Icon -->
+								<br>
+								<div class="col-md-1"><iframe
+										src="https://platform.twitter.com/widgets/follow_button.html?screen_name=BootstrapStudio&amp;show_screen_name=true&amp;show_count=true"
+										frameborder="0" scrolling="no" title="Follow BootstrapStudio on Twitter" allowtransparency="true"
+										width="250" height="30"></iframe></div> <!-- Follow Twitter -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
+	</div>
 
 	<footer>
 
