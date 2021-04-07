@@ -37,19 +37,21 @@
 					totam numquam suscipit quod iste doloribus quibusdam labore eligendi nostrum explicabo eaque ut nobis
 					corporis facilis!
 				</p>
-				<form class="form-inline" action="">
+				<div>
+				<form class="form-inline text-center" action="">
 					<div class="form-group">
 						<label for="zipcode"></label>
-						<input id="zipcode" aria-label="zip code entry" class="form-control" type="number" min="00000" max="99999" name="zipcode" placeholder="Zipcode" required><div id="typed-strings"></input>
+						<input id="zipcode" aria-label="zip code entry" class="form-control" type="number" min="00000" max="99999" name="zipcode" placeholder="Zipcode" required>
 					</div>
 					<div class="form-group">
-						<label class="form-check-label" for="remote"><input id="remote" aria-label="checkbox for remote option" class="form-check-input" type="checkbox" name="remote"> remote?</input></label>
+						<label class="form-check-label" for="remote"></label>
+						<input id="remote" aria-label="checkbox for remote option" class="form-check-input" type="checkbox" name="remote"> remote?</input>
 					</div>
-					<div class="form-group">
-						<label for="range"></label>
-						<input id="range" aria-label="range from zip code" class="form-control" type="dropdown" name="range" placeholder="Range">
+					<div class="checkbox">
+						<label for="range"><input id="range" aria-label="range from zip code" class="form-control" type="dropdown" name="range" placeholder="Range"></label>
 					</div>
 					<button class="btn btn-primary" type="submit">Submit</button>
+				</div>
 				</form>
 				<table class="table table-hover">
 					<caption style="text-align:right">Job Findings</caption>
