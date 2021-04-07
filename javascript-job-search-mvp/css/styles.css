@@ -1,4 +1,4 @@
 .dark-mode {
-    background-color: #091f40;
+    background-color: #091f40; /*Will change this to root color when the separate PR is approved*/
     color: #fff;
 }
