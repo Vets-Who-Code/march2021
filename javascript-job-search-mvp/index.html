@@ -1,90 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Bootstrap CSS -->
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-			integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-			crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-			integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
-		</script>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/styles.css">
-		<title>VWC Job Search</title>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+		integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>VWC Job Search</title>
+</head>
 
-	<body>
-		<header>
-			
-		</header>
+<body>
 
-		<main>
-			<div class="container">
-				<h1>Job Search</h1>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta optio debitis error, reprehenderit, est
-					totam numquam suscipit quod iste doloribus quibusdam labore eligendi nostrum explicabo eaque ut nobis
-					corporis facilis!
-				</p>
-				<form action="">
-					<div class="form-group">
-					<label for="zipcode"><input aria-label="zip code entry" class="form-control" type="number" min="00000" max="99999" name="zipcode" placeholder="Zipcode" required></label>
-					<label class="form-check-label" for="remote"><input aria-label="checkbox for remote option" class="form-check-input" type="checkbox" name="remote"> remote?</input></label>
-					<label for="range"><input aria-label="range from zip code" class="form-control" type="dropdown" name="range" placeholder="Range"></label>
+	<header>
+		<nav class="navbar navbar-default vwc-nav">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="https://vetswhocode.io/">
+						<img alt="Vets Who Code Logo" src="images/vetswhocode.jpg" class="brand-img">
+						<span class="vwc-header">VETSWHOCODE</span>
+					</a>
+				</div>
+
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://vetswhocode.io/">HOME</a></li>
+						<li><a href="https://vetswhocode.io/about">ABOUT</a></li>
+						<li><a href="https://vetswhocode.io/board">BOARD</a></li>
+						<li><a href="https://vetswhocode.io/testimonials">TESTIMONIALS</a></li>
+						<li><a href="https://vetswhocode.io/syllabus">SYLLABUS</a></li>
+						<li><a href="https://vetswhocode.io/mentor">MENTOR</a></li>
+						<li><a href="https://vetswhocode.io/apply">APPLY</a></li>
+						<li><a href="https://vetswhocode.io/contact">CONTACT</a></li>
+						<li><a href="https://vetswhocode.io/blog">BLOG</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><button class="btn navbar-btn moon"><i class="fas fa-moon fa-2x"></i></button></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<h1>Job Search</h1>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta optio debitis error, reprehenderit, est
+				totam numquam suscipit quod iste doloribus quibusdam labore eligendi nostrum explicabo eaque ut nobis
+				corporis facilis!
+			</p>
+			<form action="">
+				<div class="form-group">
+					<label for="zipcode"><input aria-label="zip code entry" class="form-control" type="number" min="00000"
+							max="99999" name="zipcode" placeholder="Zipcode" required></label>
+					<label class="form-check-label" for="remote"><input aria-label="checkbox for remote option"
+							class="form-check-input" type="checkbox" name="remote"> remote?</input></label>
+					<label for="range"><input aria-label="range from zip code" class="form-control" type="dropdown" name="range"
+							placeholder="Range"></label>
 					<button class="btn btn-primary" type="submit">Submit</button>
-					</div>
-				</form>
-				<table class="table table-hover">
-					<caption style="text-align:right">Job Findings</caption>
-					<thead>
-					  <tr>
+				</div>
+			</form>
+			<table class="table table-hover">
+				<caption style="text-align:right">Job Findings</caption>
+				<thead>
+					<tr>
 						<th scope="col">#</th>
 						<th scope="col">Title</th>
 						<th scope="col">Company</th>
 						<th scope="col">Location</th>
 						<th scope="col">Last Posted</th>
-					  </tr>
-					</thead>
-					<tbody>
-					  <tr>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
 						<th scope="row">1</th>
 						<th scope="col">AWS Application Developer</th>
 						<th scope="col">Pellucid Technologies</th>
 						<th scope="col">Remote</th>
 						<th scope="col">5 days ago</th>
-					  </tr>
-					  <tr>
+					</tr>
+					<tr>
 						<th scope="row">2</th>
 						<th scope="col">Engineering Manager - Developer</th>
 						<th scope="col">Google</th>
 						<th scope="col">San Francisco</th>
 						<th scope="col">18 Hours ago</th>
-					  </tr>
-					  <tr>
+					</tr>
+					<tr>
 						<th scope="row">3</th>
 						<th scope="col">Software Engineer</th>
 						<th scope="col">Whistle Charge Inc</th>
 						<th scope="col">Houston</th>
 						<th scope="col">30 Days ago</th>
-					  </tr>
-					</tbody>
-				  </table>
-			</div>
-		</main>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
 
-		<footer>
+	<footer>
 
-		</footer>
-		<script src="script/script.js"></script>
-	</body>
+	</footer>
+	<script src="script/script.js"></script>
+</body>
+
 </html>
