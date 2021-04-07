@@ -18,6 +18,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
 			integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
 		</script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<title>VWC Job Search</title>
@@ -36,14 +37,25 @@
 					totam numquam suscipit quod iste doloribus quibusdam labore eligendi nostrum explicabo eaque ut nobis
 					corporis facilis!
 				</p>
-				<form action="">
+
+				<form class="form-inline text-center" action="">
 					<div class="form-group">
-					<label for="zipcode"><input aria-label="zip code entry" class="form-control" type="number" min="00000" max="99999" name="zipcode" placeholder="Zipcode" required></label>
-					<label class="form-check-label" for="remote"><input aria-label="checkbox for remote option" class="form-check-input" type="checkbox" name="remote"> remote?</input></label>
-					<label for="range"><input aria-label="range from zip code" class="form-control" type="dropdown" name="range" placeholder="Range"></label>
-					<button class="btn btn-primary" type="submit">Submit</button>
+						<label for="zipcode"></label>
+						<input id="zipcode" aria-label="zip code entry" class="form-control" type="number" min="00000" max="99999" name="zipcode" placeholder="Zipcode" required>
 					</div>
+					<div class="form-group">
+						<div class="checkbox">
+							<label class="form-check-label" for="remote"></label>
+							<input id="remote" aria-label="checkbox for remote option" class="form-check-input" type="checkbox" name="remote"> Remote?</input>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="range"></label>
+						<input id="range" aria-label="range from zip code" class="form-control" type="number" min="00000" max="99999" name="range" placeholder="Range (miles)">
+					</div>
+					<button class="btn btn-primary" type="submit">Submit</button>
 				</form>
+
 				<table class="table table-hover">
 					<caption style="text-align:right">Job Findings</caption>
 					<thead>
