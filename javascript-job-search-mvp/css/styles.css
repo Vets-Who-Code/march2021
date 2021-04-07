@@ -431,8 +431,9 @@
 
 nav {
     padding: 15px 0;
-    font-weight: 400;
+    font-weight: bold;
     font-family: 'Open Sans';
+    letter-spacing: 2px;
 }
 
 .navbar-default {
@@ -470,6 +471,7 @@ nav {
     border-radius: 2px;
     margin-right: 5px;
 }
+
 
 li a {
     color: white !important;
