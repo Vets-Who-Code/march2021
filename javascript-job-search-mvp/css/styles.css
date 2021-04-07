@@ -481,6 +481,7 @@ li a {
 	color: white;
 }
 
+
 @media (max-width: 1199px) {
 	.navbar-header {
 		float: none;
@@ -526,4 +527,5 @@ li a {
 	.collapse.in {
 		display: block !important;
 	}
+
 }
