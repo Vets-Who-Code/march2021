@@ -1,21 +1,20 @@
-body {
-	font-family: "Open Sans";
-	font-weight: bold;
-}
+/* Navbar */
 
 nav {
 	padding: 15px 0;
+	font-weight: bold;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar-default {
-  background-image: none;
-  background-image: none;
-  background-image: none;
-  background-image: none;
-  background-image: none;
-  background-image: none;
-  background-repeat: no-repeat;
-  filter: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
 	background-color: #091F40;
 }
 
