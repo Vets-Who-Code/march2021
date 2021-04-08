@@ -231,12 +231,6 @@ nav {
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
-.navbar-nav.navbar-center {
-	position: absolute;
-	left: 50%;
-	transform: translatex(-50%);
-}
-
 .brand-img {
 	border-radius: 50%;
 	width: 50px;
@@ -247,6 +241,12 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.navbar-nav.navbar-center {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
 }
 
 .vwc-header {
@@ -297,9 +297,10 @@ li a {
 
 .link-name {
 	line-height: 30px;
+	z-index: 999;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1370px) {
 	.navbar-header {
 		float: none;
 	}
