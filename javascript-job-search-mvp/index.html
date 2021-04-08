@@ -58,10 +58,11 @@
 						<li><a href="https://vetswhocode.io/apply">Apply</a></li>
 						<li><a href="https://vetswhocode.io/contact">Contact</a></li>
 						<li><a href="https://vetswhocode.io/blog">Blog</a></li>
+						<li><button class="btn navbar-btn donate moon">DONATE</button></li>
 					</ul>
 
 					<ul class="nav navbar-nav navbar-right">
-						<li><button class="btn navbar-btn moon"><i class="fas fa-moon fa-2x"></i></button></li>
+						<li><button class="btn navbar-btn moon" onclick="darkMode()"><i class="fas fa-moon fa-2x"></i></button></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -71,7 +72,7 @@
 	<main>
 		<div class="container">
 			<h1>Job Search</h1>
-			<p>
+			<p class="lead-in">
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta optio debitis error, reprehenderit, est
 				totam numquam suscipit quod iste doloribus quibusdam labore eligendi nostrum explicabo eaque ut nobis
 				corporis facilis!
@@ -84,6 +85,7 @@
 						placeholder="Zipcode" required>
 				</div>
 				<div class="form-group">
+
 					<label for="zipcode"><input aria-label="zip code entry" class="form-control" type="number" min="00000"
 							max="99999" name="zipcode" placeholder="Zipcode" required></label>
 					<label class="form-check-label" for="remote"><input aria-label="checkbox for remote option"
@@ -91,10 +93,12 @@
 					<label for="range"><input aria-label="range from zip code" class="form-control" type="number" min="00000"
 							max='99999' name="range" placeholder="Range"></label>
 					<button class="btn btn-primary" type="submit">Submit</button>
-<p></p>				</div>
+
+				</div>
 				<div class="form-group">
 					<label for="range"></label>
 					<input aria-label="range from zip code" class="form-control" type="dropdown" name="range" placeholder="Range">
+
 				</div>
 				<button class="btn btn-primary" type="submit">Submit</button>
 			</form>
