@@ -91,7 +91,9 @@ var newArray = [1, 2, 3, 4] //an array is enclosed by brackets and each value is
 - Example:
 ``` var numbers = [1,2,3,5,8]; //array of numbers
     var cars = ["Mazda", "Honda","Chevy","Ford"]; //array of strings
-    var honda = cars[3]; //assigning a new variable with the value from the cars array. honda will be equal to the string "Ford" because the array starts at [0] index
+    var honda = cars[3]; 
+/*assigning a new variable with the value from the cars array. honda will be equal to the string 
+"Ford" because the array starts at [0] index*/
  ```
  - There are a number of array methods built into Javascript:
 ```
@@ -100,7 +102,9 @@ arr.pop() – extracts an item from the end,
 arr.shift() – extracts an item from the beginning,
 arr.unshift(...items) – adds items to the beginning. 
 
-arr.splice(start[, deleteCount, elem1, ..., elemN]) //It modifies arr starting from the index start: removes deleteCount elements and then inserts elem1, ..., elemN at their place. Returns the array of removed elements.
+arr.splice(start[, deleteCount, elem1, ..., elemN]) 
+/*It modifies arr starting from the index start: removes deleteCount elements and then inserts elem1,
+ ..., elemN at their place. Returns the array of removed elements.*/
 
 //Example of splice
 let arr = ["I", "study", "JavaScript"];
