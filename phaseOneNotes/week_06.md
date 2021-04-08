@@ -115,3 +115,54 @@ arr.splice(1, 1); // from index 1 remove 1 element
 
 console.log( arr ); // ["I", "JavaScript"] 
 ```
+# Day 4
+## Loops 
+### Definition
+- Loops are like interstate loops. It takes you around and around until you reach your desired exit point
+It is a piece of logic that dictates how many times to run something until you reach the designated end point 
+### For Loop
+- for loop is the easiest form of a loop. Very close to an "if" statement but it has more options.
+- Example:
+```for(condition; end condition; change){
+    // do it, do it now
+}
+```
+- Another example:
+
+```for(var integer = 0; integer < 10; integer = integer++) {
+     console.log("yay!"
+}
+```
+### While Loop
+- Used when you need to break logic. It doesn't increment. 
+- Example:
+
+```var i = 0, x = "";
+while (i < 5) {
+    x = x + "The number is " + i;
+    i++;
+}
+```
+### Do While
+- Example
+```var i = 0;
+do {
+    console.log(i + " ");
+    i++; // incrementing i by 1  
+} while (i < 100);
+```
+### For of Loop
+- Example
+```
+const array1 = ['a', 'b', 'c'];
+for (const element of array1) {
+  console.log(element);
+}
+
+```
+### Break and Continue
+- break; //stops the loop
+- continue; //skips this iteration and goes to the next iteration
+
+### Resources
+- [dark patterns(https://uxdesign.cc/dark-patterns-in-ux-design-7009a83b233c)
