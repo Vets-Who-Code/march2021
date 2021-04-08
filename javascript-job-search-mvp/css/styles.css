@@ -209,8 +209,11 @@
 
 nav {
 	padding: 15px 0;
-	font-weight: 400;
-	font-family: 'Open Sans';
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
 .navbar-default {
@@ -225,11 +228,13 @@ nav {
 	background-color: #091F40;
 	border: none;
 	border-radius: 0;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
 .brand-img {
 	border-radius: 50%;
 	width: 50px;
+	margin-top: 10px;
 }
 
 .navbar-brand {
@@ -239,8 +244,12 @@ nav {
 }
 
 .vwc-header {
-	padding-left: 10px;
+	padding-left: 5px;
+	padding-top: 10px;
 	color: white;
+	font-size: 1.2em;
+	letter-spacing: 3px;
+	margin-right: 100px;
 }
 
 .navbar-btn {
@@ -252,18 +261,43 @@ li a {
 	color: white !important;
 }
 
+.nav-links li:hover {
+	transition: 0.3s ease;
+	border-bottom: 1px solid white;
+}
+
 .moon {
 	background-color: #091F40;
 	color: white;
+	cursor: pointer;
 }
 
 .moon:hover {
 	color: white;
 }
 
-@media (max-width: 1199px) {
+.moon i {
+	line-height: 35px;
+}
+
+.donate {
+	background-color: #AB1534;
+	border-radius: 2px;
+}
+
+.nav-links .donate:hover,
+.nav-links .moon-li:hover {
+	border-bottom: none;
+}
+
+.link-name {
+	line-height: 30px;
+}
+
+@media (max-width: 1494px) {
 	.navbar-header {
 		float: none;
+		padding-bottom: 10px;
 	}
 
 	.navbar-left,
@@ -305,6 +339,14 @@ li a {
 
 	.collapse.in {
 		display: block !important;
+	}
+
+	.nav-links li:hover {
+		border-bottom: none;
+	}
+
+	.vwc-header {
+		margin-right: 0;
 	}
 }
 
@@ -348,11 +390,11 @@ li a {
 	margin: 50px 0;
 }
 
-.lead-in  {
+.lead-in {
 	color: #c5203e !important;
 	font-style: italic;
 	font-family: Open Sans,
-	sans-serif;
+		sans-serif;
 	font-weight: 400;
 	line-height: 29px;
 	margin-bottom: 40px;
@@ -361,7 +403,7 @@ li a {
 .job-search-description {
 	font-style: italic;
 	font-family: Open Sans,
-	sans-serif;
+		sans-serif;
 	font-weight: 400;
 	line-height: 29px;
 	margin: 0 0 10px;
