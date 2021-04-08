@@ -231,6 +231,12 @@ nav {
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
+.navbar-nav.navbar-center {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
 .brand-img {
 	border-radius: 50%;
 	width: 50px;
