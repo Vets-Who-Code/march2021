@@ -529,8 +529,62 @@ li a {
 	.collapse.in {
 		display: block !important;
 	}
-
-	.row {
-		border: 1px solid lightgrey;
-	}
 }
+
+/*Form*/
+.form-control {
+    background-color: var(--surface-4);
+    color: var(--element-1);
+    outline: 1px solid var(--element-6);
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    padding: 12px 24px;
+    width: 100% !important;
+}
+
+.input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn {
+    border-radius: 2px;
+    font-size: .875rem;
+    padding: 12px 0;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    width: 150px;
+    text-transform: capitalize;
+    background-image: var(--primary-1);
+}
+
+.form-group {
+    margin: 50px 0;
+}
+
+.lead-in {
+    color: var(--primary-3) !important;
+    font-style: italic;
+}
+
+p {
+    font-size: .9375rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.75rem;
+    text-align: center;
+    margin: .67em 0;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.row {
+    border: 1px solid lightgrey;
+}
+
