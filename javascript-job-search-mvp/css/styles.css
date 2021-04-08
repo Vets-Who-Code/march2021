@@ -352,7 +352,17 @@ li a {
 
 /* Dark Mode */
 
-.dark-mode {
+.dark-buttons {
+	background-color: #203ec5;
+	border: 1px solid var(--element-3);
+}
+
+.dark-buttons:hover {
+	background-color: #c5203e;
+	border: none;
+}
+
+.dark-background {
 	background-color: #091f40;
 	color: #fff;
 }
