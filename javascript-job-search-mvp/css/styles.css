@@ -209,8 +209,11 @@
 
 nav {
 	padding: 15px 0;
-	font-weight: 400;
-	font-family: 'Open Sans';
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
 .navbar-default {
@@ -225,6 +228,7 @@ nav {
 	background-color: #091F40;
 	border: none;
 	border-radius: 0;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
 .brand-img {
@@ -252,13 +256,22 @@ li a {
 	color: white !important;
 }
 
+.nav-links li:hover {
+	border-bottom: 1px solid white;
+}
+
 .moon {
 	background-color: #091F40;
 	color: white;
+	cursor: pointer;
 }
 
 .moon:hover {
 	color: white;
+}
+
+.donate {
+	padding: 0 !important;
 }
 
 @media (max-width: 1199px) {
@@ -305,6 +318,10 @@ li a {
 
 	.collapse.in {
 		display: block !important;
+	}
+
+	.nav-links li:hover {
+		border-bottom: none;
 	}
 }
 
