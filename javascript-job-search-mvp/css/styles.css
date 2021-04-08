@@ -284,7 +284,8 @@ li a {
 	border-radius: 2px;
 }
 
-.nav-links .donate:hover {
+.nav-links .donate:hover,
+.nav-links .moon-li:hover {
 	border-bottom: none;
 }
 
