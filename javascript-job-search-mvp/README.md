@@ -30,9 +30,16 @@
 - We can use the VWC design system we can start the migration from bootstrap with our own design system
 - The table for the site will be done is css grid
 - Bootstrap 3.3.6 for the layout
+- brand text needs to be closer to the VHC icon in the navbar
+- links should be closer to the left on navbar to make room for more links
+- the dark mode moon icon in the navbar should be pulled to the right with the donate button
+- no login requirement for mvp
+- no twitter links in the grid
+- no bookmarking jobs 
+- every job returned should have 2 or 3 explicit skills taught by VHC
 ### Javascript Functional Programming
--
--
+- Javascript will be used on the moon link in the navbar to trigger dark mode. The darkMode() function will 
+- 
 -
 -
 -
