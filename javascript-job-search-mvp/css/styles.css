@@ -273,7 +273,16 @@ li a {
 }
 
 .donate {
-	padding: 0 !important;
+	background-color: #AB1534;
+	border-radius: 2px;
+}
+
+.nav-links .donate:hover {
+	border-bottom: none;
+}
+
+.link-name {
+	line-height: 30px;
 }
 
 @media (max-width: 1199px) {
