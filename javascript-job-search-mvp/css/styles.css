@@ -417,7 +417,7 @@ h1 {
 	margin: 100px 0;
 }
 
-.btn-primary {
+#submit-button {
 	border-radius: 2px;
 	font-size: .875rem;
 	padding: 12px 0;
@@ -427,10 +427,6 @@ h1 {
 	text-transform: capitalize;
 	background-color: #c5203e !important;
 	background-image: none;
-}
-
-.form-group {
-	margin: 50px 0;
 }
 
 input {
