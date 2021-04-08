@@ -433,7 +433,6 @@ h1 {
 }
 
 /*Grid*/
-.row {
+.gridborder {
 	border: 1px solid lightgrey;
 }
-
