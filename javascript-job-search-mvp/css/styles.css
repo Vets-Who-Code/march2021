@@ -587,8 +587,6 @@ h1 {
     border: 1px solid lightgrey;
 }
 
-}
-
 /*dark mode*/
 .dark-mode {
     background-color: #091f40;
@@ -598,13 +596,4 @@ h1 {
 .btn-primary {
     background-color: var(--primary-1) !important;
     color: #fff;
-}
-  
-.row {
-    border: 1px solid lightgrey;
-}
-
-	.row {
-		border: 1px solid lightgrey;
-	}
 }
