@@ -272,6 +272,10 @@ li a {
 	color: white;
 }
 
+.moon i {
+	line-height: 40px;
+}
+
 .donate {
 	background-color: #AB1534;
 	border-radius: 2px;
