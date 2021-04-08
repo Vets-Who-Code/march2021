@@ -27,18 +27,18 @@ for(let i=0; i<job.length; i++){
   <div class="col-sm-12">
 
     <!-- First column with Company Icon -->
-    <div class="col-sm-2 grid-icon-column"></div>${job[i].Icon}
+    <div class="col-sm-2 grid-icon-column">${job[i].Icon}</div>
 
     <!-- Middle Content Column of Grid -->
     <div class="col-sm-8 grid-content-column">
-      <div class="row"></div>${job[i].Title}
-      <div class="row"></div>${job[i].Company}
-      <div class="row"></div>${job[i].Location} 
-      <div class="row"></div>${job[i].ApplicationSite}
+      <div class="row">${job[i].Title}</div>
+      <div class="row">${job[i].Company}</div>
+      <div class="row">${job[i].Location} </div>
+      <div class="row">${job[i].ApplicationSite}</div>
       <div class="row">
         <div class="col-md-12">
-          <div class="col-md-6"></div>${job[i].DateSincePosted} 
-          <div class="col-md-6"></div>${job[i].FullOrPartTime} 
+          <div class="col-md-6">${job[i].DateSincePosted}</div> 
+          <div class="col-md-6">${job[i].FullOrPartTime}</div> 
         </div>
       </div>
     </div>
