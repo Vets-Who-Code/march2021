@@ -82,13 +82,20 @@
         with practical and gainful employment.
 			</p>
 
-			<form class="form-inline" action="">
-				<div class="form-group">
-					<label for="zipcode"><input aria-label="zip code entry" class="form-control" type="number" min="00000" max="99999" name="zipcode" placeholder="Zipcode" required></label>
-					<label class="form-check-label" for="remote"><input aria-label="checkbox for remote option" class="form-check-input" type="checkbox" name="remote"> Remote?</input></label>
-					<label for="range"><input aria-label="range from zip code" class="form-control" type="dropdown" name="range" placeholder="Range"></label>
-					<button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
-				</div>
+			<form class="form-inline text-center">
+				<label class="sr-only" for="zipCode">Zip Code</label>
+				<input type="number" class="form-control input-lg" id="zipCode" placeholder="Zip Code">
+
+				<input class="form-check-input" type="checkbox" id="inlineFormCheck">
+				<label class="form-check-label" for="inlineFormCheck">
+				Remote?
+				</label>
+
+				<label class="sr-only" for="range">Range</label>
+				<input type="dropdown" class="form-control input-lg" id="range" placeholder="Range">
+				
+				<button type="submit" class="btn btn-primary mb-2">Submit</button>
+			</form>
 
 				<!-- Grid -->
 				<div class="jobgrid">
