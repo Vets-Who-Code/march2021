@@ -84,7 +84,10 @@ It also compares data types
 ## Arrays
 - Example: 
 ``` 
-var newArray = [1, 2, 3, 4] //an array is enclosed by brackets and each value is separated by commas. Arrays are declared with a variable by using let, const, or var depending on whether the items in the array with be changed or not.
+var newArray = [1, 2, 3, 4] 
+/*an array is enclosed by brackets and each value is separated by commas. Arrays are declared 
+with a variable by using let, const, or var depending on whether the items in the array with be 
+changed or not.*/
 
 ```
 - Arrays start at [0] index
