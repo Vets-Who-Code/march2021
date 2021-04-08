@@ -377,6 +377,8 @@ li a {
 	font-weight: 400;
 	line-height: 29px;
 	margin-bottom: 40px;
+	font-size: .9375rem;
+	text-align: center;
 }
 
 .job-search-description {
@@ -388,9 +390,6 @@ li a {
 	margin: 0 0 10px;
 	text-align: left;
 	font-style: normal;
-}
-
-p {
 	font-size: .9375rem;
 	text-align: center;
 }
@@ -429,7 +428,7 @@ h1 {
 	background-image: none;
 }
 
-input {
+#range, #zipcode, #inlineFormCheck {
 	margin: 15px;
 }
 
