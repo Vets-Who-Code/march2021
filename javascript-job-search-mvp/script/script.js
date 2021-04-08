@@ -23,7 +23,7 @@ let job=[{Icon:"", Title:"Application Engineer", Company:"Google", Location:"San
 let jobposting=""
 
 for(let i=0; i<job.length; i++){
-  jobposting +=`<div class="row">
+  jobposting +=`<div class="row gridborder">
   <div class="col-sm-12">
 
     <!-- First column with Company Icon -->
@@ -31,11 +31,11 @@ for(let i=0; i<job.length; i++){
 
     <!-- Middle Content Column of Grid -->
     <div class="col-sm-8 grid-content-column">
-      <div class="row">${job[i].Title}</div>
-      <div class="row">${job[i].Company}</div>
-      <div class="row">${job[i].Location} </div>
-      <div class="row">${job[i].ApplicationSite}</div>
-      <div class="row">
+      <div class="row gridborder">${job[i].Title}</div>
+      <div class="row gridborder">${job[i].Company}</div>
+      <div class="row gridborder">${job[i].Location} </div>
+      <div class="row gridborder">${job[i].ApplicationSite}</div>
+      <div class="row gridborder">
         <div class="col-md-12">
           <div class="col-md-6">${job[i].DateSincePosted}</div> 
           <div class="col-md-6">${job[i].FullOrPartTime}</div> 
