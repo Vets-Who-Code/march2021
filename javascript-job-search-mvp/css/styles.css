@@ -468,7 +468,7 @@ footer {
 }
 
 .site-link {
-    color: white;
+    color: white !important;
     margin-bottom: 10px;
 }
 
