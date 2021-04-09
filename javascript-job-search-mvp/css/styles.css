@@ -438,7 +438,7 @@ h1 {
 	border: none;
 }
 
-/*Grid*/
+/* Grid */
 .gridborder {
 	border: 1px solid lightgrey;
 }
@@ -446,138 +446,132 @@ h1 {
 /* footer */
 
 footer {
-    font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 	margin-top: 100px;
-  
 }
 
 .footer1-h {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    margin-bottom: 30px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	margin-bottom: 30px;
 	font-size: 1.5rem;
-	
 }
 
 .footer1 {
-    background-color: #1A51A3;
-    color: white;
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    
+	background-color: #1A51A3;
+	color: white;
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 .site-link {
-    color: white !important;
-    margin-bottom: 10px;
+	color: white !important;
+	margin-bottom: 10px;
 }
 
 .site-link:hover {
-    color: #BD2843;    
+	color: #BD2843;
 }
 
 .footer2 {
-    background-color: #091F40;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+	background-color: #091F40;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .footer2-header {
-    color: #BDC3C7;
-    font-weight: 700;
-    margin-bottom: 20px;
+	color: #BDC3C7;
+	font-weight: 700;
+	margin-bottom: 20px;
 	font-size: 1.3rem;
 }
 
 .footer3 {
-    background-color: #091F40;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+	background-color: #091F40;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .footer3-anchor {
-    color: white;
+	color: white;
 }
 
 .footer3-anchor:hover {
-    color:#EBA32F;
+	color: #EBA32F;
 }
 
 .footer3-p1 {
-    display: inline;
+	display: inline;
 }
 
 .footer3-p2 {
-    display: inline;
-    margin-left: 0 auto;
+	display: inline;
+	margin-left: 0 auto;
 }
 
 .copyright {
-    float:left;
+	float: left;
 }
 
 .byVWC {
-    float:right;
+	float: right;
 }
 
 .footer-font-awesome:hover {
-    color: lightblue;
+	color: lightblue;
 }
 
 .footer-font-awesome {
-    color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .footer-img {
-    width: 30%;
+	width: 30%;
 }
 
 .footer-icon {
-    color: #f1cb2f;
+	color: #f1cb2f;
 }
 
 
 .footer-li {
-    list-style-type: none;
-    margin-bottom: 10px;
+	list-style-type: none;
+	margin-bottom: 10px;
 }
 
 .footer-div1 {
-   padding-right: 50px;
+	padding-right: 50px;
 }
 
 .footer-div2 {
-    padding-left: 50px;
+	padding-left: 50px;
 }
 
 .send-button {
-    width: 100%;
-    margin-top: 10px;
+	width: 100%;
+	margin-top: 10px;
 }
 
 .flag-usa {
-    width: 30px;
-	
+	width: 30px;
 }
 
 .flag-korea {
-    width: 30px;
+	width: 30px;
 }
 
 .div-dropdown {
-    background-color: #286090;
+	background-color: #286090;
 }
 
 .language-button {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .group-email {
@@ -589,18 +583,15 @@ footer {
 }
 
 @media (max-width: 767px) {
-    .copyright {
-        float: none;
-        text-align: center;
-        display: block;
-    }
-    .byVWC {
-        float:none;
-        text-align: center;
-        display: block;
-    }
+	.copyright {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+
+	.byVWC {
+		float: none;
+		text-align: center;
+		display: block;
+	}
 }
-
-
-
- 
