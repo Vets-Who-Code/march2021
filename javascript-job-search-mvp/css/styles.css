@@ -299,7 +299,13 @@ footer li a {
 	line-height: 30px;
 }
 
-@media (max-width: 1494px) {
+@media (max-width: 1600px) {
+	.vwc-header {
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 1400px) {
 	.navbar-header {
 		float: none;
 		padding-bottom: 10px;
@@ -348,10 +354,6 @@ footer li a {
 
 	.nav-links li:hover {
 		border-bottom: none;
-	}
-
-	.vwc-header {
-		margin-right: 0;
 	}
 }
 
