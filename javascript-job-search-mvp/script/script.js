@@ -1,5 +1,16 @@
 console.log('Hello, Vets Who Code!');
 
+//Type.js
+var typed = new Typed('#typed',{
+                    stringsElement: '#typed-strings',
+                    backSpeed: 50,
+                    typeSpeed: 50,
+                    loop: true,
+                    startDelay: 1000,
+                    backDelay: 3000
+                  });
+
+//Dark Mode
 const darkMode = () => {
   const body = document.body;
   const button = document.getElementsByClassName('btn-primary');
@@ -7,6 +18,7 @@ const darkMode = () => {
   button.classList.toggle("dark-buttons");
 }
 
+//Grid
 let innergrid = document.getElementsByClassName('jobgrid')
 
 let job=[{Icon:"", Title:"Application Engineer", Company:"Google", Location:"San Francisco", ApplicationSite: "https://google.com/careers", DateSincePosted: "18 Days ago", FullOrPartTime: "Full Time"},

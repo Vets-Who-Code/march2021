@@ -17,6 +17,8 @@
 		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js">
 	</script>
+	<!--Typed.js-->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<!-- Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 	<!-- Open Sans Font -->
@@ -86,7 +88,11 @@
 	<main>
 		<div class="container">
 			<h1>Job Search</h1>
-			<p class="lead-in">At #VetsWhoCode, we provide job placement assistance.</p>
+			<p class="lead-in">#VetsWhoCode <span id="typed"></span></span></p>
+			<div id="typed-strings">
+     			<p>provides job placement assistance.</p>
+     			<p>makes a difference in the lives of veterans.</p>
+			</div>
 			<p class="job-search-description">
 				Vets Who Code Job Search (VWC) is a tool for connecting veterans, military, and military spouses with jobs.
 				Our goal is to make every workplace equitable and high-yielding by bringing together
@@ -108,9 +114,6 @@
 				<label class="sr-only" for="range">Range</label>
 				<input type="number" class="form-control input-lg" id="range" placeholder="Range">
 
-				<button id="submit-button" type="submit" class="btn btn-primary mb-2"><i
-						class="glyphicon glyphicon-search">
-						Search</i></button>
 
 				<div class="form-group" id="sel1">
 					<label for="sel1"></label>
@@ -125,8 +128,7 @@
 						<option>200 mi.</option>
 					</select>
 				</div>
-				<button id="submit-button" type="submit" class="btn btn-primary mb-2"><i class="glyphicon glyphicon-search"></i> Search</button>
-
+				<button id="submit-button" type="submit" class="btn btn-primary mb-2"><i class="glyphicon glyphicon-search">Search</i></button>
 			</form>
 
 			<!-- Grid -->
