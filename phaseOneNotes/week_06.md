@@ -123,13 +123,15 @@ It is a piece of logic that dictates how many times to run something until you r
 ### For Loop
 - for loop is the easiest form of a loop. Very close to an "if" statement but it has more options.
 - Example:
-```for(condition; end condition; change){
+```
+for(condition; end condition; change){
     // do it, do it now
 }
 ```
 - Another example:
 
-```for(var integer = 0; integer < 10; integer = integer++) {
+```
+for(var integer = 0; integer < 10; integer = integer++) {
      console.log("yay!"
 }
 ```
@@ -137,7 +139,8 @@ It is a piece of logic that dictates how many times to run something until you r
 - Used when you need to break logic. It doesn't increment. 
 - Example:
 
-```var i = 0, x = "";
+```
+var i = 0, x = "";
 while (i < 5) {
     x = x + "The number is " + i;
     i++;
@@ -145,11 +148,13 @@ while (i < 5) {
 ```
 ### Do While
 - Example
-```var i = 0;
+```
+var i = 0;
 do {
     console.log(i + " ");
     i++; // incrementing i by 1  
 } while (i < 100);
+
 ```
 ### For of Loop
 - Example
