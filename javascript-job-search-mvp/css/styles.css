@@ -285,11 +285,6 @@ li a {
 	border-radius: 2px;
 }
 
-.donate:hover {
-	background-color: #203ec5 !important;
-	border: 1px solid white;
-}
-
 .nav-links .donate:hover,
 .nav-links .moon-li:hover {
 	border-bottom: none;
@@ -431,10 +426,11 @@ h1 {
 	text-transform: capitalize;
 	background-color: #c5203e !important;
 	background-image: none;
+	border: 2 px solid black;
 }
 
 #submit-button:hover {
-	background-color: #203ec5 !important;
+	border: none;
 }
 
 /*Grid*/
