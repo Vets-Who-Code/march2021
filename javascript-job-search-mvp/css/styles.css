@@ -413,7 +413,7 @@ h1 {
 /* Form */
 
 .job-grabber {
-	margin: 50px 0;
+	margin: 100px 0;
 }
 
 #submit-button {
@@ -426,10 +426,6 @@ h1 {
 	text-transform: capitalize;
 	background-color: #c5203e !important;
 	background-image: none;
-}
-
-#range, #zipcode, #inlineFormCheck, #sel1 {
-	margin: 10px;
 }
 
 /*Grid*/
