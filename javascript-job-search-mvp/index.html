@@ -36,13 +36,9 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<!-- country-selector -->
-	<script src="//unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
-	<script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-	<script src="//unpkg.com/bootstrap-select@1.12.4/dist/js/bootstrap-select.min.js"></script>
-	<script src="//unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>
-	  <link rel="stylesheet" href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="//unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css" type="text/css" />
-  <link rel="stylesheet" href="//unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css" type="text/css" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="https://mojoaxel.github.io/bootstrap-select-country/dist/css/bootstrap-select-country.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 	<title>VWC Job Search</title>
 </head>
 
@@ -149,7 +145,7 @@
 							<li><a href="#" style="color: white; font-family: 'Open Sans', sans-serif;"><img class="flag-korea" src="images/south-korea.png" alt=""> Korean</a></li>
 						</ul>
 					</div> -->
-					<select class="selectpicker countrypicker" data-flag="true" ></select>
+					<select class="selectpicker countrypicker" data-flag="true"></select>
 
   
 				</div>
@@ -202,10 +198,8 @@
 		</div>
 	
 	</footer>
+	<!-- country-selector -->
 	<script src="script/script.js"></script>
-	<script>
-		$('.countrypicker').countrypicker();
-	  </script>
 </body>
 
 </html>
