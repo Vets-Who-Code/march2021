@@ -19,13 +19,12 @@ hoist = 'The variable has been hoisted.";
 - example for let:
 - 
 ```
-function WhatIsLet(sum) {
+function whatIsLet(sum) {
      let whatIsThis = " This can be changed is within lexical - or local - scope.";
      return sum + 1;  
      console.log(whatIsThis) 
 }
 ```
-
 ### Data types
 - string represents textual data	'hello', "hello world!" etc
 - number is an integer or a floating-point number	3, 3.234, 3e-2 etc.
@@ -44,7 +43,6 @@ Window.localStorage - Web APIs | MDN
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
 developer.mozilla.orgdeveloper.mozilla.org
 Window.sessionStorage - Web APIs | MDN
-
 # Day 2
 ## Conditionals, Operators
 ### Conditionals
