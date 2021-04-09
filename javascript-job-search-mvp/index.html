@@ -23,6 +23,7 @@
 	<!-- Open Sans Font -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 	<!-- Local CSS -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -34,6 +35,14 @@
 	<link rel="mask-icon" href="images/favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+	<!-- country-selector -->
+	<script src="//unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+	<script src="//unpkg.com/bootstrap-select@1.12.4/dist/js/bootstrap-select.min.js"></script>
+	<script src="//unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>
+	  <link rel="stylesheet" href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="//unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css" type="text/css" />
+  <link rel="stylesheet" href="//unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css" type="text/css" />
 	<title>VWC Job Search</title>
 </head>
 
@@ -131,15 +140,18 @@
 				<div class="col-md-4 footer-div1">
 					<h3 class="footer2-header">ABOUT #VETSWHOCODE</h3>
 					<p class="footer-p">FRAGO, doing business as #VetsWhoCode, is an exempt organization as described in Section 501(c)(3) of the Internal Revenue Code. Our EIN is 47-3555231.</p>
-				<div class="btn-group language-button">
-					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Language <span class="caret"></span>
-					</button>
-					<ul class="dropdown-menu div-dropdown">
-						<li><a href="#" style="color: white; font-family: 'Open Sans', sans-serif;"><img class="flag-usa" src="images/united-states.png" alt=""> English</a></li>
-						<li><a href="#" style="color: white; font-family: 'Open Sans', sans-serif;"><img class="flag-korea" src="images/south-korea.png" alt=""> Korean</a></li>
-					</ul>
-					</div>
+					<!-- <div class="btn-group language-button">
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Language <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu div-dropdown">
+							<li><a href="#" style="color: white; font-family: 'Open Sans', sans-serif;"><img class="flag-usa" src="images/united-states.png" alt=""> English</a></li>
+							<li><a href="#" style="color: white; font-family: 'Open Sans', sans-serif;"><img class="flag-korea" src="images/south-korea.png" alt=""> Korean</a></li>
+						</ul>
+					</div> -->
+					<select class="selectpicker countrypicker" data-flag="true" ></select>
+
+  
 				</div>
 				<div class="col-md-4">
 					<h3 class="footer2-header">SITE MAP</h3>
@@ -191,6 +203,9 @@
 	
 	</footer>
 	<script src="script/script.js"></script>
+	<script>
+		$('.countrypicker').countrypicker();
+	  </script>
 </body>
 
 </html>
