@@ -18,11 +18,13 @@ hoist = 'The variable has been hoisted.";
 - const is for global variables that will **NOT** change. const is good for security purposes and sometimes required. Const is for glocal variables that will NOT change
 - example for let:
 - 
-  ```function WhatIsLet(sum) {
+```
+function WhatIsLet(sum) {
      let whatIsThis = " This can be changed is within lexical - or local - scope.";
      return sum + 1;  
      console.log(whatIsThis) 
-}```
+}
+```
 
 ### Data types
 - string represents textual data	'hello', "hello world!" etc
