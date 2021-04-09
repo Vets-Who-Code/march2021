@@ -17,12 +17,13 @@ hoist = 'The variable has been hoisted.";
 - let is for global variables that will chance
 - const is for global variables that will **NOT** change. const is good for security purposes and sometimes required. Const is for glocal variables that will NOT change
 - example for let:
+- 
   ```function WhatIsLet(sum) {
      let whatIsThis = " This can be changed is within lexical - or local - scope.";
      return sum + 1;  
-     console.log(whatIsThis) }
-  console.log(whatIsLet(2))```
-- be consistent with semi-colons
+     console.log(whatIsThis) 
+}```
+
 ### Data types
 - string represents textual data	'hello', "hello world!" etc
 - number is an integer or a floating-point number	3, 3.234, 3e-2 etc.
