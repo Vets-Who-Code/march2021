@@ -132,7 +132,7 @@ for(condition; end condition; change){
 
 ```
 for(var integer = 0; integer < 10; integer = integer++) {
-     console.log("yay!"
+     console.log("yay!")
 }
 ```
 ### While Loop
@@ -170,4 +170,4 @@ for (const element of array1) {
 - continue; //skips this iteration and goes to the next iteration
 
 ### Resources
-- [dark patterns(https://uxdesign.cc/dark-patterns-in-ux-design-7009a83b233c)
+- [dark patterns](https://uxdesign.cc/dark-patterns-in-ux-design-7009a83b233c)
