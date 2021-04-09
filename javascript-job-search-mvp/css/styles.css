@@ -412,7 +412,7 @@ h1 {
 
 /* Form */
 
-.form-inline {
+.job-grabber {
 	margin: 100px 0;
 }
 
@@ -428,8 +428,8 @@ h1 {
 	background-image: none;
 }
 
-#range, #zipcode, #inlineFormCheck {
-	margin: 15px;
+#range, #zipcode, #inlineFormCheck, #sel1 {
+	margin: 10px;
 }
 
 /*Grid*/
