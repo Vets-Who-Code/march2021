@@ -441,6 +441,7 @@ h1 {
 
 footer {
     font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
   
 }
 
@@ -449,6 +450,7 @@ footer {
     font-weight: 400;
     margin-bottom: 30px;
 	font-size: 1.5rem;
+	
 }
 
 .footer1 {
@@ -461,7 +463,6 @@ footer {
 }
 
 .site-link {
-    /* display: block; */
     color: white;
     margin-bottom: 10px;
 }
