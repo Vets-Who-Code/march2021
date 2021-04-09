@@ -58,7 +58,6 @@ footer li a {
 	color: black !important;
 }
 
-
 .nav-links li:hover {
 	transition: 0.3s ease;
 	border-bottom: 1px solid white;
@@ -331,7 +330,6 @@ footer {
 .footer-icon {
 	color: #f1cb2f;
 }
-
 
 .footer-li {
 	list-style-type: none;
