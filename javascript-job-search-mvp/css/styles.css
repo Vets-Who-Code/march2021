@@ -396,7 +396,7 @@ footer li a {
 	text-align: left;
 	font-style: normal;
 	font-size: .9375rem;
-	text-align: center;
+	text-align: left;
 }
 
 h1 {
@@ -417,7 +417,7 @@ h1 {
 
 /* Form */
 
-.form-inline {
+.job-grabber {
 	margin: 100px 0;
 }
 
@@ -427,14 +427,15 @@ h1 {
 	padding: 12px 0;
 	text-align: center;
 	transition: all .2s ease-in-out;
-	width: 150px;
+	width: 115px;
 	text-transform: capitalize;
 	background-color: #c5203e !important;
 	background-image: none;
+	border: 2 px solid black;
 }
 
-#range, #zipcode, #inlineFormCheck {
-	margin: 15px;
+#submit-button:hover {
+	border: none;
 }
 
 /*Grid*/
