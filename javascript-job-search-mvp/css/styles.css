@@ -1,210 +1,3 @@
-:root[color-mode='light'] {
-	/* Surface colors: background color of body, menus, footers, navigation bars, modals */
-	--surface-1: #ffffff;
-	/* main body color */
-	--surface-1-0: rgba(255, 255, 255, 0);
-	/* transparent */
-	--surface-2: #fafafa;
-	/* mostly-white */
-	--surface-3: #f6f6f6;
-	/* white smoke */
-	--surface-4: #f9f9f9;
-	/* snow white forms bg color */
-	--surface-5: #fdfdfd;
-	/* off-white */
-	--surface-6: #091f40;
-	/* hash flag blue */
-	--surface-7: rgba(26, 26, 26, 0.9);
-	--surface-8: #000000;
-	/* black */
-	--surface-9: rgba(0, 0, 0, 0.9);
-	--surface-10: #323232;
-	/* night rider black */
-	--surface-11: rgba(20, 46, 57, 0.8);
-	/* opaque-dark-blue */
-	--surface-12: #ffffff;
-	/* panel */
-	--surface-13: #091f40;
-	--surface-14: #1a51a3;
-	--element-1: #000000;
-	/* black */
-	--element-1-2: rgba(0, 0, 0, 0.2);
-	--element-1-3: rgba(0, 0, 0, 0.3);
-	--element-1-5: rgba(0, 0, 0, 0.5);
-	--element-2: #222222;
-	/* body fonts */
-	--element-3: #091f40;
-	/* borders & dark font light bg */
-	--element-4: #ffffff;
-	/* light font on dark bg */
-	--element-4-0: rgba(255, 255, 255, 0);
-	/* transparent element */
-	--element-5: #999999;
-	/* nobel gray */
-	--element-6: #728f98;
-	/* gothic blue */
-	--element-7: #c5203e;
-	/* hash flag red */
-	--element-8: rgba(73, 71, 71, 0.15);
-	--element-9: #969595;
-	/* light nobel gray */
-	--element-10: #dadada;
-	/* gainsboro gray */
-	--element-11: #eeeeee;
-	/*  silver */
-	--element-12: #d4d4d4;
-	/* light gray */
-	--element-13: #808080;
-	/* medium gray */
-	--element-14: #ecf0f1;
-	/* bright gray */
-	--element-15: #be1635;
-	/* pink red */
-	--element-16: #091f40;
-	--element-18: #eba31d;
-	--primary-1: #c5203e;
-	/* hash flag red */
-	--primary-2: #79c5f5;
-	/* light blue */
-	--primary-3: #c5203e;
-	/* hash-flag-red span */
-	--tertiary-1: #e0e0e0;
-	/* statue gray */
-	--tertiary-2: #d0d0d0;
-	/* concrete gray */
-	--tertiary-3: #4ba3c4;
-	/* slushy blue */
-	--tertiary-4: rgba(0, 0, 0, 0.1);
-	--tertiary-5: #1a3843;
-	/* space blue */
-	--tertiary-6: rgba(35, 76, 91, 1);
-	/* dark greyish blue */
-	--tertiary-6-6: rgba(35, 76, 91, 0.6);
-	/* dark greyish blue */
-	--tertiary-6-7: rgba(35, 76, 91, 0.7);
-	/* dark greyish blue */
-	--tertiary-6-8: rgba(35, 76, 91, 0.8);
-	/* dark greyish blue */
-	--tertiary-7: #234c5b;
-	/* teal blue */
-	--tertiary-8: #29596b;
-	/* dull blue */
-	--tertiary-9: #336f85;
-	/* strong blue */
-	--tertiary-10: #ffcc00;
-	/* tangerine yellow */
-	--tertiary-11: #1a51a3;
-	/* cerulean blue */
-	--tertiary-12: #ffc903;
-	/* light yellow */
-	--tertiary-13: #bdc3c7;
-	/* grayish blue */
-	--tertiary-14: #316b80;
-	/* ocean blue */
-	--tertiary-15: #142e39;
-	/* tangaroa blue */
-	--tertiary-16: rgba(20, 46, 57, 0.7);
-	/* transparent tangaroa blue */
-	--tertiary-17: #333333;
-	/* charcoal */
-	--tertiary-18: #c5203e;
-}
-
-:root[color-mode='dark'] {
-	--surface-1: #091f40;
-	--surface-2: #1a345b;
-	--surface-3: #031228;
-	--surface-4: #1a345b;
-	--surface-5: #f6f6f6;
-	/* white smoke */
-	--surface-6: #091f40;
-	--surface-7: rgba(26, 26, 26, 0.9);
-	--surface-8: #000000;
-	/* black */
-	--surface-9: rgba(0, 0, 0, 0.9);
-	--surface-10: #323232;
-	/* night rider black */
-	--surface-11: rgba(20, 46, 57, 0.8);
-	/* opaque-dark-blue */
-	--surface-12: #1a345b;
-	/* panel */
-	--surface-13: #142744;
-	/* panel active */
-	--surface-14: #1a51a3;
-	--element-1: #ffffff;
-	--element-1-2: rgba(0, 0, 0, 0.2);
-	--element-1-3: rgba(0, 0, 0, 0.3);
-	--element-1-5: rgba(0, 0, 0, 0.5);
-	--element-2: #fafafa;
-	--element-3: #ffffff;
-	--element-4: #eee;
-	--element-4-0: rgba(255, 255, 255, 0);
-	/* transparent element */
-	--element-5: #999999;
-	/* nobel gray */
-	--element-6: #728f98;
-	/* gothic blue */
-	--element-7: #c5203e;
-	/* hash flag red */
-	--element-8: rgba(73, 71, 71, 0.15);
-	--element-9: #969595;
-	/* light nobel gray */
-	--element-10: #dadada;
-	/* gainsboro gray */
-	--element-11: #eeeeee;
-	/*  silver */
-	--element-12: #1a345b;
-	--element-13: #f3eded;
-	/* medium gray */
-	--element-14: #ecf0f1;
-	/* bright gray */
-	--element-15: #be1635;
-	/* pink red */
-	--element-16: #091f40;
-	--element-17: #121212;
-	--element-18: #eba31d;
-	--primary-1: #203ec5;
-	/* hash flag red */
-	--primary-2: #79c5f5;
-	/* light blue */
-	--primary-3: #c5203e;
-	--tertiary-1: #e0e0e0;
-	/* statue gray */
-	--tertiary-2: #d0d0d0;
-	/* concrete gray */
-	--tertiary-3: #4ba3c4;
-	/* slushy blue */
-	--tertiary-4: rgba(0, 0, 0, 0.1);
-	--tertiary-5: #1a3843;
-	/* space blue */
-	--tertiary-6: rgba(35, 76, 91, 1);
-	/* dark greyish blue */
-	--tertiary-6-6: rgba(35, 76, 91, 0.6);
-	/* dark greyish blue */
-	--tertiary-6-7: rgba(35, 76, 91, 0.7);
-	/* dark greyish blue */
-	--tertiary-6-8: rgba(35, 76, 91, 0.8);
-	/* dark greyish blue */
-	--tertiary-7: #e0e0e0;
-	/* teal blue */
-	--tertiary-8: #29596b;
-	/* dull blue */
-	--tertiary-9: #336f85;
-	/* strong blue */
-	--tertiary-10: #ffcc00;
-	/* tangerine yellow */
-	--tertiary-11: #eba31d;
-	/* cerulean blue */
-	--tertiary-14: #316b80;
-	/* ocean blue */
-	--tertiary-15: #eba31d;
-	/* tangaroa blue */
-	--tertiary-17: #eeeeee;
-	/* charcoal */
-	--tertiary-18: #eba31d;
-}
-
-
 /* Navbar */
 
 nav {
@@ -261,6 +54,10 @@ li a {
 	color: white !important;
 }
 
+footer li a {
+	color: black !important;
+}
+
 .nav-links li:hover {
 	transition: 0.3s ease;
 	border-bottom: 1px solid white;
@@ -294,7 +91,13 @@ li a {
 	line-height: 30px;
 }
 
-@media (max-width: 1494px) {
+@media (max-width: 1600px) {
+	.vwc-header {
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 1400px) {
 	.navbar-header {
 		float: none;
 		padding-bottom: 10px;
@@ -344,10 +147,6 @@ li a {
 	.nav-links li:hover {
 		border-bottom: none;
 	}
-
-	.vwc-header {
-		margin-right: 0;
-	}
 }
 
 /* Dark Mode */
@@ -367,7 +166,7 @@ li a {
 	color: #fff;
 }
 
-/*Header*/
+/* Header */
 
 .lead-in {
 	color: #c5203e !important;
@@ -391,7 +190,7 @@ li a {
 	text-align: left;
 	font-style: normal;
 	font-size: .9375rem;
-	text-align: center;
+	text-align: left;
 }
 
 h1 {
@@ -412,7 +211,7 @@ h1 {
 
 /* Form */
 
-.form-inline {
+.job-grabber {
 	margin: 100px 0;
 }
 
@@ -422,18 +221,170 @@ h1 {
 	padding: 12px 0;
 	text-align: center;
 	transition: all .2s ease-in-out;
-	width: 150px;
+	width: 115px;
 	text-transform: capitalize;
 	background-color: #c5203e !important;
 	background-image: none;
+	border: 2 px solid black;
 }
 
-#range, #zipcode, #inlineFormCheck {
-	margin: 15px;
+#submit-button:hover {
+	border: none;
 }
 
-/*Grid*/
-.row {
+/* Grid */
+.gridborder {
 	border: 1px solid lightgrey;
 }
 
+/* footer */
+
+footer {
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	margin-top: 100px;
+}
+
+.footer1-h {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	margin-bottom: 30px;
+	font-size: 1.5rem;
+}
+
+.footer1 {
+	background-color: #1A51A3;
+	color: white;
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.site-link {
+	color: white !important;
+	margin-bottom: 10px;
+}
+
+.site-link:hover {
+	color: #BD2843;
+}
+
+.footer2 {
+	background-color: #091F40;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer2-header {
+	color: #BDC3C7;
+	font-weight: 700;
+	margin-bottom: 20px;
+	font-size: 1.3rem;
+}
+
+.footer3 {
+	background-color: #091F40;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer3-anchor {
+	color: white;
+}
+
+.footer3-anchor:hover {
+	color: #EBA32F;
+}
+
+.footer3-p1 {
+	display: inline;
+}
+
+.footer3-p2 {
+	display: inline;
+	margin-left: 0 auto;
+}
+
+.copyright {
+	float: left;
+}
+
+.byVWC {
+	float: right;
+}
+
+.footer-font-awesome:hover {
+	color: lightblue;
+}
+
+.footer-font-awesome {
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.footer-img {
+	width: 30%;
+}
+
+.footer-icon {
+	color: #f1cb2f;
+}
+
+.footer-li {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+.footer-div1 {
+	padding-right: 50px;
+}
+
+.footer-div2 {
+	padding-left: 50px;
+}
+
+.send-button {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.flag-usa {
+	width: 30px;
+}
+
+.flag-korea {
+	width: 30px;
+}
+
+.div-dropdown {
+	background-color: #286090;
+}
+
+.language-button {
+	margin-top: 20px;
+}
+
+.group-email {
+	margin-bottom: 10px;
+}
+
+.footer-p {
+	line-height: 25px;
+}
+
+@media (max-width: 767px) {
+	.copyright {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+
+	.byVWC {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+}

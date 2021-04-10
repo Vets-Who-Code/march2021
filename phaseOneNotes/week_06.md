@@ -17,12 +17,14 @@ hoist = 'The variable has been hoisted.";
 - let is for global variables that will chance
 - const is for global variables that will **NOT** change. const is good for security purposes and sometimes required. Const is for glocal variables that will NOT change
 - example for let:
-  ```function WhatIsLet(sum) {
+- 
+```
+function whatIsLet(sum) {
      let whatIsThis = " This can be changed is within lexical - or local - scope.";
      return sum + 1;  
-     console.log(whatIsThis) }
-  console.log(whatIsLet(2))```
-- be consistent with semi-colons
+     console.log(whatIsThis) 
+}
+```
 ### Data types
 - string represents textual data	'hello', "hello world!" etc
 - number is an integer or a floating-point number	3, 3.234, 3e-2 etc.
@@ -41,7 +43,6 @@ Window.localStorage - Web APIs | MDN
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
 developer.mozilla.orgdeveloper.mozilla.org
 Window.sessionStorage - Web APIs | MDN
-
 # Day 2
 ## Conditionals, Operators
 ### Conditionals
@@ -115,3 +116,59 @@ arr.splice(1, 1); // from index 1 remove 1 element
 
 console.log( arr ); // ["I", "JavaScript"] 
 ```
+# Day 4
+## Loops 
+### Definition
+- Loops are like interstate loops. It takes you around and around until you reach your desired exit point
+It is a piece of logic that dictates how many times to run something until you reach the designated end point 
+### For Loop
+- for loop is the easiest form of a loop. Very close to an "if" statement but it has more options.
+- Example:
+```
+for(condition; end condition; change){
+    // do it, do it now
+}
+```
+- Another example:
+
+```
+for(var integer = 0; integer < 10; integer = integer++) {
+     console.log("yay!")
+}
+```
+### While Loop
+- Used when you need to break logic. It doesn't increment. 
+- Example:
+
+```
+var i = 0, x = "";
+while (i < 5) {
+    x = x + "The number is " + i;
+    i++;
+}
+```
+### Do While
+- Example
+```
+var i = 0;
+do {
+    console.log(i + " ");
+    i++; // incrementing i by 1  
+} while (i < 100);
+
+```
+### For of Loop
+- Example
+```
+const array1 = ['a', 'b', 'c'];
+for (const element of array1) {
+  console.log(element);
+}
+
+```
+### Break and Continue
+- break; //stops the loop
+- continue; //skips this iteration and goes to the next iteration
+
+### Resources
+- [dark patterns](https://uxdesign.cc/dark-patterns-in-ux-design-7009a83b233c)
