@@ -88,7 +88,7 @@ function submitButtonEvent (event) {
   console.log(formData);
 }
 
-submitButton.addEventListener("click", submitButtonEvent);
+submitButton.addEventListener("submit", submitButtonEvent);
 
 
 
