@@ -68,7 +68,7 @@ for(let i=0; i<job.length; i++){
 innergrid[0].innerHTML=jobposting
 
 
-// console.log(innergrid[0].innerHTML)
+console.log(innergrid[0].innerHTML)
 
 
 
