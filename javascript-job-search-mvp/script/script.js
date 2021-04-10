@@ -59,7 +59,7 @@ for(let i=0; i<job.length; i++){
 
     </div>
   </div>
-</div>`
+</div>
 }
 
 
