@@ -60,16 +60,7 @@ innergrid[0].innerHTML=jobposting
 
 // console.log(innergrid[0].innerHTML)
 
-// class SubmitButtonEvent { 
-//   constructor(job, zipcode, remote, range) {
-//     this.job = job
-//     this.zipCode = zipCode
-//     this.remote = remote
-//     this.range = range
-//     }
-//   }
-// const person1 = new SubmitButtonEvent ("Web Developer", 97504, 0, 5) 
-// console.log(person1)
+
 
 // All variables for Submit Button 
 const submitButton = document.getElementById("submit-button");
@@ -96,11 +87,4 @@ submitButton.addEventListener("click", submitButtonEvent);
 
 
 
-// 2. Get values of each element (Values of jobTitle, isRemote, radius, zipCode) console log those
-
-
-
-//on submit create object {job: 'web developer', zipCode: 97504, remote: 0, range:5} using the inputs from the form
-// Then console log that the object was created.
-// Values of jobTitle, isRemote, radius, zipCode
 
