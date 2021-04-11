@@ -90,8 +90,12 @@ footer li a {
 }
 
 .donate {
-	background-color: #AB1534;
+	background-color: #203EC5;
 	border-radius: 2px;
+}
+
+.donate:hover {
+	background-color: #AB1534;
 }
 
 .nav-links .donate:hover,
