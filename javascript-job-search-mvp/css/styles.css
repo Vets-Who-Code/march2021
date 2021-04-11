@@ -40,11 +40,14 @@ nav {
 	background-color: #091F40;
 }
 
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.active>a {
 	background-image: none;
 }
 
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
 	background-color: #091F40 !important;
 }
 
@@ -109,11 +112,11 @@ footer li a {
 
 @media (max-width: 1600px) {
 	.vwc-header {
-		margin-right: 5px;
+		margin-right: 75px;
 	}
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
 	.navbar-header {
 		float: none;
 		padding-bottom: 10px;
