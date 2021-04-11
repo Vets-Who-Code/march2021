@@ -13,8 +13,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://code.jquery.com/jquery-2.2.4.js"
-		integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js">
 	</script>
 	<!--Typed.js-->
@@ -66,10 +66,15 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-center nav-links">
 						<li><a href="https://vetswhocode.io/"><span class="link-name">Home</span></a></li>
-						<li><a href="https://vetswhocode.io/about"><span class="link-name">About</span></a></li>
-						<li><a href="https://vetswhocode.io/board"><span class="link-name">Board</span></a></li>
-						<li><a href="https://vetswhocode.io/testimonials"><span
-									class="link-name">Testimonials</span></a></li>
+						<li class="dropdown">
+							<a href="https://vetswhocode.io/about" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false"><span class="link-name">About</span><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="https://vetswhocode.io/about"><span class="link-name">About</span></a></li>
+								<li><a href="https://vetswhocode.io/board"><span class="link-name">Board</span></a></li>
+								<li><a href="https://vetswhocode.io/testimonials"><span	class="link-name">Testimonials</span></a></li>
+							</ul>
+						</li>
 						<li><a href="https://vetswhocode.io/syllabus"><span class="link-name">Syllabus</span></a></li>
 						<li><a href="https://vetswhocode.io/mentor"><span class="link-name">Mentor</span></a></li>
 						<li><a href="https://vetswhocode.io/apply"><span class="link-name">Apply</span></a></li>
@@ -78,7 +83,8 @@
 						<li><a href=""><span class="link-name">Job Search</span></a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li class="moon-li" tabindex="0"><a class="moon" onclick="darkMode()"><i class="fas fa-moon fa-2x"></i></a></li>
+						<li class="moon-li" tabindex="0"><a class="moon" onclick="darkMode()"><i class="fas fa-moon fa-2x"></i></a>
+						</li>
 						<li class="donate"><a href="https://vetswhocode.io/donate"><span class="link-name">Donate</span></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -91,8 +97,8 @@
 			<h1>Job Search</h1>
 			<p class="lead-in">#VetsWhoCode <span id="typed"></span></span></p>
 			<div id="typed-strings">
-     			<p>provides job placement assistance.</p>
-     			<p>makes a difference in the lives of veterans.</p>
+				<p>provides job placement assistance.</p>
+				<p>makes a difference in the lives of veterans.</p>
 			</div>
 			<p class="job-search-description">
 				Vets Who Code Job Search (VWC) is a tool for connecting veterans, military, and military spouses with jobs.
@@ -108,7 +114,7 @@
 
 				<input class="form-check-input" type="checkbox" id="inlineFormCheck">
 				<label class="form-check-label" for="inlineFormCheck">
-						Remote?
+					Remote?
 				</label>
 
 				<div class="form-group" id="sel1">
@@ -124,7 +130,8 @@
 						<option>200 mi.</option>
 					</select>
 				</div>
-				<button id="submit-button" type="submit" class="btn btn-primary mb-2"><i class="glyphicon glyphicon-search"> Search</i></button>
+				<button id="submit-button" type="submit" class="btn btn-primary mb-2"><i class="glyphicon glyphicon-search">
+						Search</i></button>
 			</form>
 
 			<!-- Grid -->
@@ -133,7 +140,6 @@
 			</div>
 		</div>
 	</main>
-	</div>
 
 	<footer>
 		<div class="row footer1">
@@ -141,8 +147,8 @@
 				<h3 class="footer1-h">KEEP IN TOUCH</h3>
 				<a class="footer-font-awesome" target="_blank" href="https://twitter.com/vetswhocode"><i
 						class="fab fa-twitter fa-2x"></i></a>
-				<a class="footer-font-awesome" target="_blank"
-					href="https://www.facebook.com/TheOfficialVetsWhoCode/"><i class="fab fa-facebook-f fa-2x"></i></a>
+				<a class="footer-font-awesome" target="_blank" href="https://www.facebook.com/TheOfficialVetsWhoCode/"><i
+						class="fab fa-facebook-f fa-2x"></i></a>
 				<a class="footer-font-awesome" target="_blank" href="https://github.com/Vets-Who-Code"><i
 						class="fab fa-github fa-2x"></i></a>
 				<a class="footer-font-awesome" target="_blank" href="https://www.linkedin.com/company/vets-who-code/"><i
@@ -164,33 +170,33 @@
 					<div class="row">
 						<div class="col-md-6">
 							<ul>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/"> HOME</a></li>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/about"> ABOUT</a></li>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/board"> BOARD</a></li>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/syllabus"> SYLLASBUS</a></li>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/testimonials"> TESTIMONIALS</a>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/"> HOME</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/about"> ABOUT</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/board"> BOARD</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/syllabus"> SYLLASBUS</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/testimonials"> TESTIMONIALS</a>
 								</li>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href=""> JOB SEARCH</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link" href=""> JOB
+										SEARCH</a></li>
 							</ul>
 						</div>
 						<div class="col-md-6">
 							<ul>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/mentor"> MENTOR</a></li>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/apply"> APPLY</a></li>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/donate"> DONATE</a></li>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/contact"> CONTACT US</a></li>
-								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a
-										class="site-link" href="https://vetswhocode.io/blog"> BLOG</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/mentor"> MENTOR</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/apply"> APPLY</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/donate"> DONATE</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/contact"> CONTACT US</a></li>
+								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
+										href="https://vetswhocode.io/blog"> BLOG</a></li>
 							</ul>
 						</div>
 					</div>
