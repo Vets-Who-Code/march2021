@@ -1,21 +1,19 @@
 console.log('Hello, Vets Who Code!');
 
-//Type.js
+//Typed.js
 var typed = new Typed('#typed',{
-                    stringsElement: '#typed-strings',
-                    backSpeed: 50,
-                    typeSpeed: 50,
-                    loop: true,
-                    startDelay: 1000,
-                    backDelay: 3000
-                  });
+  stringsElement: '#typed-strings',
+  backSpeed: 50,
+  typeSpeed: 50,
+  loop: true,
+  startDelay: 1000,
+  backDelay: 3000
+});
 
 //Dark Mode
 const darkMode = () => {
   const body = document.body;
-  const button = document.getElementsByClassName('btn-primary');
   body.classList.toggle("dark-background");
-  button.classList.toggle("dark-buttons");
 }
 
 //Grid
