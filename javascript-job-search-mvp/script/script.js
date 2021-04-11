@@ -85,7 +85,7 @@ function submitButtonEvent (event) {
   localStorage.setItem("radius",  event.currentTarget[2].value);
 }
 //this listens for the form to submit.
-jobSearch.addEventListener("onsubmit", submitButtonEvent);   
+jobSearch.addEventListener("submit", submitButtonEvent);   
 
 
 
