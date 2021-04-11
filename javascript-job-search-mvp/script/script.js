@@ -73,22 +73,22 @@ console.log(innergrid[0].innerHTML)
 
 
 // All variables for Submit Button 
-const submitButton = document.getElementById("submit-button");
+const jobSearch = document.getElementById("job-search");
 const zipCode = document.getElementById("zipCode");
 const isRemote = document.getElementById("inlineFormCheck");
 const range = document.getElementById("range");
-const formData = {};
 
 // Triggers the function when the search button is clicked
 function submitButtonEvent (event) {
-  event.preventDefault()
-  formData.zipCode = zipCode.value;
-  formData.isRemote = isRemote.checked;
-  formData.range = range.value;
-  console.log(formData);
+  event.preventDefault();
+  localStorage.setItem("job", "Web Developer");
+  localStorage.setItem("zipcode",  event.currentTarget[0].value);
+  localStorage.setItem("remote",  event.currentTarget[1].value);
+  localStorage.setItem("radius",  event.currentTarget[2].value);
 }
+//this listens for the form to submit.
+jobSearch.addEventListener("onsubmit", submitButtonEvent);   
 
-submitButton.addEventListener("submit", submitButtonEvent);
 
 
 
