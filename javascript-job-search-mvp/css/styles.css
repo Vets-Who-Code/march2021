@@ -165,7 +165,7 @@ footer li a {
 
 .dark-buttons {
 	background-color: #203ec5;
-	border: 1px solid var(--element-3);
+	border: 1px solid #091f40;
 }
 
 .dark-buttons:hover {
@@ -227,7 +227,7 @@ h1 {
 	margin: 100px 0;
 }
 
-#submit-button {
+.submit-button {
 	border-radius: 2px;
 	font-size: .875rem;
 	padding: 12px 0;
@@ -237,10 +237,10 @@ h1 {
 	text-transform: capitalize;
 	background-color: #c5203e !important;
 	background-image: none;
-	border: 2 px solid black;
+	border: 1px solid black;
 }
 
-#submit-button:hover {
+.submit-button:hover {
 	border: none;
 }
 
