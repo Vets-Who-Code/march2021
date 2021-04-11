@@ -1,6 +1,6 @@
 console.log('Hello, Vets Who Code!');
 
-//Typed.js
+//Type.js
 var typed = new Typed('#typed',{
                     stringsElement: '#typed-strings',
                     backSpeed: 50,
@@ -13,9 +13,9 @@ var typed = new Typed('#typed',{
 //Dark Mode
 const darkMode = () => {
   const body = document.body;
-  /*const button = document.querySelectorAll("submit-button");*/
+  const button = document.getElementsByClassName('btn-primary');
   body.classList.toggle("dark-background");
-  /*button.classList.toggle("dark-buttons");*/
+  button.classList.toggle("dark-buttons");
 }
 
 //Grid
@@ -59,7 +59,7 @@ for(let i=0; i<job.length; i++){
 
     </div>
   </div>
-</div>
+</div>`
 }
 
 
