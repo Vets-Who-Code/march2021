@@ -113,7 +113,7 @@ footer li a {
 	}
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
 	.navbar-header {
 		float: none;
 		padding-bottom: 10px;
