@@ -11,11 +11,6 @@ nav {
 
 .navbar-default {
 	background-image: none;
-	background-image: none;
-	background-image: none;
-	background-image: none;
-	background-image: none;
-	background-image: none;
 	background-repeat: no-repeat;
 	filter: none;
 	background-color: #091F40;
@@ -34,6 +29,23 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.dropdown-menu {
+	background-color: #091F40;
+}
+
+.dropdown-menu>li>a:hover {
+	background-image: none;
+	background-color: #091F40;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .active > a {
+	background-image: none;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color: #091F40 !important;
 }
 
 .vwc-header {
