@@ -172,3 +172,4 @@ for (const element of array1) {
 
 ### Resources
 - [dark patterns](https://uxdesign.cc/dark-patterns-in-ux-design-7009a83b233c)
+- [learn Javascript](gitbook.gitbook.io/learn-javascript/)
