@@ -28,7 +28,7 @@
 	<!-- Local CSS -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<!-- Favicons -->
+	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_v0/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_v0/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_v0/favicon-16x16.png">
@@ -68,11 +68,12 @@
 						<li><a href="https://vetswhocode.io/"><span class="link-name">Home</span></a></li>
 						<li class="dropdown">
 							<a href="https://vetswhocode.io/about" class="dropdown-toggle" data-toggle="dropdown" role="button"
-								aria-haspopup="true" aria-expanded="false"><span class="link-name">About</span><span class="caret"></span></a>
+								aria-haspopup="true" aria-expanded="false"><span class="link-name">About</span><span
+									class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="https://vetswhocode.io/about"><span class="link-name">About</span></a></li>
 								<li><a href="https://vetswhocode.io/board"><span class="link-name">Board</span></a></li>
-								<li><a href="https://vetswhocode.io/testimonials"><span	class="link-name">Testimonials</span></a></li>
+								<li><a href="https://vetswhocode.io/testimonials"><span class="link-name">Testimonials</span></a></li>
 							</ul>
 						</li>
 						<li><a href="https://vetswhocode.io/syllabus"><span class="link-name">Syllabus</span></a></li>
@@ -85,7 +86,8 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li class="moon-li" tabindex="0"><a class="moon" onclick="darkMode()"><i class="fas fa-moon fa-2x"></i></a>
 						</li>
-						<li class="donate"><a href="https://vetswhocode.io/donate"><span class="link-name">Donate</span></a></li>
+						<li class="donate" id="donate"><a href="https://vetswhocode.io/donate"><span
+									class="link-name">Donate</span></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -130,7 +132,8 @@
 						<option value="200">200 mi.</option>
 					</select>
 				</div>
-				<button id="submit-button" type="submit" class="btn btn-primary mb-2 submit-button"><i class="glyphicon glyphicon-search">
+				<button id="submit-button" type="submit" class="btn btn-primary mb-2 submit-button"><i
+						class="glyphicon glyphicon-search">
 						Search</i></button>
 			</form>
 
@@ -177,7 +180,7 @@
 								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
 										href="https://vetswhocode.io/board"> BOARD</a></li>
 								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
-										href="https://vetswhocode.io/syllabus"> SYLLASBUS</a></li>
+										href="https://vetswhocode.io/syllabus"> SYLLABUS</a></li>
 								<li class="footer-li"><i class="far fa-circle fa-xs footer-icon"></i><a class="site-link"
 										href="https://vetswhocode.io/testimonials"> TESTIMONIALS</a>
 								</li>
@@ -212,7 +215,7 @@
 							<label class="group-email" for="exampleInputPassword1">Message</label>
 							<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Message">
 						</div>
-						<button type="submit" class="btn btn-primary send-button">Send</button>
+						<button type="submit" class="btn btn-primary send-button" id="send-button">Send</button>
 					</form>
 				</div>
 			</div>
@@ -229,7 +232,7 @@
 	</footer>
 	<!-- country-selector -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-	<script src="script/script.js"></script>
+	<script src="scripts/script.js"></script>
 </body>
 
 </html>
