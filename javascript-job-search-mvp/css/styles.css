@@ -32,12 +32,13 @@ nav {
 }
 
 .dropdown-menu {
-	background-color: #091F40;
+	background-color: #fff;
 }
 
 .dropdown-menu>li>a:hover {
 	background-image: none;
 	background-color: #091F40;
+	color: #fff !important;
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -137,7 +138,7 @@ footer li a {
 	}
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1370px) {
 	.navbar-header {
 		float: none;
 		padding-bottom: 10px;
@@ -438,6 +439,7 @@ footer {
 
 .footer-p {
 	line-height: 25px;
+	margin: 0 0 20px 0;
 }
 
 @media (max-width: 767px) {
