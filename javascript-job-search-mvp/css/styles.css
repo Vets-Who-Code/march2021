@@ -431,6 +431,7 @@ footer {
 
 .footer-p {
 	line-height: 25px;
+	margin: 0 0 20px 0;
 }
 
 @media (max-width: 767px) {
