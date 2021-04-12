@@ -74,8 +74,16 @@ footer li a {
 }
 
 .nav-links li:hover {
-	transition: 0.3s ease-in;
+	transition: 0.2s ease-in;
 	border-bottom: 1px solid white;
+}
+
+.nav-links .drop:hover {
+	border-bottom: none;
+}
+
+.nav-links .drop .link-name:hover {
+	color: #f1cb2f !important;
 }
 
 .moon {
