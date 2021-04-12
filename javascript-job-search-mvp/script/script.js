@@ -16,57 +16,9 @@ const darkMode = () => {
   body.classList.toggle("dark-background");
 }
 
-//Grid
-let innergrid = document.getElementsByClassName('jobgrid')
-
-let job=[{Title:"Application Engineer", Company:"Google", Location:"San Francisco", ApplicationSite: "https://google.com/careers", DateSincePosted: "18 Days ago", FullOrPartTime: "Full Time"},
-          {Title:"Technical Evangelist", Company:"Eco Focus", Location:"San Francisco", ApplicationSite: "https://ecofocus.com/jobs", DateSincePosted: "> 30 Days ago", FullOrPartTime: "Full Time"},
-          {Title:"Digital Overlord", Company:"Innovation Arch", Location:"Houston", ApplicationSite: "https://innoarch.com/positions", DateSincePosted: "5 hours ago", FullOrPartTime: "Part Time"},
-          {Title:"Skynet Operator", Company:"Cogent Security", Location:"Seattle", ApplicationSite: "https://skynet.com/life", DateSincePosted: "Just now", FullOrPartTime: "Full Time"},
-          {Title:"JavaScript Guru", Company:"Felar Corp", Location:"Austin", ApplicationSite: "https://felarcorp.com/careers", DateSincePosted: "5 days ago", FullOrPartTime: "Part Time"},
-          {Title:"Object Oriented Sherpa", Company:"Sanguine Skincare", Location:"Denver", ApplicationSite: "https://s2skin.com/careers", DateSincePosted: "5 hours ago", FullOrPartTime: "Part Time"},
-          {Title:"Scrum Advisor", Company:"Senzu Bean", Location:"Chicago", ApplicationSite: "https://beans.com/team", DateSincePosted: "> 30 Days ago", FullOrPartTime: "Full Time"},
-          {Title:"Growth Hacker", Company:"Ultra Instinct", Location:"New York", ApplicationSite: "https://UI.com/apply", DateSincePosted: "> 30 Days ago", FullOrPartTime: "N/A"},
-          {Title:"Python Prophet", Company:"Ranger Powers", Location:"Seattle", ApplicationSite: "https://RangerPowers.com/careers", DateSincePosted: "5 hours ago", FullOrPartTime: "Full Time"},
-          { Title:"Six Sigma Blackbelt Coder", Company:"Gold Requisitions", Location:"Atlanta", ApplicationSite: "https://goldreqs.com/apply", DateSincePosted: "18 Days ago", FullOrPartTime: "Full Time"}]
-
-let jobposting=""
-
-for(let i=0; i<job.length; i++){
-  jobposting +=`<div class="row gridborder">
-  <div class="col-sm-12">
-
-    <!-- Middle Content Column of Grid -->
-    <div class="col-sm-8 grid-content-column">
-      <div class="row">${job[i].Title}</div>
-      <div class="row">${job[i].Company}</div>
-      <div class="row">${job[i].Location} </div>
-      <div class="row">${job[i].ApplicationSite}</div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="col-md-6">${job[i].DateSincePosted}</div> 
-          <div class="col-md-6">${job[i].FullOrPartTime}</div> 
-        </div>
-      </div>
-    </div>
-
-    <!-- Last Column, should be small for bookmark -->
-    <div class="col-sm-2 grid-bookmark-column">
-      <div class="col-md-1"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span></div>
-      <!-- Bookmark Icon -->
-
-    </div>
-  </div>
-</div>`
-}
 
 
 
-
-innergrid[0].innerHTML=jobposting
-
-
-console.log(innergrid[0].innerHTML)
 
 
 
@@ -83,6 +35,38 @@ function submitButtonEvent (event) {
   localStorage.setItem("zipcode",  event.currentTarget[0].value);
   localStorage.setItem("remote",  event.currentTarget[1].value);
   localStorage.setItem("radius",  event.currentTarget[2].value);
+  //Grid
+let innergrid = document.getElementsByClassName('jobgrid')
+
+let job=[{Title:"Application Engineer", Company:"Google", Salary:"$120,000", Location:"San Francisco", ApplicationSite: "https://google.com/careers", DateSincePosted: "18 Days ago", FullOrPartTime: "Full Time"},
+          {Title:"Technical Evangelist", Company:"Eco Focus", Salary:"Intern", Location:"San Francisco", ApplicationSite: "https://ecofocus.com/jobs", DateSincePosted: "> 30 Days ago", FullOrPartTime: "Full Time"},
+          {Title:"Digital Overlord", Company:"Innovation Arch", Salary:"$189,000", Location:"Houston", ApplicationSite: "https://innoarch.com/positions", DateSincePosted: "5 hours ago", FullOrPartTime: "Part Time"},
+          {Title:"Skynet Operator", Company:"Cogent Security", Salary:"$150,000", Location:"Seattle", ApplicationSite: "https://skynet.com/life", DateSincePosted: "Just now", FullOrPartTime: "Full Time"},
+          {Title:"JavaScript Guru", Company:"Felar Corp", Salary:"$69,000", Location:"Austin", ApplicationSite: "https://felarcorp.com/careers", DateSincePosted: "5 days ago", FullOrPartTime: "Part Time"},
+          {Title:"Object Oriented Sherpa", Company:"Sanguine Skincare", Salary:"$89,000", Location:"Denver", ApplicationSite: "https://s2skin.com/careers", DateSincePosted: "5 hours ago", FullOrPartTime: "Part Time"},
+          {Title:"Scrum Advisor", Company:"Senzu Bean", Salary:"$105,000", Location:"Chicago", ApplicationSite: "https://beans.com/team", DateSincePosted: "> 30 Days ago", FullOrPartTime: "Full Time"},
+          {Title:"Growth Hacker", Company:"Ultra Instinct", Salary:"$95,000", Location:"New York", ApplicationSite: "https://UI.com/apply", DateSincePosted: "> 30 Days ago", FullOrPartTime: "N/A"},
+          {Title:"Python Prophet", Company:"Ranger Powers", Salary:"$72,000", Location:"Seattle", ApplicationSite: "https://RangerPowers.com/careers", DateSincePosted: "5 hours ago", FullOrPartTime: "Full Time"},
+          {Title:"Six Sigma Blackbelt Coder", Company:"Gold Requisitions", Salary:"$120,000", Location:"Atlanta", ApplicationSite: "https://goldreqs.com/apply", DateSincePosted: "18 Days ago", FullOrPartTime: "Full Time"}]
+
+let jobposting=""
+
+for(let i=0; i<job.length; i++){
+  jobposting +=`<div class="">
+      <div class="grid-container">
+        <div class="grid-item grid-item-1">${job[i].Title}</div>
+        <div class="grid-item grid-item-2">${job[i].Salary}</div>
+        <div class="grid-item grid-item-3"><a id="bookmark-this" href="${job[i].ApplicationSite}" title="Bookmark This Page">Bookmark This Page</a></div>
+        <div class="grid-item grid-item-4">${job[i].Company} ${job[i].Location}</div>
+        <div class="grid-item grid-item-5">${job[i].DateSincePosted}</div>
+        <div class="grid-item grid-item-5">${job[i].FullOrPartTime}</div>
+      </div>`
+}
+
+innergrid[0].innerHTML=jobposting
+
+
+
 }
 //this listens for the form to submit.
 jobSearch.addEventListener("submit", submitButtonEvent);   
