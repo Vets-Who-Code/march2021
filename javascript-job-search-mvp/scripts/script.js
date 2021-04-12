@@ -17,6 +17,8 @@ const darkMode = () => {
   const body = document.body;
   body.classList.toggle("dark-background");
   document.getElementById("donate").classList.toggle('dark-theme')
+  document.getElementById("send-button").classList.toggle("dark-theme");
+  document.getElementById("submit-button").classList.toggle("dark-theme");
 }
 
 //Grid

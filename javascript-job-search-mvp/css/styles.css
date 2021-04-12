@@ -260,7 +260,15 @@ h1 {
 }
 
 .submit-button:hover {
-	border: none;
+	background-color: #203ec5 !important;
+}
+
+.submit-button.dark-theme {
+	background-color: #203EC5 !important;
+}
+
+.submit-button.dark-theme:hover {
+	background-color: #c5203e !important;
 }
 
 /* Grid */
@@ -381,9 +389,23 @@ footer {
 .send-button {
 	width: 100%;
 	margin-top: 10px;
+	background-image: none;
+	background-color: #c5203e !important;
 }
 
-.flag-usa {
+.send-button:hover {
+	background-color: #203ec5 !important;
+}
+
+.send-button.dark-theme {
+	background-color: #203ec5 !important;
+}
+
+.send-button.dark-theme:hover {
+	background-color: #c5203e !important;
+}
+
+.send-button.dark-them .flag-usa {
 	width: 30px;
 }
 
