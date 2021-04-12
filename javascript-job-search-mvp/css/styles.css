@@ -40,11 +40,14 @@ nav {
 	background-color: #091F40;
 }
 
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.active>a {
 	background-image: none;
 }
 
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
 	background-color: #091F40 !important;
 }
 
@@ -89,9 +92,25 @@ footer li a {
 	line-height: 35px;
 }
 
+.moon-li {
+	margin-right: 5px;
+}
+
 .donate {
 	background-color: #AB1534;
 	border-radius: 2px;
+}
+
+.donate:hover {
+	background-color: #203EC5;
+}
+
+.donate.dark-theme {
+	background-color: #203EC5;
+}
+
+.donate.dark-theme:hover {
+	background-color: #AB1534;
 }
 
 .nav-links .donate:hover,
@@ -105,11 +124,11 @@ footer li a {
 
 @media (max-width: 1600px) {
 	.vwc-header {
-		margin-right: 5px;
+		margin-right: 75px;
 	}
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1350px) {
 	.navbar-header {
 		float: none;
 		padding-bottom: 10px;
@@ -241,7 +260,15 @@ h1 {
 }
 
 .submit-button:hover {
-	border: none;
+	background-color: #203ec5 !important;
+}
+
+.submit-button.dark-theme {
+	background-color: #203EC5 !important;
+}
+
+.submit-button.dark-theme:hover {
+	background-color: #c5203e !important;
 }
 
 /* Grid */
@@ -431,9 +458,23 @@ footer {
 .send-button {
 	width: 100%;
 	margin-top: 10px;
+	background-image: none;
+	background-color: #c5203e !important;
 }
 
-.flag-usa {
+.send-button:hover {
+	background-color: #203ec5 !important;
+}
+
+.send-button.dark-theme {
+	background-color: #203ec5 !important;
+}
+
+.send-button.dark-theme:hover {
+	background-color: #c5203e !important;
+}
+
+.send-button.dark-them .flag-usa {
 	width: 30px;
 }
 
