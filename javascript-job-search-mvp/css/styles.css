@@ -92,6 +92,10 @@ footer li a {
 	line-height: 35px;
 }
 
+.moon-li {
+	margin-right: 5px;
+}
+
 .donate {
 	background-color: #AB1534;
 	border-radius: 2px;
