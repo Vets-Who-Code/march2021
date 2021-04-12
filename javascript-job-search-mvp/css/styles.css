@@ -93,11 +93,19 @@ footer li a {
 }
 
 .donate {
-	background-color: #203EC5;
+	background-color: #AB1534;
 	border-radius: 2px;
 }
 
 .donate:hover {
+	background-color: #203EC5;
+}
+
+.donate.dark-theme {
+	background-color: #203EC5;
+}
+
+.donate.dark-theme:hover {
 	background-color: #AB1534;
 }
 

@@ -16,6 +16,7 @@ var typed = new Typed('#typed', {
 const darkMode = () => {
   const body = document.body;
   body.classList.toggle("dark-background");
+  document.getElementById("donate").classList.toggle('dark-theme')
 }
 
 //Grid
