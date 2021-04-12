@@ -74,7 +74,7 @@ footer li a {
 }
 
 .nav-links li:hover {
-	transition: 0.3s ease;
+	transition: 0.3s ease-in;
 	border-bottom: 1px solid white;
 }
 
@@ -99,6 +99,7 @@ footer li a {
 .donate {
 	background-color: #AB1534;
 	border-radius: 2px;
+	transition: all .2s ease-in-out;
 }
 
 .donate:hover {
@@ -391,6 +392,7 @@ footer {
 	margin-top: 10px;
 	background-image: none;
 	background-color: #c5203e !important;
+	transition: all .2s ease-in-out;
 }
 
 .send-button:hover {
