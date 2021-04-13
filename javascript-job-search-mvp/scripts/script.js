@@ -24,78 +24,130 @@ const darkMode = () => {
 //Grid
 
 let innergrid = document.getElementsByClassName('jobgrid')
-
+//sort this
 let job = [{
     Title: "Application Engineer",
     Company: "Google",
     Location: "San Francisco, CA",
     JobSnippet: "Application Engineers understand internal processes and what it takes to run Google at speed with its ever growing scale. As an Application Engineer...",
-    DateSincePosted: "18 Days ago"
+    DateSincePosted: "18 Days ago",
+    Location: "San Francisco",
+    ApplicationSite: "https://google.com/careers",
+    DateSincePosted: "18 Days ago",
+    FullOrPartTime: "Full Time",
+    sortOrder: 18
   },
   {
     Title: "Technical Evangelist",
     Company: "Eco Focus",
     Location: "San Francisco, CA",
     JobSnippet: "Demonstrated proficiency in iSeries technical standards. Working knowledge in the appropriate technical language.",
-    DateSincePosted: "> 30 Days ago"
+    DateSincePosted: "> 30 Days ago",
+    Location: "San Francisco",
+    ApplicationSite: "https://ecofocus.com/jobs",
+    DateSincePosted: "> 30 Days ago",
+    FullOrPartTime: "Full Time",
+    sortOrder: 31
   },
   {
     Title: "Digital Overlord",
     Company: "Innovation Arch",
     Location: "Houston, TX",
     JobSnippet: "Digital overlord If you have ever worked on a website, you know this term is fitting for the role.",
-    DateSincePosted: "5 hours ago"
+    DateSincePosted: "5 hours ago",
+    Location: "Houston",
+    ApplicationSite: "https://innoarch.com/positions",
+    DateSincePosted: "Today",
+    FullOrPartTime: "Part Time",
+    sortOrder: 1
   },
   {
     Title: "Skynet Operator",
     Company: "Cogent Security",
     Location: "Seattle, WA",
     JobSnippet: "Good analytical skills Good communication and documentation skills Be able to work under pressure Be willing to work long hours and meet deadlines if required",
-    DateSincePosted: "Just now"
+    DateSincePosted: "Just now",
+    Location: "Seattle",
+    ApplicationSite: "https://skynet.com/life",
+    DateSincePosted: "Today",
+    FullOrPartTime: "Full Time",
+    sortOrder: 1
   },
   {
     Title: "JavaScript Guru",
     Company: "Felar Corp",
     Location: "Austin, TX",
     JobSnippet: "Two or more years experience developing front end websites and applications.The ideal candidate is someone who’s a web guru that will be a key part of our…",
-    DateSincePosted: "5 days ago"
+    DateSincePosted: "5 days ago",
+    Location: "Austin",
+    ApplicationSite: "https://felarcorp.com/careers",
+    DateSincePosted: "5 days ago",
+    FullOrPartTime: "Part Time",
+    sortOrder: 5
   },
   {
     Title: "Object Oriented Sherpa",
     Company: "Sanguine Skincare",
     Location: "Denver, CO",
     JobSnippet: "Demonstrate an understanding of the basics of object oriented programming. Work both autonomously and within a team environment.",
-    DateSincePosted: "5 hours ago"
+    DateSincePosted: "5 hours ago",
+    Location: "Denver",
+    ApplicationSite: "https://s2skin.com/careers",
+    DateSincePosted: "Today",
+    FullOrPartTime: "Part Time",
+    sortOrder: 1
   },
   {
     Title: "Scrum Advisor",
     Company: "Senzu Bean",
     Location: "Chicago, IL",
     JobSnippet: "Attend all weekly planning meetings, scrum meetings (all online), and potentially client meetings. This role is integral to our growing Web Production Team,…",
-    DateSincePosted: "> 30 Days ago"
+    DateSincePosted: "> 30 Days ago",
+    Location: "Chicago",
+    ApplicationSite: "https://beans.com/team",
+    DateSincePosted: "> 30 Days ago",
+    FullOrPartTime: "Full Time",
+    sortOrder: 31
   },
   {
     Title: "Growth Hacker",
     Company: "Ultra Instinct",
     Location: "New York, NY",
     JobSnippet: "Keep one eye on surpassing growth targets and the other on effective customer acquisition spending. Possess a combination of clever thinking and technical know…",
-    DateSincePosted: "> 30 Days ago"
+    DateSincePosted: "> 30 Days ago",
+    Location: "New York",
+    ApplicationSite: "https://UI.com/apply",
+    DateSincePosted: "> 30 Days ago",
+    FullOrPartTime: "N/A",
+    sortOrder: 31
   },
   {
     Title: "Python Prophet",
     Company: "Ranger Powers",
     Location: "Seattle, WA",
     JobSnippet: "Top-notch developers needed to help fuel our rapid expansion. We offer a 401(k) with 100% match of up to 4% of salary, with immediate…",
-    DateSincePosted: "5 hours ago"
+    DateSincePosted: "5 hours ago",
+    Location: "Seattle",
+    ApplicationSite: "https://RangerPowers.com/careers",
+    DateSincePosted: "Today",
+    FullOrPartTime: "Full Time",
+    sortOrder: 1
   },
   {
     Title: "Six Sigma Blackbelt Coder",
     Company: "Gold Requisitions",
     Location: "Atlanta, GA",
     JobSnippet: "Design Quality Black Belt. The Role: The Design Quality Black Belt has several roles at Hunter Douglas: The DFSS practice leader for organization teaching,…",
-    DateSincePosted: "18 Days ago"
+    DateSincePosted: "18 Days ago",
+    Location: "Atlanta",
+    ApplicationSite: "https://goldreqs.com/apply",
+    DateSincePosted: "18 Days ago",
+    FullOrPartTime: "Full Time",
+    sortOrder: 18
   }
 ]
+
+job.sort(function(a,b) {return a.sortOrder-b.sortOrder});
 
 let jobposting = ""
 
