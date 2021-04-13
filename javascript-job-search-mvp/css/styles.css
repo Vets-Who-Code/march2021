@@ -289,57 +289,56 @@ h1 {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
-	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	grid-gap: 0;
-	border: 2px solid #091f40;
+	border: 2px solid #333;
 	border-radius: 5px;
-	color: black;
-}
-
-  @media only screen and  (max-width: 600px) {
-	.grid-container {
-  	display: grid;
-  	grid-template-columns: auto;
-  	grid-template-rows: 1fr 1fr 1fr 2fr;
-  	grid-gap: 0;
-  	border: 2px solid #091f40;
-  	border-radius: 5px;
-  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1223px) {
 	.grid-container {
 		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
 		grid-gap: 0;
 		border: 2px solid #091f40;
 		border-radius: 5px;
 	}
 }
 
+  @media only screen and  (max-width: 600px) {
+	.grid-container {
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: 1fr 2fr 1fr;
+  	grid-gap: 0;
+  	border: 2px solid #091f40;
+  	border-radius: 5px;
+  }
+}
+
   .grid-item {
 	background-color: #FFF;
-	padding: 3px;
+	color: #333;
 	/* border: 1px solid black; */
   }
 
   .grid-item-1 {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: bold;
   }
 
   .grid-item-2 {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
   }
 
   .grid-item-3 {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
   }
 
   .grid-item-4 {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	color: #696969;
   }
@@ -350,35 +349,6 @@ h1 {
   	color: #696969;
   }
 
-  #bookmark-this {
-	padding: 5px 10px;
-	background-color: #c5203e;
-	border: 1px solid #b11c38;
-	border-radius: 4px;
-	font-size: 16px;
-	color: #fff;
-	text-decoration: none;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
-  }
-
-  #bookmark-this:hover {
-	background-color: #c5203e;
-	border: 1px solid #b11c38;
-	text-decoration: none;
-  }
-
-  #bookmark-this:active {
-	background-color: #c5203e;
-	border: 1px solid #b11c38;
-	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
-  }
 
 /* footer */
 
