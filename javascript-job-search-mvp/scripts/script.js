@@ -165,7 +165,7 @@ function submitButtonEvent(event) {
   let jobposting = ""
 
   for (let i = 0; i < job.length; i++) {
-    jobposting +=`<a href="${job[i].ApplicationSite}"><div class="">
+    jobposting +=`<a href="${job[i].ApplicationSite} target="blank" rel="noopener noreferrer"><div class="">
         <div class="grid-container">
           <div class="grid-item grid-item-1">${job[i].Title}</div>
           <div class="grid-item grid-item-2">${job[i].Company}</div>
