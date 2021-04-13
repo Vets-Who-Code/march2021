@@ -24,14 +24,15 @@ const darkMode = () => {
 //Grid
 
 let innergrid = document.getElementsByClassName('jobgrid')
-
+//sort this
 let job = [{
     Title: "Application Engineer",
     Company: "Google",
     Location: "San Francisco",
     ApplicationSite: "https://google.com/careers",
     DateSincePosted: "18 Days ago",
-    FullOrPartTime: "Full Time"
+    FullOrPartTime: "Full Time",
+    sortOrder: 18
   },
   {
     Title: "Technical Evangelist",
@@ -39,23 +40,26 @@ let job = [{
     Location: "San Francisco",
     ApplicationSite: "https://ecofocus.com/jobs",
     DateSincePosted: "> 30 Days ago",
-    FullOrPartTime: "Full Time"
+    FullOrPartTime: "Full Time",
+    sortOrder: 31
   },
   {
     Title: "Digital Overlord",
     Company: "Innovation Arch",
     Location: "Houston",
     ApplicationSite: "https://innoarch.com/positions",
-    DateSincePosted: "5 hours ago",
-    FullOrPartTime: "Part Time"
+    DateSincePosted: "Today",
+    FullOrPartTime: "Part Time",
+    sortOrder: 1
   },
   {
     Title: "Skynet Operator",
     Company: "Cogent Security",
     Location: "Seattle",
     ApplicationSite: "https://skynet.com/life",
-    DateSincePosted: "Just now",
-    FullOrPartTime: "Full Time"
+    DateSincePosted: "Today",
+    FullOrPartTime: "Full Time",
+    sortOrder: 1
   },
   {
     Title: "JavaScript Guru",
@@ -63,15 +67,17 @@ let job = [{
     Location: "Austin",
     ApplicationSite: "https://felarcorp.com/careers",
     DateSincePosted: "5 days ago",
-    FullOrPartTime: "Part Time"
+    FullOrPartTime: "Part Time",
+    sortOrder: 5
   },
   {
     Title: "Object Oriented Sherpa",
     Company: "Sanguine Skincare",
     Location: "Denver",
     ApplicationSite: "https://s2skin.com/careers",
-    DateSincePosted: "5 hours ago",
-    FullOrPartTime: "Part Time"
+    DateSincePosted: "Today",
+    FullOrPartTime: "Part Time",
+    sortOrder: 1
   },
   {
     Title: "Scrum Advisor",
@@ -79,7 +85,8 @@ let job = [{
     Location: "Chicago",
     ApplicationSite: "https://beans.com/team",
     DateSincePosted: "> 30 Days ago",
-    FullOrPartTime: "Full Time"
+    FullOrPartTime: "Full Time",
+    sortOrder: 31
   },
   {
     Title: "Growth Hacker",
@@ -87,15 +94,17 @@ let job = [{
     Location: "New York",
     ApplicationSite: "https://UI.com/apply",
     DateSincePosted: "> 30 Days ago",
-    FullOrPartTime: "N/A"
+    FullOrPartTime: "N/A",
+    sortOrder: 31
   },
   {
     Title: "Python Prophet",
     Company: "Ranger Powers",
     Location: "Seattle",
     ApplicationSite: "https://RangerPowers.com/careers",
-    DateSincePosted: "5 hours ago",
-    FullOrPartTime: "Full Time"
+    DateSincePosted: "Today",
+    FullOrPartTime: "Full Time",
+    sortOrder: 1
   },
   {
     Title: "Six Sigma Blackbelt Coder",
@@ -103,9 +112,12 @@ let job = [{
     Location: "Atlanta",
     ApplicationSite: "https://goldreqs.com/apply",
     DateSincePosted: "18 Days ago",
-    FullOrPartTime: "Full Time"
+    FullOrPartTime: "Full Time",
+    sortOrder: 18
   }
 ]
+
+job.sort(function(a,b) {return a.sortOrder-b.sortOrder});
 
 let jobposting = ""
 
