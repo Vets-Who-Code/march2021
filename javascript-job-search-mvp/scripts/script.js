@@ -48,7 +48,7 @@ let job = [{
     Company: "Innovation Arch",
     Location: "Houston",
     ApplicationSite: "https://innoarch.com/positions",
-    DateSincePosted: "5 hours ago",
+    DateSincePosted: "Today",
     FullOrPartTime: "Part Time",
     sortOrder: 1
   },
@@ -57,7 +57,7 @@ let job = [{
     Company: "Cogent Security",
     Location: "Seattle",
     ApplicationSite: "https://skynet.com/life",
-    DateSincePosted: "Just now",
+    DateSincePosted: "Today",
     FullOrPartTime: "Full Time",
     sortOrder: 1
   },
@@ -75,7 +75,7 @@ let job = [{
     Company: "Sanguine Skincare",
     Location: "Denver",
     ApplicationSite: "https://s2skin.com/careers",
-    DateSincePosted: "5 hours ago",
+    DateSincePosted: "Today",
     FullOrPartTime: "Part Time",
     sortOrder: 1
   },
@@ -102,7 +102,7 @@ let job = [{
     Company: "Ranger Powers",
     Location: "Seattle",
     ApplicationSite: "https://RangerPowers.com/careers",
-    DateSincePosted: "5 hours ago",
+    DateSincePosted: "Today",
     FullOrPartTime: "Full Time",
     sortOrder: 1
   },
