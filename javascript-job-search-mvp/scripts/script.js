@@ -28,82 +28,72 @@ let innergrid = document.getElementsByClassName('jobgrid')
 let job = [{
     Title: "Application Engineer",
     Company: "Google",
-    Location: "San Francisco",
-    ApplicationSite: "https://google.com/careers",
-    DateSincePosted: "18 Days ago",
-    FullOrPartTime: "Full Time"
+    Location: "San Francisco, CA",
+    JobSnippet: "Application Engineers understand internal processes and what it takes to run Google at speed with its ever growing scale. As an Application Engineer...",
+    DateSincePosted: "18 Days ago"
   },
   {
     Title: "Technical Evangelist",
     Company: "Eco Focus",
-    Location: "San Francisco",
-    ApplicationSite: "https://ecofocus.com/jobs",
-    DateSincePosted: "> 30 Days ago",
-    FullOrPartTime: "Full Time"
+    Location: "San Francisco, CA",
+    JobSnippet: "Demonstrated proficiency in iSeries technical standards. Working knowledge in the appropriate technical language.",
+    DateSincePosted: "> 30 Days ago"
   },
   {
     Title: "Digital Overlord",
     Company: "Innovation Arch",
-    Location: "Houston",
-    ApplicationSite: "https://innoarch.com/positions",
-    DateSincePosted: "5 hours ago",
-    FullOrPartTime: "Part Time"
+    Location: "Houston, TX",
+    JobSnippet: "Digital overlord If you have ever worked on a website, you know this term is fitting for the role.",
+    DateSincePosted: "5 hours ago"
   },
   {
     Title: "Skynet Operator",
     Company: "Cogent Security",
-    Location: "Seattle",
-    ApplicationSite: "https://skynet.com/life",
-    DateSincePosted: "Just now",
-    FullOrPartTime: "Full Time"
+    Location: "Seattle, WA",
+    JobSnippet: "Good analytical skills Good communication and documentation skills Be able to work under pressure Be willing to work long hours and meet deadlines if required",
+    DateSincePosted: "Just now"
   },
   {
     Title: "JavaScript Guru",
     Company: "Felar Corp",
-    Location: "Austin",
-    ApplicationSite: "https://felarcorp.com/careers",
-    DateSincePosted: "5 days ago",
-    FullOrPartTime: "Part Time"
+    Location: "Austin, TX",
+    JobSnippet: "Two or more years experience developing front end websites and applications.The ideal candidate is someone who’s a web guru that will be a key part of our…",
+    DateSincePosted: "5 days ago"
   },
   {
     Title: "Object Oriented Sherpa",
     Company: "Sanguine Skincare",
-    Location: "Denver",
-    ApplicationSite: "https://s2skin.com/careers",
-    DateSincePosted: "5 hours ago",
-    FullOrPartTime: "Part Time"
+    Location: "Denver, CO",
+    JobSnippet: "Demonstrate an understanding of the basics of object oriented programming. Work both autonomously and within a team environment.",
+    DateSincePosted: "5 hours ago"
   },
   {
     Title: "Scrum Advisor",
     Company: "Senzu Bean",
-    Location: "Chicago",
-    ApplicationSite: "https://beans.com/team",
-    DateSincePosted: "> 30 Days ago",
-    FullOrPartTime: "Full Time"
+    Location: "Chicago, IL",
+    JobSnippet: "Attend all weekly planning meetings, scrum meetings (all online), and potentially client meetings. This role is integral to our growing Web Production Team,…",
+    DateSincePosted: "> 30 Days ago"
   },
   {
     Title: "Growth Hacker",
     Company: "Ultra Instinct",
-    Location: "New York",
-    ApplicationSite: "https://UI.com/apply",
-    DateSincePosted: "> 30 Days ago",
-    FullOrPartTime: "N/A"
+    Location: "New York, NY",
+    JobSnippet: "Keep one eye on surpassing growth targets and the other on effective customer acquisition spending. Possess a combination of clever thinking and technical know…",
+    DateSincePosted: "> 30 Days ago"
   },
   {
     Title: "Python Prophet",
     Company: "Ranger Powers",
-    Location: "Seattle",
-    ApplicationSite: "https://RangerPowers.com/careers",
-    DateSincePosted: "5 hours ago",
-    FullOrPartTime: "Full Time"
+    Location: "Seattle, WA",
+    JobSnippet: "Top-notch developers needed to help fuel our rapid expansion. We offer a 401(k) with 100% match of up to 4% of salary, with immediate…",
+    DateSincePosted: "5 hours ago"
   },
   {
     Title: "Six Sigma Blackbelt Coder",
     Company: "Gold Requisitions",
-    Location: "Atlanta",
-    ApplicationSite: "https://goldreqs.com/apply",
-    DateSincePosted: "18 Days ago",
-    FullOrPartTime: "Full Time"
+    Location: "Atlanta, GA",
+    JobSnippet: "Design Quality Black Belt. The Role: The Design Quality Black Belt has several roles at Hunter Douglas: The DFSS practice leader for organization teaching,…",
+    DateSincePosted: "18 Days ago"
   }
 ]
 
@@ -113,11 +103,10 @@ for (let i = 0; i < job.length; i++) {
   jobposting +=`<div class="">
       <div class="grid-container">
         <div class="grid-item grid-item-1">${job[i].Title}</div>
-        <div class="grid-item grid-item-2">${job[i].Salary}</div>
-        <div class="grid-item grid-item-3"><a id="bookmark-this" href="${job[i].ApplicationSite}" title="Bookmark This Page">Bookmark This Page</a></div>
-        <div class="grid-item grid-item-4">${job[i].Company} ${job[i].Location}</div>
+        <div class="grid-item grid-item-2">${job[i].Company}</div>
+        <div class="grid-item grid-item-3">${job[i].Location}</div>
+        <div class="grid-item grid-item-4">${job[i].JobSnippet}</div>
         <div class="grid-item grid-item-5">${job[i].DateSincePosted}</div>
-        <div class="grid-item grid-item-5">${job[i].FullOrPartTime}</div>
       </div>`
 }
 

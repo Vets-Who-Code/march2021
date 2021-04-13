@@ -289,45 +289,65 @@ h1 {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 6fr 2fr 2fr;
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 0px;
-	border: 1px solid #203ec5;  
+	grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 0;
+	border: 2px solid #091f40;
+	border-radius: 5px;
+	color: black;
+}
+
+  @media only screen and  (max-width: 600px) {
+	.grid-container {
+  	display: grid;
+  	grid-template-columns: auto;
+  	grid-template-rows: 1fr 1fr 1fr 2fr;
+  	grid-gap: 0;
+  	border: 2px solid #091f40;
+  	border-radius: 5px;
   }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1223px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-gap: 0;
+		border: 2px solid #091f40;
+		border-radius: 5px;
+	}
+}
 
   .grid-item {
 	background-color: #FFF;
-	padding: 20px;
+	padding: 3px;
 	/* border: 1px solid black; */
-
   }
 
   .grid-item-1 {
-	font-size: 28px;
+	font-size: 1.3rem;
 	font-weight: bold;
   }
 
   .grid-item-2 {
-	font-size: 28px;
-	font-weight: bold;
+	font-size: 1.1rem;
   }
 
   .grid-item-3 {
-
+	font-size: 1.1rem;
   }
 
   .grid-item-4 {
-	font-size: 24px;
+	font-size: 1.1rem;
 	font-weight: bold;
 	color: #696969;
   }
 
   .grid-item-5 {
-
-  }
-
-  .grid-item-6 {
-
+  	font-size: 1rem;
+  	font-weight: bold;
+  	color: #696969;
   }
 
   #bookmark-this {
