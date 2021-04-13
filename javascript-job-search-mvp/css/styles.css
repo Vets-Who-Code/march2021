@@ -292,7 +292,7 @@ h1 {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 0;
-	border: 2px solid #333;
+	border: 1px solid lightgrey;
 	border-radius: 5px;
 }
 
@@ -321,6 +321,7 @@ h1 {
   .grid-item {
 	background-color: #FFF;
 	color: #333;
+	padding: 0 20px;
 	/* border: 1px solid black; */
   }
 
@@ -339,7 +340,6 @@ h1 {
 
   .grid-item-4 {
 	font-size: 1.2rem;
-	font-weight: bold;
 	color: #696969;
   }
 
