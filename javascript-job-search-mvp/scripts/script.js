@@ -355,5 +355,6 @@ const darkMode = () => {
   document.getElementById("donate").classList.toggle('dark-theme')
   document.getElementById("send-button").classList.toggle("dark-theme");
   document.getElementById("submit-button").classList.toggle("dark-theme");
-  //document.getElementById("grid-container").classList.toggle("dark-grid:hover"); 
+  document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));
+  document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
 }
