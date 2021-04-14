@@ -292,8 +292,8 @@ var countrypicker = function (a) {
     C = {
       locale: "en",
       countries: {
-        KR: "South Korea",
-        US: "United States"
+        US: "United States",
+        KR: "South Korea"        
       }
     };
   s.registerLocale(C);
