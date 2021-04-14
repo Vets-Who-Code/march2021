@@ -11,148 +11,6 @@ var typed = new Typed('#typed', {
   backDelay: 3000
 });
 
-//Dark Mode
-
-const darkMode = () => {
-  const body = document.body;
-  body.classList.toggle("dark-background");
-  document.getElementById("donate").classList.toggle('dark-theme')
-  document.getElementById("send-button").classList.toggle("dark-theme");
-  document.getElementById("submit-button").classList.toggle("dark-theme");
-}
-
-//Grid
-
-let innergrid = document.getElementsByClassName('jobgrid')
-//sort this
-let job = [{
-    Title: "Application Engineer",
-    Company: "Google",
-    Location: "San Francisco",
-    ApplicationSite: "https://google.com/careers",
-    DateSincePosted: "18 Days ago",
-    FullOrPartTime: "Full Time",
-    sortOrder: 18
-  },
-  {
-    Title: "Technical Evangelist",
-    Company: "Eco Focus",
-    Location: "San Francisco",
-    ApplicationSite: "https://ecofocus.com/jobs",
-    DateSincePosted: "> 30 Days ago",
-    FullOrPartTime: "Full Time",
-    sortOrder: 31
-  },
-  {
-    Title: "Digital Overlord",
-    Company: "Innovation Arch",
-    Location: "Houston",
-    ApplicationSite: "https://innoarch.com/positions",
-    DateSincePosted: "Today",
-    FullOrPartTime: "Part Time",
-    sortOrder: 1
-  },
-  {
-    Title: "Skynet Operator",
-    Company: "Cogent Security",
-    Location: "Seattle",
-    ApplicationSite: "https://skynet.com/life",
-    DateSincePosted: "Today",
-    FullOrPartTime: "Full Time",
-    sortOrder: 1
-  },
-  {
-    Title: "JavaScript Guru",
-    Company: "Felar Corp",
-    Location: "Austin",
-    ApplicationSite: "https://felarcorp.com/careers",
-    DateSincePosted: "5 days ago",
-    FullOrPartTime: "Part Time",
-    sortOrder: 5
-  },
-  {
-    Title: "Object Oriented Sherpa",
-    Company: "Sanguine Skincare",
-    Location: "Denver",
-    ApplicationSite: "https://s2skin.com/careers",
-    DateSincePosted: "Today",
-    FullOrPartTime: "Part Time",
-    sortOrder: 1
-  },
-  {
-    Title: "Scrum Advisor",
-    Company: "Senzu Bean",
-    Location: "Chicago",
-    ApplicationSite: "https://beans.com/team",
-    DateSincePosted: "> 30 Days ago",
-    FullOrPartTime: "Full Time",
-    sortOrder: 31
-  },
-  {
-    Title: "Growth Hacker",
-    Company: "Ultra Instinct",
-    Location: "New York",
-    ApplicationSite: "https://UI.com/apply",
-    DateSincePosted: "> 30 Days ago",
-    FullOrPartTime: "N/A",
-    sortOrder: 31
-  },
-  {
-    Title: "Python Prophet",
-    Company: "Ranger Powers",
-    Location: "Seattle",
-    ApplicationSite: "https://RangerPowers.com/careers",
-    DateSincePosted: "Today",
-    FullOrPartTime: "Full Time",
-    sortOrder: 1
-  },
-  {
-    Title: "Six Sigma Blackbelt Coder",
-    Company: "Gold Requisitions",
-    Location: "Atlanta",
-    ApplicationSite: "https://goldreqs.com/apply",
-    DateSincePosted: "18 Days ago",
-    FullOrPartTime: "Full Time",
-    sortOrder: 18
-  }
-]
-
-job.sort(function(a,b) {return a.sortOrder-b.sortOrder});
-
-let jobposting = ""
-
-for (let i = 0; i < job.length; i++) {
-  jobposting += `<div class="row gridborder">
-  <div class="col-sm-12">
-
-    <!-- Middle Content Column of Grid -->
-    <div class="col-sm-8 grid-content-column">
-      <div class="row">${job[i].Title}</div>
-      <div class="row">${job[i].Company}</div>
-      <div class="row">${job[i].Location} </div>
-      <div class="row">${job[i].ApplicationSite}</div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="col-md-6">${job[i].DateSincePosted}</div>
-          <div class="col-md-6">${job[i].FullOrPartTime}</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Last Column, should be small for bookmark -->
-    <div class="col-sm-2 grid-bookmark-column">
-      <div class="col-md-1"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span></div>
-      <!-- Bookmark Icon -->
-
-    </div>
-  </div>
-</div>`
-}
-
-innergrid[0].innerHTML = jobposting
-
-console.log(innergrid[0].innerHTML)
-
 // All variables for Submit Button
 const jobSearch = document.getElementById("job-search");
 const zipCode = document.getElementById("zipCode");
@@ -166,6 +24,167 @@ function submitButtonEvent(event) {
   localStorage.setItem("zipcode", event.currentTarget[0].value);
   localStorage.setItem("remote", event.currentTarget[1].value);
   localStorage.setItem("radius", event.currentTarget[2].value);
+
+  //Grid
+  let innergrid = document.getElementsByClassName('jobgrid')
+  //sort this
+  let job = [{
+      Title: "Application Engineer",
+      Company: "Google",
+      Location: "San Francisco, CA",
+      JobSnippet: "Application Engineers understand internal processes and what it takes to run Google at speed with its ever growing scale. As an Application Engineer...",
+      DateSincePosted: "18 Days ago",
+      Location: "San Francisco",
+      Remote: "Yes",
+      Salary: "$115,000",
+      ApplicationSite: "https://google.com/careers",
+      DateSincePosted: "18 Days ago",
+      FullOrPartTime: "Full Time",
+      sortOrder: 18
+    },
+    {
+      Title: "Technical Evangelist",
+      Company: "Eco Focus",
+      Location: "San Francisco, CA",
+      JobSnippet: "Demonstrated proficiency in iSeries technical standards. Working knowledge in the appropriate technical language.",
+      DateSincePosted: "> 30 Days ago",
+      Location: "San Francisco",
+      Remote: "Yes",
+      Salary: "$105,000",
+      ApplicationSite: "https://www.ecofocusworldwide.com/",
+      DateSincePosted: "> 30 Days ago",
+      FullOrPartTime: "Full Time",
+      sortOrder: 31
+    },
+    {
+      Title: "Digital Overlord",
+      Company: "Innovation Arch",
+      Location: "Houston, TX",
+      JobSnippet: "Digital overlord - If you have ever worked on a website, you know this term is fitting for the role.",
+      DateSincePosted: "5 hours ago",
+      Location: "Houston",
+      Remote: "No",
+      Salary: "$55,000",
+      ApplicationSite: "https://www.accenture.com/us-en/about/innovation-architecture-index",
+      DateSincePosted: "Today",
+      FullOrPartTime: "Part Time",
+      sortOrder: 1
+    },
+    {
+      Title: "Skynet Operator",
+      Company: "Cogent Security",
+      Location: "Seattle, WA",
+      JobSnippet: "Good analytical skills Good communication and documentation skills Be able to work under pressure Be willing to work long hours and meet...",
+      DateSincePosted: "Just now",
+      Location: "Seattle",
+      Remote: "Yes",
+      Salary: "$145,000",
+      ApplicationSite: "https://skynet.com/life",
+      DateSincePosted: "Today",
+      FullOrPartTime: "Full Time",
+      sortOrder: 1
+    },
+    {
+      Title: "JavaScript Guru",
+      Company: "Felar Corp",
+      Location: "Austin, TX",
+      JobSnippet: "Two or more years experience developing front end websites and applications.The ideal candidate is someone who’s a web guru that will…",
+      DateSincePosted: "5 days ago",
+      Location: "Austin",
+      Remote: "Yes",
+      Salary: "$85,000",
+      ApplicationSite: "https://felarcorp.com/careers",
+      DateSincePosted: "5 days ago",
+      FullOrPartTime: "Part Time",
+      sortOrder: 5
+    },
+    {
+      Title: "Object Oriented Sherpa",
+      Company: "Sanguine Skincare",
+      Location: "Denver, CO",
+      JobSnippet: "Demonstrate an understanding of the basics of object oriented programming. Work both autonomously and within a team environment.",
+      DateSincePosted: "5 hours ago",
+      Location: "Denver",
+      Remote: "Yes",
+      Salary: "$65,000",
+      ApplicationSite: "https://s2skin.com/careers",
+      DateSincePosted: "Today",
+      FullOrPartTime: "Part Time",
+      sortOrder: 1
+    },
+    {
+      Title: "Scrum Advisor",
+      Company: "Senzu Bean",
+      Location: "Chicago, IL",
+      JobSnippet: "Attend all weekly planning meetings, scrum meetings (all online), and potentially client meetings. This role is integral to our growing Web Production…",
+      DateSincePosted: "> 30 Days ago",
+      Location: "Chicago",
+      Remote: "No",
+      Salary: "$105,000",
+      ApplicationSite: "https://beans.com/team",
+      DateSincePosted: "> 30 Days ago",
+      FullOrPartTime: "Full Time",
+      sortOrder: 31
+    },
+    {
+      Title: "Growth Hacker",
+      Company: "Ultra Instinct",
+      Location: "New York, NY",
+      JobSnippet: "Keep one eye on surpassing growth targets and the other on effective customer acquisition spending. Possess a combination of clever thinking and…",
+      DateSincePosted: "> 30 Days ago",
+      Location: "New York",
+      Remote: "Yes",
+      Salary: "$95,000",
+      ApplicationSite: "https://UI.com/apply",
+      DateSincePosted: "> 30 Days ago",
+      FullOrPartTime: "N/A",
+      sortOrder: 31
+    },
+    {
+      Title: "Python Prophet",
+      Company: "Ranger Powers",
+      Location: "Seattle, WA",
+      JobSnippet: "Top-notch developers needed to help fuel our rapid expansion. We offer a 401(k) with 100% match of up to 4% of…",
+      DateSincePosted: "5 hours ago",
+      Location: "Seattle",
+      Remote: "No",
+      Salary: "$75,000",
+      ApplicationSite: "https://RangerPowers.com/careers",
+      DateSincePosted: "Today",
+      FullOrPartTime: "Full Time",
+      sortOrder: 1
+    },
+    {
+      Title: "Six Sigma Blackbelt Coder",
+      Company: "Gold Requisitions",
+      Location: "Atlanta, GA",
+      JobSnippet: "Design Quality Black Belt. The Role: The Design Quality Black Belt has several roles at Hunter Douglas: The DFSS practice leader for…",
+      DateSincePosted: "18 Days ago",
+      Location: "Atlanta",
+      ApplicationSite: "https://goldreqs.com/apply",
+      DateSincePosted: "18 Days ago",
+      FullOrPartTime: "Full Time",
+      sortOrder: 18
+    }
+  ]
+
+  job.sort(function(a,b) {return a.sortOrder-b.sortOrder});
+
+  let jobposting = ""
+
+  for (let i = 0; i < job.length; i++) {
+    jobposting +=`<a href="${job[i].ApplicationSite} target="blank" rel="noopener noreferrer"><div class="">
+        <div class="grid-container">
+          <div class="grid-item grid-item-1">${job[i].Title}</div>
+          <div class="grid-item grid-item-2">${job[i].Company} - ${job[i].Location}</div>
+          <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
+          <div class="grid-item grid-item-4">${job[i].JobSnippet}</div>
+          <div class="grid-item grid-item-5">${job[i].Salary}</div>
+          <div class="grid-item grid-item-6">${job[i].DateSincePosted}</div>
+        </div></a>`
+  }
+
+  innergrid[0].innerHTML = jobposting
 }
 
 //this listens for the form to submit.
@@ -292,8 +311,8 @@ var countrypicker = function (a) {
     C = {
       locale: "en",
       countries: {
+        US: "United States",
         KR: "South Korea",
-        US: "United States"
       }
     };
   s.registerLocale(C);
@@ -327,3 +346,14 @@ var countrypicker = function (a) {
     };
   return a.fn.countrypicker = N, a(".countrypicker").countrypicker(), N
 }($);
+
+//Dark Mode
+
+const darkMode = () => {
+  const body = document.body;
+  body.classList.toggle("dark-background");
+  document.getElementById("donate").classList.toggle('dark-theme')
+  document.getElementById("send-button").classList.toggle("dark-theme");
+  document.getElementById("submit-button").classList.toggle("dark-theme");
+  //document.getElementById("grid-container").classList.toggle("dark-grid:hover"); 
+}
