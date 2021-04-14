@@ -174,13 +174,13 @@ function submitButtonEvent(event) {
 
   for (let i = 0; i < job.length; i++) {
     jobposting +=`<a href="${job[i].ApplicationSite} target="blank" rel="noopener noreferrer"><div class="">
-        <div class="grid-container">
-          <div class="grid-item grid-item-1">${job[i].Title}</div>
-          <div class="grid-item grid-item-2">${job[i].Company} - ${job[i].Location}</div>
-          <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
-          <div class="grid-item grid-item-4">${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-5">${job[i].Salary}</div>
-          <div class="grid-item grid-item-6">${job[i].DateSincePosted}</div>
+        <div class="grid-container" id="grid-container">
+          <h2 class="grid-items">${job[i].Title}</h2>
+          <p class="grid-items">${job[i].Company} - ${job[i].Location}</p>
+          <p class="grid-items">Remote: ${job[i].Remote}</p>
+          <p class="grid-items">${job[i].JobSnippet}</p>
+          <p class="grid-items">${job[i].Salary}</p>
+          <p class="grid-items" id="date">${job[i].DateSincePosted}</p>
         </div></a>`
   }
 
@@ -355,5 +355,10 @@ const darkMode = () => {
   document.getElementById("donate").classList.toggle('dark-theme')
   document.getElementById("send-button").classList.toggle("dark-theme");
   document.getElementById("submit-button").classList.toggle("dark-theme");
-  //document.getElementById("grid-container").classList.toggle("dark-grid:hover"); 
+
+  const gridItems = document.getElementsByClassName("grid-items");
+  for (let i = 0; i < gridItems.length; i++) {
+    gridItems[i].style.backgroundColor = "#C5203E";
+    gridItems[i].style.color = "white";
+  }
 }
