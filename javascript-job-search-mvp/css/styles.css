@@ -196,16 +196,6 @@ footer li a {
 
 /* Dark Mode */
 
-.dark-buttons {
-	background-color: #203ec5;
-	border: 1px solid #091f40;
-}
-
-.dark-buttons:hover {
-	background-color: #c5203e;
-	border: none;
-}
-
 .dark-background {
 	background-color: #091f40;
 	color: #fff;
@@ -286,36 +276,46 @@ h1 {
 }
 
 /* Grid */
+a {
+	text-decoration: none !important;
+}
 
 .grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 0;
+	display: block;
+	/*grid-template-columns: 5fr 1fr;*/
+	/*grid-template-rows: 3fr 1fr;*/
 	border: 1px solid lightgrey;
 	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 75%;
+	margin: 9px auto;
+	width: 50%;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1223px) {
+@media only screen and (max-width: 1008px) {
 	.grid-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-	}
+		width: 75%;
+	} 
 }
 
-  @media only screen and  (max-width: 600px) {
-	.grid-container {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 2fr 1fr 2fr 5fr 1fr;
-  }
+.grid-container:hover {
+	 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
+/*
+.dark-grid {
+ background-color: #091f40;
+}
+
+.dark-grid:hover {
+	box-shadow: 0 8px 16px 0 white !important;
+}*/
 
   .grid-item {
 	background-color: #FFF;
 	color: #333;
-	padding: 0 20px;
+	padding: 2%;
 	/* border: 1px solid black; */
   }
 
@@ -333,7 +333,7 @@ h1 {
   }
 
   .grid-item-4 {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: #696969;
   }
 

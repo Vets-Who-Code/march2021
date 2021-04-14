@@ -11,16 +11,6 @@ var typed = new Typed('#typed', {
   backDelay: 3000
 });
 
-//Dark Mode
-
-const darkMode = () => {
-  const body = document.body;
-  body.classList.toggle("dark-background");
-  document.getElementById("donate").classList.toggle('dark-theme')
-  document.getElementById("send-button").classList.toggle("dark-theme");
-  document.getElementById("submit-button").classList.toggle("dark-theme");
-}
-
 // All variables for Submit Button
 const jobSearch = document.getElementById("job-search");
 const zipCode = document.getElementById("zipCode");
@@ -45,6 +35,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Application Engineers understand internal processes and what it takes to run Google at speed with its ever growing scale. As an Application Engineer...",
       DateSincePosted: "18 Days ago",
       Location: "San Francisco",
+      Remote: "Yes",
+      Salary: "$115,000",
       ApplicationSite: "https://google.com/careers",
       DateSincePosted: "18 Days ago",
       FullOrPartTime: "Full Time",
@@ -57,6 +49,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Demonstrated proficiency in iSeries technical standards. Working knowledge in the appropriate technical language.",
       DateSincePosted: "> 30 Days ago",
       Location: "San Francisco",
+      Remote: "Yes",
+      Salary: "$105,000",
       ApplicationSite: "https://www.ecofocusworldwide.com/",
       DateSincePosted: "> 30 Days ago",
       FullOrPartTime: "Full Time",
@@ -69,6 +63,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Digital overlord - If you have ever worked on a website, you know this term is fitting for the role.",
       DateSincePosted: "5 hours ago",
       Location: "Houston",
+      Remote: "No",
+      Salary: "$55,000",
       ApplicationSite: "https://www.accenture.com/us-en/about/innovation-architecture-index",
       DateSincePosted: "Today",
       FullOrPartTime: "Part Time",
@@ -81,6 +77,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Good analytical skills Good communication and documentation skills Be able to work under pressure Be willing to work long hours and meet...",
       DateSincePosted: "Just now",
       Location: "Seattle",
+      Remote: "Yes",
+      Salary: "$145,000",
       ApplicationSite: "https://skynet.com/life",
       DateSincePosted: "Today",
       FullOrPartTime: "Full Time",
@@ -93,6 +91,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Two or more years experience developing front end websites and applications.The ideal candidate is someone who’s a web guru that will…",
       DateSincePosted: "5 days ago",
       Location: "Austin",
+      Remote: "Yes",
+      Salary: "$85,000",
       ApplicationSite: "https://felarcorp.com/careers",
       DateSincePosted: "5 days ago",
       FullOrPartTime: "Part Time",
@@ -105,6 +105,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Demonstrate an understanding of the basics of object oriented programming. Work both autonomously and within a team environment.",
       DateSincePosted: "5 hours ago",
       Location: "Denver",
+      Remote: "Yes",
+      Salary: "$65,000",
       ApplicationSite: "https://s2skin.com/careers",
       DateSincePosted: "Today",
       FullOrPartTime: "Part Time",
@@ -117,6 +119,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Attend all weekly planning meetings, scrum meetings (all online), and potentially client meetings. This role is integral to our growing Web Production…",
       DateSincePosted: "> 30 Days ago",
       Location: "Chicago",
+      Remote: "No",
+      Salary: "$105,000",
       ApplicationSite: "https://beans.com/team",
       DateSincePosted: "> 30 Days ago",
       FullOrPartTime: "Full Time",
@@ -129,6 +133,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Keep one eye on surpassing growth targets and the other on effective customer acquisition spending. Possess a combination of clever thinking and…",
       DateSincePosted: "> 30 Days ago",
       Location: "New York",
+      Remote: "Yes",
+      Salary: "$95,000",
       ApplicationSite: "https://UI.com/apply",
       DateSincePosted: "> 30 Days ago",
       FullOrPartTime: "N/A",
@@ -141,6 +147,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Top-notch developers needed to help fuel our rapid expansion. We offer a 401(k) with 100% match of up to 4% of…",
       DateSincePosted: "5 hours ago",
       Location: "Seattle",
+      Remote: "No",
+      Salary: "$75,000",
       ApplicationSite: "https://RangerPowers.com/careers",
       DateSincePosted: "Today",
       FullOrPartTime: "Full Time",
@@ -168,17 +176,15 @@ function submitButtonEvent(event) {
     jobposting +=`<a href="${job[i].ApplicationSite} target="blank" rel="noopener noreferrer"><div class="">
         <div class="grid-container">
           <div class="grid-item grid-item-1">${job[i].Title}</div>
-          <div class="grid-item grid-item-2">${job[i].Company}</div>
-          <div class="grid-item grid-item-3">${job[i].Location}</div>
+          <div class="grid-item grid-item-2">${job[i].Company} - ${job[i].Location}</div>
+          <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
           <div class="grid-item grid-item-4">${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-5">${job[i].DateSincePosted}</div>
-          <div class="grid-item grid-item-6"></div>
+          <div class="grid-item grid-item-5">${job[i].Salary}</div>
+          <div class="grid-item grid-item-6">${job[i].DateSincePosted}</div>
         </div></a>`
   }
 
   innergrid[0].innerHTML = jobposting
-
-  console.log(innergrid[0].innerHTML)
 }
 
 //this listens for the form to submit.
@@ -305,8 +311,8 @@ var countrypicker = function (a) {
     C = {
       locale: "en",
       countries: {
+        US: "United States",
         KR: "South Korea",
-        US: "United States"
       }
     };
   s.registerLocale(C);
@@ -340,3 +346,14 @@ var countrypicker = function (a) {
     };
   return a.fn.countrypicker = N, a(".countrypicker").countrypicker(), N
 }($);
+
+//Dark Mode
+
+const darkMode = () => {
+  const body = document.body;
+  body.classList.toggle("dark-background");
+  document.getElementById("donate").classList.toggle('dark-theme')
+  document.getElementById("send-button").classList.toggle("dark-theme");
+  document.getElementById("submit-button").classList.toggle("dark-theme");
+  //document.getElementById("grid-container").classList.toggle("dark-grid:hover"); 
+}
