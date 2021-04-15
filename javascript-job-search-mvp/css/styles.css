@@ -375,6 +375,7 @@ footer {
 
 .site-link:hover {
 	color: #BD2843;
+	text-decoration: underline !important;
 }
 
 .footer2 {
