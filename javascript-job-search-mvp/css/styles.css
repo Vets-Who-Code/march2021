@@ -259,8 +259,7 @@ footer li a {
 
 .job-search-description {
 	font-style: italic;
-	font-family: Open Sans,
-		sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	line-height: 29px;
 	margin: 0 0 10px;
@@ -318,6 +317,21 @@ h1 {
 
 input[type="checkbox"] {
 	margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+	.zip {
+		margin-right: 0;
+	}
+
+	.miles {
+		margin: 0;
+	}
+
+	input[type="checkbox"] {
+		margin-right: 0;
+		margin-top: 15px;
+	}
 }
 
 /* Grid */
