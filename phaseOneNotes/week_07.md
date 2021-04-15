@@ -12,7 +12,8 @@
 - [aboutmonica](https://aboutmonica.com/)
 ### Homework 
 - Do your Github README file. There is a generator located [here](https://rahuldkjain.github.io/gh-profile-readme-generator/) if you wish to use it. 
-## Day 2
+# Day 2
+## Functions and Objects
 ### Functions
 - make function names meaningful. Self documenting code. 
 - be consistent with semicolons
