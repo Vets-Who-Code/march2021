@@ -1,21 +1,19 @@
 # Day 1
 ## Open Forum
+### Stand-ups and checkins
+### Job App Assignment Update 
 ### Big O Notation 
-### Shadow list for signup NFT Token development 
-### 
-- Functions
-- Objects -Nested Functions
-- 
-
+- Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. 
+### NFT Token Development Shadow Project
+- There will be a sign-list posted to shadow Jerome as he builds an NFT Token 
+- A non-fungible token (NFT) is a unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable.
 ### Resources
 - [gatsby](https://www.gatsbyjs.com/)
 - [aboutmonica](https://aboutmonica.com/)
 - []()
- 
-### Homework
-
-# Day 2
-## Functions and Objects
+### Homework 
+- Do your Github README file. There is a generator located [here](https://rahuldkjain.github.io/gh-profile-readme-generator/) if you wish to use it. 
+## Day 2
 ### Functions
 - make function names meaningful. Self documenting code. 
 - be consistent with semicolons
@@ -68,4 +66,4 @@ language.name
 ### Portfolio Notes
 - build something like twillio into your portfolio
 - make a subscribe to newsletter section for people to stay updated on what you're doing
-- Look into DevRel. DevRel focuses on maintaining and growing relationships with the ultimate goal of building advocacy, whereas developer marketing looks to build awareness and get developers into the funnel. 
+- Look into DevRel. DevRel focuses on maintaining and growing relationships with the ultimate goal of building advocacy, whereas developer marketing looks to build awareness and get developers into the funnel.
