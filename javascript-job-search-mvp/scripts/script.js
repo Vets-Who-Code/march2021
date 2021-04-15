@@ -3,12 +3,13 @@ console.log('Hello, Vets Who Code!');
 //loader
 
 const loading = document.querySelector(".hide-if-loading");
+const show = document.querySelector(".loading");
 
 //Display loader for 3 seconds
 setTimeout(() => {
   loading.classList.remove("hide-if-loading");
   document.querySelector(".loading").classList.remove("loading");
-}, 4000)
+}, 5000)
 
 
 //Typed.js

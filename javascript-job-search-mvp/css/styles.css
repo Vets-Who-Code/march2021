@@ -10,28 +10,31 @@
 	z-index: 9999999;
 }
 
+#loading-text {
+	
+	text-align: center;
+}
+
 .hide-if-loading {
 	display: none;
 }
 
 .fade-out {
 	animation: fadeOut ease-out 5s;
-	-webkit-animation: fadeOut ease-out 5s;
-	-moz-animation: fadeOut ease-out 5s;
-	-o-animation: fadeOut ease-out 5s;
-	-ms-animation: fadeOut ease-out 5s;
+	-webkit-animation: fadeOut ease-in-out 3s;
+	-moz-animation: fadeOut ease-in-out 3s;
+	-o-animation: fadeOut ease-in-out 3s;
+	-ms-animation: fadeOut ease-in-out 3s;
 }
 
 @keyframes fadeOut {
-	
 	0% {
 		opacity: 0;
 	}
-
+	
 	100% {
 		opacity: 1;
 	}
-
 }
 
 /* Navbar */
