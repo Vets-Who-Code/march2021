@@ -9,7 +9,7 @@ const show = document.querySelector(".loading");
 setTimeout(() => {
   loading.classList.remove("hide-if-loading");
   document.querySelector(".loading").classList.remove("loading");
-}, 6000)
+}, 5000)
 
 
 //Typed.js
