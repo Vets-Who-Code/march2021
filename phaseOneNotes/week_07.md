@@ -75,9 +75,10 @@ language.name
 # Day 3
 ## ES6
 ### Arrow Functions
-- Arrow function expressions are 
-does not have its own binding 
-- does not have lexical scope
+- Function expressions are best for object methods. Arrow functions are best for callbacks or methods like map, reduce, or forEach.
+- Arrow functions do not have their own binding(can't use 'this' with arrow functions) 
+- Arrow functions cannot be used with contructors
+- do not have lexical scope
 - used in higher level functions a lot 
 - use mozilla MDN documentation to reference. 
 - Example of the difference between traditional and arrow functions
@@ -111,7 +112,6 @@ function square(num = 1) {
 square(); // returns 1
 const squareArrow = (num = 1) => num*num;
 squareArrow(); // returns 1
-
 ```
 ### Resources
 - [MDN Arrow Function Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
