@@ -72,3 +72,58 @@ language.name
 - Look into DevRel. DevRel focuses on maintaining and growing relationships with the ultimate goal of building advocacy, whereas developer marketing looks to build awareness and get developers into the funnel.
 ### Front End Masters
 - Contact Jerome for a subscription code to Front End Masters
+# Day 3
+## ES6
+### Arrow Functions
+- Function expressions are best for object methods. Arrow functions are best for callbacks or methods like map, reduce, or forEach.
+- Arrow functions do not have their own binding(can't use 'this' with arrow functions).They do not have lexical scope.
+- Arrow functions cannot be used with contructors
+- Used in higher level functions a lot 
+- Use Mozilla MDN documentation for further info. 
+- Example of the difference between traditional and arrow functions
+```
+// Traditional Function
+function (a){
+  return a + 100;
+}
+
+// Arrow Function Break Down
+
+// 1. Remove the word "function" and place arrow between the argument and opening body bracket
+(a) => {
+  return a + 100;
+}
+
+// 2. Remove the body brackets and word "return" -- the return is implied.
+(a) => a + 100;
+
+// 3. Remove the argument parentheses
+a => a + 100;
+
+```
+- Default parameters have a predetermined value before you pass in any arguments
+- If you have more than one parameter in arrow functions, you have to use parenthesis
+- Example of a default parameter:
+```
+function square(num = 1) {
+  return num*num;
+}
+square(); // returns 1
+const squareArrow = (num = 1) => num*num;
+squareArrow(); // returns 1
+```
+### Resources
+- [MDN Arrow Function Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- everything you learn this week, implement this into your portfolio and project
+### Project comments
+- Larger text box for contact message
+- Certain character count before you are able to send contact message
+- Twitter bird needs circle icon
+- Job search needs to come after mentor and appy in the footer site map
+- Video floated left and cards on the right 
+- Cards should be the same length as the form 
+- Pass the cards darkMode via javascript 
+- onclick should check for the dark mode class. 'If darkmode do this'
+- South Korea button may not make it to production 
+- Have the social icons turn red on focus
+- Once you select dark mode check to see if cards are populated
