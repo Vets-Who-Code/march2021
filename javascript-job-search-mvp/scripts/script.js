@@ -349,9 +349,10 @@ var countrypicker = function (a) {
 const darkMode = () => {
   const body = document.body;
   body.classList.toggle("dark-background");
-  document.getElementById("donate").classList.toggle('dark-theme')
+  document.getElementById("donate").classList.toggle('dark-theme');
   document.getElementById("send-button").classList.toggle("dark-theme");
   document.getElementById("submit-button").classList.toggle("dark-theme");
+  document.getElementById("typed").classList.toggle("dark-theme");
   document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));
   document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
 }

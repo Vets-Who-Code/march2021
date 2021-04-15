@@ -123,14 +123,6 @@ footer li a {
 	background-color: #203EC5;
 }
 
-.donate.dark-theme {
-	background-color: #203EC5;
-}
-
-.donate.dark-theme:hover {
-	background-color: #AB1534;
-}
-
 .nav-links .donate:hover,
 .nav-links .moon-li:hover {
 	border-bottom: none;
@@ -210,6 +202,35 @@ footer li a {
 	color: #fff;
 }
 
+.donate.dark-theme {
+	background-color: #203EC5;
+}
+
+.donate.dark-theme:hover {
+	background-color: #AB1534;
+}
+
+.submit-button.dark-theme {
+	background-color: #203EC5 !important;
+}
+
+.submit-button.dark-theme:hover {
+	background-color: #c5203e !important;
+}
+
+.send-button.dark-theme {
+	background-color: #203ec5 !important;
+}
+
+.send-button.dark-theme:hover {
+	background-color: #c5203e !important;
+}
+
+.send-button.dark-theme .flag-usa {
+	width: 30px;
+}
+
+
 /* Header */
 
 .lead-in {
@@ -277,14 +298,6 @@ h1 {
 
 .submit-button:hover {
 	background-color: #203ec5 !important;
-}
-
-.submit-button.dark-theme {
-	background-color: #203EC5 !important;
-}
-
-.submit-button.dark-theme:hover {
-	background-color: #c5203e !important;
 }
 
 .zip {
@@ -496,18 +509,6 @@ footer {
 
 .send-button:hover {
 	background-color: #203ec5 !important;
-}
-
-.send-button.dark-theme {
-	background-color: #203ec5 !important;
-}
-
-.send-button.dark-theme:hover {
-	background-color: #c5203e !important;
-}
-
-.send-button.dark-them .flag-usa {
-	width: 30px;
 }
 
 .flag-korea {
