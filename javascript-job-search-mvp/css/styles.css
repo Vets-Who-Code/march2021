@@ -322,6 +322,8 @@ a {
   .grid-item-1 {
 	font-size: 1.5rem;
 	font-weight: bold;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
   }
 
   .grid-item-2 {
@@ -342,6 +344,13 @@ a {
   	font-weight: bold;
   	color: #696969;
   }
+
+  .grid-item-6 {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+  }
+
+
 
 
 /* footer */
