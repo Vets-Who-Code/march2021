@@ -17,14 +17,14 @@
 ### Functions
 - make function names meaningful. Self documenting code. 
 - be consistent with semicolons
-- Example: 
+- Example of a Function: 
 ```
 function triple(num) {
    return 3 * num;
 }
 triple(5)
 ```
-- Example:
+- Example of a function with conditionals inside:
 ```
 function isOldEnoughToDrink(age) {
    if(age >= 21) {
