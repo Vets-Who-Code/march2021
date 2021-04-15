@@ -35,6 +35,10 @@ nav {
 	background-color: #091f40 !important;
 }
 
+.drop a:focus {
+	color: #203EC5 !important;
+}
+
 .dropdown-menu {
 	background-color: #fff;
 }
@@ -106,7 +110,7 @@ footer li a {
 }
 
 .moon-li {
-	margin-right: 5px;
+	margin-right: 8px;
 }
 
 .donate {
@@ -142,7 +146,7 @@ footer li a {
 	}
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1373px) {
 	.navbar-header {
 		float: none;
 		padding-bottom: 10px;
@@ -192,6 +196,10 @@ footer li a {
 	.nav-links li:hover {
 		border-bottom: none;
 	}
+
+	.moon {
+		margin-bottom: 10px;
+	}
 }
 
 /* Dark Mode */
@@ -211,8 +219,12 @@ footer li a {
 	font-weight: 400;
 	line-height: 29px;
 	margin-bottom: 40px;
-	font-size: .9375rem;
+	font-size: 1.4rem;
 	text-align: center;
+}
+
+#typed {
+	font-size: 1.4rem;
 }
 
 .job-search-description {
@@ -224,7 +236,6 @@ footer li a {
 	margin: 0 0 10px;
 	text-align: left;
 	font-style: normal;
-	font-size: .9375rem;
 	text-align: left;
 }
 
@@ -275,7 +286,20 @@ h1 {
 	background-color: #c5203e !important;
 }
 
+.zip {
+	margin-right: 30px;
+}
+
+.miles {
+	margin: 0 30px;
+}
+
+input[type="checkbox"] {
+	margin-right: 5px;
+}
+
 /* Grid */
+
 a {
 	text-decoration: none !important;
 }
@@ -296,59 +320,59 @@ a {
 @media only screen and (max-width: 1008px) {
 	.grid-container {
 		width: 75%;
-	} 
+	}
 }
 
 .grid-container:hover {
-	 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dark-grid {
- background-color: #c5203e !important;
- color: white !important;
+	background-color: #c5203e !important;
+	color: white !important;
 }
 
 .dark-container:hover {
 	box-shadow: 0 1px 4px 0 white !important;
 }
 
-  .grid-item {
+.grid-item {
 	background-color: #FFF;
 	color: #333;
 	padding: 2%;
 	/* border: 1px solid black; */
-  }
+}
 
-  .grid-item-1 {
+.grid-item-1 {
 	font-size: 1.5rem;
 	font-weight: bold;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-  }
+}
 
-  .grid-item-2 {
+.grid-item-2 {
 	font-size: 1.2rem;
-  }
+}
 
-  .grid-item-3 {
+.grid-item-3 {
 	font-size: 1.2rem;
-  }
+}
 
-  .grid-item-4 {
+.grid-item-4 {
 	font-size: 1rem;
 	color: #696969;
-  }
+}
 
-  .grid-item-5 {
-  	font-size: 1rem;
-  	font-weight: bold;
-  	color: #696969;
-  }
+.grid-item-5 {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #696969;
+}
 
-  .grid-item-6 {
+.grid-item-6 {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-  }
+}
 
 
 
