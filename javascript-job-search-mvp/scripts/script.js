@@ -11,11 +11,10 @@ var typed = new Typed('#typed', {
   backDelay: 3000
 });
 
-// All variables for Submit Button
+// Variables for Search Button
 const jobSearch = document.getElementById("job-search");
-const zipCode = document.getElementById("zipCode");
-const isRemote = document.getElementById("inlineFormCheck");
-const range = document.getElementById("range");
+//this listens for the form to submit.
+jobSearch.addEventListener("submit", submitButtonEvent);
 
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
@@ -26,7 +25,7 @@ function submitButtonEvent(event) {
   localStorage.setItem("radius", event.currentTarget[2].value);
 
   //Grid
-  let innergrid = document.getElementsByClassName('jobgrid')
+  let innergrid = document.getElementsByClassName('jobgrid');
   //sort this
   let job = [{
       Title: "Application Engineer",
@@ -186,10 +185,6 @@ function submitButtonEvent(event) {
 
   innergrid[0].innerHTML = jobposting
 }
-
-//this listens for the form to submit.
-jobSearch.addEventListener("submit", submitButtonEvent);
-
 
 //# sourceMappingURL=bootstrap-select-country.min.js.map
 
@@ -358,3 +353,13 @@ const darkMode = () => {
   document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));
   document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
 }
+
+//Contact Form Submit
+
+function contactFormSubmit(event) {
+  event.preventDefault();
+}
+
+//this listens for the contact form to submit.
+const contactButton = document.getElementById("contact-form");
+contactButton.addEventListener("submit", contactFormSubmit);
