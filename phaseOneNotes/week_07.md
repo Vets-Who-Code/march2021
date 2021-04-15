@@ -10,7 +10,6 @@
 ### Resources
 - [gatsby](https://www.gatsbyjs.com/)
 - [aboutmonica](https://aboutmonica.com/)
-- []()
 ### Homework 
 - Do your Github README file. There is a generator located [here](https://rahuldkjain.github.io/gh-profile-readme-generator/) if you wish to use it. 
 ## Day 2
