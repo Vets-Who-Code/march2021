@@ -15,8 +15,8 @@
 # Day 2
 ## Functions and Objects
 ### Functions
-- make function names meaningful. Self documenting code. 
-- be consistent with semicolons
+- Make function names meaningful. Self documenting code. 
+- Be consistent with semicolons
 - Example of a Function: 
 ```
 function triple(num) {
@@ -41,9 +41,9 @@ isOldEnoughToDrink(18);
 - You define (and create) a JavaScript object with an object literal.
 - Spaces and line breaks are not important. An object definition can span multiple lines.
 - The name:values pairs in JavaScript objects are called properties.
-- objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+- Objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
 - An object can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where a key is a string (also called a “property name”), and value can be anything.
-- basiclly objects package property names and values in structured data 
+- Basiclly objects package property names and values in structured data 
 - Example of an Object: 
 ```
 var language = {
@@ -67,6 +67,6 @@ language.name
 
 ```
 ### Portfolio Notes
-- build something like twillio into your portfolio
-- make a subscribe to newsletter section for people to stay updated on what you're doing
+- Build something like twillio into your portfolio
+- Make a subscribe to newsletter section for people to stay updated on what you're doing
 - Look into DevRel. DevRel focuses on maintaining and growing relationships with the ultimate goal of building advocacy, whereas developer marketing looks to build awareness and get developers into the funnel.
