@@ -124,6 +124,6 @@ squareArrow(); // returns 1
 - Cards should be the same length as the form 
 - Pass the cards darkMode via javascript 
 - onclick should check for the dark mode class. 'If darkmode do this'
-- South korea button may not make it to production 
+- South Korea button may not make it to production 
 - Have the social icons turn red on focus
 - Once you select dark mode check to see if cards are populated
