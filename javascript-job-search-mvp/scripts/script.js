@@ -353,6 +353,7 @@ const darkMode = () => {
   document.getElementById("send-button").classList.toggle("dark-theme");
   document.getElementById("submit-button").classList.toggle("dark-theme");
   document.getElementById("typed").classList.toggle("dark-theme");
+  document.querySelector(".lead-in").classList.toggle("dark-theme");
   document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));
   document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
 }

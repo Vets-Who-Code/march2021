@@ -230,11 +230,18 @@ footer li a {
 	width: 30px;
 }
 
+#typed.dark-theme {
+	color: white;
+}
+
+.lead-in.dark-theme {
+	color: #c5203e !important;
+}
 
 /* Header */
 
 .lead-in {
-	color: #c5203e !important;
+	color: #091F40 !important;
 	font-style: italic;
 	font-family: Open Sans,
 		sans-serif;
@@ -247,6 +254,7 @@ footer li a {
 
 #typed {
 	font-size: 1.4rem;
+	color: #c5203e;
 }
 
 .job-search-description {
