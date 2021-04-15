@@ -1,3 +1,20 @@
+/* Loading */
+
+.loading {
+	background: url('../images/veteran.gif') no-repeat center center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9999999;
+}
+
+.hide-if-loading {
+	display: none;
+}
+
+
 /* Navbar */
 
 nav {

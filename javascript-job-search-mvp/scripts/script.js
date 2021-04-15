@@ -1,5 +1,16 @@
 console.log('Hello, Vets Who Code!');
 
+//loader
+
+const loading = document.querySelector(".hide-if-loading");
+
+//Display loader for 3 seconds
+setTimeout(() => {
+  loading.classList.remove("hide-if-loading");
+  document.querySelector(".loading").classList.remove("loading");
+}, 7000)
+
+
 //Typed.js
 
 var typed = new Typed('#typed', {
