@@ -67,6 +67,6 @@ language.name
 
 ```
 ### Portfolio Notes
-- Build something like twillio into your portfolio
+- Build something like Twillio into your portfolio
 - Make a subscribe to newsletter section for people to stay updated on what you're doing
 - Look into DevRel. DevRel focuses on maintaining and growing relationships with the ultimate goal of building advocacy, whereas developer marketing looks to build awareness and get developers into the funnel.
