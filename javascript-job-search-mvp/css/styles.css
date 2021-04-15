@@ -14,6 +14,25 @@
 	display: none;
 }
 
+.fade-out {
+	animation: fadeOut ease-out 5s;
+	-webkit-animation: fadeOut ease-out 5s;
+	-moz-animation: fadeOut ease-out 5s;
+	-o-animation: fadeOut ease-out 5s;
+	-ms-animation: fadeOut ease-out 5s;
+}
+
+@keyframes fadeOut {
+	
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
 
 /* Navbar */
 
