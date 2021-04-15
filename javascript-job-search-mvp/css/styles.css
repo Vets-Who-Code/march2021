@@ -11,7 +11,6 @@
 }
 
 #loading-text {
-	
 	text-align: center;
 }
 
@@ -20,21 +19,22 @@
 }
 
 .fade-out {
-	animation: fadeOut ease-out 5s;
-	-webkit-animation: fadeOut ease-in-out 3s;
-	-moz-animation: fadeOut ease-in-out 3s;
-	-o-animation: fadeOut ease-in-out 3s;
-	-ms-animation: fadeOut ease-in-out 3s;
+	animation: fadeOut 5s linear;
+	-webkit-animation: fadeOut 5s linear;
+	-moz-animation: fadeOut 5s linear;
+	-o-animation: fadeOut 5s linear;
+	-ms-animation: fadeOut 5s linear;
 }
 
 @keyframes fadeOut {
-	0% {
-		opacity: 0;
-	}
-	
-	100% {
-		opacity: 1;
-	}
+		0%,
+		100% {
+			opacity: 0
+		}
+
+		50% {
+			opacity: 1
+		}
 }
 
 /* Navbar */
