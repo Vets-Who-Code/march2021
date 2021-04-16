@@ -556,6 +556,12 @@ footer {
 	margin: 0 0 20px 0;
 }
 
+@media (max-width: 1200px) {
+	.site-map {
+		padding-right: 0;
+	}
+}
+
 @media (max-width: 992px) {
 	.footer-div1 {
 		padding: 0;
@@ -576,11 +582,19 @@ footer {
 	.footer2-header {
 		text-align: center;
 	}
+
+	.site-map {
+		padding-left: 0;
+	}
 }
 
 @media (max-width: 768px) {
 	.footer-div2 {
 		margin: 0 20px;
+	}
+
+	.job-search-description {
+		text-align: center;
 	}
 }
 
@@ -601,10 +615,6 @@ footer {
 @media (max-width: 426px) {
 	.vwc-header {
 		margin-right: 0;
-	}
-
-	.job-search-description {
-		text-align: center;
 	}
 
 	.container h1 {
