@@ -263,9 +263,9 @@ footer li a {
 	font-weight: 400;
 	line-height: 29px;
 	margin: 0 0 10px;
-	text-align: left;
 	font-style: normal;
-	text-align: left;
+	text-align: center;
+	font-size: 1.2rem;
 }
 
 h1 {
