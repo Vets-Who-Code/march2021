@@ -115,7 +115,7 @@ squareArrow(); // returns 1
 ### Resources
 - [MDN Arrow Function Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 ### Homework
-- everything you learn this week, implement this into your portfolio and project
+- Everything you learned this week, implement this into your portfolio and project
 ### Project comments
 - Larger text box for contact message
 - Certain character count before you are able to send contact message
