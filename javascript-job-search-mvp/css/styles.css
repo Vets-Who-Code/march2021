@@ -362,6 +362,10 @@ a {
 	margin: 20px auto;
 }
 
+.grid-item {
+	font-family: "Open Sans";
+}
+
 @media only screen and (max-width: 1008px) {
 	.grid-container {
 		width: 98%;
