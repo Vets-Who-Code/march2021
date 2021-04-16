@@ -8,8 +8,8 @@
 - There will be a sign-list posted to shadow Jerome as he builds an NFT Token 
 - A non-fungible token (NFT) is a unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable.
 ### Resources
-- [gatsby](https://www.gatsbyjs.com/)
-- [aboutmonica](https://aboutmonica.com/)
+- [Gatsby](https://www.gatsbyjs.com/)
+- [Aboutmonica](https://aboutmonica.com/)
 ### Homework 
 - Do your Github README file. There is a generator located [here](https://rahuldkjain.github.io/gh-profile-readme-generator/) if you wish to use it. 
 # Day 2
