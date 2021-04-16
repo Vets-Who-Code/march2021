@@ -520,9 +520,8 @@ footer {
 }
 
 .footer-font-awesome:focus {
-	background-color: #BD2843;
+	color: #BD2843;
 }
-
 
 .send-button {
 	width: 100%;
