@@ -172,6 +172,10 @@ function submitButtonEvent(event) {
     }
   ]
 
+  if(event.currentTarget[0].value[0] == 1) {
+    job = [];
+  }
+
   job.sort(function (a, b) {
     return a.sortOrder - b.sortOrder
   });
