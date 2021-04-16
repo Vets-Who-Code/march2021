@@ -640,6 +640,10 @@ footer {
 		text-align: center;
 		display: block;
 	}
+
+	.copyright {
+		margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 426px) {
