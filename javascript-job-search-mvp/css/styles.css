@@ -556,6 +556,34 @@ footer {
 	margin: 0 0 20px 0;
 }
 
+@media (max-width: 992px) {
+	.footer-div1 {
+		padding: 0;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.footer-div3 {
+		text-align: center;
+		padding: 0;
+		margin-bottom: 40px;
+	}
+
+	.footer-div2 {
+		padding: 0;
+	}
+
+	.footer2-header {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer-div2 {
+		margin: 0 20px;
+	}
+}
+
 @media (max-width: 767px) {
 	.copyright {
 		float: none;
@@ -567,5 +595,19 @@ footer {
 		float: none;
 		text-align: center;
 		display: block;
+	}
+}
+
+@media (max-width: 426px) {
+	.vwc-header {
+		margin-right: 0;
+	}
+
+	.job-search-description {
+		text-align: center;
+	}
+
+	.container h1 {
+		font-size: 3em;
 	}
 }
