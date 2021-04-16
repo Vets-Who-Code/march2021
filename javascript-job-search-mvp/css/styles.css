@@ -342,8 +342,6 @@ a {
 
 .grid-container {
 	display: block;
-	/*grid-template-columns: 5fr 1fr;*/
-	/*grid-template-rows: 3fr 1fr;*/
 	border: 1px solid lightgrey;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

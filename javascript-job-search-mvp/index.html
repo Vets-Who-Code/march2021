@@ -214,7 +214,11 @@
             </div>
             <div class="form-group">
               <label class="group-email" for="exampleInputPassword1">Message</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Message">
+              <textarea name="textarea" id="textarea" maxlength="300" style="width: 100%" rows="5" class="form-control" id="exampleInputPassword1" placeholder="Message" autofocus></textarea>
+              <div id="count">
+                <span id="current_count">0</span>
+                <span id="maximum_count">/ 300</span>
+              </div>
             </div>
             <button type="submit" class="btn btn-primary send-button" id="send-button">Send</button>
           </form>
@@ -235,6 +239,16 @@
   <!-- country-selector -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
   <script src="scripts/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('textarea').keyup(function() {    
+        var characterCount = $(this).val().length,
+            current_count = $('#current_count'),
+            maximum_count = $('#maximum_count'),
+            count = $('#count');    
+            current_count.text(characterCount);        
+    });
+  </script>
 </body>
 
 </html>
