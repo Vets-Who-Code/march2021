@@ -340,22 +340,36 @@ a {
 	text-decoration: none !important;
 }
 
+video {
+	position:sticky;
+	top: 50px;
+	width:40%;
+	float: left;
+}
+
 .grid-container {
-	display: block;
+	display: block;	
 	/*grid-template-columns: 5fr 1fr;*/
 	/*grid-template-rows: 3fr 1fr;*/
 	border: 1px solid lightgrey;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
-	width: 75%;
-	margin: 20px auto;
 	width: 50%;
+	margin: 20px 52%;
 }
 
 @media only screen and (max-width: 1008px) {
 	.grid-container {
 		width: 75%;
+		margin: 20px auto;
+	}
+	video {
+		display: block;
+		position: relative;
+		width: 75%;
+		margin: 100px auto;
+		float: none;
 	}
 }
 
