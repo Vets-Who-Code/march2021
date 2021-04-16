@@ -488,6 +488,15 @@ footer {
 	float: right;
 }
 
+.made-by {
+	color: white;
+}
+
+.made-by:hover {
+	color: #f1cb2f;
+	cursor: pointer;
+}
+
 .footer-font-awesome:hover {
 	color: lightblue;
 }
