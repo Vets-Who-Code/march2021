@@ -37,12 +37,6 @@
 - no twitter links in the grid
 - no bookmarking jobs 
 - every job returned should have 2 or 3 explicit skills taught by VHC
-### Javascript Functional Programming
-- Javascript will be used on the moon link in the navbar to trigger dark mode. The darkMode() function will 
-- 
--
--
--
 ### Mockup
 ![job project](images/mockup.jpg)
 
