@@ -179,12 +179,14 @@ function submitButtonEvent(event) {
     }
   ]
 
-  job.sort(function(a,b) {return a.sortOrder-b.sortOrder});
+  job.sort(function (a, b) {
+    return a.sortOrder - b.sortOrder
+  });
 
   let jobposting = ""
 
   for (let i = 0; i < job.length; i++) {
-    jobposting +=`<a href="${job[i].ApplicationSite} target="blank" rel="noopener noreferrer"><div class="">
+    jobposting += `<a href="${job[i].ApplicationSite} target="blank" rel="noopener noreferrer"><div class="">
         <div class="grid-container">
           <div class="grid-item grid-item-1">${job[i].Title}</div>
           <div class="grid-item grid-item-2">${job[i].Company} - ${job[i].Location}</div>
@@ -359,9 +361,12 @@ var countrypicker = function (a) {
 const darkMode = () => {
   const body = document.body;
   body.classList.toggle("dark-background");
-  document.getElementById("donate").classList.toggle('dark-theme')
+  document.getElementById("donate").classList.toggle('dark-theme');
   document.getElementById("send-button").classList.toggle("dark-theme");
   document.getElementById("submit-button").classList.toggle("dark-theme");
+  document.getElementById("typed").classList.toggle("dark-theme");
+  document.querySelector(".lead-in").classList.toggle("dark-theme");
+  document.querySelector(".fa-moon").classList.toggle("fa-sun");
   document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));
   document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
 }
