@@ -521,6 +521,11 @@ footer {
 	padding-left: 50px;
 }
 
+.footer-font-awesome:focus {
+	background-color: #BD2843;
+}
+
+
 .send-button {
 	width: 100%;
 	margin-top: 10px;
