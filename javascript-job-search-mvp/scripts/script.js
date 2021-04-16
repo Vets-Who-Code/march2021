@@ -15,9 +15,12 @@ var typed = new Typed('#typed', {
 const jobSearch = document.getElementById("job-search");
 //this listens for the form to submit.
 jobSearch.addEventListener("submit", submitButtonEvent);
+//variable for veteran video
+const veteranVideo = document.getElementById("veteran-video");
 
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
+
   event.preventDefault();
   localStorage.setItem("job", "Web Developer");
   localStorage.setItem("zipcode", event.currentTarget[0].value);
@@ -160,6 +163,8 @@ function submitButtonEvent(event) {
       JobSnippet: "Design Quality Black Belt. The Role: The Design Quality Black Belt has several roles at Hunter Douglas: The DFSS practice leader for…",
       DateSincePosted: "18 Days ago",
       Location: "Atlanta",
+      Remote: "No",
+      Salary: "$95,000",
       ApplicationSite: "https://goldreqs.com/apply",
       DateSincePosted: "18 Days ago",
       FullOrPartTime: "Full Time",
@@ -173,6 +178,14 @@ function submitButtonEvent(event) {
 
   let jobposting = ""
 
+    if(job.length > 0) {
+    veteranVideo.classList.add('hidden');
+    document.getElementById("no-results").classList.add('hidden');
+  } else {
+    document.getElementById("no-results").classList.remove('hidden');
+    veteranVideo.classList.remove('hidden');
+  }
+
   for (let i = 0; i < job.length; i++) {
     jobposting += `<a href="${job[i].ApplicationSite} target="blank" rel="noopener noreferrer"><div class="">
         <div class="grid-container">
@@ -185,7 +198,20 @@ function submitButtonEvent(event) {
         </div></a>`
   }
 
+  const noResults = "The search returned no jobs";
+  if (job.length === 0) {
+    josposting+=noResults;
+  }
+
   innergrid[0].innerHTML = jobposting
+
+  if(document.body.classList.contains("dark-background")) {
+    document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
+    document.querySelectorAll(".grid-item").forEach(e => e.classList.add("dark-grid"));
+  } else  {
+    document.querySelectorAll(".grid-container").forEach(e => e.classList.remove("dark-container"));
+    document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
+  }
 }
 
 //# sourceMappingURL=bootstrap-select-country.min.js.map
