@@ -135,10 +135,11 @@
             <option value="200">200 mi.</option>
           </select>
         </div>
-        <button id="submit-button" type="submit" class="btn btn-primary mb-2 submit-button search"><i
+        <button id="submit-button" type="submit" class="btn btn-primary mb-2 submit-button search" onClick="document.getElementById('middle').scrollIntoView();"><i
             class="glyphicon glyphicon-search">
             Search</i></button>
       </form>
+			<div id="middle"></div>
       <div>
         <p id="no-results" class="text-center hidden">Sorry there were no results. Try again.</p>
       </div>

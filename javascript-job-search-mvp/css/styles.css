@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 /* Navbar */
 
 nav {
@@ -345,6 +349,11 @@ input[type="checkbox"] {
 .jobgrid {
 	overflow: auto;
 	height: 700px;
+}
+
+#middle {
+	position: relative;
+	top: -150px;
 }
 
 .disable-scrollbars::-webkit-scrollbar {
