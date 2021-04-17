@@ -185,6 +185,7 @@ function submitButtonEvent(event) {
   if (job.length > 0) {
     veteranVideo.classList.add('hidden');
     document.getElementById("no-results").classList.add('hidden');
+    document.getElementById('jobgrid').classList.remove('hidden');
   } else {
     document.getElementById("no-results").classList.remove('hidden');
     veteranVideo.classList.remove('hidden');
@@ -207,7 +208,7 @@ function submitButtonEvent(event) {
     josposting += noResults;
   }
 
-  innergrid[0].innerHTML = jobposting
+  innergrid[0].innerHTML = jobposting;
 
   if (document.body.classList.contains("dark-background")) {
     document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
