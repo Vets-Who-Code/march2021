@@ -334,16 +334,18 @@ input[type="checkbox"] {
 	}
 }
 
-/*No results Label*/
+/* No results Label */
+
 #no-results {
 	font-size: 20px;
 }
 
 /* Grid */
+
 #veteran-video {
 	display: block;
 	width: 57%;
-	margin: 80px auto 0 auto; 
+	margin: 80px auto 0 auto;
 }
 
 a {
@@ -363,7 +365,7 @@ a {
 }
 
 .grid-item {
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 }
 
 @media only screen and (max-width: 1008px) {
@@ -395,7 +397,7 @@ a {
 	color: #333;
 	padding: 2%;
 	width: 100%
-	/* border: 1px solid black; */
+		/* border: 1px solid black; */
 }
 
 .grid-item-1 {
@@ -429,7 +431,7 @@ a {
 	border-bottom-right-radius: 5px;
 }
 
-/* footer */
+/* Footer */
 
 footer {
 	font-family: 'Open Sans', sans-serif;

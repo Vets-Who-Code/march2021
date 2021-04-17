@@ -172,7 +172,7 @@ function submitButtonEvent(event) {
     }
   ]
 
-  if(event.currentTarget[0].value[0] == 1) {
+  if (event.currentTarget[0].value[0] == 1) {
     job = [];
   }
 
@@ -182,7 +182,7 @@ function submitButtonEvent(event) {
 
   let jobposting = ""
 
-    if(job.length > 0) {
+  if (job.length > 0) {
     veteranVideo.classList.add('hidden');
     document.getElementById("no-results").classList.add('hidden');
   } else {
@@ -204,15 +204,15 @@ function submitButtonEvent(event) {
 
   const noResults = "The search returned no jobs";
   if (job.length === 0) {
-    josposting+=noResults;
+    josposting += noResults;
   }
 
   innergrid[0].innerHTML = jobposting
 
-  if(document.body.classList.contains("dark-background")) {
+  if (document.body.classList.contains("dark-background")) {
     document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
     document.querySelectorAll(".grid-item").forEach(e => e.classList.add("dark-grid"));
-  } else  {
+  } else {
     document.querySelectorAll(".grid-container").forEach(e => e.classList.remove("dark-container"));
     document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
   }
