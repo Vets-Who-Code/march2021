@@ -323,7 +323,7 @@ input[type="checkbox"] {
 	margin-right: 5px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.5px) {
 	.zip {
 		margin-right: 0;
 	}
