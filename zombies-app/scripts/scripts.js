@@ -7,16 +7,6 @@ const advisory = () => {
   }
 }
 
-//loading
-const loading = document.querySelector(".hide-if-loading");
-
-//Display loader for 3 seconds
-setTimeout(() => {
-  loading.classList.remove("hide-if-loading");
-  document.querySelector(".loading").classList.remove("loading");
-}, 3000)
-
-
 /* Dark Mode */
 
 // Select the button
