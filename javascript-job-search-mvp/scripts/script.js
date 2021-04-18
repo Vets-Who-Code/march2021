@@ -384,6 +384,7 @@ const darkMode = () => {
   document.getElementById("send-button").classList.toggle("dark-theme");
   document.getElementById("submit-button").classList.toggle("dark-theme");
   document.getElementById("typed").classList.toggle("dark-theme");
+  document.getElementById("jobgrid").classList.toggle("dark-theme");
   document.querySelector(".lead-in").classList.toggle("dark-theme");
   document.querySelector(".fa-moon").classList.toggle("fa-sun");
   document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));

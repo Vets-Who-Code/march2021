@@ -242,6 +242,10 @@ footer li a {
 	color: #c5203e !important;
 }
 
+.jobgrid.dark-theme {
+	scrollbar-color: rgba(255, 255, 255, 0.5) rgba(54, 58, 76, 0);
+}
+
 /* Header */
 
 .lead-in {
