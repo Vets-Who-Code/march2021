@@ -7,6 +7,12 @@
 }
 
 @media (max-width: 1373px) {
+	.vwc-header {
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 1285px) {
 	.navbar-header {
 		float: none;
 		padding-bottom: 10px;
