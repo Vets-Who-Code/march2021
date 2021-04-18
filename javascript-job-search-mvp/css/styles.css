@@ -370,19 +370,6 @@ input[type="checkbox"] {
 	}
 }
 
-.disable-scrollbars::-webkit-scrollbar {
-	width: 0px;
-	background: transparent;
-	/* Chrome/Safari/Webkit */
-}
-
-.disable-scrollbars {
-	scrollbar-width: none;
-	/* Firefox */
-	-ms-overflow-style: none;
-	/* IE 10+ */
-}
-
 #veteran-video {
 	display: block;
 	width: 57%;
@@ -416,6 +403,39 @@ a {
 
 	#veteran-video {
 		width: 98%
+	}
+}
+
+@media (max-width: 768px) {
+	.disable-scrollbars::-webkit-scrollbar {
+		width: 0px;
+		background: transparent;
+		/* Chrome/Safari/Webkit */
+	}
+
+	.disable-scrollbars {
+		scrollbar-width: none;
+		/* Firefox */
+		-ms-overflow-style: none;
+		/* IE 10+ */
+	}
+
+	.jobgrid-container {
+		margin: 0;
+	}
+
+	.jobgrid {
+		margin-right: 0;
+	}
+
+	.container {
+		width: 87%;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+		width: 98%;
 	}
 }
 
@@ -573,6 +593,17 @@ footer {
 	color: white;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+@media (max-width: 343px) {
+	.footer-font-awesome {
+		margin-left: 7.5px;
+		margin-right: 7.5px;
+	}
+
+	.vwc-header {
+		font-size: 1.1rem;
+	}
 }
 
 .footer-img {
