@@ -728,6 +728,12 @@ footer {
 	}
 }
 
+@media (max-width: 449px) {
+	.container h1 {
+		font-size: 2.9rem;
+	}
+}
+
 @media (max-width: 426px) {
 	.vwc-header {
 		margin-right: 0;
@@ -741,5 +747,11 @@ footer {
 @media (max-width: 325px) {
 	.container h1 {
 		font-size: 2.7rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.byVWC {
+		font-size: .9rem;
 	}
 }
