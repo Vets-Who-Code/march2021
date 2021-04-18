@@ -100,10 +100,12 @@
   <main>
     <div class="container">
       <h1>JOB SEARCH</h1>
-      <p class="lead-in">#VetsWhoCode <span id="typed"></span></span></p>
-      <div id="typed-strings">
-        <p>provides job placement assistance.</p>
-        <p>makes a difference in the lives of veterans.</p>
+      <div class="typed-container">
+        <p class="lead-in">#VetsWhoCode <span id="typed"></span></p>
+        <div id="typed-strings">
+          <p>provides job placement assistance.</p>
+          <p>makes a difference in the lives of veterans.</p>
+        </div>
       </div>
       <p class="job-search-description">
         Vets Who Code Job Search (VWC) is a tool for connecting veterans, military, and military spouses with jobs.
@@ -135,19 +137,19 @@
             <option value="200">200 mi.</option>
           </select>
         </div>
-        <button id="submit-button" type="submit" class="btn btn-primary mb-2 submit-button search" onClick="document.getElementById('middle').scrollIntoView();"><i
-            class="glyphicon glyphicon-search">
+        <button id="submit-button" type="submit" class="btn btn-primary mb-2 submit-button search"
+          onClick="document.getElementById('middle').scrollIntoView();"><i class="glyphicon glyphicon-search">
             Search</i></button>
       </form>
-			<div id="middle"></div>
+      <div id="middle"></div>
       <div>
         <p id="no-results" class="text-center hidden">Sorry there were no results. Try again.</p>
       </div>
       <video id="veteran-video" src="videos/veteran-on-computer.mp4" autoplay loop></video>
       <!-- Grid -->
       <div class="jobgrid-container">
-      <div class="jobgrid hidden disable-scrollbars" id="jobgrid" aria-label="Job Grid">
-      </div>
+        <div class="jobgrid hidden disable-scrollbars" id="jobgrid" aria-label="Job Grid">
+        </div>
       </div>
     </div>
   </main>
