@@ -346,9 +346,17 @@ input[type="checkbox"] {
 
 /* Grid */
 
+.jobgrid-container {
+	margin: 0 175px;
+}
+
 .jobgrid {
 	overflow: auto;
 	height: 700px;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(54, 58, 76, 0.2) rgba(54, 58, 76, 0.1);
+	margin-right: -8px;
+	width: auto;
 }
 
 #middle {
@@ -392,7 +400,7 @@ a {
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
-	width: 57%;
+	width: 85%;
 	height: 300px;
 	margin: 20px auto;
 }
