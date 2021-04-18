@@ -1,0 +1,247 @@
+/* Media Queries */
+
+@media (max-width: 1600px) {
+	.vwc-header {
+		margin-right: 75px;
+	}
+}
+
+@media (max-width: 1373px) {
+	.navbar-header {
+		float: none;
+		padding-bottom: 10px;
+	}
+
+	.navbar-left,
+	.navbar-right {
+		float: none !important;
+	}
+
+	.navbar-toggle {
+		display: block;
+	}
+
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	}
+
+	.navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+
+	.navbar-nav {
+		float: none !important;
+		margin-top: 7.5px;
+	}
+
+	.navbar-nav>li {
+		float: none;
+	}
+
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.collapse.in {
+		display: block !important;
+	}
+
+	.nav-links li:hover {
+		border-bottom: none;
+	}
+
+	.moon {
+		margin-bottom: 10px;
+		margin-top: -10px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.site-map {
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 1008px) {
+	.grid-container {
+		width: 98%;
+	}
+
+	#veteran-video {
+		width: 98%
+	}
+}
+
+@media (max-width: 992px) {
+	.footer-div1 {
+		padding: 0;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.footer-div3 {
+		text-align: center;
+		padding: 0;
+		margin-bottom: 40px;
+	}
+
+	.footer-div2 {
+		padding: 0;
+	}
+
+	.footer2-header {
+		text-align: center;
+	}
+
+	.site-map {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.disable-scrollbars::-webkit-scrollbar {
+		width: 0px;
+		background: transparent;
+		/* Chrome/Safari/Webkit */
+	}
+
+	.disable-scrollbars {
+		scrollbar-width: none;
+		/* Firefox */
+		-ms-overflow-style: none;
+		/* IE 10+ */
+	}
+
+	.jobgrid-container {
+		margin: 0;
+	}
+
+	.jobgrid {
+		margin-right: 0;
+	}
+
+	.container {
+		width: 87%;
+	}
+
+	.footer-div2 {
+		margin: 0 20px;
+	}
+
+	.job-search-description {
+		text-align: center;
+	}
+
+	#middle {
+		position: initial;
+	}
+}
+
+@media (max-width: 767.5px) {
+	.zip {
+		margin-right: 0;
+	}
+
+	.miles {
+		margin: 0;
+	}
+
+	input[type="checkbox"] {
+		margin-right: 0;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.copyright {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+
+	.byVWC {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+
+	.copyright {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 759px) {
+	.typed-container {
+		height: 100px;
+	}
+
+	#typed {
+		font-size: 1.2rem;
+	}
+
+	.lead-in {
+		font-size: 1.2rem;
+	}
+
+	.job-search-description {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.container h1 {
+		font-size: 3.4rem;
+	}
+}
+
+@media (max-width: 449px) {
+	.container h1 {
+		font-size: 2.9rem;
+	}
+}
+
+@media (max-width: 426px) {
+	.vwc-header {
+		margin-right: 0;
+	}
+
+	.container h1 {
+		font-size: 2.8em;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+		width: 98%;
+	}
+}
+
+@media (max-width: 343px) {
+	.footer-font-awesome {
+		margin-left: 7.5px;
+		margin-right: 7.5px;
+	}
+
+	.vwc-header {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 325px) {
+	.container h1 {
+		font-size: 2.7rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.byVWC {
+		font-size: .9rem;
+	}
+}
