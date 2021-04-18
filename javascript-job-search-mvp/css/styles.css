@@ -733,3 +733,9 @@ footer {
 		font-size: 3em;
 	}
 }
+
+@media (max-width: 325px) {
+	.container h1 {
+		font-size: 2.7rem;
+	}
+}
