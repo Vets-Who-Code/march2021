@@ -347,7 +347,7 @@ input[type="checkbox"] {
 /* Grid */
 
 .jobgrid-container {
-	margin: 0 175px;
+	margin: 0 200px;
 }
 
 .jobgrid {
@@ -355,7 +355,7 @@ input[type="checkbox"] {
 	height: 700px;
 	scrollbar-width: thin;
 	scrollbar-color: rgba(54, 58, 76, 0.2) rgba(54, 58, 76, 0.1);
-	margin-right: -8px;
+	margin-right: -7px;
 	width: auto;
 }
 
