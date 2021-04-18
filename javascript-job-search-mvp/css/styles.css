@@ -346,9 +346,17 @@ input[type="checkbox"] {
 
 /* Grid */
 
+.jobgrid-container {
+	margin: 0 200px;
+}
+
 .jobgrid {
 	overflow: auto;
 	height: 700px;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(197, 32, 62, 0.5) rgba(54, 58, 76, 0.2);
+	margin-right: -7px;
+	width: auto;
 }
 
 #middle {
@@ -360,19 +368,6 @@ input[type="checkbox"] {
 	#middle {
 		position: initial;
 	}
-}
-
-.disable-scrollbars::-webkit-scrollbar {
-	width: 0px;
-	background: transparent;
-	/* Chrome/Safari/Webkit */
-}
-
-.disable-scrollbars {
-	scrollbar-width: none;
-	/* Firefox */
-	-ms-overflow-style: none;
-	/* IE 10+ */
 }
 
 #veteran-video {
@@ -392,7 +387,7 @@ a {
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
-	width: 57%;
+	width: 85%;
 	height: 300px;
 	margin: 20px auto;
 }
@@ -408,6 +403,39 @@ a {
 
 	#veteran-video {
 		width: 98%
+	}
+}
+
+@media (max-width: 768px) {
+	.disable-scrollbars::-webkit-scrollbar {
+		width: 0px;
+		background: transparent;
+		/* Chrome/Safari/Webkit */
+	}
+
+	.disable-scrollbars {
+		scrollbar-width: none;
+		/* Firefox */
+		-ms-overflow-style: none;
+		/* IE 10+ */
+	}
+
+	.jobgrid-container {
+		margin: 0;
+	}
+
+	.jobgrid {
+		margin-right: 0;
+	}
+
+	.container {
+		width: 87%;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+		width: 98%;
 	}
 }
 
@@ -567,6 +595,17 @@ footer {
 	margin-right: 20px;
 }
 
+@media (max-width: 343px) {
+	.footer-font-awesome {
+		margin-left: 7.5px;
+		margin-right: 7.5px;
+	}
+
+	.vwc-header {
+		font-size: 1.1rem;
+	}
+}
+
 .footer-img {
 	width: 30%;
 }
@@ -692,5 +731,11 @@ footer {
 
 	.container h1 {
 		font-size: 3em;
+	}
+}
+
+@media (max-width: 325px) {
+	.container h1 {
+		font-size: 2.7rem;
 	}
 }
