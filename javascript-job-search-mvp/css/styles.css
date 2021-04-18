@@ -354,7 +354,7 @@ input[type="checkbox"] {
 	overflow: auto;
 	height: 700px;
 	scrollbar-width: thin;
-	scrollbar-color: rgba(197, 32, 62, 0.4) rgba(54, 58, 76, 0.2);
+	scrollbar-color: rgba(197, 32, 62, 0.5) rgba(54, 58, 76, 0.2);
 	margin-right: -7px;
 	width: auto;
 }
