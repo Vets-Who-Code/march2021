@@ -1,7 +1,7 @@
+//easter egg
 console.log('Hello, Vets Who Code!');
 
 //Typed.js
-
 var typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
   backSpeed: 50,
@@ -17,18 +17,23 @@ const jobSearch = document.getElementById("job-search");
 jobSearch.addEventListener("submit", submitButtonEvent);
 //variable for veteran video
 const veteranVideo = document.getElementById("veteran-video");
+//receives objects from the API (array of objects)
 let job = [];
 
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
-
   event.preventDefault();
+
+  //for the future language dropdown functionality
   localStorage.setItem("job", "Web Developer");
   localStorage.setItem("zipcode", event.currentTarget[0].value);
   localStorage.setItem("remote", event.currentTarget[1].value);
   localStorage.setItem("radius", event.currentTarget[2].value);
+
+  //API data gets pushed into this as a string 
+  let jobposting = "";
  
-  // GET Request
+  // API GET Request
   fetch('https://swapi.dev/api/people/?').then(response => {
           if (response.ok) {
               return response.json();
@@ -36,27 +41,29 @@ function submitButtonEvent(event) {
           throw new Error('Network response error.');
       })
       .then(response => {
+        if(job.length > 0) {
+          job = [];
+          jobposting = "";
+        }
       for(let i = 0; i < response.results.length; i++) {
       job.push({Title: response.results[i].name, Company: response.results[i].height, Location: response.results[i].mass, Remote: response.results[i].hair_color, JobSnippet: response.results[i].skin_color, Salary: response.results[i].eye_color, DateSincePosted: response.results[i].birth_year});
     }
   });
-
-  console.log(job);
  
   //Grid    
   let innergrid = document.getElementsByClassName('jobgrid');
-  //sort this
 
+  //test case for 11111 zip code to demonstrate the no search results screen. To be removed. 
   if (event.currentTarget[0].value[0] == 1) {
     job = [];
   }
 
+  //sort the job array
   job.sort(function (a, b) {
     return a.sortOrder - b.sortOrder
   });
 
-  let jobposting = ""
-
+  //if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
   if (job.length > 0) {
     veteranVideo.classList.add('hidden');
     document.getElementById("no-results").classList.add('hidden');
@@ -66,6 +73,7 @@ function submitButtonEvent(event) {
     veteranVideo.classList.remove('hidden');
   }
 
+  //adds a container and items to the jobposting string for each object in the job array
   for (let i = 0; i < job.length; i++) {
     jobposting += `<a href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer"><div class="">
         <div class="grid-container">
@@ -78,6 +86,7 @@ function submitButtonEvent(event) {
         </div></a>`
   }
 
+  //if the job array contains no data from the API, the jobposting string will show no results
   const noResults = "The search returned no jobs";
   if (job.length === 0) {
     jobposting += noResults;
@@ -95,7 +104,6 @@ function submitButtonEvent(event) {
 }
 
 //# sourceMappingURL=bootstrap-select-country.min.js.map
-
 var countrypicker = function (a) {
   "use strict";
   a = a && a.hasOwnProperty("default") ? a.default : a;
@@ -251,7 +259,6 @@ var countrypicker = function (a) {
 }($);
 
 //Dark Mode
-
 const darkMode = () => {
   const body = document.body;
   body.classList.toggle("dark-background");
@@ -266,8 +273,7 @@ const darkMode = () => {
   document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
 }
 
-//Contact Form Submit
-
+//Contact Form
 function contactFormSubmit(event) {
   event.preventDefault();
 }
