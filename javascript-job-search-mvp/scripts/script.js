@@ -17,6 +17,7 @@ const jobSearch = document.getElementById("job-search");
 jobSearch.addEventListener("submit", submitButtonEvent);
 //variable for veteran video
 const veteranVideo = document.getElementById("veteran-video");
+let job = [];
 
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
@@ -26,151 +27,25 @@ function submitButtonEvent(event) {
   localStorage.setItem("zipcode", event.currentTarget[0].value);
   localStorage.setItem("remote", event.currentTarget[1].value);
   localStorage.setItem("radius", event.currentTarget[2].value);
+ 
+  // GET Request
+  fetch('https://swapi.dev/api/people/?').then(response => {
+          if (response.ok) {
+              return response.json();
+          }
+          throw new Error('Network response error.');
+      })
+      .then(response => {
+      for(let i = 0; i < response.results.length; i++) {
+      job.push({Title: response.results[i].name, Company: response.results[i].height, Location: response.results[i].mass, Remote: response.results[i].hair_color, JobSnippet: response.results[i].skin_color, Salary: response.results[i].eye_color, DateSincePosted: response.results[i].birth_year});
+    }
+  });
 
-  //Grid
+  console.log(job);
+ 
+  //Grid    
   let innergrid = document.getElementsByClassName('jobgrid');
   //sort this
-  let job = [{
-      Title: "Application Engineer",
-      Company: "Google",
-      Location: "San Francisco, CA",
-      JobSnippet: "Application Engineers understand internal processes and what it takes to run Google at speed with its ever growing scale. As an Application Engineer...",
-      DateSincePosted: "18 Days ago",
-      Location: "San Francisco",
-      Remote: "Yes",
-      Salary: "$115,000",
-      ApplicationSite: "https://google.com/careers",
-      DateSincePosted: "18 Days ago",
-      FullOrPartTime: "Full Time",
-      sortOrder: 18
-    },
-    {
-      Title: "Technical Evangelist",
-      Company: "Eco Focus",
-      Location: "San Francisco, CA",
-      JobSnippet: "Demonstrated proficiency in iSeries technical standards. Working knowledge in the appropriate technical language.",
-      DateSincePosted: "> 30 Days ago",
-      Location: "San Francisco",
-      Remote: "Yes",
-      Salary: "$105,000",
-      ApplicationSite: "https://www.ecofocusworldwide.com/",
-      DateSincePosted: "> 30 Days ago",
-      FullOrPartTime: "Full Time",
-      sortOrder: 31
-    },
-    {
-      Title: "Digital Overlord",
-      Company: "Innovation Arch",
-      Location: "Houston, TX",
-      JobSnippet: "Digital overlord - If you have ever worked on a website, you know this term is fitting for the role.",
-      DateSincePosted: "5 hours ago",
-      Location: "Houston",
-      Remote: "No",
-      Salary: "$55,000",
-      ApplicationSite: "https://www.accenture.com/us-en/about/innovation-architecture-index",
-      DateSincePosted: "Today",
-      FullOrPartTime: "Part Time",
-      sortOrder: 1
-    },
-    {
-      Title: "Skynet Operator",
-      Company: "Cogent Security",
-      Location: "Seattle, WA",
-      JobSnippet: "Good analytical skills Good communication and documentation skills Be able to work under pressure Be willing to work long hours and meet...",
-      DateSincePosted: "Just now",
-      Location: "Seattle",
-      Remote: "Yes",
-      Salary: "$145,000",
-      ApplicationSite: "https://skynet.com/life",
-      DateSincePosted: "Today",
-      FullOrPartTime: "Full Time",
-      sortOrder: 1
-    },
-    {
-      Title: "JavaScript Guru",
-      Company: "Felar Corp",
-      Location: "Austin, TX",
-      JobSnippet: "Two or more years experience developing front end websites and applications.The ideal candidate is someone who’s a web guru that will…",
-      DateSincePosted: "5 days ago",
-      Location: "Austin",
-      Remote: "Yes",
-      Salary: "$85,000",
-      ApplicationSite: "https://felarcorp.com/careers",
-      DateSincePosted: "5 days ago",
-      FullOrPartTime: "Part Time",
-      sortOrder: 5
-    },
-    {
-      Title: "Object Oriented Sherpa",
-      Company: "Sanguine Skincare",
-      Location: "Denver, CO",
-      JobSnippet: "Demonstrate an understanding of the basics of object oriented programming. Work both autonomously and within a team environment.",
-      DateSincePosted: "5 hours ago",
-      Location: "Denver",
-      Remote: "Yes",
-      Salary: "$65,000",
-      ApplicationSite: "https://s2skin.com/careers",
-      DateSincePosted: "Today",
-      FullOrPartTime: "Part Time",
-      sortOrder: 1
-    },
-    {
-      Title: "Scrum Advisor",
-      Company: "Senzu Bean",
-      Location: "Chicago, IL",
-      JobSnippet: "Attend all weekly planning meetings, scrum meetings (all online), and potentially client meetings. This role is integral to our growing Web Production…",
-      DateSincePosted: "> 30 Days ago",
-      Location: "Chicago",
-      Remote: "No",
-      Salary: "$105,000",
-      ApplicationSite: "https://beans.com/team",
-      DateSincePosted: "> 30 Days ago",
-      FullOrPartTime: "Full Time",
-      sortOrder: 31
-    },
-    {
-      Title: "Growth Hacker",
-      Company: "Ultra Instinct",
-      Location: "New York, NY",
-      JobSnippet: "Keep one eye on surpassing growth targets and the other on effective customer acquisition spending. Possess a combination of clever thinking and…",
-      DateSincePosted: "> 30 Days ago",
-      Location: "New York",
-      Remote: "Yes",
-      Salary: "$95,000",
-      ApplicationSite: "https://UI.com/apply",
-      DateSincePosted: "> 30 Days ago",
-      FullOrPartTime: "N/A",
-      sortOrder: 31
-    },
-    {
-      Title: "Python Prophet",
-      Company: "Ranger Powers",
-      Location: "Seattle, WA",
-      JobSnippet: "Top-notch developers needed to help fuel our rapid expansion. We offer a 401(k) with 100% match of up to 4% of…",
-      DateSincePosted: "5 hours ago",
-      Location: "Seattle",
-      Remote: "No",
-      Salary: "$75,000",
-      ApplicationSite: "https://RangerPowers.com/careers",
-      DateSincePosted: "Today",
-      FullOrPartTime: "Full Time",
-      sortOrder: 1
-    },
-    {
-      Title: "Six Sigma Blackbelt Coder",
-      Company: "Gold Requisitions",
-      Location: "Atlanta, GA",
-      JobSnippet: "Design Quality Black Belt. The Role: The Design Quality Black Belt has several roles at Hunter Douglas: The DFSS practice leader for…",
-      DateSincePosted: "18 Days ago",
-      Location: "Atlanta",
-      Remote: "No",
-      Salary: "$95,000",
-      ApplicationSite: "https://goldreqs.com/apply",
-      DateSincePosted: "18 Days ago",
-      FullOrPartTime: "Full Time",
-      sortOrder: 18
-    }
-  ]
 
   if (event.currentTarget[0].value[0] == 1) {
     job = [];
@@ -194,18 +69,18 @@ function submitButtonEvent(event) {
   for (let i = 0; i < job.length; i++) {
     jobposting += `<a href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer"><div class="">
         <div class="grid-container">
-          <div class="grid-item grid-item-1">${job[i].Title}</div>
-          <div class="grid-item grid-item-2">${job[i].Company} - ${job[i].Location}</div>
+          <div class="grid-item grid-item-1">Title: ${job[i].Title}</div>
+          <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
           <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
-          <div class="grid-item grid-item-4">${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-5">${job[i].Salary}</div>
-          <div class="grid-item grid-item-6">${job[i].DateSincePosted}</div>
+          <div class="grid-item grid-item-4">Job Description ${job[i].JobSnippet}</div>
+          <div class="grid-item grid-item-5">Salary ${job[i].Salary}</div>
+          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}</div>
         </div></a>`
   }
 
   const noResults = "The search returned no jobs";
   if (job.length === 0) {
-    josposting += noResults;
+    jobposting += noResults;
   }
 
   innergrid[0].innerHTML = jobposting;
