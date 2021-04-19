@@ -8,11 +8,11 @@
 
 @media (max-width: 1373px) {
 	.vwc-header {
-		margin-right: 5px;
+		margin-right: 2px;
 	}
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1299px) {
 	.navbar-header {
 		float: none;
 		padding-bottom: 10px;
