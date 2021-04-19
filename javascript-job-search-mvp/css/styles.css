@@ -286,7 +286,7 @@ input[type="checkbox"] {
 }
 
 .jobgrid::-webkit-scrollbar {
-	width: 10px;
+	width: 8px;
 }
 
 .jobgrid::-webkit-scrollbar-track {
