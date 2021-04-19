@@ -183,6 +183,20 @@ footer li a {
 	scrollbar-color: rgba(255, 255, 255, 0.5) rgba(54, 58, 76, 0);
 }
 
+.jobgrid.dark-theme::-webkit-scrollbar {
+	width: 8px;
+}
+
+.jobgrid.dark-theme::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+	border-radius: 10px;
+}
+
+.jobgrid.dark-theme::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.7);
+}
+
 /* Header */
 
 .lead-in {
