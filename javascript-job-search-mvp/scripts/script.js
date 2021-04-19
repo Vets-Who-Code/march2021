@@ -86,12 +86,6 @@ function submitButtonEvent(event) {
         </div></a>`
   }
 
-  //if the job array contains no data from the API, the jobposting string will show no results
-  const noResults = "The search returned no jobs";
-  if (job.length === 0) {
-    jobposting += noResults;
-  }
-
   innergrid[0].innerHTML = jobposting;
 
   if (document.body.classList.contains("dark-background")) {
