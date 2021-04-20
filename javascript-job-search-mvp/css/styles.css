@@ -491,11 +491,11 @@ footer {
 }
 
 .footer-font-awesome:hover {
-	color: lightblue;
+	color: #203EC5;
 }
 
 .footer-font-awesome {
-	color: white;
+	color: #091F40;
 	margin-left: 20px;
 	margin-right: 20px;
 }

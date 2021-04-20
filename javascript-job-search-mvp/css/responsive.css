@@ -207,6 +207,13 @@
 	}
 }
 
+@media (max-width: 483px),
+(min-width: 440px) {
+	.footer1 .container {
+		padding: 0;
+	}
+}
+
 @media (max-width: 449px) {
 	.container h1 {
 		font-size: 2.9rem;
