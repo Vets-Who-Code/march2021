@@ -180,21 +180,15 @@ footer li a {
 }
 
 .jobgrid.dark-theme {
-	scrollbar-color: rgba(255, 255, 255, 0.5) rgba(54, 58, 76, 0);
-}
-
-.jobgrid.dark-theme::-webkit-scrollbar {
-	width: 8px;
+	scrollbar-color: rgba(255, 255, 255, 0.7) rgba(54, 58, 76, 0);
 }
 
 .jobgrid.dark-theme::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
-	border-radius: 10px;
+	background: rgba(255, 255, 255, 0);
 }
 
 .jobgrid.dark-theme::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.7);
+	background: rgba(255, 255, 255, 0.7);
 }
 
 /* Header */
@@ -300,17 +294,15 @@ input[type="checkbox"] {
 }
 
 .jobgrid::-webkit-scrollbar {
-	width: 8px;
+	width: 6px;
 }
 
 .jobgrid::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-	border-radius: 10px;
+	background: rgba(0, 0, 0, 0);
 }
 
 .jobgrid::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	background: rgba(54, 58, 76, 0.3);
 }
 
 #middle {
