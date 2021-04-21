@@ -102,8 +102,28 @@
 		padding: 0;
 	}
 
+	.site-map {
+		margin-left: -5px;
+	}
+
+	.site-map+div {
+		margin-left: -5px;
+	}
+
+	.footer-li {
+		margin-bottom: 20px;
+	}
+
+	.footer-icon {
+		display: none;
+	}
+
 	.footer2-header {
 		text-align: center;
+	}
+
+	.footer2-header {
+		margin-bottom: 25px;
 	}
 
 	.site-map {

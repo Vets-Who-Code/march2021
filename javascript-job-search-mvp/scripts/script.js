@@ -30,27 +30,35 @@ function submitButtonEvent(event) {
   localStorage.setItem("remote", event.currentTarget[1].value);
   localStorage.setItem("radius", event.currentTarget[2].value);
 
-  //API data gets pushed into this as a string 
+  //API data gets pushed into this as a string
   let jobposting = "";
- 
+
   // API GET Request
   fetch('https://swapi.dev/api/people/?').then(response => {
-          if (response.ok) {
-              return response.json();
-          }
-          throw new Error('Network response error.');
-      })
-      .then(response => {
-        if(job.length > 0) {
-          job = [];
-          jobposting = "";
-        }
-      for(let i = 0; i < response.results.length; i++) {
-      job.push({Title: response.results[i].name, Company: response.results[i].height, Location: response.results[i].mass, Remote: response.results[i].hair_color, JobSnippet: response.results[i].skin_color, Salary: response.results[i].eye_color, DateSincePosted: response.results[i].birth_year});
-    }
-  });
- 
-  //Grid    
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error('Network response error.');
+    })
+    .then(response => {
+      if (job.length > 0) {
+        job = [];
+        jobposting = "";
+      }
+      for (let i = 0; i < response.results.length; i++) {
+        job.push({
+          Title: response.results[i].name,
+          Company: response.results[i].height,
+          Location: response.results[i].mass,
+          Remote: response.results[i].hair_color,
+          JobSnippet: response.results[i].skin_color,
+          Salary: response.results[i].eye_color,
+          DateSincePosted: response.results[i].birth_year
+        });
+      }
+    });
+
+  //Grid
   let innergrid = document.getElementsByClassName('jobgrid');
 
   //test case for 11111 zip code to demonstrate the no search results screen. To be removed. 
