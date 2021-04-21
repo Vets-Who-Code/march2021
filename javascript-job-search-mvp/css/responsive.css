@@ -99,6 +99,10 @@
 	.site-map {
 		padding-left: 0;
 	}
+
+	.jobgrid-container {
+		margin: 0;
+	}
 }
 
 @media (max-width: 768px) {
