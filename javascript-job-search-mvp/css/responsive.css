@@ -216,6 +216,10 @@
 	.container h1 {
 		font-size: 3.4rem;
 	}
+
+	.container .icons {
+		font-size: 1.5rem;
+	}
 }
 
 @media (max-width: 483px),
