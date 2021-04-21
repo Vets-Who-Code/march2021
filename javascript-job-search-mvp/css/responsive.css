@@ -75,6 +75,12 @@
 	}
 }
 
+@media (max-width: 1199px) {
+	.jobgrid-container {
+		margin: 0 100px;
+	}
+}
+
 @media (max-width: 992px) {
 	.footer-div1 {
 		padding: 0;
