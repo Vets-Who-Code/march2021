@@ -289,7 +289,6 @@ input[type="checkbox"] {
 	height: 700px;
 	scrollbar-width: thin;
 	scrollbar-color: rgba(54, 58, 76, 0.3) rgba(54, 58, 76, 0);
-	margin-right: -8px;
 	width: auto;
 }
 
