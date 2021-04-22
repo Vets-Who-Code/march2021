@@ -341,13 +341,15 @@ input[type="checkbox"] {
 	background-color: #FFF;
 	color: #333;
 	padding: 2%;
-	width: 100%
+	width: 100%;
+	text-decoration: none;
 		/* border: 1px solid black; */
 }
 
 .dark-grid  {
 	background-color: #c5203e;
 	color: white;
+	text-decoration: none;
 }
 
 .dark-container:hover {
@@ -372,13 +374,11 @@ input[type="checkbox"] {
 
 .grid-item-4 {
 	font-size: 1rem;
-	color: #696969;
 }
 
 .grid-item-5 {
 	font-size: 1rem;
 	font-weight: bold;
-	color: #696969;
 }
 
 .grid-item-6 {
@@ -544,7 +544,6 @@ footer {
 .text {
 	color: black;
 }
-
 
 .language-button {
 	margin-top: 20px;
