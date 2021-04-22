@@ -346,9 +346,17 @@ input[type="checkbox"] {
 		/* border: 1px solid black; */
 }
 
+.grid-item:on-focus {
+	text-decoration: none;
+}
+
 .dark-grid  {
 	background-color: #c5203e;
 	color: white;
+	text-decoration: none;
+}
+
+.dark-grid:on-focus {
 	text-decoration: none;
 }
 
@@ -562,5 +570,8 @@ a {
 	text-decoration: none;
 }
 a:hover {
+	text-decoration: none;
+}
+a:focus{
 	text-decoration: none;
 }
