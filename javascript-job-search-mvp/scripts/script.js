@@ -18,22 +18,22 @@ jobSearch.addEventListener("submit", submitButtonEvent);
 //variable for veteran video
 const veteranVideo = document.getElementById("veteran-video");
 
-
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
   event.preventDefault();
 
   //for the future language dropdown functionality
-  localStorage.setItem("job", "Web Developer");
+
+  /*localStorage.setItem("job", "Web Developer");
   localStorage.setItem("zipcode", event.currentTarget[0].value);
   localStorage.setItem("remote", event.currentTarget[1].value);
-  localStorage.setItem("radius", event.currentTarget[2].value);
+  localStorage.setItem("radius", event.currentTarget[2].value);*/
 
   //API data gets pushed into this as a string 
   let jobposting = "";
   //receives objects from the API (array of objects)
   let job = [];
-    //Grid    
+  //Grid    
   let innergrid = document.getElementById('jobgrid');
  
   // API GET Request
