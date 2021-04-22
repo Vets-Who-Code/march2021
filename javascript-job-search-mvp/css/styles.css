@@ -541,6 +541,18 @@ footer {
 	background-color: #286090;
 }
 
+.text {
+	color: black;
+}
+
+.text:focus {
+	color: white;
+}
+
+.select.option-with-flag option:hover {
+	color: white;
+}
+
 .language-button {
 	margin-top: 20px;
 }
