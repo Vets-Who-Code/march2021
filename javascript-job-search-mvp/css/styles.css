@@ -212,7 +212,7 @@ footer li a {
 /* Header */
 
 .lead-in {
-	color: var(--dark-blue) !important;
+	color: var(--dark-blue);
 	font-style: italic;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
@@ -268,13 +268,13 @@ h1 {
 	transition: all .2s ease-in-out;
 	width: 115px;
 	text-transform: capitalize;
-	background-color: var(--light-red) !important;
+	background-color: var(--light-red);
 	background-image: none;
 	border: 1px solid black;
 }
 
 .submit-button:hover {
-	background-color: var(--medium-blue) !important;
+	background-color: var(--medium-blue);
 }
 
 .zip {
@@ -332,7 +332,7 @@ input[type="checkbox"] {
 	margin: 80px auto 0 auto;
 }
 
-a {
+.cardAnchor {
 	text-decoration: none !important;
 }
 

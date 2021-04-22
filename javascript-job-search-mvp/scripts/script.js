@@ -83,7 +83,7 @@ function submitButtonEvent(event) {
 
   //adds a container and items to the jobposting string for each object in the job array
   for (let i = 0; i < job.length; i++) {
-    jobposting += `<a href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer"><div class="">
+    jobposting += `<a class="cardAnchor" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer"><div class="">
         <div class="grid-container">
           <div class="grid-item grid-item-1">Title: ${job[i].Title}</div>
           <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
