@@ -63,6 +63,10 @@
 		border-bottom: none;
 	}
 
+	.nav-links .link-name:hover {
+		color: var(--light-gold);
+	}
+
 	.moon {
 		margin-bottom: 10px;
 		margin-top: -10px;
@@ -75,17 +79,17 @@
 	}
 }
 
-@media only screen and (max-width: 1008px) {
-	.grid-container {
-		width: 98%;
+@media (max-width: 1199px) {
+	.jobgrid-container {
+		margin: 0 100px;
 	}
 
-	#veteran-video {
-		width: 98%
+	.veteran-video {
+		width: 70%;
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.footer-div1 {
 		padding: 0;
 		text-align: center;
@@ -102,12 +106,44 @@
 		padding: 0;
 	}
 
+	.site-map {
+		margin-left: -5px;
+	}
+
+	.site-map+div {
+		margin-left: -5px;
+	}
+
+	.footer-li {
+		margin-bottom: 20px;
+	}
+
+	.footer-icon {
+		display: none;
+	}
+
 	.footer2-header {
 		text-align: center;
 	}
 
+	.footer2-header {
+		margin-bottom: 25px;
+	}
+
 	.site-map {
 		padding-left: 0;
+	}
+
+	.site-map2 .footer-li:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.jobgrid-container {
+		margin: 0;
+	}
+
+	.veteran-video {
+		width: 90%;
 	}
 }
 
@@ -145,23 +181,16 @@
 		text-align: center;
 	}
 
-	#middle {
+	.middle {
 		position: initial;
 	}
-}
 
-@media (max-width: 767.5px) {
-	.zip {
-		margin-right: 0;
+	.grid-container {
+		width: 98%;
 	}
 
-	.miles {
-		margin: 0;
-	}
-
-	input[type="checkbox"] {
-		margin-right: 0;
-		margin-top: 15px;
+	.veteran-video {
+		width: 98%
 	}
 }
 
@@ -181,6 +210,19 @@
 	.copyright {
 		margin-bottom: 20px;
 	}
+
+	.zip {
+		margin-right: 0;
+	}
+
+	.miles {
+		margin: 0;
+	}
+
+	input[type="checkbox"] {
+		margin-right: 0;
+		margin-top: 15px;
+	}
 }
 
 @media (max-width: 759px) {
@@ -188,7 +230,7 @@
 		height: 100px;
 	}
 
-	#typed {
+	.typed {
 		font-size: 1.2rem;
 	}
 
@@ -204,6 +246,10 @@
 @media (max-width: 500px) {
 	.container h1 {
 		font-size: 3.4rem;
+	}
+
+	.container .icons {
+		font-size: 1.5rem;
 	}
 }
 
