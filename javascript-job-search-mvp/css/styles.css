@@ -545,9 +545,6 @@ footer {
 	color: black;
 }
 
-.li.text:focus {
-	color: white;
-}
 
 .language-button {
 	margin-top: 20px;
