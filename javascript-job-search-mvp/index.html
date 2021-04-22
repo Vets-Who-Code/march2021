@@ -102,7 +102,7 @@
     <div class="container">
       <h1>JOB SEARCH</h1>
       <div class="typed-container">
-        <p class="lead-in">#VetsWhoCode <span id="typed"></span></p>
+        <p class="lead-in">#VetsWhoCode <span id="typed" class="typed"></span></p>
         <div id="typed-strings">
           <p>provides job placement assistance.</p>
           <p>makes a difference in the lives of veterans.</p>
@@ -142,11 +142,11 @@
           onClick="document.getElementById('middle').scrollIntoView();"><i class="glyphicon glyphicon-search">
             Search</i></button>
       </form>
-      <div id="middle"></div>
+      <div id="middle" class="middle"></div>
       <div>
-        <p id="no-results" class="text-center hidden">Sorry there were no results. Try again.</p>
+        <p id="no-results" class="text-center hidden no-results">Sorry there were no results. Try again.</p>
       </div>
-      <video id="veteran-video" src="videos/veteran-on-computer.mp4" autoplay loop muted></video>
+      <video id="veteran-video" class="veteran-video" src="videos/veteran-on-computer.mp4" autoplay loop muted></video>
       <!-- Grid -->
       <div class="jobgrid-container">
         <div class="jobgrid hidden disable-scrollbars" id="jobgrid" aria-label="Job Grid">
@@ -167,8 +167,7 @@
         <span class="fa-stack fa-2x icons">
           <i class="fas fa-circle fa-stack-2x"></i>
           <a class="footer-font-awesome" title="Facebook" target="_blank" rel="noopener noreferrer"
-            href="https://www.facebook.com/TheOfficialVetsWhoCode/"><i
-              class="fab fa-facebook-f fa-stack-1x"></i></a>
+            href="https://www.facebook.com/TheOfficialVetsWhoCode/"><i class="fab fa-facebook-f fa-stack-1x"></i></a>
         </span>
         <span class="fa-stack fa-2x icons">
           <i class="fas fa-circle fa-stack-2x"></i>
@@ -178,8 +177,7 @@
         <span class="fa-stack fa-2x icons">
           <i class="fas fa-circle fa-stack-2x"></i>
           <a class="footer-font-awesome" title="Linkedin" target="_blank" rel="noopener noreferrer"
-            href="https://www.linkedin.com/company/vets-who-code/"><i
-              class="fab fa-linkedin-in fa-stack-1x"></i></a>
+            href="https://www.linkedin.com/company/vets-who-code/"><i class="fab fa-linkedin-in fa-stack-1x"></i></a>
         </span>
         <span class="fa-stack fa-2x icons">
           <i class="fas fa-circle fa-stack-2x"></i>
@@ -241,7 +239,7 @@
               <label class="group-email" for="exampleInputPassword1">Message</label>
               <textarea name="textarea" id="textarea" maxlength="300" style="width: 100%" rows="2" class="form-control"
                 id="exampleInputPassword1" placeholder="Message"></textarea>
-              <div id="count">
+              <div id="count" class="count">
                 <span id="current_count">0</span>
                 <span id="maximum_count">/ 300</span>
               </div>

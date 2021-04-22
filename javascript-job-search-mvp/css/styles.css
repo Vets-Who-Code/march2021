@@ -189,7 +189,7 @@ footer li a {
 	width: 30px;
 }
 
-#typed.dark-theme {
+.typed.dark-theme {
 	color: white;
 }
 
@@ -222,7 +222,7 @@ footer li a {
 	text-align: center;
 }
 
-#typed {
+.typed {
 	font-size: 1.4rem;
 	color: var(--light-red);
 }
@@ -250,7 +250,6 @@ h1 {
 	font-weight: 900;
 	margin-bottom: 48px;
 	margin-top: 0;
-	color: var(--dark-blue);
 	margin: .67em 0;
 }
 
@@ -291,7 +290,7 @@ input[type="checkbox"] {
 
 /* No results Label */
 
-#no-results {
+.no-results {
 	font-size: 20px;
 }
 
@@ -321,12 +320,12 @@ input[type="checkbox"] {
 	background: rgba(54, 58, 76, 0.3);
 }
 
-#middle {
+.middle {
 	position: relative;
 	top: -150px;
 }
 
-#veteran-video {
+.veteran-video {
 	display: block;
 	width: 57%;
 	margin: 80px auto 0 auto;
@@ -439,7 +438,7 @@ footer {
 	text-decoration: underline !important;
 }
 
-#count {
+.count {
 	margin-top: 10px;
 }
 
