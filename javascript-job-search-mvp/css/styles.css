@@ -39,18 +39,11 @@ ul.about-drop {
 	background-color: #091f40;
 }
 
-.drop a:focus {
-	color: #203EC5 !important;
-}
-
-.dropdown-menu {
-	background-color: #fff;
-}
 
 .dropdown-menu>li>a:hover {
 	background-image: none;
 	background-color: #091F40;
-	color: #fff !important;
+	color: #fff;
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -58,11 +51,13 @@ ul.about-drop {
 	background-image: none;
 }
 
-.nav .open>a,
-.nav .open>a:hover,
-.nav .open>a:focus {
-	background-color: #091F40 !important;
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+	background-color: #091F40;
+	color: white;
 }
+
 
 .vwc-header {
 	padding-left: 5px;
@@ -78,13 +73,18 @@ ul.about-drop {
 	margin-right: 5px;
 }
 
-li a {
-	color: white !important;
+.navbar-default .navbar-nav > li > a {
+	color: white;
 }
 
-footer li a {
-	color: black !important;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	color: white;
 }
+
+.dropdown-menu > li > a {
+	color: white;
+}
+
 
 .nav-links li:hover {
 	transition: 0.2s ease-in;
@@ -96,7 +96,7 @@ footer li a {
 }
 
 .nav-links .drop .link-name:hover {
-	color: #f1cb2f !important;
+	color: #f1cb2f;
 }
 
 .moon {
@@ -151,20 +151,37 @@ footer li a {
 	background-color: #AB1534;
 }
 
+.submit-button {
+	border-radius: 2px;
+	font-size: .875rem;
+	padding: 12px 0;
+	text-align: center;
+	transition: all .2s ease-in-out;
+	width: 115px;
+	text-transform: capitalize;
+	background-color: #c5203e;
+	background-image: none;
+	border: 1px solid black;
+}
+
+.submit-button:hover {
+	background-color: #203ec5 ;
+}
+
 .submit-button.dark-theme {
-	background-color: #203EC5 !important;
+	background-color: #203EC5;
 }
 
 .submit-button.dark-theme:hover {
-	background-color: #c5203e !important;
+	background-color: #c5203e;
 }
 
 .send-button.dark-theme {
-	background-color: #203ec5 !important;
+	background-color: #203ec5;
 }
 
 .send-button.dark-theme:hover {
-	background-color: #c5203e !important;
+	background-color: #c5203e;
 }
 
 .send-button.dark-theme .flag-usa {
@@ -176,7 +193,19 @@ footer li a {
 }
 
 .lead-in.dark-theme {
-	color: #c5203e !important;
+	color: #c5203e;
+}
+
+.lead-in {
+	color: #091F40;
+	font-style: italic;
+	font-family: Open Sans,
+	sans-serif;
+	font-weight: 400;
+	line-height: 29px;
+	margin-bottom: 40px;
+	font-size: 1.4rem;
+	text-align: center;
 }
 
 .jobgrid.dark-theme {
@@ -193,17 +222,7 @@ footer li a {
 
 /* Header */
 
-.lead-in {
-	color: #091F40 !important;
-	font-style: italic;
-	font-family: Open Sans,
-		sans-serif;
-	font-weight: 400;
-	line-height: 29px;
-	margin-bottom: 40px;
-	font-size: 1.4rem;
-	text-align: center;
-}
+
 
 #typed {
 	font-size: 1.4rem;
@@ -241,23 +260,6 @@ h1 {
 
 .job-grabber {
 	margin: 75px 0;
-}
-
-.submit-button {
-	border-radius: 2px;
-	font-size: .875rem;
-	padding: 12px 0;
-	text-align: center;
-	transition: all .2s ease-in-out;
-	width: 115px;
-	text-transform: capitalize;
-	background-color: #c5203e !important;
-	background-image: none;
-	border: 1px solid black;
-}
-
-.submit-button:hover {
-	background-color: #203ec5 !important;
 }
 
 .zip {
@@ -315,10 +317,6 @@ input[type="checkbox"] {
 	margin: 80px auto 0 auto;
 }
 
-a {
-	text-decoration: none !important;
-}
-
 .grid-container {
 	display: flex;
 	flex-flow: row wrap;
@@ -338,16 +336,6 @@ a {
 .grid-container:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
-.dark-grid {
-	background-color: #c5203e !important;
-	color: white !important;
-}
-
-.dark-container:hover {
-	box-shadow: 0 1px 4px 0 white !important;
-}
-
 .grid-item {
 	display: block;
 	background-color: #FFF;
@@ -356,6 +344,16 @@ a {
 	width: 100%
 		/* border: 1px solid black; */
 }
+
+.dark-grid  {
+	background-color: #c5203e;
+	color: white;
+}
+
+.dark-container:hover {
+	box-shadow: 0 1px 4px 0 white;
+}
+
 
 .grid-item-1 {
 	font-size: 1.5rem;
@@ -412,14 +410,14 @@ footer {
 }
 
 .site-link {
-	color: white !important;
+	color: white;
 	margin-bottom: 10px;
 	margin-left: 5px;
 }
 
 .site-link:hover {
-	color: #BD2843;
-	text-decoration: underline !important;
+	color: white;
+	text-decoration: underline;
 }
 
 #count {
@@ -516,16 +514,23 @@ footer {
 	color: #BD2843;
 }
 
+.send-button.dark-theme{
+	background-color: #c5203e;
+}
 .send-button {
 	width: 100%;
 	margin-top: 10px;
 	background-image: none;
-	background-color: #c5203e !important;
+	background-color: #c5203e;
 	transition: all .2s ease-in-out;
 }
 
+.send-button.dark-theme:hover{
+	background-color: #203ec5;
+}
+
 .send-button:hover {
-	background-color: #203ec5 !important;
+	background-color: #203ec5;
 }
 
 .flag-korea {
@@ -547,4 +552,11 @@ footer {
 .footer-p {
 	line-height: 25px;
 	margin: 0 0 20px 0;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
 }
