@@ -54,13 +54,13 @@ nav {
 }
 
 ul.about-drop {
-	background-color: #091f40;
+	background-color: var(--dark-blue);
 }
 
 .dropdown-menu>li>a:hover {
 	background-image: none;
-	background-color: #091F40;
-	color: #fff;
+	background-color: var(--dark-blue);
+	color: white;
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -71,10 +71,9 @@ ul.about-drop {
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
-	background-color: #091F40;
+	background-color: var(--dark-blue);
 	color: white;
 }
-
 
 .vwc-header {
 	padding-left: 5px;
@@ -114,7 +113,7 @@ ul.about-drop {
 }
 
 .nav-links .drop .link-name:hover {
-	color: #f1cb2f;
+	color: var(--light-gold);
 }
 
 .moon {
@@ -177,29 +176,29 @@ ul.about-drop {
 	transition: all .2s ease-in-out;
 	width: 115px;
 	text-transform: capitalize;
-	background-color: #c5203e;
+	background-color: var(--light-red);
 	background-image: none;
 	border: 1px solid black;
 }
 
 .submit-button:hover {
-	background-color: #203ec5;
+	background-color: var(--medium-blue);
 }
 
 .submit-button.dark-theme {
-	background-color: #203EC5;
+	background-color: var(--medium-blue);
 }
 
 .submit-button.dark-theme:hover {
-	background-color: #c5203e;
+	background-color: var(--light-red);
 }
 
 .send-button.dark-theme {
-	background-color: #203ec5;
+	background-color: var(--medium-blue);
 }
 
 .send-button.dark-theme:hover {
-	background-color: #c5203e;
+	background-color: var(--light-red);
 }
 
 .send-button.dark-theme .flag-usa {
@@ -211,11 +210,11 @@ ul.about-drop {
 }
 
 .lead-in.dark-theme {
-	color: #c5203e;
+	color: var(--light-red);
 }
 
 .lead-in {
-	color: #091F40;
+	color: var(--dark-blue);
 	font-style: italic;
 	font-family: Open Sans,
 		sans-serif;
@@ -361,7 +360,7 @@ input[type="checkbox"] {
 }
 
 .dark-grid {
-	background-color: #c5203e;
+	background-color: var(--light-red);
 	color: white;
 }
 
@@ -529,23 +528,23 @@ footer {
 }
 
 .send-button.dark-theme {
-	background-color: #c5203e;
+	background-color: var(--light-red);
 }
 
 .send-button {
 	width: 100%;
 	margin-top: 10px;
 	background-image: none;
-	background-color: #c5203e;
+	background-color: var(--light-red);
 	transition: all .2s ease-in-out;
 }
 
 .send-button.dark-theme:hover {
-	background-color: #203ec5;
+	background-color: var(--medium-blue);
 }
 
 .send-button:hover {
-	background-color: #203ec5;
+	background-color: var(--medium-blue);
 }
 
 .flag-korea {
