@@ -63,6 +63,10 @@
 		border-bottom: none;
 	}
 
+	.nav-links .link-name:hover {
+		color: var(--light-gold);
+	}
+
 	.moon {
 		margin-bottom: 10px;
 		margin-top: -10px;
@@ -80,7 +84,7 @@
 		margin: 0 100px;
 	}
 
-	#veteran-video {
+	.veteran-video {
 		width: 70%;
 	}
 }
@@ -138,7 +142,7 @@
 		margin: 0;
 	}
 
-	#veteran-video {
+	.veteran-video {
 		width: 90%;
 	}
 }
@@ -177,7 +181,7 @@
 		text-align: center;
 	}
 
-	#middle {
+	.middle {
 		position: initial;
 	}
 
@@ -185,23 +189,8 @@
 		width: 98%;
 	}
 
-	#veteran-video {
+	.veteran-video {
 		width: 98%
-	}
-}
-
-@media (max-width: 767.5px) {
-	.zip {
-		margin-right: 0;
-	}
-
-	.miles {
-		margin: 0;
-	}
-
-	input[type="checkbox"] {
-		margin-right: 0;
-		margin-top: 15px;
 	}
 }
 
@@ -221,6 +210,19 @@
 	.copyright {
 		margin-bottom: 20px;
 	}
+
+	.zip {
+		margin-right: 0;
+	}
+
+	.miles {
+		margin: 0;
+	}
+
+	input[type="checkbox"] {
+		margin-right: 0;
+		margin-top: 15px;
+	}
 }
 
 @media (max-width: 759px) {
@@ -228,7 +230,7 @@
 		height: 100px;
 	}
 
-	#typed {
+	.typed {
 		font-size: 1.2rem;
 	}
 
