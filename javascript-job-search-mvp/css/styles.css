@@ -2,6 +2,24 @@ html {
 	scroll-behavior: smooth;
 }
 
+:root {
+	/* Blue */
+	--dark-blue: #091F40;
+	--medium-blue: #203ec5;
+	--light-blue: #1A51A3;
+	/* Red */
+	--dark-red: #AB1534;
+	--medium-red: #BD2843;
+	--light-red: #c5203e;
+	/* Grey */
+	--dark-grey: #333333;
+	--medium-grey: #696969;
+	--light-grey: #BDC3C7;
+	/* Gold */
+	--dark-gold: #EBA32F;
+	--light-gold: #F1CB2F;
+}
+
 /* Navbar */
 
 nav {
@@ -17,7 +35,7 @@ nav {
 	background-image: none;
 	background-repeat: no-repeat;
 	filter: none;
-	background-color: #091F40;
+	background-color: var(--dark-blue);
 	border: none;
 	border-radius: 0;
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
@@ -36,21 +54,21 @@ nav {
 }
 
 .about-drop {
-	background-color: #091f40 !important;
+	background-color: var(--dark-blue) !important;
 }
 
 .drop a:focus {
-	color: #203EC5 !important;
+	color: var(--medium-blue) !important;
 }
 
 .dropdown-menu {
-	background-color: #fff;
+	background-color: white;
 }
 
 .dropdown-menu>li>a:hover {
 	background-image: none;
-	background-color: #091F40;
-	color: #fff !important;
+	background-color: var(--dark-blue);
+	color: white !important;
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -61,7 +79,7 @@ nav {
 .nav .open>a,
 .nav .open>a:hover,
 .nav .open>a:focus {
-	background-color: #091F40 !important;
+	background-color: var(--dark-blue) !important;
 }
 
 .vwc-header {
@@ -96,11 +114,11 @@ footer li a {
 }
 
 .nav-links .drop .link-name:hover {
-	color: #f1cb2f !important;
+	color: var(--light-gold) !important;
 }
 
 .moon {
-	background-color: #091F40;
+	background-color: var(--dark-blue);
 	color: white;
 	cursor: pointer;
 }
@@ -118,13 +136,13 @@ footer li a {
 }
 
 .donate {
-	background-color: #AB1534;
+	background-color: var(--dark-red);
 	border-radius: 2px;
 	transition: all .2s ease-in-out;
 }
 
 .donate:hover {
-	background-color: #203EC5;
+	background-color: var(--medium-blue);
 }
 
 .nav-links .donate:hover,
@@ -139,32 +157,32 @@ footer li a {
 /* Dark Mode */
 
 .dark-background {
-	background-color: #091f40;
-	color: #fff;
+	background-color: var(--dark-blue);
+	color: white;
 }
 
 .donate.dark-theme {
-	background-color: #203EC5;
+	background-color: var(--medium-blue);
 }
 
 .donate.dark-theme:hover {
-	background-color: #AB1534;
+	background-color: var(--dark-red);
 }
 
 .submit-button.dark-theme {
-	background-color: #203EC5 !important;
+	background-color: var(--medium-blue) !important;
 }
 
 .submit-button.dark-theme:hover {
-	background-color: #c5203e !important;
+	background-color: var(--light-red) !important;
 }
 
 .send-button.dark-theme {
-	background-color: #203ec5 !important;
+	background-color: var(--medium-blue) !important;
 }
 
 .send-button.dark-theme:hover {
-	background-color: #c5203e !important;
+	background-color: var(--light-red) !important;
 }
 
 .send-button.dark-theme .flag-usa {
@@ -176,7 +194,7 @@ footer li a {
 }
 
 .lead-in.dark-theme {
-	color: #c5203e !important;
+	color: var(--light-red) !important;
 }
 
 .jobgrid.dark-theme {
@@ -194,10 +212,9 @@ footer li a {
 /* Header */
 
 .lead-in {
-	color: #091F40 !important;
+	color: var(--dark-blue) !important;
 	font-style: italic;
-	font-family: Open Sans,
-		sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	line-height: 29px;
 	margin-bottom: 40px;
@@ -207,7 +224,7 @@ footer li a {
 
 #typed {
 	font-size: 1.4rem;
-	color: #c5203e;
+	color: var(--light-red);
 }
 
 .job-search-description {
@@ -229,11 +246,11 @@ h1 {
 	text-align: center;
 	line-height: 1.1;
 	font-weight: 900;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 900;
 	margin-bottom: 48px;
 	margin-top: 0;
-	color: var(--element-3);
+	color: var(--dark-blue);
 	margin: .67em 0;
 }
 
@@ -251,13 +268,13 @@ h1 {
 	transition: all .2s ease-in-out;
 	width: 115px;
 	text-transform: capitalize;
-	background-color: #c5203e !important;
+	background-color: var(--light-red) !important;
 	background-image: none;
 	border: 1px solid black;
 }
 
 .submit-button:hover {
-	background-color: #203ec5 !important;
+	background-color: var(--medium-blue) !important;
 }
 
 .zip {
@@ -340,7 +357,7 @@ a {
 }
 
 .dark-grid {
-	background-color: #c5203e !important;
+	background-color: var(--light-red) !important;
 	color: white !important;
 }
 
@@ -350,8 +367,8 @@ a {
 
 .grid-item {
 	display: block;
-	background-color: #FFF;
-	color: #333;
+	background-color: white;
+	color: var(--dark-grey);
 	padding: 2%;
 	width: 100%
 		/* border: 1px solid black; */
@@ -374,13 +391,13 @@ a {
 
 .grid-item-4 {
 	font-size: 1rem;
-	color: #696969;
+	color: var(--medium-grey);
 }
 
 .grid-item-5 {
 	font-size: 1rem;
 	font-weight: bold;
-	color: #696969;
+	color: var(--medium-grey);
 }
 
 .grid-item-6 {
@@ -404,7 +421,7 @@ footer {
 }
 
 .footer1 {
-	background-color: #1A51A3;
+	background-color: var(--light-blue);
 	color: white;
 	text-align: center;
 	padding-top: 35px;
@@ -418,7 +435,7 @@ footer {
 }
 
 .site-link:hover {
-	color: #BD2843;
+	color: var(--medium-red);
 	text-decoration: underline !important;
 }
 
@@ -427,21 +444,21 @@ footer {
 }
 
 .footer2 {
-	background-color: #091F40;
+	background-color: var(--dark-blue);
 	color: white;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
 .footer2-header {
-	color: #BDC3C7;
+	color: var(--light-grey);
 	font-weight: 700;
 	margin-bottom: 20px;
 	font-size: 1.3rem;
 }
 
 .footer3 {
-	background-color: #091F40;
+	background-color: var(--dark-blue);
 	color: white;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -452,7 +469,7 @@ footer {
 }
 
 .footer3-anchor:hover {
-	color: #EBA32F;
+	color: var(--dark-gold);
 }
 
 .footer3-p1 {
@@ -477,16 +494,16 @@ footer {
 }
 
 .made-by:hover {
-	color: #f1cb2f;
+	color: var(--light-gold);
 	cursor: pointer;
 }
 
 .footer-font-awesome:hover {
-	color: #203EC5;
+	color: var(--medium-blue);
 }
 
 .footer-font-awesome {
-	color: #091F40;
+	color: var(--dark-blue);
 	margin-left: 20px;
 	margin-right: 20px;
 }
@@ -496,7 +513,7 @@ footer {
 }
 
 .footer-icon {
-	color: #f1cb2f;
+	color: var(--light-gold);
 }
 
 .footer-li {
@@ -513,19 +530,19 @@ footer {
 }
 
 .footer-font-awesome:focus {
-	color: #BD2843;
+	color: var(--medium-red);
 }
 
 .send-button {
 	width: 100%;
 	margin-top: 10px;
 	background-image: none;
-	background-color: #c5203e !important;
+	background-color: var(--light-red) !important;
 	transition: all .2s ease-in-out;
 }
 
 .send-button:hover {
-	background-color: #203ec5 !important;
+	background-color: var(--medium-blue) !important;
 }
 
 .flag-korea {
@@ -533,7 +550,7 @@ footer {
 }
 
 .div-dropdown {
-	background-color: #286090;
+	background-color: var(--light-blue);
 }
 
 .language-button {
