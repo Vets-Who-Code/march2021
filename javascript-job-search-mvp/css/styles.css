@@ -545,11 +545,7 @@ footer {
 	color: black;
 }
 
-.text:focus {
-	color: white;
-}
-
-.select.option-with-flag option:hover {
+.li.text:focus {
 	color: white;
 }
 
