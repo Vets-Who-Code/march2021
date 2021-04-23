@@ -153,74 +153,6 @@ ul.about-drop {
 	line-height: 30px;
 }
 
-/* Dark Mode */
-
-.dark-background {
-	background-color: var(--dark-blue);
-	color: white;
-}
-
-.donate.dark-theme {
-	background-color: var(--medium-blue);
-}
-
-.donate.dark-theme:hover {
-	background-color: var(--dark-red);
-}
-
-.submit-button:hover {
-	background-color: var(--medium-blue);
-}
-
-.submit-button.dark-theme {
-	background-color: var(--medium-blue);
-}
-
-.submit-button.dark-theme:hover {
-	background-color: var(--light-red);
-}
-
-.send-button.dark-theme {
-	background-color: var(--medium-blue);
-}
-
-.send-button.dark-theme:hover {
-	background-color: var(--light-red);
-}
-
-.send-button.dark-theme .flag-usa {
-	width: 30px;
-}
-
-.typed.dark-theme {
-	color: white;
-}
-
-.lead-in.dark-theme {
-	color: var(--light-red);
-}
-
-.jobgrid.dark-theme {
-	scrollbar-color: rgba(255, 255, 255, 0.7) rgba(54, 58, 76, 0);
-}
-
-.jobgrid.dark-theme::-webkit-scrollbar-track {
-	background: rgba(255, 255, 255, 0);
-}
-
-.jobgrid.dark-theme::-webkit-scrollbar-thumb {
-	background: rgba(255, 255, 255, 0.7);
-}
-
-.dark-grid {
-	background-color: var(--light-red);
-	color: white;
-}
-
-.dark-container:hover {
-	box-shadow: 0 1px 4px 0 white;
-}
-
 /* Header */
 
 .typed {
@@ -578,4 +510,72 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+
+/* Dark Mode */
+
+.dark-background {
+	background-color: var(--dark-blue);
+	color: white;
+}
+
+.donate.dark-theme {
+	background-color: var(--medium-blue);
+}
+
+.donate.dark-theme:hover {
+	background-color: var(--dark-red);
+}
+
+.submit-button:hover {
+	background-color: var(--medium-blue);
+}
+
+.submit-button.dark-theme {
+	background-color: var(--medium-blue);
+}
+
+.submit-button.dark-theme:hover {
+	background-color: var(--light-red);
+}
+
+.send-button.dark-theme {
+	background-color: var(--medium-blue);
+}
+
+.send-button.dark-theme:hover {
+	background-color: var(--light-red);
+}
+
+.send-button.dark-theme .flag-usa {
+	width: 30px;
+}
+
+.typed.dark-theme {
+	color: white;
+}
+
+.lead-in.dark-theme {
+	color: var(--light-red);
+}
+
+.jobgrid.dark-theme {
+	scrollbar-color: rgba(255, 255, 255, 0.7) rgba(54, 58, 76, 0);
+}
+
+.jobgrid.dark-theme::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0);
+}
+
+.jobgrid.dark-theme::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.dark-grid {
+	background-color: var(--light-red);
+	color: white;
+}
+
+.dark-container:hover {
+	box-shadow: 0 1px 4px 0 white;
 }
