@@ -102,6 +102,9 @@ ul.about-drop {
 	color: white;
 }
 
+.navbar-nav>li>.dropdown-menu {
+	margin-top: 3px;
+}
 
 .nav-links li:hover {
 	transition: 0.2s ease-in;
