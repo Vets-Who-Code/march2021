@@ -495,10 +495,6 @@ footer {
 	width: 30px;
 }
 
-.div-dropdown {
-	background-color: var(--light-blue);
-}
-
 .text {
 	color: black;
 }
@@ -507,7 +503,13 @@ footer {
 	color: white;
 }
 
-.select.option-with-flag option:hover {
+.text:hover {
+	color: white;
+}
+
+footer .dropdown-menu>li>a:hover {
+	background-image: none;
+	background-color: var(--light-blue);
 	color: white;
 }
 
