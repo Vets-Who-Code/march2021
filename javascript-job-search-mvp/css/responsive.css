@@ -223,6 +223,14 @@
 		margin-right: 0;
 		margin-top: 15px;
 	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color: white;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+		color: var(--light-gold);
+	}
 }
 
 @media (max-width: 759px) {
