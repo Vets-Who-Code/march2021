@@ -187,6 +187,7 @@ h1 {
 	margin-bottom: 48px;
 	margin-top: 0;
 	margin: .67em 0;
+	color: var(--dark-blue);
 }
 
 .lead-in {
@@ -550,6 +551,10 @@ a:hover {
 }
 
 /* Dark Header */
+
+.main-header.dark-theme {
+	color: white;
+}
 
 .typed.dark-theme {
 	color: white;
