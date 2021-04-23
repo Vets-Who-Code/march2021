@@ -369,6 +369,10 @@ footer {
 	text-decoration: underline;
 }
 
+.site-link:focus {
+	color: var(--light-red);
+}
+
 .count {
 	margin-top: 10px;
 }
@@ -402,6 +406,10 @@ footer {
 	color: var(--light-gold);
 }
 
+.footer3-anchor:focus {
+	color: var(--light-red);
+}
+
 .footer3-p1 {
 	display: inline;
 }
@@ -426,6 +434,10 @@ footer {
 .made-by:hover {
 	color: var(--light-gold);
 	cursor: pointer;
+}
+
+.made-by:focus {
+	color: var(--light-red);
 }
 
 .footer-font-awesome:hover {
@@ -463,20 +475,12 @@ footer {
 	color: var(--medium-red);
 }
 
-.send-button.dark-theme {
-	background-color: var(--light-red);
-}
-
 .send-button {
 	width: 100%;
 	margin-top: 10px;
 	background-image: none;
 	background-color: var(--light-red);
 	transition: all .2s ease-in-out;
-}
-
-.send-button.dark-theme:hover {
-	background-color: var(--medium-blue);
 }
 
 .send-button:hover {
@@ -489,6 +493,18 @@ footer {
 
 .div-dropdown {
 	background-color: var(--light-blue);
+}
+
+.text {
+	color: black;
+}
+
+.text:focus {
+	color: white;
+}
+
+.select.option-with-flag option:hover {
+	color: white;
 }
 
 .language-button {
@@ -512,7 +528,9 @@ a:hover {
 	text-decoration: none;
 }
 
-/* Dark Mode */
+/*** DARK MODE *** /
+
+/* Dark Nav */
 
 .dark-background {
 	background-color: var(--dark-blue);
@@ -527,6 +545,18 @@ a:hover {
 	background-color: var(--dark-red);
 }
 
+/* Dark Header */
+
+.typed.dark-theme {
+	color: white;
+}
+
+.lead-in.dark-theme {
+	color: var(--light-red);
+}
+
+/* Dark Form */
+
 .submit-button:hover {
 	background-color: var(--medium-blue);
 }
@@ -539,25 +569,7 @@ a:hover {
 	background-color: var(--light-red);
 }
 
-.send-button.dark-theme {
-	background-color: var(--medium-blue);
-}
-
-.send-button.dark-theme:hover {
-	background-color: var(--light-red);
-}
-
-.send-button.dark-theme .flag-usa {
-	width: 30px;
-}
-
-.typed.dark-theme {
-	color: white;
-}
-
-.lead-in.dark-theme {
-	color: var(--light-red);
-}
+/* Dark Job Grid */
 
 .jobgrid.dark-theme {
 	scrollbar-color: rgba(255, 255, 255, 0.7) rgba(54, 58, 76, 0);
@@ -578,4 +590,18 @@ a:hover {
 
 .dark-container:hover {
 	box-shadow: 0 1px 4px 0 white;
+}
+
+/* Dark Footer */
+
+.send-button.dark-theme {
+	background-color: var(--medium-blue);
+}
+
+.send-button.dark-theme:hover {
+	background-color: var(--light-red);
+}
+
+.send-button.dark-theme .flag-usa {
+	width: 30px;
 }
