@@ -168,19 +168,6 @@ ul.about-drop {
 	background-color: var(--dark-red);
 }
 
-.submit-button {
-	border-radius: 2px;
-	font-size: .875rem;
-	padding: 12px 0;
-	text-align: center;
-	transition: all .2s ease-in-out;
-	width: 115px;
-	text-transform: capitalize;
-	background-color: var(--light-red);
-	background-image: none;
-	border: 1px solid black;
-}
-
 .submit-button:hover {
 	background-color: var(--medium-blue);
 }
@@ -213,18 +200,6 @@ ul.about-drop {
 	color: var(--light-red);
 }
 
-.lead-in {
-	color: var(--dark-blue);
-	font-style: italic;
-	font-family: Open Sans,
-		sans-serif;
-	font-weight: 400;
-	line-height: 29px;
-	margin-bottom: 40px;
-	font-size: 1.4rem;
-	text-align: center;
-}
-
 .jobgrid.dark-theme {
 	scrollbar-color: rgba(255, 255, 255, 0.7) rgba(54, 58, 76, 0);
 }
@@ -235,6 +210,15 @@ ul.about-drop {
 
 .jobgrid.dark-theme::-webkit-scrollbar-thumb {
 	background: rgba(255, 255, 255, 0.7);
+}
+
+.dark-grid {
+	background-color: var(--light-red);
+	color: white;
+}
+
+.dark-container:hover {
+	box-shadow: 0 1px 4px 0 white;
 }
 
 /* Header */
@@ -270,6 +254,18 @@ h1 {
 	margin: .67em 0;
 }
 
+.lead-in {
+	color: var(--dark-blue);
+	font-style: italic;
+	font-family: Open Sans,
+		sans-serif;
+	font-weight: 400;
+	line-height: 29px;
+	margin-bottom: 40px;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
 /* Form */
 
 .job-grabber {
@@ -288,13 +284,24 @@ input[type="checkbox"] {
 	margin-right: 5px;
 }
 
-/* No results Label */
+.submit-button {
+	border-radius: 2px;
+	font-size: .875rem;
+	padding: 12px 0;
+	text-align: center;
+	transition: all .2s ease-in-out;
+	width: 115px;
+	text-transform: capitalize;
+	background-color: var(--light-red);
+	background-image: none;
+	border: 1px solid black;
+}
 
 .no-results {
 	font-size: 20px;
 }
 
-/* Grid */
+/* Job Grid */
 
 .jobgrid-container {
 	margin: 0 200px;
@@ -363,15 +370,6 @@ input[type="checkbox"] {
 	color: var(--dark-grey);
 	padding: 2%;
 	width: 100%
-}
-
-.dark-grid {
-	background-color: var(--light-red);
-	color: white;
-}
-
-.dark-container:hover {
-	box-shadow: 0 1px 4px 0 white;
 }
 
 .grid-item-1 {
