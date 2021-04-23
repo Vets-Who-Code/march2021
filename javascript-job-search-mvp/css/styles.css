@@ -331,6 +331,12 @@ input[type="checkbox"] {
 	margin: 80px auto 0 auto;
 }
 
+@-moz-document url-prefix() {
+	.veteran-video {
+		width: 55%;
+	}
+}
+
 .grid-container {
 	display: flex;
 	flex-flow: row wrap;

@@ -87,6 +87,12 @@
 	.veteran-video {
 		width: 70%;
 	}
+
+	@-moz-document url-prefix() {
+		.veteran-video {
+			width: 67%
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -143,7 +149,13 @@
 	}
 
 	.veteran-video {
-		width: 90%;
+		width: 92%;
+	}
+
+	@-moz-document url-prefix() {
+		.veteran-video {
+			width: 87%
+		}
 	}
 }
 
