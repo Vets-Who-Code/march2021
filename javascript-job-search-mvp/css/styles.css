@@ -229,6 +229,10 @@ input[type="checkbox"] {
 	border: 1px solid black;
 }
 
+.btn-primary:focus {
+	background-color: var(--light-red);
+}
+
 .no-results {
 	font-size: 20px;
 }
