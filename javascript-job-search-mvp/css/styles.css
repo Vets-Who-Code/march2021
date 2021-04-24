@@ -499,17 +499,12 @@ footer {
 	color: black;
 }
 
-.text:focus {
-	color: white;
-}
-
-.text:hover {
-	color: white;
-}
-
 footer .dropdown-menu>li>a:hover {
 	background-image: none;
 	background-color: var(--light-blue);
+}
+
+footer .dropdown-menu>li>a:hover>span {
 	color: white;
 }
 
