@@ -44,10 +44,16 @@
 	.navbar-nav {
 		float: none !important;
 		margin-top: 7.5px;
+		margin-left: -29px;
+		margin-right: -29px;
 	}
 
 	.navbar-nav>li {
 		float: none;
+	}
+
+	.navbar-nav>li>.dropdown-menu {
+		margin-top: -.8em;
 	}
 
 	.navbar-nav>li>a {
@@ -242,6 +248,13 @@
 
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
 		color: var(--light-gold);
+	}
+
+	.navbar-nav {
+		float: none !important;
+		margin-top: 7.5px;
+		margin-left: -15px;
+		margin-right: -15px;
 	}
 }
 
