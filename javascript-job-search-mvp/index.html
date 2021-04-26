@@ -248,19 +248,19 @@
 					<form method="post" id="contact-form">
 						<div class="form-group">
 							<label class="group-email" for="exampleInputEmail1">Email</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							<input type="email" class="form-control" id="userEmail" placeholder="Email">
 						</div>
 						<div class="form-group">
 							<label class="group-email" for="exampleInputPassword1">Message</label>
-							<textarea name="textarea" id="textarea" maxlength="300" style="width: 100%" rows="2" class="form-control"
+							<textarea name="textarea" id="userMessage" maxlength="300" style="width: 100%" rows="2" class="form-control"
 								id="exampleInputPassword1" placeholder="Message"></textarea>
 							<div id="count" class="count">
 								<span id="current_count">0</span>
 								<span id="maximum_count">/ 300</span>
 							</div>
 						</div>
-						<button type="submit" class="btn btn-primary send-button" id="send-button">Send</button>
-						<input type="button" value="Send Email" onclick="sendEmail()">
+						<button type="submit" class="btn btn-primary send-button" id="send-button" onclick="sendEmail()">Send</button>
+						<!-- <button type="submit" class="btn btn-primary send-button" id="send-button" onclick="check()">Send</button> -->
 					</form>
 				</div>
 			</div>
@@ -276,8 +276,6 @@
 		</div>
 	</footer>
 	<!-- End Footer -->
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/d3js/6.7.0/d3.min.js"></script>
 	<!-- Scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 	<script src="scripts/script.js"></script>
