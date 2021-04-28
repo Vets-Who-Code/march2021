@@ -24,12 +24,6 @@ let job = [];
 function submitButtonEvent(event) {
 	event.preventDefault();
 
-	//for the future language dropdown functionality
-	localStorage.setItem("job", "Web Developer");
-	localStorage.setItem("zipcode", event.currentTarget[0].value);
-	localStorage.setItem("remote", event.currentTarget[1].value);
-	localStorage.setItem("radius", event.currentTarget[2].value);
-
 	//API data gets pushed into this as a string
 	let jobposting = "";
 
