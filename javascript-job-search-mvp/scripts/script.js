@@ -91,7 +91,7 @@ function submitButtonEvent(event) {
 		}
 
 		innergrid[0].innerHTML = jobposting;
-	}, 0400);
+	}, 0500);
 
 	if (document.body.classList.contains("dark-background")) {
 		document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
