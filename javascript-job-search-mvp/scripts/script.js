@@ -59,36 +59,39 @@ function submitButtonEvent(event) {
 	if (event.currentTarget[0].value[0] == 1) {
 		job = [];
 	}
+	setTimeout(function(){
+		//sort the job array
+		job.sort(function (a, b) {
+			return a.sortOrder - b.sortOrder
+		});
 
-	//sort the job array
-	job.sort(function (a, b) {
-		return a.sortOrder - b.sortOrder
-	});
+		//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
+		if (job.length > 0) {
+			veteranVideo.classList.add('hidden');
+			document.getElementById("no-results").classList.add('hidden');
+			document.getElementById('jobgrid').classList.remove('hidden');
+		} else {
+			document.getElementById("no-results").classList.remove('hidden');
+			veteranVideo.classList.remove('hidden');
+		}
 
-	//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
-	if (job.length > 0) {
-		veteranVideo.classList.add('hidden');
-		document.getElementById("no-results").classList.add('hidden');
-		document.getElementById('jobgrid').classList.remove('hidden');
-	} else {
-		document.getElementById("no-results").classList.remove('hidden');
-		veteranVideo.classList.remove('hidden');
-	}
 
-	//adds a container and items to the jobposting string for each object in the job array
-	for (let i = 0; i < job.length; i++) {
-		jobposting += `<a class="cardAnchor" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer"><div class="">
-        <div class="grid-container">
-          <div class="grid-item grid-item-1">Title: ${job[i].Title}</div>
-          <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
-          <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
-          <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
-          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}</div>
-        </div></a>`
-	}
 
-	innergrid[0].innerHTML = jobposting;
+		//adds a container and items to the jobposting string for each object in the job array
+		for (let i = 0; i < job.length; i++) {
+			jobposting += `<a class="cardAnchor" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer"><div class="">
+			<div class="grid-container">
+			<div class="grid-item grid-item-1">Title: ${job[i].Title}</div>
+			<div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
+			<div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
+			<div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
+			<div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
+			<div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}</div>
+			</div></a>`
+		}
+
+		innergrid[0].innerHTML = jobposting;
+	}, 0400);
 
 	if (document.body.classList.contains("dark-background")) {
 		document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
