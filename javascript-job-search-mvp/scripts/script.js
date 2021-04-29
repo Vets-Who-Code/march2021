@@ -50,20 +50,13 @@ function submitButtonEvent(event) {
 					DateSincePosted: response.results[i].birth_year
 				});
 			}
+			//Grid
+		let innergrid = document.getElementsByClassName('jobgrid');
+
+		//sort the job array
+		job.sort(function (a, b) {
+			return a.sortOrder - b.sortOrder
 		});
-
-	//Grid
-	let innergrid = document.getElementsByClassName('jobgrid');
-
-	//test case for 11111 zip code to demonstrate the no search results screen. To be removed.
-	if (event.currentTarget[0].value[0] == 1) {
-		job = [];
-	}
-
-	//sort the job array
-	job.sort(function (a, b) {
-		return a.sortOrder - b.sortOrder
-	});
 
 	//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
 	if (job.length > 0) {
@@ -97,6 +90,9 @@ function submitButtonEvent(event) {
 		document.querySelectorAll(".grid-container").forEach(e => e.classList.remove("dark-container"));
 		document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
 	}
+
+		});
+
 }
 
 // adds grab to scroll functionality 
