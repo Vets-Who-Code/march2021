@@ -241,6 +241,7 @@ input[type="checkbox"] {
 
 .jobgrid-container {
 	margin: 0 200px;
+	cursor: grab;
 }
 
 .grid-container {
@@ -248,12 +249,24 @@ input[type="checkbox"] {
 	overflow: auto;
 }
 
+.hide-native-scrollbar {
+	scrollbar-width: none;
+	/* Firefox 64 */
+	-ms-overflow-style: none;
+	/* Internet Explorer 11 */
+}
+
+.hide-native-scrollbar::-webkit-scrollbar {
+	/** WebKit */
+	display: none;
+}
+
 a:link,a:visited, a:hover, a:active {
 	text-decoration: none;
 }
 
 .jobgrid {
-	overflow: hidden;
+	overflow: auto;
 	height: 700px;
 	width: auto;
 }
