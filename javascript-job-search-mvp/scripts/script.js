@@ -53,10 +53,8 @@ function submitButtonEvent(event) {
 			//Grid
 		let innergrid = document.getElementsByClassName('jobgrid');
 
-		//sort the job array
-		job.sort(function (a, b) {
-			return a.sortOrder - b.sortOrder
-		});
+		//sort the job array 	
+		job.sort((a, b) => a.title.localeCompare(b.title));
 
 	//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
 	if (job.length > 0) {
