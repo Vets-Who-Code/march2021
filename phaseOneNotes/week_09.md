@@ -1,18 +1,18 @@
 # Day 1
 ## Portfolios 
-- used trackthis.link to view many examples of luxury websites that use black and white themes
-- luxury websites use sans-serif fonts
-- portfolios should have a flow to them or a common theme
+- Used trackthis.link to view many examples of luxury websites that use black and white themes
+- Luxury websites use sans-serif fonts
+- Portfolios should have a flow to them or a common theme
 ## APIs
 - API means application programming interface
--  that defines interactions between multiple software applications or mixed hardware-software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc.
+- Defines interactions between multiple software applications or mixed hardware-software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc.
 ### REST 
 - REST API is the most popular version 
 - REST APIs communicate via HTTP requests to perform standard database functions like creating, reading, updating, and deleting records (also known as CRUD) within a resource. For example, a REST API would use a GET request to retrieve a record, a POST request to create one, a PUT request to update a record, and a DELETE request to delete one. All HTTP methods can be used in API calls. A well-designed REST API is similar to a website running in a web browser with built-in HTTP functionality.
 ### GraphQL
-- data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data
-- provides an alternative to REST
-- offers tools for complex queries and a less-is-more approach to fetch calls
+- Data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data
+- Provides an alternative to REST
+- Offers tools for complex queries and a less-is-more approach to fetch calls
 - GraphQL have schemas and database like behaviors
 - GraphQL behaves in a geospacial manner
 - GraphQL is about asking different objects for the value of a specific field. The advantage here is that GraphQL always knows exactly what information you need and returns only the data you want.
@@ -87,7 +87,7 @@
 - An API contract is a common phrase to describe how API services are consumed, and depending on the on-boarding process, an API provider and consumer can enter into a contract for services around a set of resources, in a self-service way
 - So if there is a a set in stone method for the API consumption it would be called 'Formal'
 - So more secure, stateful API's that use XML are SOAP
-- not generally used for public APIs
+- Not generally used for public APIs
 - Possible contract statuses are :
 UNINITIALIZED	
 First creation status before any contract information has been set
@@ -115,6 +115,6 @@ That is why a programmer should not take switching from a sequential to a parall
 - Sequential is in order while parallel means every operation is running at the same time.
 - Stateful apis put the responsibility of control on us. That is what SOAP would do. We want to give that control over to the user.
 ### Homework
-- go through the process of using node and SOAP
+- Go through the process of using node and SOAP
 - https://www.brcline.com/blog/how-to-perform-soap-requests-with-node-js
 - SOAP UI or POSTMAN to test API 
