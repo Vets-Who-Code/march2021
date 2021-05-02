@@ -39,34 +39,38 @@ function compare(a, b) {
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
 	event.preventDefault();
+	
+	//grabs default dropdown value and sets it back to default on a new search
+	const sortBy = document.getElementById("sort-by");
+	sortBy.selected = true;
 
 	//API data gets pushed into this as a string
 	let jobposting = "";
 
 	// API GET Request
 	fetch('https://swapi.dev/api/people/?').then(response => {
-			if (response.ok) {
-				return response.json();
-			}
-			throw new Error('Network response error.');
-		})
-		.then(response => {
-			if (job.length > 0) {
-				job = [];
-				jobposting = "";
-			}
-			for (let i = 0; i < response.results.length; i++) {
-				job.push({
-					Title: response.results[i].name,
-					Company: response.results[i].height,
-					Location: response.results[i].mass,
-					Remote: response.results[i].hair_color,
-					JobSnippet: response.results[i].skin_color,
-					Salary: response.results[i].eye_color,
-					DateSincePosted: response.results[i].birth_year,
-					ApplicationSite: 'https://swapi.dev/'
-				});
-			}
+		if (response.ok) {
+			return response.json();
+		}
+		throw new Error('Network response error.');
+	})
+	.then(response => {
+	if (job.length > 0) {
+		job = [];
+		jobposting = "";
+	}
+	for (let i = 0; i < response.results.length; i++) {
+		job.push({
+			Title: response.results[i].name,
+			Company: response.results[i].height,
+			Location: response.results[i].mass,
+			Remote: response.results[i].hair_color,
+			JobSnippet: response.results[i].skin_color,
+			Salary: response.results[i].eye_color,
+			DateSincePosted: response.results[i].birth_year,
+			ApplicationSite: 'https://swapi.dev/'
+		});
+	}
 
 	//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
 	if (job.length > 0) {
@@ -103,7 +107,7 @@ function submitButtonEvent(event) {
 		document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
 	}
 
-		});
+	});
 
 }
 
@@ -178,13 +182,15 @@ const contactButton = document.getElementById("contact-form");
 contactButton.addEventListener("submit", contactFormSubmit);
 
 //this listens for the sort dropdown to change
-const jobSort = document.getElementById('names');
+const names = document.getElementById('names');
 names.addEventListener("change", changeJobGrid);
 
 //this reorders the objects in the job array and changes the innergrid inner html
-function changeJobGrid() {
-	job.sort(compare);
-	console.log(job);
+function changeJobGrid() { 
+	if (names.value === "title") {
+		job.sort(compare);
+	}
+
 	jobposting = "";
 	innergrid.innerHTML = "";
 	//adds a container and items to the jobposting string for each object in the job array
