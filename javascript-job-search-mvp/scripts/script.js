@@ -205,6 +205,15 @@ function changeJobGrid() {
           <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}</div>
 		  <div class="grid-item grid-item-7"><a href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
         </div>`
-	}	
+	}
+		
 	innergrid[0].innerHTML = jobposting;
+	
+	if (document.body.classList.contains("dark-background")) {
+		document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
+		document.querySelectorAll(".grid-item").forEach(e => e.classList.add("dark-grid"));
+	} else {
+		document.querySelectorAll(".grid-container").forEach(e => e.classList.remove("dark-container"));
+		document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
+	}
 }
