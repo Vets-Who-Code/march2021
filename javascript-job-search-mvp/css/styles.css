@@ -246,7 +246,7 @@ input[type="checkbox"] {
 
 .grid-container {
 	cursor: grab;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .hide-native-scrollbar {
@@ -345,6 +345,23 @@ a:link,a:visited, a:hover, a:active {
 .grid-item-6 {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+}
+
+.grid-item-7 > a {
+	background-color: var(--medium-blue);
+	padding: 1%;
+	color: white;
+}
+
+.job-sort {
+	text-align: right;
+}
+
+#names {
+	outline: black;
+	margin: 2% 7.5%;
+	padding: 1%;
+	color: black;
 }
 
 /* Footer */
