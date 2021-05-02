@@ -47,7 +47,8 @@ function submitButtonEvent(event) {
 					Remote: response.results[i].hair_color,
 					JobSnippet: response.results[i].skin_color,
 					Salary: response.results[i].eye_color,
-					DateSincePosted: response.results[i].birth_year
+					DateSincePosted: response.results[i].birth_year,
+					ApplicationSite: 'https://swapi.dev/'
 				});
 			}
 			//Grid
