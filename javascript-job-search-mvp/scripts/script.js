@@ -20,6 +20,21 @@ const veteranVideo = document.getElementById("veteran-video");
 //receives objects from the API (array of objects)
 let job = [];
 
+//sorts the job array of objects when title is selected from dropdown
+function compare(a, b) {
+  // Use toUpperCase() to ignore character casing
+  const bandA = a.Title.toLowerCase();
+  const bandB = b.Title.toLowerCase();
+
+  let comparison = 0;
+  if (bandA > bandB) {
+    comparison = 1;
+  } else if (bandA < bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}
+
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
 	event.preventDefault();
@@ -51,13 +66,8 @@ function submitButtonEvent(event) {
 					ApplicationSite: 'https://swapi.dev/'
 				});
 			}
-			//Grid
-		let innergrid = document.getElementsByClassName('jobgrid');
 
-		//sort the job array
-		job.sort(function (a, b) {
-			return a.sortOrder - b.sortOrder
-		});
+		let innergrid = document.getElementsByClassName('jobgrid');
 
 	//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
 	if (job.length > 0) {
@@ -73,7 +83,7 @@ function submitButtonEvent(event) {
 	//adds a container and items to the jobposting string for each object in the job array
 	for (let i = 0; i < job.length; i++) {
 		jobposting += `<div class="">
-        	<div class="grid-container">
+        <div class="grid-container">
           <div class="grid-item grid-item-1">Title: ${job[i].Title}</div>
           <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
           <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
@@ -167,3 +177,27 @@ function contactFormSubmit(event) {
 //this listens for the contact form to submit.
 const contactButton = document.getElementById("contact-form");
 contactButton.addEventListener("submit", contactFormSubmit);
+
+//this listens for the sort dropdown to change
+const jobSort = document.getElementById('names');
+names.addEventListener("change", changeJobGrid);
+
+//this reorders the objects in the job array and changes the innergrid inner html
+function changeJobGrid() {
+	job.sort(compare);
+	jobposting = "";
+	innergrid.innerHTML = "";
+	//adds a container and items to the jobposting string for each object in the job array
+	for (let i = 0; i < job.length; i++) {
+		jobposting += `<div class="">
+        <div class="grid-container">
+          <div class="grid-item grid-item-1">Title: ${job[i].Title}</div>
+          <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
+          <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
+          <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
+          <div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
+          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}</div>
+		  <div class="grid-item grid-item-7"><a href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
+        </div>`
+	}
+}

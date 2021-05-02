@@ -352,6 +352,7 @@ a:link,a:visited, a:hover, a:active {
 }
 
 #names {
+	outline: black;
 	margin: 0 7.5%;
 	padding: 1%;
 	color: black;
