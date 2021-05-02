@@ -347,6 +347,12 @@ a:link,a:visited, a:hover, a:active {
 	border-bottom-right-radius: 5px;
 }
 
+.grid-item-7 > a {
+	background-color: var(--medium-blue);
+	padding: 1%;
+	color: white;
+}
+
 .job-sort {
 	text-align: right;
 }
