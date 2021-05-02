@@ -246,7 +246,11 @@ input[type="checkbox"] {
 
 .grid-container {
 	cursor: grab;
-	overflow: auto;
+	overflow: hidden;
+}
+
+.cardAnchor {
+	padding: 2%;
 }
 
 .hide-native-scrollbar {
