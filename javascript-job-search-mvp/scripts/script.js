@@ -17,6 +17,7 @@ const jobSearch = document.getElementById("job-search");
 jobSearch.addEventListener("submit", submitButtonEvent);
 //variable for veteran video
 const veteranVideo = document.getElementById("veteran-video");
+let innergrid = document.getElementsByClassName('jobgrid');
 //receives objects from the API (array of objects)
 let job = [];
 
@@ -66,8 +67,6 @@ function submitButtonEvent(event) {
 					ApplicationSite: 'https://swapi.dev/'
 				});
 			}
-
-		let innergrid = document.getElementsByClassName('jobgrid');
 
 	//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
 	if (job.length > 0) {
@@ -185,6 +184,7 @@ names.addEventListener("change", changeJobGrid);
 //this reorders the objects in the job array and changes the innergrid inner html
 function changeJobGrid() {
 	job.sort(compare);
+	console.log(job);
 	jobposting = "";
 	innergrid.innerHTML = "";
 	//adds a container and items to the jobposting string for each object in the job array
@@ -199,5 +199,6 @@ function changeJobGrid() {
           <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}</div>
 		  <div class="grid-item grid-item-7"><a href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
         </div>`
-	}
+	}	
+	innergrid[0].innerHTML = jobposting;
 }
