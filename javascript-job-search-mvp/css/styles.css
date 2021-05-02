@@ -249,10 +249,6 @@ input[type="checkbox"] {
 	overflow: hidden;
 }
 
-.cardAnchor {
-	padding: 2%;
-}
-
 .hide-native-scrollbar {
 	scrollbar-width: none;
 	/* Firefox 64 */
@@ -349,6 +345,16 @@ a:link,a:visited, a:hover, a:active {
 .grid-item-6 {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+}
+
+.job-sort {
+	text-align: right;
+}
+
+#names {
+	margin: 0 7.5%;
+	padding: 1%;
+	color: black;
 }
 
 /* Footer */

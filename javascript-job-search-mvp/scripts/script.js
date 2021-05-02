@@ -64,6 +64,7 @@ function submitButtonEvent(event) {
 		veteranVideo.classList.add('hidden');
 		document.getElementById("no-results").classList.add('hidden');
 		document.getElementById('jobgrid').classList.remove('hidden');
+		document.getElementById('job-sort').classList.remove('hidden');
 	} else {
 		document.getElementById("no-results").classList.remove('hidden');
 		veteranVideo.classList.remove('hidden');
@@ -79,7 +80,7 @@ function submitButtonEvent(event) {
           <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
           <div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
           <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}</div>
-		  <a class="grid-item grid-item-7" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a>
+		  <div class="grid-item grid-item-7"><a href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
         </div>`
 	}
 
