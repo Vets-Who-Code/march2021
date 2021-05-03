@@ -573,7 +573,8 @@ footer .dropdown-menu>li>a:hover>span {
 }
 
 .apply.dark-apply:hover {
-	background-color: var(--dark-red);
+	background-color: white;
+	color: black;
 }
 
 /* Dark Header */
