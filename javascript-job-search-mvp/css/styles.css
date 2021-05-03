@@ -347,7 +347,16 @@ a:link,a:visited, a:hover, a:active {
 	border-bottom-right-radius: 5px;
 }
 
-.grid-item-7 > a {
+.apply {
+	color: white;
+	float: right;
+	background-color: var(--light-red);
+	padding: 1%;
+	color: white;
+	border: 1px solid black;
+}
+
+.apply:hover {
 	background-color: var(--medium-blue);
 	padding: 1%;
 	color: white;
@@ -542,7 +551,6 @@ footer .dropdown-menu>li>a:hover>span {
 	margin: 0 0 20px 0;
 }
 
-
 /*** DARK MODE *** /
 
 /* Dark Nav */
@@ -557,6 +565,14 @@ footer .dropdown-menu>li>a:hover>span {
 }
 
 .donate.dark-theme:hover {
+	background-color: var(--dark-red);
+}
+
+.apply.dark-apply {
+	background-color: var(--medium-blue);
+}
+
+.apply.dark-apply:hover {
 	background-color: var(--dark-red);
 }
 
