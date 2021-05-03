@@ -42,7 +42,6 @@ function submitButtonEvent(event) {
 	
 	//grabs default dropdown value and sets it back to default on a new search
 	const sortBy = document.getElementById("sort-by");
-	sortBy.selected = true;
 
 	//API data gets pushed into this as a string
 	let jobposting = "";
@@ -72,6 +71,8 @@ function submitButtonEvent(event) {
 		});
 	}
 
+	changeJobGrid();
+
 	//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
 	if (job.length > 0) {
 		veteranVideo.classList.add('hidden');
@@ -92,8 +93,7 @@ function submitButtonEvent(event) {
           <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
           <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
           <div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
-          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}</div>
-		  <div class="grid-item grid-item-7"><a href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
+          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<button class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</button></div>
         </div>`
 	}
 
@@ -102,9 +102,11 @@ function submitButtonEvent(event) {
 	if (document.body.classList.contains("dark-background")) {
 		document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
 		document.querySelectorAll(".grid-item").forEach(e => e.classList.add("dark-grid"));
+		document.querySelectorAll(".apply").forEach(e => e.classList.add("dark-apply"));
 	} else {
 		document.querySelectorAll(".grid-container").forEach(e => e.classList.remove("dark-container"));
 		document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
+			document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
 	}
 
 	});
@@ -170,6 +172,7 @@ const darkMode = () => {
 	document.querySelector(".fa-moon").classList.toggle("fa-sun");
 	document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));
 	document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
+	document.querySelectorAll(".apply").forEach(e => e.classList.toggle("dark-apply"));
 }
 
 //Contact Form
@@ -202,8 +205,7 @@ function changeJobGrid() {
           <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
           <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
           <div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
-          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}</div>
-		  <div class="grid-item grid-item-7"><a href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
+          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<button class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</button></div>
         </div>`
 	}
 		
@@ -212,8 +214,10 @@ function changeJobGrid() {
 	if (document.body.classList.contains("dark-background")) {
 		document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
 		document.querySelectorAll(".grid-item").forEach(e => e.classList.add("dark-grid"));
+		document.querySelectorAll(".apply").forEach(e => e.classList.add("dark-apply"));
 	} else {
 		document.querySelectorAll(".grid-container").forEach(e => e.classList.remove("dark-container"));
 		document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
+		document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
 	}
 }
