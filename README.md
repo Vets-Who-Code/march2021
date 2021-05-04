@@ -8,6 +8,7 @@ Welcome to Vets Who Code play repo for the new troops.
 
 - [Jay](https://twitter.com/JeromeHardaway)
 - [Michael](https://twitter.com/MuddyBootsCode)
+- [Phil](https://www.linkedin.com/in/tenteromano/)
 
 ## Students
 
