@@ -1,6 +1,6 @@
 # Day 1 
 ## Standups
-- Keep in mind when selecting your mentor what you can help them with as well.
+- Keep in mind when selecting your mentor what you can help them with as well.(general advice)
 - Discussed portfolios. Be prepared to discuss why you made specofic choices with your portfolio. Make sure it makes sense. 
 - Take unneccesary or unused code out of your portfolio file so you have less to explain. 
 ## Project
