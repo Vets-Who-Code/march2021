@@ -8,7 +8,8 @@ More to come.
 ## To run a file:
 1. cd into the challenge you want to try.
 2. You should have `node` installed. If you don't... do it.
-3. 
+3. Run the file with `node path_to_file.js`
+    - If no error happens but you didn't see anything; are you logging anything?
 
 ## How to get started testing your files:
 
