@@ -1,10 +1,19 @@
+// Explaination of modular arithmitic
+// or the "%" operator
+
+// Any Integer can be described in the following format.
+// This format uses ONLY integers. (whole numbers).
+// Let's describe this integer, A.
+// -----
 // Given A, and given (positive) B
 // There exists unique integers Q, and R, such that
 
 // A = (B * Q) + R
 
-// Lets Do an example
+// Lets Do an example for the number, 38
+// A = 38, then:
 // 38 = (9 * ?) + R
+// What is B and what is R?
 
 let A = 38;
 let B = 9;

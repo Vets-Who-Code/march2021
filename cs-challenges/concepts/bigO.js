@@ -12,6 +12,7 @@ array_2d = [
   [20, 21, 22],
 ];
 
+// These are both O(1)
 console.log(array1[2] + "\n");
 
 console.log(array_2d[1] + "\n");
