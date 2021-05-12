@@ -1,5 +1,5 @@
 // --- Directions
-// Print out the n-th entry in the fibonacci series.
+// Return the n-th entry in the fibonacci series.
 // The fibonacci series is an ordering of numbers where
 // each number is the sum of the preceeding two.
 // For example, the sequence
