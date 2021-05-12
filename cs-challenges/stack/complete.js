@@ -27,7 +27,12 @@ class Stack {
 
   // Look at the top of the stack, without removing
   peek() {
-    return this.data[this.data.length - 1];
+    return this.data[this._lastIdx()];
+  }
+
+  // "Private" method
+  _lastIdx() {
+    return this.data.length - 1;
   }
 }
 
