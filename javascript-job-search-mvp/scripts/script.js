@@ -46,30 +46,31 @@ function submitButtonEvent(event) {
 	//API data gets pushed into this as a string
 	let jobposting = "";
 
-	// API GET Request
-	fetch('https://swapi.dev/api/people/?').then(response => {
-		if (response.ok) {
-			return response.json();
+  fetch('http://romine.tech/api/adzuna.php?what=developer&where=10001').then(response => response.json(), error => console.log(error))
+		.then(response => {
+		if (job.length > 0) {
+			job = [];
+			jobposting = "";
 		}
-		throw new Error('Network response error.');
-	})
-	.then(response => {
-	if (job.length > 0) {
-		job = [];
-		jobposting = "";
-	}
-	for (let i = 0; i < response.results.length; i++) {
-		job.push({
-			Title: response.results[i].name,
-			Company: response.results[i].height,
-			Location: response.results[i].mass,
-			Remote: response.results[i].hair_color,
-			JobSnippet: response.results[i].skin_color,
-			Salary: response.results[i].eye_color,
-			DateSincePosted: response.results[i].birth_year,
-			ApplicationSite: 'https://swapi.dev/'
-		});
-	}
+
+		let remote = "No";
+
+
+		for (let i = 0; i < response.data.results.length; i++) {
+			if(response.data.results[i].description.indexOf("remote") !== -1 || response.data.results[i].description.indexOf("REMOTE") !== -1 || response.data.results[i].description.indexOf("work from home") !== -1 || response.data.results[i].description.indexOf("WORK FROM HOME") !== -1) {
+				remote = "Yes";
+			}
+			job.push({
+				Title: response.data.results[i].title,
+				Company: response.data.results[i].company.display_name,
+				Location: response.data.results[i].location.display_name,
+				Remote: remote,
+				JobSnippet: response.data.results[i].description,
+				//Salary: response.data.results[i].salary_is_predicted,
+				DateSincePosted: response.data.results[i].created,
+				ApplicationSite: response.data.results[i].redirect_url
+			});
+		}
 
 	changeJobGrid();
 
@@ -92,8 +93,7 @@ function submitButtonEvent(event) {
           <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
           <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
           <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
-          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<button class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</button></div>
+          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<a class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
         </div>`
 	}
 
@@ -204,7 +204,6 @@ function changeJobGrid() {
           <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
           <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
           <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
           <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<button class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</button></div>
         </div>`
 	}
