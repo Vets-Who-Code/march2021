@@ -86,7 +86,6 @@ function submitButtonEvent(event) {
           <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
           <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
           <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
           <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<a class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
         </div>`
 	}
@@ -198,7 +197,6 @@ function changeJobGrid() {
           <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
           <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
           <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-5">Salary: ${job[i].Salary}</div>
           <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<button class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</button></div>
         </div>`
 	}
