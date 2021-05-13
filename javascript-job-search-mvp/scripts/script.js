@@ -52,12 +52,19 @@ function submitButtonEvent(event) {
 			job = [];
 			jobposting = "";
 		}
+
+		let remote = "No";
+
+
 		for (let i = 0; i < response.data.results.length; i++) {
+			if(response.data.results[i].description.indexOf("remote") !== -1 || response.data.results[i].description.indexOf("REMOTE") !== -1 || response.data.results[i].description.indexOf("work from home") !== -1 || response.data.results[i].description.indexOf("WORK FROM HOME") !== -1) {
+				remote = "Yes";
+			}
 			job.push({
 				Title: response.data.results[i].title,
 				Company: response.data.results[i].company.display_name,
 				Location: response.data.results[i].location.display_name,
-				Remote: "No",
+				Remote: remote,
 				JobSnippet: response.data.results[i].description,
 				//Salary: response.data.results[i].salary_is_predicted,
 				DateSincePosted: response.data.results[i].created,
