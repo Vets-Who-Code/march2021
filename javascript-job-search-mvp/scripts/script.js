@@ -57,7 +57,7 @@ function submitButtonEvent(event) {
 
 
 		for (let i = 0; i < response.data.results.length; i++) {
-			if(response.data.results[i].description.indexOf("remote") !== -1 || response.data.results[i].description.indexOf("REMOTE") !== -1 || response.data.results[i].description.indexOf("work from home") !== -1 || response.data.results[i].description.indexOf("WORK FROM HOME") !== -1) {
+			if(response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) {
 				remote = "Yes";
 			}
 			job.push({
