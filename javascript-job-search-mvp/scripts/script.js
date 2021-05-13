@@ -39,27 +39,37 @@ function compare(a, b) {
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
 	event.preventDefault();
+	localStorage.setItem("zipcode", event.currentTarget[0].value);
+  localStorage.setItem("remote", event.currentTarget[1].checked);
+	localStorage.setItem("radius", event.currentTarget[2].value);
 	
 	//grabs default dropdown value and sets it back to default on a new search
 	const sortBy = document.getElementById("sort-by");
 
 	//API data gets pushed into this as a string
 	let jobposting = "";
+	let what = "developer"; 
+	let where = event.currentTarget[0].value;
+	let remote = event.currentTarget[1].checked;
 
-  fetch('http://romine.tech/api/adzuna.php?what=developer&where=10001').then(response => response.json(), error => console.log(error))
+  fetch(`http://romine.tech/api/adzuna.php?what=${what}&where=${where}`).then(response => response.json(), error => console.log(error))
 		.then(response => {
 		if (job.length > 0) {
 			job = [];
 			jobposting = "";
 		}
 
-		let remote = "No";
-
-
 		for (let i = 0; i < response.data.results.length; i++) {
-			if(response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) {
+
+			let date = new Date(response.data.results[i].created);
+
+			if(remote && (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1)) {
 				remote = "Yes";
+			} else {
+				remote = "No";
 			}
+
+			if (remote === "Yes") {
 			job.push({
 				Title: response.data.results[i].title,
 				Company: response.data.results[i].company.display_name,
@@ -67,9 +77,23 @@ function submitButtonEvent(event) {
 				Remote: remote,
 				JobSnippet: response.data.results[i].description,
 				//Salary: response.data.results[i].salary_is_predicted,
-				DateSincePosted: response.data.results[i].created,
+				DateSincePosted: date.toLocaleDateString(),
+				Date: date,
 				ApplicationSite: response.data.results[i].redirect_url
 			});
+		} else {
+				job.push({
+					Title: response.data.results[i].title,
+					Company: response.data.results[i].company.display_name,
+					Location: response.data.results[i].location.display_name,
+					Remote: remote,
+					JobSnippet: response.data.results[i].description,
+					//Salary: response.data.results[i].salary_is_predicted,
+					DateSincePosted: date.toLocaleDateString(),
+					Date: date,
+					ApplicationSite: response.data.results[i].redirect_url
+				});
+			}
 		}
 
 	changeJobGrid();
