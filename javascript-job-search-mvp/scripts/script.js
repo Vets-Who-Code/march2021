@@ -46,7 +46,7 @@ function submitButtonEvent(event) {
 	//API data gets pushed into this as a string
 	let jobposting = "";
 
-  fetch('https://romine.tech/api/adzuna.php?what=developer&where=10001').then(response => response.json(), error => console.log(error))
+  fetch('http://romine.tech/api/adzuna.php?what=developer&where=10001').then(response => response.json(), error => console.log(error))
 		.then(response => {
 		if (job.length > 0) {
 			job = [];
