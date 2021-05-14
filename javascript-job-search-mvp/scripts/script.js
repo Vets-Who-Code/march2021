@@ -50,7 +50,7 @@ function submitButtonEvent(event) {
 	let jobposting = "";
 	let what = "developer"; 
 	let where = event.currentTarget[0].value;
-	let remote = event.currentTarget[1].checked;
+	let remotePosition = event.currentTarget[1].checked;
 
   fetch(`http://romine.tech/api/adzuna.php?what=${what}&where=${where}`).then(response => response.json(), error => console.log(error))
 		.then(response => {
@@ -60,28 +60,12 @@ function submitButtonEvent(event) {
 		}
 
 		for (let i = 0; i < response.data.results.length; i++) {
-
 			let date = new Date(response.data.results[i].created);
-
-			if(remote && (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1)) {
+			let remote = "No";
+			if(remotePosition && (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1)) {
 				remote = "Yes";
-			} else {
-				remote = "No";
 			}
-
-			if (remote === "Yes") {
-			job.push({
-				Title: response.data.results[i].title,
-				Company: response.data.results[i].company.display_name,
-				Location: response.data.results[i].location.display_name,
-				Remote: remote,
-				JobSnippet: response.data.results[i].description,
-				//Salary: response.data.results[i].salary_is_predicted,
-				DateSincePosted: date.toLocaleDateString(),
-				Date: date,
-				ApplicationSite: response.data.results[i].redirect_url
-			});
-		} else {
+			if(remotePosition && remote == "Yes" || !remotePosition && remote == "No"){
 				job.push({
 					Title: response.data.results[i].title,
 					Company: response.data.results[i].company.display_name,
@@ -94,6 +78,7 @@ function submitButtonEvent(event) {
 					ApplicationSite: response.data.results[i].redirect_url
 				});
 			}
+			
 		}
 
 	changeJobGrid();
