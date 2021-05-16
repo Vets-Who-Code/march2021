@@ -1,5 +1,27 @@
 /* Media Queries */
-@media (min-width: 2301px) {
+@media (min-width: 2700px) {
+  #radar {
+    width: 15%;
+    margin-top: 5%;
+  }
+
+  #hand {
+    width: 15%;
+    margin-top: 5%;
+  }
+
+  #army {
+    width: 15%;
+    margin-top: 5%;
+  }
+
+  #explosion {
+    width: 15%;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 2699px) {
   #radar {
     margin-top: -1%;
   }
