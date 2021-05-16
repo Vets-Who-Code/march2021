@@ -1,7 +1,25 @@
 /* Media Queries */
-@media (min-width: 2000px) {
+@media (min-width: 2301px) {
   #radar {
-    margin-top: 5%
+    margin-top: -1%;
+  }
+
+  #hand {
+    margin-top: -1%;
+  }
+
+  #army {
+    margin-top: -1%;
+  }
+
+  #explosion {
+    margin-top: -1%;
+  }
+}
+
+@media (max-width: 2300px) {
+  #radar {
+    margin-top: 5%;
   }
 
   #hand {
@@ -14,6 +32,24 @@
 
   #explosion {
     margin-top: 5%;
+  }
+}
+
+@media (max-width: 2000px) {
+  #radar {
+    margin-top: 10%
+  }
+
+  #hand {
+    margin-top: 10%;
+  }
+
+  #army {
+    margin-top: 10%;
+  }
+
+  #explosion {
+    margin-top: 10%;
   }
 }
 
