@@ -307,7 +307,7 @@ body.dark-theme p a:active {
 
 .intro {
 	padding-bottom: 60px;
-	margin: 0 7%;
+	margin: 6% 7% 6% 7%;
 }
 
 /* Cards */
@@ -368,22 +368,22 @@ body.dark-theme p a:active {
 
 #radar {
 	width: 25%;
-	margin-top: 12%
+	margin-top: 8%
 }
 
 #hand {
 	width: 25%;
-	margin-top: 12%;
+	margin-top: 8%;
 }
 
 #army {
 	width: 25%;
-	margin-top: 12%;
+	margin-top: 8%;
 }
 
 #explosion {
 	width: 25%;
-	margin-top: 12%;
+	margin-top: 8%;
 	padding-bottom: 4%
 }
 
