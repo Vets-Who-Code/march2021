@@ -1,4 +1,4 @@
-const Stack = require('./stack');
+const Stack = require('./index');
 
 test('Stack is a class', () => {
   expect(typeof Stack.prototype.constructor).toEqual('function');

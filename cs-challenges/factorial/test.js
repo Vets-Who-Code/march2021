@@ -1,4 +1,4 @@
-const factorial = require("./factorial");
+const factorial = require("./index");
 
 test("factorial function is defined", () => {
   expect(typeof factorial).toEqual("function");

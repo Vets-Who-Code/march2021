@@ -1,4 +1,4 @@
-const circularArray = require("./circularArray");
+const circularArray = require("./index");
 
 const testArray = [10, 12, 14];
 const arrLen = testArray.length;
