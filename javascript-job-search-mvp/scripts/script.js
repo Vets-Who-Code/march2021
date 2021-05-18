@@ -61,26 +61,28 @@ function submitButtonEvent(event) {
 				jobposting = "";
 			}
 
-			for (let i = 0; i < response.data.results.length; i++) {
-				let date = new Date(response.data.results[i].created);
-				let remote = "No";
+			if(response.data && response.data.results.length > 0) {
+				for (let i = 0; i < response.data.results.length; i++) {
+					let date = new Date(response.data.results[i].created);
+					let remote = "No";
 
-				if (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) {
-					remote = "Yes";
-				}
+					if (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) {
+						remote = "Yes";
+					}
 
-				if (remotePosition && remote == "Yes" || !remotePosition) {
-					job.push({
-						Title: response.data.results[i].title,
-						Company: response.data.results[i].company.display_name,
-						Location: response.data.results[i].location.display_name,
-						Remote: remote,
-						JobSnippet: response.data.results[i].description,
-						//Salary: response.data.results[i].salary_is_predicted,
-						DateSincePosted: date.toLocaleDateString(),
-						Date: date,
-						ApplicationSite: response.data.results[i].redirect_url
-					});
+					if (remotePosition && remote == "Yes" || !remotePosition) {
+						job.push({
+							Title: response.data.results[i].title,
+							Company: response.data.results[i].company.display_name,
+							Location: response.data.results[i].location.display_name,
+							Remote: remote,
+							JobSnippet: response.data.results[i].description,
+							//Salary: response.data.results[i].salary_is_predicted,
+							DateSincePosted: date.toLocaleDateString(),
+							Date: date,
+							ApplicationSite: response.data.results[i].redirect_url
+						});
+					}
 				}
 			}
 
