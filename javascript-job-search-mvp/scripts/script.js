@@ -48,13 +48,14 @@ function submitButtonEvent(event) {
 
 	//API data gets pushed into this as a string
 	let jobposting = "";
-	let what = "javascript react gatsby graphql";
+	let what = "JavaScript React Gatsby GraphQL NodeJS";
 	let where = event.currentTarget[0].value;
 	let remotePosition = event.currentTarget[1].checked;
 	let distance = event.currentTarget[2].value;
-	let exclude = "0000 senior sr. principal lead";
-
-	fetch(`http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=7&distance=${distance}&what_exclude=${exclude}`).then(response => response.json(), error => console.log(error))
+	let exclude = ["0000", "senior", "Sr.", "principal", "lead"];
+	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=7&distance=${distance}`
+	console.log(URL);
+	fetch(URL).then(response => response.json(), error => console.log(error))
 		.then(response => {
 			if (job.length > 0) {
 				job = [];
@@ -62,6 +63,12 @@ function submitButtonEvent(event) {
 			}
 
 			if(response.data && response.data.results.length > 0) {
+				response.data.results = response.data.results.reduce((acc, value) => {
+					if(!exclude.includes(value.title.toLowerCase())) { 
+						acc.push(value);
+					}
+					return acc;
+				}, []);
 				for (let i = 0; i < response.data.results.length; i++) {
 					let date = new Date(response.data.results[i].created);
 					let remote = "No";
