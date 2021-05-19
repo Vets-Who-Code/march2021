@@ -14,7 +14,7 @@
 
 
 
-// Fun fact - there is still
+// Fun Fact: you are overwriting the native "Set" object by naming your class this
 class Set {
   CLASS_NAME = "SET";
 
