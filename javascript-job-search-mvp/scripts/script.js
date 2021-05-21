@@ -50,6 +50,7 @@ function submitButtonEvent(event) {
 	let jobposting = "";
 	let what = "JavaScript React Gatsby GraphQL NodeJS";
 	let where = event.currentTarget[0].value;
+	let skills = what.split(' ');
 	let remotePosition = event.currentTarget[1].checked;
 	let distance = event.currentTarget[2].value;
 	let exclude = ["0000", "senior", "Sr.", "principal", "lead"];
@@ -64,7 +65,8 @@ function submitButtonEvent(event) {
 
 			if(response.data && response.data.results.length > 0) {
 				response.data.results = response.data.results.reduce((acc, value) => {
-					if(!exclude.includes(value.title.toLowerCase())) { 
+					if(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)
+					&& (skills.some(e => value.title.indexOf(e) > -1) || skills.some(e => value.description.indexOf(e) > -1))) { 
 						acc.push(value);
 					}
 					return acc;
