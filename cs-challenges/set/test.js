@@ -1,4 +1,4 @@
-const Set = require("./completed");
+const Set = require("./index");
 
 const TEST_ARR = [1, 1, 2, 3, 3, 2, 8];
 
@@ -119,7 +119,7 @@ describe(".intersection()", () => {
     expect(setB.showSet()).toEqual([5, 20]);
   });
 
-  test("it returns a set of the union", () => {
+  test("it returns a set of the intersection", () => {
     const setA = new Set([10, 5]);
     const setB = new Set([5, 20]);
 
