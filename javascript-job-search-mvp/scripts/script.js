@@ -53,7 +53,7 @@ function submitButtonEvent(event) {
 
 	//API data gets pushed into this as a string
 	let jobposting = "";
-	let what = "JavaScript React Gatsby GraphQL NodeJS";
+	let what = "JavaScript React Gatsby GraphQL NodeJS node.js software engineer";
 	let where = event.currentTarget[0].value;
 	let skills = what.split(' ');
 	let remotePosition = event.currentTarget[1].checked;
@@ -70,8 +70,14 @@ function submitButtonEvent(event) {
 
 			if(response.data && response.data.results.length > 0) {
 				response.data.results = response.data.results.reduce((acc, value) => {
-					if(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)
-					&& (skills.filter(e => value.title.indexOf(e) > -1).length > 1 || skills.filter(e => value.description.indexOf(e) > -1).length > 1)) { 
+					
+					var ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
+
+					console.log(`title:  ${value.title.toLowerCase()} Exclude: ${ex} Skills in Title: ${skills.filter(e => value.title.indexOf(e) > -1).length} Skills in body: ${skills.filter(e => value.description.indexOf(e) > -1).length}`)
+
+
+					if(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.indexOf(e) > -1).length >= 1 ||
+					(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.indexOf(e) > -1).length > 1)){ 
 						acc.push(value);
 					}
 					return acc;
@@ -126,6 +132,7 @@ function submitButtonEvent(event) {
 			}
 
 			innergrid[0].innerHTML = jobposting;
+			localStorage.setItem("jobposting", innergrid[0].innerHTML);
 
 			if (document.body.classList.contains("dark-background")) {
 				document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
@@ -146,11 +153,9 @@ function submitButtonEvent(event) {
 					// load more content here
 					document.getElementById('card-loader').classList.remove('hidden');
 					setTimeout(()=>{
-						innergrid[0].innerHTML += jobposting;
+						innergrid[0].innerHTML += localStorage.getItem("jobposting")
 					document.getElementById('card-loader').classList.add('hidden');
-					},2000)
-					 
-
+					},2000);
 				}
 			})
 
