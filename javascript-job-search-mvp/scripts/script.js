@@ -38,6 +38,11 @@ function compare(a, b) {
 
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
+	var loader = document.getElementById("loader");
+	veteranVideo.classList.add('hidden');
+	loader.classList.remove('hidden');
+	document.getElementById("no-results").classList.add('hidden');
+
 	event.preventDefault();
 	localStorage.setItem("zipcode", event.currentTarget[0].value);
 	localStorage.setItem("remote", event.currentTarget[1].checked);
@@ -96,7 +101,7 @@ function submitButtonEvent(event) {
 			}
 
 			changeJobGrid();
-
+			loader.classList.add('hidden')
 			//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
 			if (job.length > 0) {
 				veteranVideo.classList.add('hidden');
@@ -131,6 +136,23 @@ function submitButtonEvent(event) {
 				document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
 				document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
 			}
+
+			jobgrid.addEventListener('scroll',()=>{
+				var scrollY = jobgrid.scrollHeight - jobgrid.scrollTop;
+				var height = jobgrid.offsetHeight;
+				var offset = height - scrollY;
+				
+				if (offset == 0 || offset == 1) {
+					// load more content here
+					document.getElementById('card-loader').classList.remove('hidden');
+					setTimeout(()=>{
+						innergrid[0].innerHTML += jobposting;
+					document.getElementById('card-loader').classList.add('hidden');
+					},2000)
+					 
+
+				}
+			})
 
 		});
 
