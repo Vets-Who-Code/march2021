@@ -53,7 +53,7 @@ function submitButtonEvent(event) {
 	let skills = what.split(' ');
 	let remotePosition = event.currentTarget[1].checked;
 	let distance = event.currentTarget[2].value;
-	let exclude = ["0000", "senior", "Sr.", "principal", "lead"];
+	let exclude = ["0000", "senior", "sr.", "principal", "lead"];
 	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=7&distance=${distance}`
 	console.log(URL);
 	fetch(URL).then(response => response.json(), error => console.log(error))
@@ -66,7 +66,7 @@ function submitButtonEvent(event) {
 			if(response.data && response.data.results.length > 0) {
 				response.data.results = response.data.results.reduce((acc, value) => {
 					if(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)
-					&& (skills.some(e => value.title.indexOf(e) > -1) || skills.some(e => value.description.indexOf(e) > -1))) { 
+					&& (skills.filter(e => value.title.indexOf(e) > -1).length > 1 || skills.filter(e => value.description.indexOf(e) > -1).length > 1)) { 
 						acc.push(value);
 					}
 					return acc;
