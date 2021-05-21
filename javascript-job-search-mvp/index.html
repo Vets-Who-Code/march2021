@@ -158,9 +158,13 @@
 			<div>
 				<p id="no-results" class="text-center hidden no-results">Sorry there were no results. Try again.</p>
 			</div>
+			<div id="loader" class="loading hidden">
+				<div class="ball first"></div>
+				<div class="ball second"></div>
+				<div class="ball third"></div>
+			</div>
 			<video id="veteran-video" class="veteran-video" src="videos/veteran-on-computer.mp4" autoplay loop muted></video>
 			<!-- End Empty Grid -->
-
 			<!-- Grid -->
 			<div class="jobgrid-container">
 				<div class="job-sort hidden" id="job-sort">
@@ -168,10 +172,24 @@
 						<option class="sort-options" id="sort-by" value="Sort by:" selected>Sort by:</option>
 						<option class="sort-options" value="title">Title</option>
 					</select>
+				
+
+
+
+
+
+
+
 				</div>
 				<div class="jobgrid hidden hide-native-scrollbar" id="jobgrid" aria-label="Job Grid">
 				</div>
+
 			</div>
+		</div>
+		<div id="card-loader" class="loading hidden">
+			<div class="ball first colord-balls"></div>
+			<div class="ball second colord-balls"></div>
+			<div class="ball third colord-balls"></div>
 		</div>
 	</main>
 	<!-- End Grid -->
