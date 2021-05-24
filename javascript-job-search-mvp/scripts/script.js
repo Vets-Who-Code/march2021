@@ -58,9 +58,9 @@ function submitButtonEvent(event) {
 	let skills = what.split(' ');
 	let remotePosition = event.currentTarget[1].checked;
 	let distance = event.currentTarget[2].value;
-	let exclude = ["0000", "senior", "sr.", "principal", "lead"];
+	let exclude = ["0000", "senior", "sr.", "principal", "lead", "master"];
 	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=7&distance=${distance}`
-	console.log(URL);
+	//console.log(URL);
 	fetch(URL).then(response => response.json(), error => console.log(error))
 		.then(response => {
 			if (job.length > 0) {
@@ -73,11 +73,11 @@ function submitButtonEvent(event) {
 					
 					var ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
 
-					console.log(`title:  ${value.title.toLowerCase()} Exclude: ${ex} Skills in Title: ${skills.filter(e => value.title.indexOf(e) > -1).length} Skills in body: ${skills.filter(e => value.description.indexOf(e) > -1).length}`)
+					//console.log(`title:  ${value.title.toLowerCase()} Exclude: ${ex} Skills in Title: ${skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length} Skills in body: ${skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length}`)
 
 
-					if(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.indexOf(e) > -1).length >= 1 ||
-					(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.indexOf(e) > -1).length > 1)){ 
+					if(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length >= 1 ||
+					(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length > 1)){ 
 						acc.push(value);
 					}
 					return acc;
@@ -148,8 +148,9 @@ function submitButtonEvent(event) {
 				var scrollY = jobgrid.scrollHeight - jobgrid.scrollTop;
 				var height = jobgrid.offsetHeight;
 				var offset = height - scrollY;
-				
+				console.log(offset);
 				if (offset == 0 || offset == 1) {
+				console.log(offset + "we made it")
 					// load more content here
 					document.getElementById('card-loader').classList.remove('hidden');
 					setTimeout(()=>{
