@@ -5,4 +5,4 @@ node_modules/
 yarn.lock
 package-lock.json
 
-cs-challenges/*/completed.js
+cs-challenges/*/completed*.js
