@@ -149,8 +149,7 @@ function submitButtonEvent(event) {
 				var height = jobgrid.offsetHeight;
 				var offset = height - scrollY;
 				console.log(offset);
-				if (offset == 0 || offset == 1) {
-				console.log(offset + "we made it")
+				if (offset >= -1 && offset <= 1) {
 					// load more content here
 					document.getElementById('card-loader').classList.remove('hidden');
 					setTimeout(()=>{
