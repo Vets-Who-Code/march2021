@@ -154,7 +154,7 @@ function submitButtonEvent(event) {
 					setTimeout(()=>{
 						innergrid[0].innerHTML += localStorage.getItem("jobposting")
 					document.getElementById('card-loader').classList.add('hidden');
-					},2100);
+					},2000);
 				}
 			})
 
