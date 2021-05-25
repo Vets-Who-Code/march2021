@@ -1,6 +1,6 @@
 // const Node = require('./completedv2.js');
-const Node = require('./completed');
-// const Node = require('./index');
+// const Node = require('./completed');
+const Node = require('./index');
 
 test('Node is a constructor', () => {
   expect(typeof Node.prototype.constructor).toEqual('function');
@@ -11,6 +11,12 @@ test('Node can insert correctly', () => {
   node.insert(5);
   node.insert(15);
   node.insert(17);
+
+  //      10
+  //    /    \
+  //   5     15
+  //           \
+  //            17
 
   expect(node.left.data).toEqual(5);
   expect(node.right.data).toEqual(15);

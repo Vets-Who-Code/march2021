@@ -87,7 +87,7 @@ function mergeSort(arr) {
 
 // Helper method to "sort" array halfs
 // This is the O(n) part of the algorithm
-// At most will traverse `n` times - the size of a single half
+// At most will traverse `n` times - the size of left + right
 function merge(left, right) {
   const arr = [];
   let leftIdx = 0,

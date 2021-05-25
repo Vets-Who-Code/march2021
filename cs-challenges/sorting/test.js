@@ -1,4 +1,4 @@
-const S = require("./index");
+const S = require("./complete");
 const bubbleSort = S.bubbleSort;
 const selectionSort = S.selectionSort;
 const mergeSort = S.mergeSort;
