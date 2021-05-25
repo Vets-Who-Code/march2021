@@ -18,7 +18,19 @@
 //       '####'
 
 function steps(n) {
-  // TODO: implement
+  var x = ''
+  for (var i = 1; i <= n; i++){
+    for (var j = 1; j <= n; j++){
+      if(i >= j){
+        x += 'X'
+      }
+      else{
+        x += ' '
+      }
+    }
+    console.log(x) 
+    x= ''
+  }
 }
-
+steps(4)
 module.exports = steps;

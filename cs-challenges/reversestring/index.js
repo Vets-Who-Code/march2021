@@ -9,5 +9,8 @@
 function reverse(str) {
   return str.split("").reverse().join("");
 }
+var l = reverse('apple');
+
+let p = 0
 
 module.exports = reverse;

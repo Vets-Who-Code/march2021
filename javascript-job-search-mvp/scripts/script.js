@@ -96,7 +96,7 @@ function submitButtonEvent(event) {
 							Company: response.data.results[i].company.display_name,
 							Location: response.data.results[i].location.display_name,
 							Remote: remote,
-							JobSnippet: response.data.results[i].description,
+							JobSnippet: response.data.results[i].description.replace( /(<([^>]+)>)/ig, ''),
 							//Salary: response.data.results[i].salary_is_predicted,
 							DateSincePosted: date.toLocaleDateString(),
 							Date: date,
@@ -149,7 +149,7 @@ function submitButtonEvent(event) {
 				var height = jobgrid.offsetHeight;
 				var offset = height - scrollY;
 				console.log(offset);
-				if (offset == 0 || offset == 1) {
+				if (offset >= 400 ) {
 				console.log(offset + "we made it")
 					// load more content here
 					document.getElementById('card-loader').classList.remove('hidden');
