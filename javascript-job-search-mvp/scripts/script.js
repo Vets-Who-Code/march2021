@@ -38,7 +38,7 @@ function compare(a, b) {
 
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
-	var loader = document.getElementById("loader");
+	let loader = document.getElementById("loader");
 	veteranVideo.classList.add('hidden');
 	loader.classList.remove('hidden');
 	document.getElementById("no-results").classList.add('hidden');
@@ -58,8 +58,9 @@ function submitButtonEvent(event) {
 	let skills = what.split(' ');
 	let remotePosition = event.currentTarget[1].checked;
 	let distance = event.currentTarget[2].value;
-	let exclude = ["0000", "senior", "sr.", "principal", "lead", "master"];
-	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=7&distance=${distance}`
+	let exclude = ["0000", "senior", "sr.", "Senior", "sr", "Sr", "Sr.", "principal", "lead", "master"];
+	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&page=1`
+	let URL2 = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&page=2`
 	//console.log(URL);
 	fetch(URL).then(response => response.json(), error => console.log(error))
 		.then(response => {
@@ -68,16 +69,15 @@ function submitButtonEvent(event) {
 				jobposting = "";
 			}
 
-			if(response.data && response.data.results.length > 0) {
+			if (response.data && response.data.results.length > 0) {
 				response.data.results = response.data.results.reduce((acc, value) => {
-					
-					var ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
+
+					let ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
 
 					//console.log(`title:  ${value.title.toLowerCase()} Exclude: ${ex} Skills in Title: ${skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length} Skills in body: ${skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length}`)
 
-
-					if(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length >= 1 ||
-					(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length > 1)){ 
+					if (!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length >= 1 ||
+						(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length > 1)) {
 						acc.push(value);
 					}
 					return acc;
@@ -96,7 +96,7 @@ function submitButtonEvent(event) {
 							Company: response.data.results[i].company.display_name,
 							Location: response.data.results[i].location.display_name,
 							Remote: remote,
-							JobSnippet: response.data.results[i].description.replace( /(<([^>]+)>)/ig, ''),
+							JobSnippet: response.data.results[i].description.replace(/(<([^>]+)>)/ig, ''),
 							//Salary: response.data.results[i].salary_is_predicted,
 							DateSincePosted: date.toLocaleDateString(),
 							Date: date,
@@ -118,17 +118,16 @@ function submitButtonEvent(event) {
 				document.getElementById("no-results").classList.remove('hidden');
 				veteranVideo.classList.remove('hidden');
 			}
-
 			//adds a container and items to the jobposting string for each object in the job array
 			for (let i = 0; i < job.length; i++) {
 				jobposting += `<div class="">
-        <div class="grid-container">
-          <div class="grid-item grid-item-1">${job[i].Title}</div>
-          <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
-          <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
-          <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<a class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
-        </div>`
+				<div class="grid-container">
+				<div class="grid-item grid-item-1">${job[i].Title}</div>
+				<div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
+				<div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
+				<div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
+				<div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<a class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
+				</div>`
 			}
 
 			innergrid[0].innerHTML = jobposting;
@@ -143,24 +142,78 @@ function submitButtonEvent(event) {
 				document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
 				document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
 			}
-
-			jobgrid.addEventListener('scroll',()=>{
-				var scrollY = jobgrid.scrollHeight - jobgrid.scrollTop;
-				var height = jobgrid.offsetHeight;
-				var offset = height - scrollY;
-				if (offset >= -1 && offset <= 1) {
-					// load more content here
-					document.getElementById('card-loader').classList.remove('hidden');
-					setTimeout(()=>{
-						innergrid[0].innerHTML += localStorage.getItem("jobposting")
-					document.getElementById('card-loader').classList.add('hidden');
-					},2000);
-				}
-			})
-
 		});
 
-}
+	jobgrid.addEventListener('scroll', () => {
+		let scrollY = jobgrid.scrollHeight - jobgrid.scrollTop;
+		let height = jobgrid.offsetHeight;
+		let offset = height - scrollY;
+		if (offset >= -1 && offset <= 1) {
+			// load more content here
+			document.getElementById('card-loader').classList.remove('hidden');
+			//innergrid[0].innerHTML += innergrid[0].innerHTML;
+			fetch(URL2).then(response => response.json(), error => console.log(error))
+				.then(response => {
+					if (response.data && response.data.results.length > 0) {
+						response.data.results = response.data.results.reduce((acc, value) => {
+
+							let ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
+
+							//console.log(`title:  ${value.title.toLowerCase()} Exclude: ${ex} Skills in Title: ${skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length} Skills in body: ${skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length}`)
+
+							if (!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length >= 1 ||
+								(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length > 1)) {
+								acc.push(value);
+							}
+							return acc;
+						}, []);
+
+						job = [];
+
+						for (let i = 0; i < response.data.results.length; i++) {
+							let date = new Date(response.data.results[i].created);
+							let remote = "No";
+
+							if (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) {
+								remote = "Yes";
+							}
+
+							if (remotePosition && remote == "Yes" || !remotePosition) {
+								job.push({
+									Title: response.data.results[i].title,
+									Company: response.data.results[i].company.display_name,
+									Location: response.data.results[i].location.display_name,
+									Remote: remote,
+									JobSnippet: response.data.results[i].description.replace(/(<([^>]+)>)/ig, ''),
+									//Salary: response.data.results[i].salary_is_predicted,
+									DateSincePosted: date.toLocaleDateString(),
+									Date: date,
+									ApplicationSite: response.data.results[i].redirect_url
+								});
+							}
+						}
+						//update the job grid
+						//adds a container and items to the jobposting string for each object in the job array
+						jobposting = "";
+
+						for (let i = 0; i < job.length; i++) {
+							jobposting += `<div class="">
+						<div class="grid-container">
+						<div class="grid-item grid-item-1">${job[i].Title}</div>
+						<div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
+						<div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
+						<div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
+						<div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<button class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</button></div>
+						</div>`
+						}
+
+						innergrid[0].innerHTML += jobposting;
+					}
+				});
+			document.getElementById('card-loader').classList.add('hidden');
+		}
+	})
+} //submit button event
 
 // adds grab to scroll functionality
 document.addEventListener('DOMContentLoaded', function () {

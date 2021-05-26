@@ -642,7 +642,7 @@ footer .dropdown-menu>li>a:hover>span {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: black;
+    background: var(--medium-red);
     margin: 0 10px;
 }
 
@@ -666,6 +666,4 @@ footer .dropdown-menu>li>a:hover>span {
         transform: translateY(0);
     }
 }
-.colord-balls{
-background: forestgreen;
-}
+
