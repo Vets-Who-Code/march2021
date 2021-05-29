@@ -159,8 +159,6 @@ function submitButtonEvent(event) {
 
 							let ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
 
-							//console.log(`title:  ${value.title.toLowerCase()} Exclude: ${ex} Skills in Title: ${skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length} Skills in body: ${skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length}`)
-
 							if (!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length >= 1 ||
 								(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length > 1)) {
 								acc.push(value);
@@ -263,6 +261,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Attach the handler
 	ele.addEventListener('mousedown', mouseDownHandler);
+});
+
+// Pagination
+const pagination = new tui.Pagination('pagination', {
+	totalItems: 100,
+	itemsPerPage: 20,
+	visibilePages: 5,
+	page: 1,
+	centerAlign: true
 });
 
 //Dark Mode
