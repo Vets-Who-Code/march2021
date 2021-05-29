@@ -25,6 +25,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+	<!-- Toast UI Pagination -->
+	<link rel="stylesheet" href="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.css" />
 	<!-- Local CSS -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -165,6 +167,7 @@
 			</div>
 			<video id="veteran-video" class="veteran-video" src="videos/veteran-on-computer.mp4" autoplay loop muted></video>
 			<!-- End Empty Grid -->
+
 			<!-- Grid -->
 			<div class="jobgrid-container">
 				<div class="job-sort hidden" id="job-sort">
@@ -172,18 +175,9 @@
 						<option class="sort-options" id="sort-by" value="Sort by:" selected>Sort by:</option>
 						<option class="sort-options" value="title">Title</option>
 					</select>
-				
-
-
-
-
-
-
-
 				</div>
 				<div class="jobgrid hidden hide-native-scrollbar" id="jobgrid" aria-label="Job Grid">
 				</div>
-
 			</div>
 		</div>
 		<div id="card-loader" class="loading hidden">
@@ -304,6 +298,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 	<script src="scripts/script.js?v1"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.js"></script>
 	<!-- Character count for footer form -->
 	<script type="text/javascript">
 		$('textarea').keyup(function () {
