@@ -20,7 +20,6 @@ const veteranVideo = document.getElementById("veteran-video");
 let innergrid = document.getElementsByClassName('jobgrid');
 //receives objects from the API (array of objects)
 let job = [];
-
 //sorts the job array of objects when title is selected from dropdown
 function compare(a, b) {
 	// Use toUpperCase() to ignore character casing
@@ -38,15 +37,21 @@ function compare(a, b) {
 
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
+	let page = 1;
+	if (typeof event === 'object') {
+		localStorage.setItem("event", event);
+		event.preventDefault();
+		localStorage.setItem("zipcode", event.currentTarget[0].value);
+		localStorage.setItem("remote", event.currentTarget[1].checked);
+		localStorage.setItem("radius", event.currentTarget[2].value);
+	} else {
+		page = event;
+	}
+
 	let loader = document.getElementById("loader");
 	veteranVideo.classList.add('hidden');
 	loader.classList.remove('hidden');
 	document.getElementById("no-results").classList.add('hidden');
-
-	event.preventDefault();
-	localStorage.setItem("zipcode", event.currentTarget[0].value);
-	localStorage.setItem("remote", event.currentTarget[1].checked);
-	localStorage.setItem("radius", event.currentTarget[2].value);
 
 	//grabs default dropdown value and sets it back to default on a new search
 	const sortBy = document.getElementById("sort-by");
@@ -54,34 +59,33 @@ function submitButtonEvent(event) {
 	//API data gets pushed into this as a string
 	let jobposting = "";
 	let what = "JavaScript React Gatsby GraphQL NodeJS node.js software engineer";
-	let where = event.currentTarget[0].value;
+	let where = localStorage.getItem("zipcode");
 	let skills = what.split(' ');
-	let remotePosition = event.currentTarget[1].checked;
-	let distance = event.currentTarget[2].value;
+	let remotePosition = localStorage.getItem("remote");
+	let distance = localStorage.getItem("radius");
 	let exclude = ["0000", "senior", "sr.", "Senior", "sr", "Sr", "Sr.", "principal", "lead", "master"];
-	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&page=1`
-	let URL2 = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&page=2`
-	//console.log(URL);
+	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&page=${page}`
+
 	fetch(URL).then(response => response.json(), error => console.log(error))
 		.then(response => {
 			if (job.length > 0) {
 				job = [];
 				jobposting = "";
-			}
+			};
 
 			if (response.data && response.data.results.length > 0) {
-				response.data.results = response.data.results.reduce((acc, value) => {
+				// response.data.results = response.data.results.reduce((acc, value) => {
 
-					let ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
+				// 	let ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
 
-					//console.log(`title:  ${value.title.toLowerCase()} Exclude: ${ex} Skills in Title: ${skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length} Skills in body: ${skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length}`)
+				// 	//console.log(`title:  ${value.title.toLowerCase()} Exclude: ${ex} Skills in Title: ${skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length} Skills in body: ${skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length}`)
 
-					if (!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length >= 1 ||
-						(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length > 1)) {
-						acc.push(value);
-					}
-					return acc;
-				}, []);
+				// 	if (!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length >= 1 ||
+				// 		(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length > 1)) {
+				// 		acc.push(value);
+				// 	}
+				// 	return acc;
+				// }, []);
 				for (let i = 0; i < response.data.results.length; i++) {
 					let date = new Date(response.data.results[i].created);
 					let remote = "No";
@@ -90,7 +94,7 @@ function submitButtonEvent(event) {
 						remote = "Yes";
 					}
 
-					if (remotePosition && remote == "Yes" || !remotePosition) {
+					// if (remotePosition && remote == "Yes" || !remotePosition) {
 						job.push({
 							Title: response.data.results[i].title,
 							Company: response.data.results[i].company.display_name,
@@ -102,7 +106,7 @@ function submitButtonEvent(event) {
 							Date: date,
 							ApplicationSite: response.data.results[i].redirect_url
 						});
-					}
+					// }
 				}
 			}
 
@@ -120,8 +124,7 @@ function submitButtonEvent(event) {
 			}
 			//adds a container and items to the jobposting string for each object in the job array
 			for (let i = 0; i < job.length; i++) {
-				jobposting += `<div class="">
-				<div class="grid-container">
+				jobposting +=	`<div class="grid-container">
 				<div class="grid-item grid-item-1">${job[i].Title}</div>
 				<div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
 				<div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
@@ -264,12 +267,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Pagination
-const pagination = new tui.Pagination('pagination', {
+
+var Pagination = tui.Pagination;
+var container = document.getElementById('pagination');
+var options = {
 	totalItems: 100,
 	itemsPerPage: 20,
 	visibilePages: 5,
 	page: 1,
 	centerAlign: true
+}
+
+var pagination = new Pagination(container, options);
+
+pagination.on('beforeMove', function (eventData) {
+	submitButtonEvent(eventData.page);
 });
 
 //Dark Mode
