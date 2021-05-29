@@ -1,8 +1,5 @@
-//easter egg
-console.log('Hello, Vets Who Code!');
-
 //Typed.js
-var typed = new Typed('#typed', {
+let typed = new Typed('#typed', {
 	stringsElement: '#typed-strings',
 	backSpeed: 50,
 	typeSpeed: 50,
@@ -20,25 +17,11 @@ const veteranVideo = document.getElementById("veteran-video");
 let innergrid = document.getElementsByClassName('jobgrid');
 //receives objects from the API (array of objects)
 let job = [];
-//sorts the job array of objects when title is selected from dropdown
-function compare(a, b) {
-	// Use toUpperCase() to ignore character casing
-	const bandA = a.Title.toLowerCase();
-	const bandB = b.Title.toLowerCase();
-
-	let comparison = 0;
-	if (bandA > bandB) {
-		comparison = 1;
-	} else if (bandA < bandB) {
-		comparison = -1;
-	}
-	return comparison;
-}
-
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
 	let page = 1;
 	if (typeof event === 'object') {
+		// is the event from the search click or from the sort change?
 		localStorage.setItem("event", event);
 		event.preventDefault();
 		localStorage.setItem("zipcode", event.currentTarget[0].value);
@@ -60,31 +43,19 @@ function submitButtonEvent(event) {
 	let jobposting = "";
 	let what = "JavaScript React Gatsby GraphQL NodeJS node.js software engineer";
 	let where = localStorage.getItem("zipcode");
-	let skills = what.split(' ');
 	let remotePosition = localStorage.getItem("remote");
 	let distance = localStorage.getItem("radius");
 	let exclude = ["0000", "senior", "sr.", "Senior", "sr", "Sr", "Sr.", "principal", "lead", "master"];
-	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&what_exclude=${exclude}&page=${page}`
+	let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&what_exclude=${exclude}&page=${page}`
 
-	fetch(URL).then(response => response.json(), error => console.log(error))
-		.then(response => {
+	fetch(url).then(response => response.json(), error => console.log(error)).then(response => {
 			if (job.length > 0) {
 				job = [];
 				jobposting = "";
 			};
+
 			if (response.data && response.data.results.length > 0) {
-				// response.data.results = response.data.results.reduce((acc, value) => {
 
-				// 	let ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
-
-				// 	//console.log(`title:  ${value.title.toLowerCase()} Exclude: ${ex} Skills in Title: ${skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length} Skills in body: ${skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length}`)
-
-				// 	if (!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length >= 1 ||
-				// 		(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length > 1)) {
-				// 		acc.push(value);
-				// 	}
-				// 	return acc;
-				// }, []);
 				for (let i = 0; i < response.data.results.length; i++) {
 					let date = new Date(response.data.results[i].created);
 					let remote = "No";
@@ -93,23 +64,22 @@ function submitButtonEvent(event) {
 						remote = "Yes";
 					}
 
-					// if (remotePosition && remote == "Yes" || !remotePosition) {
-					job.push({
-						Title: response.data.results[i].title,
-						Company: response.data.results[i].company.display_name,
-						Location: response.data.results[i].location.display_name,
-						Remote: remote,
-						JobSnippet: response.data.results[i].description.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, ''),
-						//Salary: response.data.results[i].salary_is_predicted,
-						DateSincePosted: date.toLocaleDateString(),
-						Date: date,
-						ApplicationSite: response.data.results[i].redirect_url
-					});
-					// }
+					if (remotePosition && remote == "Yes" || !remotePosition) {
+						job.push({
+							Title: response.data.results[i].title,
+							Company: response.data.results[i].company.display_name,
+							Location: response.data.results[i].location.display_name,
+							Remote: remote,
+							JobSnippet: response.data.results[i].description.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, ''),
+							//Salary: response.data.results[i].salary_is_predicted,
+							DateSincePosted: date.toLocaleDateString(),
+							Date: date,
+							ApplicationSite: response.data.results[i].redirect_url
+						});
+					}
 				}
 			}
 
-			changeJobGrid();
 			loader.classList.add('hidden')
 			//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
 			if (job.length > 0) {
@@ -144,13 +114,14 @@ function submitButtonEvent(event) {
 				document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
 				document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
 			}
+
 			// Pagination
 			var Pagination = tui.Pagination;
 			var container = document.getElementById('pagination');
 			var options = {
 				totalItems: response.data.count,
 				itemsPerPage: 20,
-				visibilePages: 5,
+				visiblePages: 5,
 				page: 1,
 				centerAlign: true
 			}
@@ -161,75 +132,7 @@ function submitButtonEvent(event) {
 				submitButtonEvent(eventData.page);
 			});
 		});
-
-	jobgrid.addEventListener('scroll', () => {
-		let scrollY = jobgrid.scrollHeight - jobgrid.scrollTop;
-		let height = jobgrid.offsetHeight;
-		let offset = height - scrollY;
-		if (offset >= -1 && offset <= 1) {
-			// load more content here
-			document.getElementById('card-loader').classList.remove('hidden');
-			//innergrid[0].innerHTML += innergrid[0].innerHTML;
-			fetch(URL2).then(response => response.json(), error => console.log(error))
-				.then(response => {
-					if (response.data && response.data.results.length > 0) {
-						response.data.results = response.data.results.reduce((acc, value) => {
-
-							let ex = (exclude.some(e => value.title.toLowerCase().indexOf(e) > -1)) ? 'excluded' : 'not-excluded';
-
-							if (!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.title.toLowerCase().indexOf(e) > -1).length >= 1 && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length >= 1 ||
-								(!exclude.some(e => value.title.toLowerCase().indexOf(e) > -1) && skills.filter(e => value.description.toLowerCase().indexOf(e) > -1).length > 1)) {
-								acc.push(value);
-							}
-							return acc;
-						}, []);
-
-						job = [];
-
-						for (let i = 0; i < response.data.results.length; i++) {
-							let date = new Date(response.data.results[i].created);
-							let remote = "No";
-
-							if (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) {
-								remote = "Yes";
-							}
-
-							if (remotePosition && remote == "Yes" || !remotePosition) {
-								job.push({
-									Title: response.data.results[i].title,
-									Company: response.data.results[i].company.display_name,
-									Location: response.data.results[i].location.display_name,
-									Remote: remote,
-									JobSnippet: response.data.results[i].description.replace(/(<([^>]+)>)/ig, ''),
-									//Salary: response.data.results[i].salary_is_predicted,
-									DateSincePosted: date.toLocaleDateString(),
-									Date: date,
-									ApplicationSite: response.data.results[i].redirect_url
-								});
-							}
-						}
-						//update the job grid
-						//adds a container and items to the jobposting string for each object in the job array
-						jobposting = "";
-
-						for (let i = 0; i < job.length; i++) {
-							jobposting += `<div class="">
-						<div class="grid-container">
-						<div class="grid-item grid-item-1">${job[i].Title}</div>
-						<div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
-						<div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
-						<div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
-						<div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<button class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</button></div>
-						</div>`
-						}
-
-						innergrid[0].innerHTML += jobposting;
-					}
-				});
-			document.getElementById('card-loader').classList.add('hidden');
-		}
-	})
-} //submit button event
+}; //submit button event
 
 // adds grab to scroll functionality
 document.addEventListener('DOMContentLoaded', function () {
@@ -296,12 +199,12 @@ const darkMode = () => {
 	document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));
 	document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
 	document.querySelectorAll(".apply").forEach(e => e.classList.toggle("dark-apply"));
-}
+};
 
 //Contact Form
 function contactFormSubmit(event) {
 	event.preventDefault();
-}
+};
 
 //this listens for the contact form to submit.
 const contactButton = document.getElementById("contact-form");
@@ -309,37 +212,4 @@ contactButton.addEventListener("submit", contactFormSubmit);
 
 //this listens for the sort dropdown to change
 const names = document.getElementById('names');
-names.addEventListener("change", changeJobGrid);
-
-//this reorders the objects in the job array and changes the innergrid inner html
-function changeJobGrid() {
-	if (names.value === "title") {
-		job.sort(compare);
-	}
-
-	jobposting = "";
-	innergrid.innerHTML = "";
-	//adds a container and items to the jobposting string for each object in the job array
-	for (let i = 0; i < job.length; i++) {
-		jobposting += `<div class="">
-        <div class="grid-container">
-          <div class="grid-item grid-item-1">${job[i].Title}</div>
-          <div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
-          <div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
-          <div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
-          <div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<button class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</button></div>
-        </div>`
-	}
-
-	innergrid[0].innerHTML = jobposting;
-
-	if (document.body.classList.contains("dark-background")) {
-		document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
-		document.querySelectorAll(".grid-item").forEach(e => e.classList.add("dark-grid"));
-		document.querySelectorAll(".apply").forEach(e => e.classList.add("dark-apply"));
-	} else {
-		document.querySelectorAll(".grid-container").forEach(e => e.classList.remove("dark-container"));
-		document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
-		document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
-	}
-}
+names.addEventListener("change", submitButtonEvent);
