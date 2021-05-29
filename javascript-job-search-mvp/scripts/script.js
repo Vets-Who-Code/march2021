@@ -64,7 +64,7 @@ function submitButtonEvent(event) {
 	let remotePosition = localStorage.getItem("remote");
 	let distance = localStorage.getItem("radius");
 	let exclude = ["0000", "senior", "sr.", "Senior", "sr", "Sr", "Sr.", "principal", "lead", "master"];
-	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&page=${page}`
+	let URL = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&what_exclude=${exclude}&page=${page}`
 
 	fetch(URL).then(response => response.json(), error => console.log(error))
 		.then(response => {
@@ -72,7 +72,6 @@ function submitButtonEvent(event) {
 				job = [];
 				jobposting = "";
 			};
-
 			if (response.data && response.data.results.length > 0) {
 				// response.data.results = response.data.results.reduce((acc, value) => {
 
@@ -95,17 +94,17 @@ function submitButtonEvent(event) {
 					}
 
 					// if (remotePosition && remote == "Yes" || !remotePosition) {
-						job.push({
-							Title: response.data.results[i].title,
-							Company: response.data.results[i].company.display_name,
-							Location: response.data.results[i].location.display_name,
-							Remote: remote,
-							JobSnippet: response.data.results[i].description.replace(/(<([^>]+)>)/ig, ''),
-							//Salary: response.data.results[i].salary_is_predicted,
-							DateSincePosted: date.toLocaleDateString(),
-							Date: date,
-							ApplicationSite: response.data.results[i].redirect_url
-						});
+					job.push({
+						Title: response.data.results[i].title,
+						Company: response.data.results[i].company.display_name,
+						Location: response.data.results[i].location.display_name,
+						Remote: remote,
+						JobSnippet: response.data.results[i].description.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, ''),
+						//Salary: response.data.results[i].salary_is_predicted,
+						DateSincePosted: date.toLocaleDateString(),
+						Date: date,
+						ApplicationSite: response.data.results[i].redirect_url
+					});
 					// }
 				}
 			}
@@ -124,7 +123,7 @@ function submitButtonEvent(event) {
 			}
 			//adds a container and items to the jobposting string for each object in the job array
 			for (let i = 0; i < job.length; i++) {
-				jobposting +=	`<div class="grid-container">
+				jobposting += `<div class="grid-container">
 				<div class="grid-item grid-item-1">${job[i].Title}</div>
 				<div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
 				<div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
@@ -145,6 +144,22 @@ function submitButtonEvent(event) {
 				document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
 				document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
 			}
+			// Pagination
+			var Pagination = tui.Pagination;
+			var container = document.getElementById('pagination');
+			var options = {
+				totalItems: response.data.count,
+				itemsPerPage: 20,
+				visibilePages: 5,
+				page: 1,
+				centerAlign: true
+			}
+
+			var pagination = new Pagination(container, options);
+
+			pagination.on('beforeMove', function (eventData) {
+				submitButtonEvent(eventData.page);
+			});
 		});
 
 	jobgrid.addEventListener('scroll', () => {
@@ -264,24 +279,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Attach the handler
 	ele.addEventListener('mousedown', mouseDownHandler);
-});
-
-// Pagination
-
-var Pagination = tui.Pagination;
-var container = document.getElementById('pagination');
-var options = {
-	totalItems: 100,
-	itemsPerPage: 20,
-	visibilePages: 5,
-	page: 1,
-	centerAlign: true
-}
-
-var pagination = new Pagination(container, options);
-
-pagination.on('beforeMove', function (eventData) {
-	submitButtonEvent(eventData.page);
 });
 
 //Dark Mode
