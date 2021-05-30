@@ -53,6 +53,10 @@ function submitButtonEvent(event) {
 				job = [];
 			};
 
+			if(response.count){
+
+			}
+
 			if (response.data && response.data.results.length > 0) {
 
 				for (let i = 0; i < response.data.results.length; i++) {
@@ -111,22 +115,6 @@ function submitButtonEvent(event) {
 				document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
 			}
 
-			// Pagination
-			var Pagination = tui.Pagination;
-			var container = document.getElementById('pagination');
-			var options = {
-				totalItems: response.data.count,
-				itemsPerPage: 20,
-				visiblePages: 5,
-				page: 1,
-				centerAlign: true
-			}
-
-			var pagination = new Pagination(container, options);
-
-			pagination.on('beforeMove', function (eventData) {
-				submitButtonEvent(eventData.page);
-			});
 		});
 }; //submit button event
 
@@ -209,3 +197,21 @@ contactButton.addEventListener("submit", contactFormSubmit);
 //this listens for the sort dropdown to change
 const names = document.getElementById('names');
 names.addEventListener("change", submitButtonEvent);
+
+// Pagination
+var Pagination = tui.Pagination;
+var container = document.getElementById('pagination');
+var options = {
+	totalItems: 75,
+	itemsPerPage: 20,
+	visiblePages: 5,
+	page: 1,
+	centerAlign: true
+}
+
+var pagination = new Pagination(container, options);
+
+pagination.on('beforeMove', function (eventData) {
+	submitButtonEvent(eventData.page);
+});
+
