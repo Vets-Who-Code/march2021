@@ -47,7 +47,7 @@ function submitButtonEvent(event) {
 	let distance = localStorage.getItem("radius");
 	let exclude = ["0000", "senior", "sr.", "Senior", "sr", "Sr", "Sr.", "principal", "lead", "master"];
 	let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&what_exclude=${exclude}&page=${page}`
-	console,log(url);
+	console.log(url);
 	fetch(url).then(response => response.json(), error => console.log(error)).then(response => {
 			if (job.length > 0) {
 				job = [];
