@@ -50,7 +50,7 @@ function submitButtonEvent(event) {
 	console.log(url);
 	fetch(url).then(response => response.json(), error => console.log(error)).then(response => {
 			if (job.length > 0) job = [];
-			if(response.data.count)	localStorage.setItem("count", response.data.count);
+			if(page == 1) pagination.setTotalItems(response.data.count);
 			
 			if (response.data && response.data.results.length > 0) {
 				for (let i = 0; i < response.data.results.length; i++) {
@@ -195,27 +195,15 @@ names.addEventListener("change", submitButtonEvent);
 var Pagination = tui.Pagination;
 var container = document.getElementById('pagination');
 var options = {
-	totalItems: 75,
-	itemsPerPage: 20,
-	visiblePages: 5,
+	totalItems: 60,
+	itemsPerPage: 15,
 	page: 1,
 	centerAlign: true
 }
 
 var pagination = new Pagination(container, options);
 
-console.log(pagination);
-
 pagination.on('beforeMove', function (eventData) {
-submitButtonEvent(eventData.page);
-var options = {
-	totalItems: parseInt(localStorage.getItem("count")),
-	itemsPerPage: 25,
-	visiblePages: Math.floor(parseInt(localStorage.getItem("count")) / 25),
-	page: eventData.page,
-	centerAlign: true
-		}
-		pagination = new Pagination(container, options);
-
+	submitButtonEvent(eventData.page);
 });
 
