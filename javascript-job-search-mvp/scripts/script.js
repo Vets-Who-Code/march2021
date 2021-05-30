@@ -63,20 +63,17 @@ function submitButtonEvent(event) {
 					if (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) {
 						remote = "Yes";
 					}
-
-					if (remotePosition && remote == "Yes" || !remotePosition) {
-						job.push({
-							Title: response.data.results[i].title,
-							Company: response.data.results[i].company.display_name,
-							Location: response.data.results[i].location.display_name,
-							Remote: remote,
-							JobSnippet: response.data.results[i].description.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, ''),
-							//Salary: response.data.results[i].salary_is_predicted,
-							DateSincePosted: date.toLocaleDateString(),
-							Date: date,
-							ApplicationSite: response.data.results[i].redirect_url
-						});
-					}
+					job.push({
+						Title: response.data.results[i].title,
+						Company: response.data.results[i].company.display_name,
+						Location: response.data.results[i].location.display_name,
+						Remote: remote,
+						JobSnippet: response.data.results[i].description.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, ''),
+						//Salary: response.data.results[i].salary_is_predicted,
+						DateSincePosted: date.toLocaleDateString(),
+						Date: date,
+						ApplicationSite: response.data.results[i].redirect_url
+					});
 				}
 			}
 
