@@ -17,6 +17,7 @@ const veteranVideo = document.getElementById("veteran-video");
 let innergrid = document.getElementsByClassName('jobgrid');
 //receives objects from the API (array of objects)
 let job = [];
+localStorage.setItem("count", 75);
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
 	let page = 1;
@@ -49,23 +50,16 @@ function submitButtonEvent(event) {
 	let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&what_exclude=${exclude}&page=${page}`
 	console.log(url);
 	fetch(url).then(response => response.json(), error => console.log(error)).then(response => {
-			if (job.length > 0) {
-				job = [];
-			};
-
-			if(response.count){
-
-			}
-
+			if (job.length > 0) job = [];
+			if(response.count)	localStorage.setItem("count", response.count);
+			
 			if (response.data && response.data.results.length > 0) {
-
 				for (let i = 0; i < response.data.results.length; i++) {
 					let date = new Date(response.data.results[i].created);
+					
 					let remote = "No";
-
-					if (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) {
-						remote = "Yes";
-					}
+					if (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) remote = "Yes";
+					
 					job.push({
 						Title: response.data.results[i].title,
 						Company: response.data.results[i].company.display_name,
@@ -211,7 +205,18 @@ var options = {
 
 var pagination = new Pagination(container, options);
 
+console.log(pagination);
+
 pagination.on('beforeMove', function (eventData) {
-	submitButtonEvent(eventData.page);
+submitButtonEvent(eventData.page);
+var options = {
+	totalItems: parseInt(localStorage.getItem("count")),
+	itemsPerPage: 25,
+	visiblePages: Math.floor(parseInt(localStorage.getItem("count")) / 25),
+	page: eventData.page,
+	centerAlign: true
+		}
+		pagination = new Pagination(container, options);
+
 });
 
