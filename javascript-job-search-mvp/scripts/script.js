@@ -17,7 +17,6 @@ const veteranVideo = document.getElementById("veteran-video");
 let innergrid = document.getElementsByClassName('jobgrid');
 //receives objects from the API (array of objects)
 let job = [];
-localStorage.setItem("count", 75);
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
 	let page = 1;
@@ -51,7 +50,7 @@ function submitButtonEvent(event) {
 	console.log(url);
 	fetch(url).then(response => response.json(), error => console.log(error)).then(response => {
 			if (job.length > 0) job = [];
-			if(response.count)	localStorage.setItem("count", response.count);
+			if(response.data.count)	localStorage.setItem("count", response.data.count);
 			
 			if (response.data && response.data.results.length > 0) {
 				for (let i = 0; i < response.data.results.length; i++) {
