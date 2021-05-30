@@ -51,7 +51,6 @@ function submitButtonEvent(event) {
 	fetch(url).then(response => response.json(), error => console.log(error)).then(response => {
 			if (job.length > 0) {
 				job = [];
-				jobposting = "";
 			};
 
 			if (response.data && response.data.results.length > 0) {
