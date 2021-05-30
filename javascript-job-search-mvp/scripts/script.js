@@ -50,20 +50,18 @@ function submitButtonEvent(event) {
 	console.log(url);
 	fetch(url).then(response => response.json(), error => console.log(error)).then(response => {
 			if (job.length > 0) job = [];
-			if(page == 1) pagination.setTotalItems(response.data.count);
+			//use pagination class method setTottalItems to set items to the total from the API call
+			if(page == 1) pagination.reset(response.data.count);
 			
 			if (response.data && response.data.results.length > 0) {
 				for (let i = 0; i < response.data.results.length; i++) {
 					let date = new Date(response.data.results[i].created);
 					
-					let remote = "No";
-					if (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) remote = "Yes";
-					
 					job.push({
 						Title: response.data.results[i].title,
 						Company: response.data.results[i].company.display_name,
 						Location: response.data.results[i].location.display_name,
-						Remote: remote,
+						Remote: (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) ? 'Yes' : 'No',
 						JobSnippet: response.data.results[i].description.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, ''),
 						//Salary: response.data.results[i].salary_is_predicted,
 						DateSincePosted: date.toLocaleDateString(),
@@ -116,12 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const ele = document.getElementById('jobgrid');
 	ele.style.cursor = 'grab';
 
-	let pos = {
-		top: 0,
-		left: 0,
-		x: 0,
-		y: 0
-	};
+	let pos = {top: 0, left: 0,	x: 0, y: 0};
 
 	const mouseDownHandler = function (e) {
 		ele.style.cursor = 'grabbing';
@@ -192,18 +185,7 @@ const names = document.getElementById('names');
 names.addEventListener("change", submitButtonEvent);
 
 // Pagination
-var Pagination = tui.Pagination;
-var container = document.getElementById('pagination');
-var options = {
-	totalItems: 60,
-	itemsPerPage: 15,
-	page: 1,
-	centerAlign: true
-}
+var pagination = new tui.Pagination(document.getElementById('pagination'), {itemsPerPage: 15});
 
-var pagination = new Pagination(container, options);
-
-pagination.on('beforeMove', function (eventData) {
-	submitButtonEvent(eventData.page);
-});
-
+//Page on click
+pagination.on('beforeMove', event => submitButtonEvent(event.page));
