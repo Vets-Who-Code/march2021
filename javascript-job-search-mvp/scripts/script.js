@@ -36,12 +36,10 @@ function submitButtonEvent(event) {
 	loader.classList.remove('hidden');
 	document.getElementById("no-results").classList.add('hidden');
 
-	//grabs default dropdown value and sets it back to default on a new search
-	const sortBy = document.getElementById("sort-by");
 
 	//API data gets pushed into this as a string
 	let jobposting = "";
-	let what = "JavaScript React Gatsby GraphQL NodeJS node.js software engineer";
+	let what = "JavaScript ReactJS Gatsby GraphQL NodeJS node.js";
 	let where = localStorage.getItem("zipcode");
 	let remotePosition = localStorage.getItem("remote");
 	let distance = localStorage.getItem("radius");
@@ -82,7 +80,7 @@ function submitButtonEvent(event) {
 				veteranVideo.classList.add('hidden');
 				document.getElementById("no-results").classList.add('hidden');
 				document.getElementById('jobgrid').classList.remove('hidden');
-				document.getElementById('job-sort').classList.remove('hidden');
+
 			} else {
 				document.getElementById("no-results").classList.remove('hidden');
 				veteranVideo.classList.remove('hidden');
@@ -185,12 +183,8 @@ function contactFormSubmit(event) {
 const contactButton = document.getElementById("contact-form");
 contactButton.addEventListener("submit", contactFormSubmit);
 
-//this listens for the sort dropdown to change
-const names = document.getElementById('names');
-names.addEventListener("change", submitButtonEvent);
-
 // Pagination
 var pagination = new tui.Pagination(document.getElementById('pagination'), {itemsPerPage: 15});
 
 //Page on click
-pagination.on('beforeMove', event => submitButtonEvent(event.page));
+pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(500, 0)));
