@@ -51,8 +51,7 @@ function submitButtonEvent(event) {
 	fetch(url).then(response => response.json(), error => console.log(error)).then(response => {
 			if (job.length > 0) job = [];
 			//use pagination class method setTottalItems to set items to the total from the API call
-			if(page == 1) {
-				pagination.reset(response.data.count);
+			if(page == 1 && response.data) {
 				document.getElementById('pagination').classList.remove('hidden');
 			}
 			
