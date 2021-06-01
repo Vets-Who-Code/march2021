@@ -52,6 +52,7 @@ function submitButtonEvent(event) {
 			if (job.length > 0) job = [];
 			//use pagination class method setTottalItems to set items to the total from the API call
 			if(page == 1 && response.data) {
+				pagination.reset(response.data.count);
 				document.getElementById('pagination').classList.remove('hidden');
 			}
 			
