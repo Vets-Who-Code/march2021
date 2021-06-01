@@ -55,6 +55,7 @@ function submitButtonEvent(event) {
 			if (job.length > 0) job = [];
 			//use pagination class method setTottalItems to set items to the total from the API call
 			if(page == 1 && response.data) {
+				pagination.reset(response.data.count);
 				document.getElementById('pagination').classList.remove('hidden');
 			}
 			
@@ -188,6 +189,5 @@ contactButton.addEventListener("submit", contactFormSubmit);
 // Pagination
 var pagination = new tui.Pagination(document.getElementById('pagination'), {itemsPerPage: 15});
 
-//Page on click
 pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(500, 0), getGrid.scrollTop -= 10000));
 
