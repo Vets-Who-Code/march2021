@@ -46,7 +46,7 @@ function submitButtonEvent(event) {
 	let where = localStorage.getItem("zipcode");
 	let remotePosition = localStorage.getItem("remote");
 	let distance = localStorage.getItem("radius");
-	let exclude = ["0000", "senior", "sr.", "Senior", "sr", "Sr", "Sr.", "principal", "lead", "master"];
+	let exclude = "0000 senior sr. Senior sr Sr. principal lead master";
 	let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&what_exclude=${exclude}&sort_by=date`
 	//remote y/n
 	url += `&page=${page}`
