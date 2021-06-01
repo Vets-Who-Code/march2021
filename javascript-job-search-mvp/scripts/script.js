@@ -21,7 +21,7 @@ const getGrid = document.getElementById('jobgrid');
 
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
-	getGrid.scrollTop -= 2000
+	getGrid.scrollTop -= 10000;
 	let page = 1;
 	if (typeof event === 'object') {
 		// is the event from the search click or from the sort change?
@@ -189,5 +189,5 @@ contactButton.addEventListener("submit", contactFormSubmit);
 var pagination = new tui.Pagination(document.getElementById('pagination'), {itemsPerPage: 15});
 
 //Page on click
-pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(500, 0), getGrid.scrollTop -= 2000));
+pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(500, 0), getGrid.scrollTop -= 10000));
 
