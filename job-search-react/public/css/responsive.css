@@ -1,0 +1,339 @@
+/* Media Queries */
+
+@media (max-width: 1600px) {
+	.vwc-header {
+		margin-right: 75px;
+	}
+}
+
+@media (max-width: 1373px) {
+	.vwc-header {
+		margin-right: 2px;
+	}
+}
+
+@media (max-width: 1299px) {
+	.navbar-header {
+		float: none;
+		padding-bottom: 10px;
+	}
+
+	.navbar-left,
+	.navbar-right {
+		float: none !important;
+	}
+
+	.navbar-toggle {
+		display: block;
+	}
+
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	}
+
+	.navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+
+	.navbar-nav {
+		float: none !important;
+		margin-top: 7.5px;
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+
+	.navbar-nav>li {
+		float: none;
+	}
+
+	.navbar-nav>li>.dropdown-menu {
+		margin-top: -.8em;
+	}
+
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.collapse.in {
+		display: block !important;
+	}
+
+	.nav-links li:hover {
+		border-bottom: none;
+	}
+
+	.nav-links .link-name:hover {
+		color: var(--light-gold);
+	}
+
+	.moon {
+		margin-bottom: 10px;
+		margin-top: -10px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.site-map {
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 1199px) {
+	.jobgrid-container {
+		margin: 0 100px;
+	}
+
+	.veteran-video {
+		width: 70%;
+	}
+
+	@-moz-document url-prefix() {
+		.veteran-video {
+			width: 67%
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.footer-div1 {
+		padding: 0;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.footer-div3 {
+		text-align: center;
+		padding: 0;
+		margin-bottom: 40px;
+	}
+
+	.footer-div2 {
+		padding: 0;
+	}
+
+	.site-map {
+		margin-left: -5px;
+	}
+
+	.site-map+div {
+		margin-left: -5px;
+	}
+
+	.footer-li {
+		margin-bottom: 20px;
+	}
+
+	.footer-icon {
+		display: none;
+	}
+
+	.footer2-header {
+		text-align: center;
+	}
+
+	.footer2-header {
+		margin-bottom: 25px;
+	}
+
+	.site-map {
+		padding-left: 0;
+	}
+
+	.site-map2 .footer-li:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.jobgrid-container {
+		margin: 0;
+	}
+
+	.veteran-video {
+		width: 92%;
+	}
+
+	@-moz-document url-prefix() {
+		.veteran-video {
+			width: 87%
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.disable-scrollbars::-webkit-scrollbar {
+		width: 0px;
+		background: transparent;
+		/* Chrome/Safari/Webkit */
+	}
+
+	.disable-scrollbars {
+		scrollbar-width: none;
+		/* Firefox */
+		-ms-overflow-style: none;
+		/* IE 10+ */
+	}
+
+	.jobgrid-container {
+		margin: 0;
+	}
+
+	.jobgrid {
+		margin-right: 0;
+	}
+
+	.container {
+		width: 87%;
+	}
+
+	.footer-div2 {
+		margin: 0 20px;
+	}
+
+	.job-search-description {
+		text-align: center;
+	}
+
+	.middle {
+		position: initial;
+	}
+
+	.grid-container {
+		width: 98%;
+	}
+
+	.veteran-video {
+		width: 98%
+	}
+}
+
+@media (max-width: 767px) {
+	.copyright {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+
+	.byVWC {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+
+	.copyright {
+		margin-bottom: 20px;
+	}
+
+	.zip {
+		margin-right: 0;
+	}
+
+	.miles {
+		margin: 0;
+	}
+
+	input[type="checkbox"] {
+		margin-right: 0;
+		margin-top: 15px;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color: white;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+		color: var(--light-gold);
+	}
+
+	.navbar-nav {
+		float: none !important;
+		margin-top: 7.5px;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+
+@media (max-width: 759px) {
+	.typed-container {
+		height: 100px;
+	}
+
+	.typed {
+		font-size: 1.2rem;
+	}
+
+	.lead-in {
+		font-size: 1.2rem;
+	}
+
+	.job-search-description {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.container h1 {
+		font-size: 3.4rem;
+	}
+
+	.container .icons {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 483px),
+(min-width: 440px) {
+	.footer1 .container {
+		padding: 0;
+	}
+}
+
+@media (max-width: 449px) {
+	.container h1 {
+		font-size: 2.9rem;
+	}
+}
+
+@media (max-width: 426px) {
+	.vwc-header {
+		margin-right: 0;
+	}
+
+	.container h1 {
+		font-size: 2.8em;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+		width: 98%;
+	}
+}
+
+@media (max-width: 343px) {
+	.footer-font-awesome {
+		margin-left: 7.5px;
+		margin-right: 7.5px;
+	}
+
+	.vwc-header {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 325px) {
+	.container h1 {
+		font-size: 2.7rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.byVWC {
+		font-size: .9rem;
+	}
+}
