@@ -17,8 +17,11 @@ const veteranVideo = document.getElementById("veteran-video");
 let innergrid = document.getElementsByClassName('jobgrid');
 //receives objects from the API (array of objects)
 let job = [];
+const getGrid = document.getElementById('jobgrid');
+
 // Triggers the function when the search button is clicked
 function submitButtonEvent(event) {
+	getGrid.scrollTop -= 10000;
 	let page = 1;
 	if (typeof event === 'object') {
 		// is the event from the search click or from the sort change?
@@ -43,7 +46,7 @@ function submitButtonEvent(event) {
 	let where = localStorage.getItem("zipcode");
 	let remotePosition = localStorage.getItem("remote");
 	let distance = localStorage.getItem("radius");
-	let exclude = ["0000", "senior", "sr.", "Senior", "sr", "Sr", "Sr.", "principal", "lead", "master"];
+	let exclude = "0000 senior sr. Senior sr Sr. principal lead master";
 	let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${where}&max_days_old=30&distance=${distance}&what_exclude=${exclude}&sort_by=date`
 	//remote y/n
 	url += `&page=${page}`
@@ -186,5 +189,5 @@ contactButton.addEventListener("submit", contactFormSubmit);
 // Pagination
 var pagination = new tui.Pagination(document.getElementById('pagination'), {itemsPerPage: 15});
 
-//Page on click
-pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(500, 0)));
+pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(500, 0), getGrid.scrollTop -= 10000));
+
