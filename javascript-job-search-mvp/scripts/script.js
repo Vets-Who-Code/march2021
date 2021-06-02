@@ -196,5 +196,8 @@ const pagination = new tui.Pagination(document.getElementById('pagination'), {
 	itemsPerPage: 15
 });
 
-const middle = document.getElementById('middle')
-pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(middle), getGrid.scrollTop -= 10000));
+pagination.on('beforeMove', event => {
+	submitButtonEvent(event.page);
+	window.scroll(0, 450);
+	getGrid.scrollTop -= 10000;
+});
