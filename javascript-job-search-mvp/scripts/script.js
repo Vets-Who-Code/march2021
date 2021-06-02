@@ -192,8 +192,9 @@ const contactButton = document.getElementById("contact-form");
 contactButton.addEventListener("submit", contactFormSubmit);
 
 // Pagination
-var pagination = new tui.Pagination(document.getElementById('pagination'), {
+const pagination = new tui.Pagination(document.getElementById('pagination'), {
 	itemsPerPage: 15
 });
+
 const middle = document.getElementById('middle')
 pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(middle), getGrid.scrollTop -= 10000));
