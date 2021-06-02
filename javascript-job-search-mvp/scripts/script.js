@@ -67,7 +67,7 @@ function submitButtonEvent(event) {
 					Title: response.data.results[i].title,
 					Company: response.data.results[i].company.display_name,
 					Location: response.data.results[i].location.display_name,
-					Remote: (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) ? 'Yes' : 'No',
+					Remote: (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].title.toLowerCase().indexOf("remote") > -1) ? 'Yes' : 'No',
 					JobSnippet: response.data.results[i].description.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, ''),
 					//Salary: response.data.results[i].salary_is_predicted,
 					DateSincePosted: date.toLocaleDateString(),
