@@ -52,67 +52,67 @@ function submitButtonEvent(event) {
 	url += `&page=${page}`
 	console.log(url);
 	fetch(url).then(response => response.json(), error => console.log(error)).then(response => {
-			if (job.length > 0) job = [];
-			//use pagination class method setTottalItems to set items to the total from the API call
-			if(page == 1 && response.data) {
-				pagination.reset(response.data.count);
-				document.getElementById('pagination').classList.remove('hidden');
-			}
-			
-			if (response.data && response.data.results.length > 0) {
-				for (let i = 0; i < response.data.results.length; i++) {
-					let date = new Date(response.data.results[i].created);
-					
-					job.push({
-						Title: response.data.results[i].title,
-						Company: response.data.results[i].company.display_name,
-						Location: response.data.results[i].location.display_name,
-						Remote: (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) ? 'Yes' : 'No',
-						JobSnippet: response.data.results[i].description.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, ''),
-						//Salary: response.data.results[i].salary_is_predicted,
-						DateSincePosted: date.toLocaleDateString(),
-						Date: date,
-						ApplicationSite: response.data.results[i].redirect_url
-					});
-				}
-			}
+		if (job.length > 0) job = [];
+		//use pagination class method setTottalItems to set items to the total from the API call
+		if (page == 1 && response.data) {
+			pagination.reset(response.data.count);
+			document.getElementById('pagination').classList.remove('hidden');
+		}
 
-			loader.classList.add('hidden')
-			//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
-			if (job.length > 0) {
-				veteranVideo.classList.add('hidden');
-				document.getElementById("no-results").classList.add('hidden');
-				document.getElementById('jobgrid').classList.remove('hidden');
+		if (response.data && response.data.results.length > 0) {
+			for (let i = 0; i < response.data.results.length; i++) {
+				let date = new Date(response.data.results[i].created);
 
-			} else {
-				document.getElementById("no-results").classList.remove('hidden');
-				veteranVideo.classList.remove('hidden');
+				job.push({
+					Title: response.data.results[i].title,
+					Company: response.data.results[i].company.display_name,
+					Location: response.data.results[i].location.display_name,
+					Remote: (response.data.results[i].description.toLowerCase().indexOf("remote") > -1 || response.data.results[i].description.toLowerCase().indexOf("work from home") > -1) ? 'Yes' : 'No',
+					JobSnippet: response.data.results[i].description.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, ''),
+					//Salary: response.data.results[i].salary_is_predicted,
+					DateSincePosted: date.toLocaleDateString(),
+					Date: date,
+					ApplicationSite: response.data.results[i].redirect_url
+				});
 			}
-			//adds a container and items to the jobposting string for each object in the job array
-			for (let i = 0; i < job.length; i++) {
-				jobposting += `<div class="grid-container">
+		}
+
+		loader.classList.add('hidden')
+		//if the job variable is an empty array, the hidden class is added to the video and removed from the jobgrid div
+		if (job.length > 0) {
+			veteranVideo.classList.add('hidden');
+			document.getElementById("no-results").classList.add('hidden');
+			document.getElementById('jobgrid').classList.remove('hidden');
+
+		} else {
+			document.getElementById("no-results").classList.remove('hidden');
+			veteranVideo.classList.remove('hidden');
+		}
+		//adds a container and items to the jobposting string for each object in the job array
+		for (let i = 0; i < job.length; i++) {
+			jobposting += `<div class="grid-container">
 				<div class="grid-item grid-item-1">${job[i].Title}</div>
 				<div class="grid-item grid-item-2">Company: ${job[i].Company} - ${job[i].Location}</div>
 				<div class="grid-item grid-item-3">Remote: ${job[i].Remote}</div>
 				<div class="grid-item grid-item-4">Job Description: ${job[i].JobSnippet}</div>
 				<div class="grid-item grid-item-6">Date Posted: ${job[i].DateSincePosted}<a class="apply" href="${job[i].ApplicationSite}" target="_blank" rel="noopener noreferrer">Apply</a></div>
 				</div>`
-			}
+		}
 
-			innergrid[0].innerHTML = jobposting;
-			localStorage.setItem("jobposting", innergrid[0].innerHTML);
+		innergrid[0].innerHTML = jobposting;
+		localStorage.setItem("jobposting", innergrid[0].innerHTML);
 
-			if (document.body.classList.contains("dark-background")) {
-				document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
-				document.querySelectorAll(".grid-item").forEach(e => e.classList.add("dark-grid"));
-				document.querySelectorAll(".apply").forEach(e => e.classList.add("dark-apply"));
-			} else {
-				document.querySelectorAll(".grid-container").forEach(e => e.classList.remove("dark-container"));
-				document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
-				document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
-			}
+		if (document.body.classList.contains("dark-background")) {
+			document.querySelectorAll(".grid-container").forEach(e => e.classList.add("dark-container"));
+			document.querySelectorAll(".grid-item").forEach(e => e.classList.add("dark-grid"));
+			document.querySelectorAll(".apply").forEach(e => e.classList.add("dark-apply"));
+		} else {
+			document.querySelectorAll(".grid-container").forEach(e => e.classList.remove("dark-container"));
+			document.querySelectorAll(".grid-item").forEach(e => e.classList.remove("dark-grid"));
+			document.querySelectorAll(".apply").forEach(e => e.classList.remove("dark-apply"));
+		}
 
-		});
+	});
 }; //submit button event
 
 // adds grab to scroll functionality
@@ -120,7 +120,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	const ele = document.getElementById('jobgrid');
 	ele.style.cursor = 'grab';
 
-	let pos = {top: 0, left: 0,	x: 0, y: 0};
+	let pos = {
+		top: 0,
+		left: 0,
+		x: 0,
+		y: 0
+	};
 
 	const mouseDownHandler = function (e) {
 		ele.style.cursor = 'grabbing';
@@ -187,7 +192,8 @@ const contactButton = document.getElementById("contact-form");
 contactButton.addEventListener("submit", contactFormSubmit);
 
 // Pagination
-var pagination = new tui.Pagination(document.getElementById('pagination'), {itemsPerPage: 15});
+var pagination = new tui.Pagination(document.getElementById('pagination'), {
+	itemsPerPage: 15
+});
 let middle = document.getElementById('middle')
-pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(middle), getGrid.scrollTop -= 10000));
-
+pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(middle).scrollIntoView(), getGrid.scrollTop -= 10000));
