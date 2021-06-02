@@ -195,5 +195,5 @@ contactButton.addEventListener("submit", contactFormSubmit);
 var pagination = new tui.Pagination(document.getElementById('pagination'), {
 	itemsPerPage: 15
 });
-let middle = document.getElementById('middle')
-pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(middle).scrollIntoView(), getGrid.scrollTop -= 10000));
+const middle = document.getElementById('middle')
+pagination.on('beforeMove', event => (submitButtonEvent(event.page), window.scrollTo(middle), getGrid.scrollTop -= 10000));
