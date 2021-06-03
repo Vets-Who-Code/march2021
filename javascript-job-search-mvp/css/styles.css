@@ -493,6 +493,11 @@ footer {
 	color: var(--light-gold);
 }
 
+.adzuna-logo {
+	width: 15px;
+	height: auto;
+}
+
 .footer-font-awesome:hover {
 	color: var(--medium-blue);
 }
