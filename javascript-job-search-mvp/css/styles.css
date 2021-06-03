@@ -673,11 +673,15 @@ footer .dropdown-menu>li>a:hover>span {
 }
 
 
-.tui-page-btn, .tui-last, .tui-first {
+.tui-page-btn {
 	background-color: white;
 }
 
 .tui-is-selected {
 	background-color: var(--medium-blue) !important;
+}
+
+.tui-last, .tui-first {
+	background-color: var(--light-blue);
 }
 
