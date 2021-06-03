@@ -479,6 +479,20 @@ footer {
 	color: var(--light-red);
 }
 
+.adzuna {
+	text-align: center;
+}
+
+.adzuna a:link,
+.adzuna a:visited,
+.adzuna a:active {
+	color: white;
+}
+
+.adzuna a:hover {
+	color: var(--light-gold);
+}
+
 .footer-font-awesome:hover {
 	color: var(--medium-blue);
 }
