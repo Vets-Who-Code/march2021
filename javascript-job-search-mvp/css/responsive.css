@@ -120,6 +120,7 @@
 
 	.site-map {
 		margin-left: -5px;
+		padding-left: 0;
 	}
 
 	.site-map+div {
@@ -136,14 +137,7 @@
 
 	.footer2-header {
 		text-align: center;
-	}
-
-	.footer2-header {
 		margin-bottom: 25px;
-	}
-
-	.site-map {
-		padding-left: 0;
 	}
 
 	.site-map2 .footer-li:last-of-type {
@@ -156,6 +150,20 @@
 
 	.veteran-video {
 		width: 92%;
+	}
+
+	.copyright {
+		float: none;
+		text-align: center;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.byVWC {
+		float: none;
+		text-align: center;
+		display: block;
+		margin-bottom: 20px;
 	}
 
 	@-moz-document url-prefix() {
@@ -213,22 +221,6 @@
 }
 
 @media (max-width: 767px) {
-	.copyright {
-		float: none;
-		text-align: center;
-		display: block;
-	}
-
-	.byVWC {
-		float: none;
-		text-align: center;
-		display: block;
-	}
-
-	.copyright {
-		margin-bottom: 20px;
-	}
-
 	.zip {
 		margin-right: 0;
 	}
