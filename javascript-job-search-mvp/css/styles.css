@@ -671,3 +671,13 @@ footer .dropdown-menu>li>a:hover>span {
 		transform: translateY(0);
 	}
 }
+
+
+.tui-page-btn, .tui-last, .tui-first {
+	background-color: white;
+}
+
+.tui-is-selected {
+	background-color: var(--medium-blue) !important;
+}
+
