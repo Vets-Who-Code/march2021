@@ -712,3 +712,7 @@ footer .dropdown-menu>li>a:hover>span {
 		transform: translateY(0);
 	}
 }
+
+.tui-page-btn {
+	background-color: white;
+}
