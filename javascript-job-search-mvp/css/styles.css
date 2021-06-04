@@ -201,7 +201,7 @@ h1 {
 /* Form */
 
 .job-grabber {
-	margin: 75px 0;
+	margin: 75px 0 70px 0;
 }
 
 .zip {
@@ -374,12 +374,39 @@ a:active {
 	color: black;
 }
 
+.pages {
+	margin-top: 20px;
+}
+
+.adzuna {
+	text-align: center;
+	padding-top: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .9rem;
+}
+
+.adzuna .adzuna a:link,
+.adzuna a:visited,
+.adzuna a:active {
+	color: var(--light-red);
+}
+
+.adzuna a:hover {
+	color: var(--medium-blue);
+	text-decoration: underline;
+}
+
+.adzuna-logo {
+	width: 12px;
+	height: auto;
+}
+
 /* Footer */
 
 footer {
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
 .footer1-h {
@@ -477,20 +504,6 @@ footer {
 
 .made-by:focus {
 	color: var(--light-red);
-}
-
-.adzuna {
-	text-align: center;
-}
-
-.adzuna a:link,
-.adzuna a:visited,
-.adzuna a:active {
-	color: white;
-}
-
-.adzuna a:hover {
-	color: var(--light-gold);
 }
 
 .footer-font-awesome:hover {
@@ -629,6 +642,20 @@ footer .dropdown-menu>li>a:hover>span {
 
 .dark-container:hover {
 	box-shadow: 0 1px 4px 0 white;
+}
+
+.adzuna.dark-theme {
+	color: white;
+}
+
+.adzuna.dark-theme a:link,
+.adzuna.dark-theme a:visited,
+.adzuna.dark-theme a:active {
+	color: var(--light-red);
+}
+
+.adzuna.dark-theme a:hover {
+	color: var(--light-gold);
 }
 
 /* Dark Footer */
