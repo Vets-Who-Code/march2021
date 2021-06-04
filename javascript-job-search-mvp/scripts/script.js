@@ -57,6 +57,7 @@ function submitButtonEvent(event) {
 		if (page == 1 && response.data) {
 			pagination.reset(response.data.count);
 			document.getElementById('pagination').classList.remove('hidden');
+			document.querySelector('.adzuna').classList.remove('hidden');
 		}
 
 		if (response.data && response.data.results.length > 0) {
@@ -177,6 +178,7 @@ const darkMode = () => {
 	document.getElementById("main-header").classList.toggle("dark-theme");
 	document.querySelector(".lead-in").classList.toggle("dark-theme");
 	document.querySelector(".fa-moon").classList.toggle("fa-sun");
+	document.querySelector(".adzuna").classList.toggle("dark-theme");
 	document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));
 	document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
 	document.querySelectorAll(".apply").forEach(e => e.classList.toggle("dark-apply"));

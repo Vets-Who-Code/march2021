@@ -163,7 +163,6 @@
 		float: none;
 		text-align: center;
 		display: block;
-		margin-bottom: 20px;
 	}
 
 	@-moz-document url-prefix() {
