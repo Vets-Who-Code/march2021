@@ -1,19 +1,15 @@
 import React from "react";
+import Typed from 'react-typed'
 
 export default function JobApp() {
   return (
 <div>
     <div class="container">
-
-    {/* <!-- Header --> */}
         <h1 class="main-header" id="main-header">JOB SEARCH</h1>
         <div class="typed-container">
-        <p class="lead-in">#VetsWhoCode <span id="typed" class="typed"></span></p>
-        <div id="typed-strings">
-            <p>provides job placement assistance.</p>
-            <p>makes a difference in the lives of veterans.</p>
+            <div id="typed-strings"><p class="lead-in">#VetsWhoCode <span id="typed" class="typed"> <Typed strings={['provides job placement assistance.','makes a difference in the lives of veterans.']}typeSpeed={50} backSpeed={50} loop /></span>
+            </p></div>
         </div>
-    </div>
        <p class="job-search-description">
         Vets Who Code Job Search (VWC) is a tool for connecting veterans, military, and military spouses with jobs.
         Our goal is to make every workplace fair and profitable by bringing together
