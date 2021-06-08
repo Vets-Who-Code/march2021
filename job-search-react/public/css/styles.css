@@ -382,6 +382,10 @@ footer {
 	margin-top: 100px;
 }
 
+textarea{
+	width: 100%;
+}
+
 .footer1-h {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 400;
