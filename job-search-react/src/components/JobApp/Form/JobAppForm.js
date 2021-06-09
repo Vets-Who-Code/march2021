@@ -1,6 +1,7 @@
 import React from "react";
-
+import SubmitButton from "./SubmitButton/Submit";
 export default function JobAppForm() {
+
     return(
     <form id="job-search" class="form-inline text-center job-grabber">
     <label class="sr-only" for="zipCode">Zip Code</label>
@@ -25,10 +26,6 @@ export default function JobAppForm() {
             <option value="5000">CONUS</option>
         </select>
     </div>
-    <button id="submit-button" type="submit" class="btn btn-primary mb-2 submit-button search"
-        onClick="document.getElementById('middle').scrollIntoView();">
-        <i class="glyphicon glyphicon-search">Search</i>
-    </button>
+    <SubmitButton />
 </form>
-
-    )}
+)}
