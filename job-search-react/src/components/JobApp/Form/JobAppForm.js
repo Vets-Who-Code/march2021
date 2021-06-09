@@ -1,9 +1,17 @@
 import React from "react";
 import SubmitButton from "./SubmitButton/Submit";
 export default function JobAppForm() {
+    const jobSearchData = (event) => {
+        console.log(event.currentTarget[0].value);
+        console.log(event.currentTarget[1].value);
+        console.log(event.currentTarget[2].value);
+        console.log(event.currentTarget[3].value);
+        event.preventDefault();
+
+    }
 
     return(
-    <form id="job-search" class="form-inline text-center job-grabber">
+    <form id="job-search" class="form-inline text-center job-grabber" onSubmit={jobSearchData}>
     <label class="sr-only" for="zipCode">Zip Code</label>
     <input type="string" pattern="[0-9]{5}" class="form-control input-lg zip" id="zipCode" placeholder="Zip Code" required />
     <input class="form-check-input" type="checkbox" id="inlineFormCheck" />
