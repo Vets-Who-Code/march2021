@@ -83,7 +83,7 @@ export default function Footer() {
 							</div>
 							<div className="form-group">
 								<label className="group-email" for="exampleInputPassword1">Message</label>
-								<textarea name="textarea" id="textarea" maxlength="300" styles="width: 100%" rows="2" className="form-control"
+								<textarea name="textarea" id="textarea" maxlength="300" rows="2" className="form-control"
 									id="exampleInputPassword1" placeholder="Message"></textarea>
 								<div id="count" className="count">
 									<span id="current_count">0</span>
@@ -95,12 +95,12 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
-	<div className="row footer3" styles="border-top: 1px solid gray;">
+	<div className="row footer3">
 				<div className="container">
 					<span title="Copyright" className="copyright">©2021 <a className="footer3-anchor" target="_blank"
 							rel="noopener noreferrer"
 							href="https://github.com/Vets-Who-Code/vets-who-code-app/blob/master/LICENSE">#VetsWhoCode</a></span>
-					<span className="byVWC">Made By the 🔥<a tabindex="0" hef="https://github.com/Vets-Who-Code/march2021"
+					<span className="byVWC">Made By the 🔥<a tabIndex="0" hef="https://github.com/Vets-Who-Code/march2021"
 							target="_blank" rel="noopener noreferrer" className="made-by">Post-Apocalyptic Coders</a>🔥</span>
 				</div>
 			</div>

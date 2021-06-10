@@ -1,19 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Typed from 'react-typed';
 import Form from './Form/Form.js';
 
 export default function JobApp() {
+
+	const [userData, setUserData] = useState(null);
+
+	function formData(clickEvent) {
+		clickEvent.preventDefault();
+		setUserData(clickEvent);
+	  console.log(userData);
+	};
+
 	return (
 		<div>
-			<div class="container">
-				<h1 class="main-header" id="main-header">
+			<div className="container">
+				<h1 className="main-header" id="main-header">
 					JOB SEARCH
 				</h1>
-				<div class="typed-container">
+				<div className="typed-container">
 					<div id="typed-strings">
-						<p class="lead-in">
+						<p className="lead-in">
 							#VetsWhoCode{' '}
-							<span id="typed" class="typed">
+							<span id="typed" className="typed">
 								{' '}
 								<Typed
 									strings={[
@@ -28,7 +37,7 @@ export default function JobApp() {
 						</p>
 					</div>
 				</div>
-				<p class="job-search-description">
+				<p className="job-search-description">
 					Vets Who Code Job Search (VWC) is a tool for connecting veterans,
 					military, and military spouses with jobs. Our goal is to make every
 					workplace fair and profitable by bringing together the perfect
@@ -38,24 +47,24 @@ export default function JobApp() {
 				{/* <!-- End Header --> */}
 
 				{/* <!-- Search Bar --> */}
-				<Form />
+				<Form data={formData} />
 				{/* <!-- Search End --> */}
 
 				{/* <!-- Empty Grid --> */}
-				<div id="middle" class="middle"></div>
+				<div id="middle" className="middle"></div>
 				<div>
-					<p id="no-results" class="text-center hidden no-results">
+					<p id="no-results" className="text-center hidden no-results">
 						Sorry there were no results. Try again.
 					</p>
 				</div>
-				<div id="loader" class="loading hidden">
-					<div class="ball first"></div>
-					<div class="ball second"></div>
-					<div class="ball third"></div>
+				<div id="loader" className="loading hidden">
+					<div className="ball first"></div>
+					<div className="ball second"></div>
+					<div className="ball third"></div>
 				</div>
 				<video
 					id="veteran-video"
-					class="veteran-video"
+					className="veteran-video"
 					src="videos/veteran-on-computer.mp4"
 					autoplay
 					loop
@@ -64,15 +73,15 @@ export default function JobApp() {
 				{/* <!-- End Empty Grid --> */}
 
 				{/* <!-- Grid --> */}
-				<div class="jobgrid-container">
+				<div className="jobgrid-container">
 					<div
-						class="jobgrid hidden hide-native-scrollbar"
+						className="jobgrid hidden hide-native-scrollbar"
 						id="jobgrid"
 						aria-label="Job Grid"
 					></div>
 				</div>
 			</div>
-			<div id="pagination" class="tui-pagination hidden"></div>
+			<div id="pagination" className="tui-pagination hidden"></div>
 		</div>
 	);
 }

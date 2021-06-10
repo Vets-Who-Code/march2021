@@ -1,28 +1,39 @@
 import React from 'react';
-import SearchButton from "./SearchButton/SearchButton"
+import SearchButton from './SearchButton/SearchButton';
 
-export default function Form() {
+export default function Form(props) {
 	return (
-		<form id="job-search" class="form-inline text-center job-grabber">
-			<label class="sr-only" for="zipCode">
+		<form
+			onSubmit={(event) => props.data(event)}
+			className="form-inline text-center job-grabber"
+		>
+			<label className="sr-only" for="zipCode">
 				Zip Code
 			</label>
 			<input
 				type="string"
 				pattern="[0-9]{5}"
-				class="form-control input-lg zip"
+				className="form-control input-lg zip"
 				id="zipCode"
 				placeholder="Zip Code"
 				required
 			/>
-			<input class="form-check-input" type="checkbox" id="inlineFormCheck" />
-			<label class="form-check-label" for="inlineFormCheck">
+			<input
+				className="form-check-input"
+				type="checkbox"
+				id="inlineFormCheck"
+			/>
+			<label className="form-check-label" for="inlineFormCheck">
 				Remote?
 			</label>
 
-			<div class="form-group" id="sel1">
+			<div className="form-group" id="sel1">
 				<label for="sel1"></label>
-				<select class="form-control input-lg miles" id="sel1" name="sellist1">
+				<select
+					className="form-control input-lg miles"
+					id="sel1"
+					name="sellist1"
+				>
 					{/* <!-- value is set in km --> */}
 					<option value="0">Only in</option>
 					<option value="8">5 mi.</option>
