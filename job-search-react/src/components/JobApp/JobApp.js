@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState }  from "react";
 import Typed from 'react-typed'
 import JobAppForm from "../JobApp/Form/JobAppForm"
 
 export default function JobApp() {
+    const [jobsParams, setJobsParams] = useState('');
+    function formData(event){
+        event.preventDefault();
+        setJobsParams({   
+                        zipCode: event.target[0].value,
+                        remote: event.target[1].value,
+                        km: event.target[2].value
+        });
+        console.log(jobsParams);
+    }
     return (
         <div>
             <div class="container">
@@ -20,7 +30,7 @@ export default function JobApp() {
                 {/* <!-- End Header --> */}
 
                 {/* <!-- Search Bar --> */}
-                <JobAppForm />
+                <JobAppForm submitForm={formData} />
                 {/* <!-- Search End --> */}
 
                 {/* <!-- Empty Grid --> */}
