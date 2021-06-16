@@ -66,7 +66,7 @@ export default function JobApp() {
 					id="veteran-video"
 					className="veteran-video"
 					src="videos/veteran-on-computer.mp4"
-					autoplay
+					autoPlay
 					loop
 					muted
 				></video>
