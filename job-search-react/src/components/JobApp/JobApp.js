@@ -1,16 +1,15 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Typed from 'react-typed';
 import Form from './Form/Form.js';
 
 export default function JobApp() {
-
 	const [userData, setUserData] = useState(null);
 
 	function formData(clickEvent) {
 		clickEvent.preventDefault();
 		setUserData(clickEvent);
-	  console.log(userData);
-	};
+		console.log(userData);
+	}
 
 	return (
 		<div>
