@@ -6,3 +6,4 @@ test('renders donate link', () => {
   const linkElement = screen.getByText('Donate');
   expect(linkElement).toBeInTheDocument();
 });
+

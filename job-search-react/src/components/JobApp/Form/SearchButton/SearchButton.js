@@ -8,4 +8,4 @@ export default function SearchButton() {
 			<i className="glyphicon glyphicon-search">Search</i>
 		</button>
 	);
-};
+}

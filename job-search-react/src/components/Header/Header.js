@@ -123,7 +123,8 @@ export default function Header(props) {
 						</ul>
 						<ul className="nav navbar-nav navbar-right">
 							<li className="moon-li" tabIndex="0">
-								<a href="true"
+								<a
+									href="true"
 									className="moon"
 									aria-label="Dark Mode Button"
 									title="dark mode button"

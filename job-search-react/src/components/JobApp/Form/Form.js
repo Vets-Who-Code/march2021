@@ -1,5 +1,8 @@
 import React from 'react';
 import SearchButton from './SearchButton/SearchButton';
+import Remote from './Remote/Remote';
+import ZipCode from './ZipCode/ZipCode';
+import Distance from './Distance/Distance';
 
 export default function Form(props) {
 	return (
