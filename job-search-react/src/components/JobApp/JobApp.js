@@ -68,7 +68,6 @@ export default function JobApp() {
 					src="videos/veteran-on-computer.mp4"
 					autoPlay
 					loop
-					muted
 				></video>
 				{/* <!-- End Empty Grid --> */}
 

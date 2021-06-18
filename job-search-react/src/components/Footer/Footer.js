@@ -78,12 +78,12 @@ export default function Footer() {
 						<h3 className="footer2-header">CONTACT US</h3>
 						<form id="contact-form">
 							<div className="form-group">
-								<label className="group-email" for="exampleInputEmail1">Email</label>
+								<label className="group-email" htmlFor="exampleInputEmail1">Email</label>
 								<input type="email" className="form-control" id="exampleInputEmail1" placeholder="Email" />
 							</div>
 							<div className="form-group">
-								<label className="group-email" for="exampleInputPassword1">Message</label>
-								<textarea name="textarea" id="textarea" maxlength="300" rows="2" className="form-control"
+								<label className="group-email" htmlFor="exampleInputPassword1">Message</label>
+								<textarea name="textarea" id="textarea" maxLength="300" rows="2" className="form-control"
 									id="exampleInputPassword1" placeholder="Message"></textarea>
 								<div id="count" className="count">
 									<span id="current_count">0</span>

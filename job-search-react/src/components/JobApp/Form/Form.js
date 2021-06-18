@@ -7,7 +7,7 @@ export default function Form(props) {
 			onSubmit={(event) => props.data(event)}
 			className="form-inline text-center job-grabber"
 		>
-			<label className="sr-only" for="zipCode">
+			<label className="sr-only" htmlFor="zipCode">
 				Zip Code
 			</label>
 			<input
@@ -23,12 +23,12 @@ export default function Form(props) {
 				type="checkbox"
 				id="inlineFormCheck"
 			/>
-			<label className="form-check-label" for="inlineFormCheck">
+			<label className="form-check-label" htmlFor="inlineFormCheck">
 				Remote?
 			</label>
 
 			<div className="form-group" id="sel1">
-				<label for="sel1"></label>
+				<label htmlFor="sel1"></label>
 				<select
 					className="form-control input-lg miles"
 					id="sel1"
@@ -39,7 +39,7 @@ export default function Form(props) {
 					<option value="8">5 mi.</option>
 					<option value="16">10 mi.</option>
 					<option value="24">15 mi.</option>
-					<option value="40" selected>
+					<option value="40" defaultValue>
 						25 mi.
 					</option>
 					<option value="80">50 mi.</option>

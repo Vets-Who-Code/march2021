@@ -20,7 +20,6 @@ export default function Header(props) {
 		// document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
 		// document.querySelectorAll(".apply").forEach(e => e.classList.toggle("dark-apply"));
 	}
-	console.log(props);
 
 	return (
 		<header>
