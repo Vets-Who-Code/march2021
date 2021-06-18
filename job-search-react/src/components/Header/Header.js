@@ -1,6 +1,26 @@
 import React from 'react';
 
-export default function Header() {
+export default function Header(props) {
+	function darkMode(event) {
+		event.preventDefault();
+		const lightMode=`${props.theme === 'dark' ? 'light': 'dark'}`
+		return props.setTheme(lightMode);
+		// const body = document.body;
+		// body.classList.toggle("dark-background");
+		// document.getElementById("donate").classList.toggle('dark-theme');
+		// document.getElementById("send-button").classList.toggle("dark-theme");
+		// document.getElementById("submit-button").classList.toggle("dark-theme");
+		// document.getElementById("typed").classList.toggle("dark-theme");
+		// document.getElementById("jobgrid").classList.toggle("dark-theme");
+		// document.getElementById("main-header").classList.toggle("dark-theme");
+		// document.querySelector(".lead-in").classList.toggle("dark-theme");
+		// document.querySelector(".fa-moon").classList.toggle("fa-sun");
+		// document.querySelector(".adzuna").classList.toggle("dark-theme");
+		// document.querySelectorAll(".grid-container").forEach(e => e.classList.toggle("dark-container"));
+		// document.querySelectorAll(".grid-item").forEach(e => e.classList.toggle("dark-grid"));
+		// document.querySelectorAll(".apply").forEach(e => e.classList.toggle("dark-apply"));
+	}
+
 	return (
 		<header>
 			<nav className="navbar navbar-default vwc-nav">
@@ -108,12 +128,12 @@ export default function Header() {
 									className="moon"
 									aria-label="Dark Mode Button"
 									title="dark mode button"
-									onClick="darkMode()"
+									onClick={darkMode}
 								>
 									<i alt="moon icon" className="fas fa-moon fa-2x"></i>
 								</a>
 							</li>
-							<li className="donate" id="donate">
+							<li className={`donate ${props.theme === 'light' ? 'light-theme': 'dark-theme'}`}>
 								<a href="https://vetswhocode.io/donate">
 									<span className="link-name">Donate</span>
 								</a>
