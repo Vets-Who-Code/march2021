@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Footer() {
+export default function Footer(props) {
+
 	return (
 		<footer>
 			<div className="row footer1">
@@ -191,8 +192,8 @@ export default function Footer() {
 							</div>
 							<button
 								type="submit"
-								className="btn btn-primary send-button"
 								id="send-button"
+								className={`btn btn-primary send-button ${props.theme === 'light' ? 'light-theme': 'dark-theme'}`}
 							>
 								Send
 							</button>
@@ -217,7 +218,7 @@ export default function Footer() {
 						Made By the 🔥
 						<a
 							tabIndex="0"
-							hef="https://github.com/Vets-Who-Code/march2021"
+							href="https://github.com/Vets-Who-Code/march2021"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="made-by"
