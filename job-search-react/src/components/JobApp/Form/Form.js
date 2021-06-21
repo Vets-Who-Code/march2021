@@ -5,6 +5,7 @@ import ZipCode from './ZipCode/ZipCode';
 import Distance from './Distance/Distance';
 
 export default function Form(props) {
+
 	return (
 		<form
 			onSubmit={(event) => props.data(event)}

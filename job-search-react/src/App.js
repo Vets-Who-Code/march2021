@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <Header theme={theme} setTheme={setTheme} />
-      <JobApp />
-      <Footer />
+      <JobApp theme={theme} setTheme={setTheme} />
+      <Footer theme={theme} setTheme={setTheme} />
     </div>
   );
 }
