@@ -2,9 +2,7 @@ import React from 'react';
 
 export default function SearchButton(props) {
 	return (
-		<button
-			type="submit"
-			className="btn btn-primary mb-2 submit-button search">
+		<button type="submit" className="btn btn-primary mb-2 submit-button search">
 			<i className="glyphicon glyphicon-search">Search</i>
 		</button>
 	);

@@ -3,7 +3,7 @@ import React from 'react';
 export default function Header(props) {
 	function darkMode(event) {
 		event.preventDefault();
-		const lightMode=`${props.theme === 'dark' ? 'light': 'dark'}`
+		const lightMode = `${props.theme === 'dark' ? 'light' : 'dark'}`;
 		return props.setTheme(lightMode);
 	}
 
@@ -119,7 +119,11 @@ export default function Header(props) {
 									<i alt="moon icon" className="fas fa-moon fa-2x"></i>
 								</a>
 							</li>
-							<li className={`donate ${props.theme === 'light' ? 'light-theme': 'dark-theme'}`}>
+							<li
+								className={`donate ${
+									props.theme === 'light' ? 'light-theme' : 'dark-theme'
+								}`}
+							>
 								<a href="https://vetswhocode.io/donate">
 									<span className="link-name">Donate</span>
 								</a>

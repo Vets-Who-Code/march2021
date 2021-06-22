@@ -80,8 +80,7 @@ export default function JobApp() {
 				</div>
 			</div>
 			<div id="pagination" className="tui-pagination hidden"></div>
-			 {/* <!-- End Grid --> */}
-
+			{/* <!-- End Grid --> */}
 		</div> // render wrapper div
 	);
 }
