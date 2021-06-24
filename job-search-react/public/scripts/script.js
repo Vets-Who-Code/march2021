@@ -178,15 +178,15 @@ document.addEventListener('DOMContentLoaded', function () {
 //Dark Mode
 const darkMode = () => {
 	const body = document.body;
-	body.classList.toggle('dark-background');
-	document.getElementById('donate').classList.toggle('dark-theme');
-	document.getElementById('send-button').classList.toggle('dark-theme');
-	document.getElementById('submit-button').classList.toggle('dark-theme');
-	document.getElementById('typed').classList.toggle('dark-theme');
-	document.getElementById('jobgrid').classList.toggle('dark-theme');
-	document.getElementById('main-header').classList.toggle('dark-theme');
-	document.querySelector('.lead-in').classList.toggle('dark-theme');
-	document.querySelector('.fa-moon').classList.toggle('fa-sun');
+	// body.classList.toggle('dark-background');
+	// document.getElementById('donate').classList.toggle('dark-theme');
+	// document.getElementById('send-button').classList.toggle('dark-theme');
+	// document.getElementById('submit-button').classList.toggle('dark-theme');
+	// document.getElementById('typed').classList.toggle('dark-theme');
+	// document.getElementById('jobgrid').classList.toggle('dark-theme');
+	// document.getElementById('main-header').classList.toggle('dark-theme');
+	// document.querySelector('.lead-in').classList.toggle('dark-theme');
+	// document.querySelector('.fa-moon').classList.toggle('fa-sun');
 	document
 		.querySelectorAll('.grid-container')
 		.forEach((e) => e.classList.toggle('dark-container'));
