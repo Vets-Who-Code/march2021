@@ -3,12 +3,21 @@ import Typed from 'react-typed';
 import Form from './Form/Form.js';
 
 export default function JobApp(props) {
-	const [userData, setUserData] = useState(null);
+	const [userData, setUserData] = useState({
+		zipCode: '',
+		remote: false,
+		distance: '',
+	});
 
 	function formData(clickEvent) {
 		clickEvent.preventDefault();
-		setUserData(clickEvent);
-		console.log(userData);
+		const formResponse = {
+			zipCode: clickEvent.target[0].value,
+			remote: clickEvent.target[1].checked,
+			distance: clickEvent.target[2].value,
+		};
+		setUserData(formResponse);
+		console.log(formResponse);
 	}
 
 	return (

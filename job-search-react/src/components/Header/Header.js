@@ -119,7 +119,7 @@ export default function Header(props) {
 									<i
 										alt="moon icon"
 										className={`fas fa-2x fa-${
-											props.theme === 'light' ? 'sun' : 'moon'
+											props.theme !== 'light' ? 'sun' : 'moon'
 										} `}
 									></i>
 								</a>
