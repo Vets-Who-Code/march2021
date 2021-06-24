@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Typed from 'react-typed';
 import Form from './Form/Form.js';
 
-export default function JobApp() {
+export default function JobApp(props) {
 	const [userData, setUserData] = useState(null);
 
 	function formData(clickEvent) {
@@ -14,14 +14,14 @@ export default function JobApp() {
 	return (
 		<div>
 			<div className="container">
-				<h1 className="main-header" id="main-header">
+				<h1 id="main-header" className={`main-header ${props.ternary}`}>
 					JOB SEARCH
 				</h1>
 				<div className="typed-container">
 					<div id="typed-strings">
-						<p className="lead-in">
+						<p className={`lead-in ${props.ternary}`}>
 							#VetsWhoCode{' '}
-							<span id="typed" className="typed">
+							<span id="typed" className={`typed ${props.ternary}`}>
 								{' '}
 								<Typed
 									strings={[
@@ -46,7 +46,7 @@ export default function JobApp() {
 				{/* <!-- End Header --> */}
 
 				{/* <!-- Search Bar --> */}
-				<Form data={formData} />
+				<Form data={formData} theme={props.theme} />
 				{/* <!-- Search End --> */}
 
 				{/* <!-- Empty Grid --> */}
@@ -71,7 +71,7 @@ export default function JobApp() {
 				{/* <!-- End Empty Grid --> */}
 
 				{/* <!-- Grid --> */}
-				<div className="jobgrid-container">
+				<div className={`jobgrid-container ${props.ternary}`}>
 					<div
 						className="jobgrid hidden hide-native-scrollbar"
 						id="jobgrid"

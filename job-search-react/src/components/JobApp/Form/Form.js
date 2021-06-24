@@ -13,7 +13,7 @@ export default function Form(props) {
 			<ZipCode />
 			<Remote />
 			<Distance />
-			<SearchButton />
+			<SearchButton theme={props.theme} />
 		</form>
 	);
 }
