@@ -116,7 +116,12 @@ export default function Header(props) {
 									title="dark mode button"
 									onClick={darkMode}
 								>
-									<i alt="moon icon" className={`fas fa-2x fa-${props.theme === 'light' ? 'sun' : 'moon'} `}></i>
+									<i
+										alt="moon icon"
+										className={`fas fa-2x fa-${
+											props.theme === 'light' ? 'sun' : 'moon'
+										} `}
+									></i>
 								</a>
 							</li>
 							<li
