@@ -13,9 +13,20 @@ export default function JobApp(props) {
 		clickEvent.preventDefault();
 		const formResponse = {
 			zipCode: clickEvent.target[0].value,
-			remote: clickEvent.target[1].checked,
+			remote: clickEvent.target[1].checked, //TODO!!!!
 			distance: clickEvent.target[2].value,
 		};
+
+		let what = 'JavaScript ReactJS Gatsby GraphQL NodeJS node.js';
+		let exclude = '0000 senior sr. Senior sr Sr. principal lead master';
+
+		let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${formResponse.zipCode}&distance=${formResponse.distance}&what_exclude=${exclude}&sort_by=date&max_days_old=30&page=1`
+
+		fetch(url)
+			.then((response) => response.json())
+			.then(console.log)
+			.catch(console.error);
+
 		setUserData(formResponse);
 		console.log(formResponse);
 	}
