@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import Typed from 'react-typed';
 import Form from './Form/Form.js';
+import Card from './Card/Card';
 
 export default function JobApp(props) {
-	const [userData, setUserData] = useState({
-		zipCode: '',
-		remote: false,
-		distance: '',
-	});
+	const [jobData, setJobData] = useState("I'm a Card!");
+
+	const [formSubmitted, setFormSubmitted] = useState(false);
 
 	function formData(clickEvent) {
 		clickEvent.preventDefault();
+		setFormSubmitted(true);
 		const formResponse = {
 			zipCode: clickEvent.target[0].value,
 			remote: clickEvent.target[1].checked, //TODO!!!!
@@ -20,15 +20,12 @@ export default function JobApp(props) {
 		let what = 'JavaScript ReactJS Gatsby GraphQL NodeJS node.js';
 		let exclude = '0000 senior sr. Senior sr Sr. principal lead master';
 
-		let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${formResponse.zipCode}&distance=${formResponse.distance}&what_exclude=${exclude}&sort_by=date&max_days_old=30&page=1`
+		let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${formResponse.zipCode}&distance=${formResponse.distance}&what_exclude=${exclude}&sort_by=date&max_days_old=30&page=1`;
 
 		fetch(url)
 			.then((response) => response.json())
-			.then(console.log)
+			.then(setJobData)
 			.catch(console.error);
-
-		setUserData(formResponse);
-		console.log(formResponse);
 	}
 
 	return (
@@ -91,6 +88,7 @@ export default function JobApp(props) {
 				{/* <!-- End Empty Grid --> */}
 
 				{/* <!-- Grid --> */}
+				<Card isSubmitted={formSubmitted} jobData={jobData} />
 				<div className={`jobgrid-container ${props.ternary}`}>
 					<div
 						className="jobgrid hidden hide-native-scrollbar"
