@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import Typed from 'react-typed';
 import Form from './Form/Form.js';
 import Card from './Card/Card';
+import Loader from './Loader/Loader';
 
 export default function JobApp(props) {
-	const [jobData, setJobData] = useState("I'm a Card!");
+	const [jobData, setJobData] = useState(false);
 
 	const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -73,11 +74,7 @@ export default function JobApp(props) {
 						Sorry there were no results. Try again.
 					</p>
 				</div>
-				<div id="loader" className="loading hidden">
-					<div className="ball first"></div>
-					<div className="ball second"></div>
-					<div className="ball third"></div>
-				</div>
+				<Loader isSubmitted={formSubmitted} jobData={jobData} />
 				<video
 					id="veteran-video"
 					className="veteran-video"
@@ -88,7 +85,11 @@ export default function JobApp(props) {
 				{/* <!-- End Empty Grid --> */}
 
 				{/* <!-- Grid --> */}
-				<Card isSubmitted={formSubmitted} jobData={jobData} />
+				{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
+				{jobData.data &&
+					jobData.data.results.map((job) => (
+						<Card isSubmitted={formSubmitted} jobData={job} />
+					))}
 				<div className={`jobgrid-container ${props.ternary}`}>
 					<div
 						className="jobgrid hidden hide-native-scrollbar"
