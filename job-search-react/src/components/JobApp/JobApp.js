@@ -3,6 +3,8 @@ import Typed from 'react-typed';
 import Form from './Form/Form.js';
 import Card from './Card/Card';
 import Loader from './Loader/Loader';
+import Video from './Video/Video.js';
+import NoResults from './NoResults/NoResults.js';
 
 export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
@@ -12,6 +14,8 @@ export default function JobApp(props) {
 	function formData(clickEvent) {
 		clickEvent.preventDefault();
 		setFormSubmitted(true);
+		document.getElementById('middle').scrollIntoView();
+
 		const formResponse = {
 			zipCode: clickEvent.target[0].value,
 			remote: clickEvent.target[1].checked, //TODO!!!!
@@ -61,30 +65,20 @@ export default function JobApp(props) {
 					candidate with the ideal employer. Our site pairs technology and best
 					practices in order to promote practical and gainful employment.
 				</p>
-				{/* <!-- End Header --> */}
+				{/*  End Header  */}
 
-				{/* <!-- Search Bar --> */}
+				{/*  Search Bar  */}
 				<Form data={formData} theme={props.theme} />
-				{/* <!-- Search End --> */}
+				{/*  Search End  */}
 
-				{/* <!-- Empty Grid --> */}
+				{/*  Empty Grid  */}
 				<div id="middle" className="middle"></div>
-				<div>
-					<p id="no-results" className="text-center hidden no-results">
-						Sorry there were no results. Try again.
-					</p>
-				</div>
+				<NoResults isSubmitted={formSubmitted} jobData={jobData} />
 				<Loader isSubmitted={formSubmitted} jobData={jobData} />
-				<video
-					id="veteran-video"
-					className="veteran-video"
-					src="videos/veteran-on-computer.mp4"
-					autoPlay
-					loop
-				></video>
-				{/* <!-- End Empty Grid --> */}
+				<Video isSubmitted={formSubmitted} />
+				{/*  End Empty Grid  */}
 
-				{/* <!-- Grid --> */}
+				{/*  Grid  */}
 				{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
 				{jobData.data &&
 					jobData.data.results.map((job) => (
@@ -99,7 +93,7 @@ export default function JobApp(props) {
 				</div>
 			</div>
 			<div id="pagination" className="tui-pagination hidden"></div>
-			{/* <!-- End Grid --> */}
-		</div> // render wrapper div
+			{/*  End Grid  */}
+		</div> // <-- render wrapper div
 	);
 }
