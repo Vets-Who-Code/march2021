@@ -3,6 +3,7 @@ import Typed from 'react-typed';
 import Form from './Form/Form.js';
 import Card from './Card/Card';
 import Loader from './Loader/Loader';
+import Video from './Video/Video.js';
 
 export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
@@ -75,13 +76,7 @@ export default function JobApp(props) {
 					</p>
 				</div>
 				<Loader isSubmitted={formSubmitted} jobData={jobData} />
-				<video
-					id="veteran-video"
-					className="veteran-video"
-					src="videos/veteran-on-computer.mp4"
-					autoPlay
-					loop
-				></video>
+				<Video isSubmitted={formSubmitted} />
 				{/* <!-- End Empty Grid --> */}
 
 				{/* <!-- Grid --> */}
