@@ -4,6 +4,7 @@ import Form from './Form/Form.js';
 import Card from './Card/Card';
 import Loader from './Loader/Loader';
 import Video from './Video/Video.js';
+import NoResults from './NoResults/NoResults.js';
 
 export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
@@ -70,11 +71,7 @@ export default function JobApp(props) {
 
 				{/* <!-- Empty Grid --> */}
 				<div id="middle" className="middle"></div>
-				<div>
-					<p id="no-results" className="text-center hidden no-results">
-						Sorry there were no results. Try again.
-					</p>
-				</div>
+				<NoResults isSubmitted={formSubmitted} jobData={jobData} />
 				<Loader isSubmitted={formSubmitted} jobData={jobData} />
 				<Video isSubmitted={formSubmitted} />
 				{/* <!-- End Empty Grid --> */}
