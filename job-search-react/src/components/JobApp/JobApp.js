@@ -65,20 +65,20 @@ export default function JobApp(props) {
 					candidate with the ideal employer. Our site pairs technology and best
 					practices in order to promote practical and gainful employment.
 				</p>
-				{/* <!-- End Header --> */}
+				{/*  End Header  */}
 
-				{/* <!-- Search Bar --> */}
+				{/*  Search Bar  */}
 				<Form data={formData} theme={props.theme} />
-				{/* <!-- Search End --> */}
+				{/*  Search End  */}
 
-				{/* <!-- Empty Grid --> */}
+				{/*  Empty Grid  */}
 				<div id="middle" className="middle"></div>
 				<NoResults isSubmitted={formSubmitted} jobData={jobData} />
 				<Loader isSubmitted={formSubmitted} jobData={jobData} />
 				<Video isSubmitted={formSubmitted} />
-				{/* <!-- End Empty Grid --> */}
+				{/*  End Empty Grid  */}
 
-				{/* <!-- Grid --> */}
+				{/*  Grid  */}
 				{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
 				{jobData.data &&
 					jobData.data.results.map((job) => (
@@ -93,7 +93,7 @@ export default function JobApp(props) {
 				</div>
 			</div>
 			<div id="pagination" className="tui-pagination hidden"></div>
-			{/* <!-- End Grid --> */}
-		</div> // render wrapper div
+			{/*  End Grid  */}
+		</div> // <-- render wrapper div
 	);
 }
