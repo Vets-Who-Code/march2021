@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import JobApp from './components/JobApp/JobApp';
 
-function App() {
-	const [theme, setTheme] = React.useState('light');
+export default function App() {
+	const [theme, setTheme] = useState('light');
 	const getDarkTheme = theme === 'light' ? 'light-theme' : 'dark-theme';
 	return (
 		<div className={`App ${theme === 'light' ? '' : 'dark-background'}`}>
@@ -14,5 +14,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;
