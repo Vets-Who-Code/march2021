@@ -14,6 +14,8 @@ export default function JobApp(props) {
 	function formData(clickEvent) {
 		clickEvent.preventDefault();
 		setFormSubmitted(true);
+		document.getElementById('middle').scrollIntoView();
+
 		const formResponse = {
 			zipCode: clickEvent.target[0].value,
 			remote: clickEvent.target[1].checked, //TODO!!!!
