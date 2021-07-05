@@ -79,17 +79,18 @@ export default function JobApp(props) {
 				{/*  End Empty Grid  */}
 
 				{/*  Grid  */}
-				{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
-				{jobData.data &&
-					jobData.data.results.map((job) => (
-						<Card isSubmitted={formSubmitted} jobData={job} />
-					))}
 				<div className={`jobgrid-container ${props.ternary}`}>
 					<div
-						className="jobgrid hidden hide-native-scrollbar"
-						id="jobgrid"
-						aria-label="Job Grid"
-					></div>
+						className={`jobgrid hide-native-scrollbar ${
+							jobData ? '' : 'hidden'
+						}`}
+					>
+						{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
+						{jobData.data &&
+							jobData.data.results.map((job) => (
+								<Card isSubmitted={formSubmitted} jobData={job} />
+							))}
+					</div>
 				</div>
 			</div>
 			<div id="pagination" className="tui-pagination hidden"></div>
