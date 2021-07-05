@@ -48,11 +48,13 @@ export default function JobApp(props) {
 								<Typed
 									strings={[
 										'provides job placement assistance.',
-										'makes a difference in the lives of veterans.',
+										'^2000 makes a difference in the lives of veterans.',
 									]}
 									typeSpeed={50}
 									backSpeed={50}
 									loop
+									startDelay={1000}
+									backDelay={3000}
 								/>
 							</span>
 						</p>
