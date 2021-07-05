@@ -1,19 +1,20 @@
 :root {
 	/* Blue */
-	--dark-blue: #091F40;
+	--dark-blue: #091f40;
 	--medium-blue: #203ec5;
-	--light-blue: #1A51A3;
+	--light-blue: #1a51a3;
 	/* Red */
-	--dark-red: #AB1534;
-	--medium-red: #BD2843;
+	--dark-red: #ab1534;
+	--medium-red: #bd2843;
 	--light-red: #c5203e;
 	/* Grey */
 	--dark-grey: #333333;
 	--medium-grey: #696969;
-	--light-grey: #BDC3C7;
+	--light-grey: #bdc3c7;
 	/* Gold */
-	--dark-gold: #EBA32F;
-	--light-gold: #F1CB2F;
+	--dark-gold: #eba32f;
+	--light-gold: #f1cb2f;
+	scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -53,20 +54,20 @@ ul.about-drop {
 	background-color: var(--dark-blue);
 }
 
-.dropdown-menu>li>a:hover {
+.dropdown-menu > li > a:hover {
 	background-image: none;
 	background-color: var(--dark-blue);
 	color: white;
 }
 
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.active>a {
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a {
 	background-image: none;
 }
 
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:hover,
-.navbar-default .navbar-nav>.open>a:focus {
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
 	background-color: var(--dark-blue);
 	color: white;
 }
@@ -85,20 +86,20 @@ ul.about-drop {
 	margin-right: 5px;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
 	color: white;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
 	color: white;
 }
 
-.dropdown-menu>li>a {
+.dropdown-menu > li > a {
 	color: white;
 }
 
-.navbar-nav>li>.dropdown-menu {
+.navbar-nav > li > .dropdown-menu {
 	margin-top: 3px;
 }
 
@@ -136,7 +137,7 @@ ul.about-drop {
 .donate {
 	background-color: var(--dark-red);
 	border-radius: 2px;
-	transition: all .2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .donate:hover {
@@ -161,7 +162,7 @@ ul.about-drop {
 
 .job-search-description {
 	font-style: italic;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	line-height: 29px;
 	margin: 0 0 10px;
@@ -178,19 +179,18 @@ h1 {
 	text-align: center;
 	line-height: 1.1;
 	font-weight: 900;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 900;
 	margin-bottom: 48px;
 	margin-top: 0;
-	margin: .67em 0;
+	margin: 0.67em 0;
 	color: var(--dark-blue);
 }
 
 .lead-in {
 	color: var(--dark-blue);
 	font-style: italic;
-	font-family: Open Sans,
-		sans-serif;
+	font-family: Open Sans, sans-serif;
 	font-weight: 400;
 	line-height: 29px;
 	margin-bottom: 40px;
@@ -212,16 +212,16 @@ h1 {
 	margin: 0 30px;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
 	margin-right: 5px;
 }
 
 .submit-button {
 	border-radius: 2px;
-	font-size: .875rem;
+	font-size: 0.875rem;
 	padding: 12px 0;
 	text-align: center;
-	transition: all .2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	width: 115px;
 	text-transform: capitalize;
 	background-color: var(--light-red);
@@ -301,7 +301,7 @@ a:active {
 }
 
 .grid-item {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .grid-container:hover {
@@ -313,7 +313,7 @@ a:active {
 	background-color: white;
 	color: var(--dark-grey);
 	padding: 2%;
-	width: 100%
+	width: 100%;
 }
 
 .grid-item-1 {
@@ -382,7 +382,7 @@ footer {
 	margin-top: 100px;
 }
 
-textarea{
+textarea {
 	width: 100%;
 }
 
@@ -524,7 +524,7 @@ textarea{
 	margin-top: 10px;
 	background-image: none;
 	background-color: var(--light-red);
-	transition: all .2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .send-button:hover {
@@ -535,12 +535,12 @@ textarea{
 	color: black;
 }
 
-footer .dropdown-menu>li>a:hover {
+footer .dropdown-menu > li > a:hover {
 	background-image: none;
 	background-color: var(--light-blue);
 }
 
-footer .dropdown-menu>li>a:hover>span {
+footer .dropdown-menu > li > a:hover > span {
 	color: white;
 }
 
@@ -654,12 +654,12 @@ footer .dropdown-menu>li>a:hover>span {
 
 .first {
 	animation: slide 2s ease-in-out infinite;
-	animation-delay: .1s;
+	animation-delay: 0.1s;
 }
 
 .second {
 	animation: slide 2s ease-in-out infinite;
-	animation-delay: .5s;
+	animation-delay: 0.5s;
 }
 
 .third {
