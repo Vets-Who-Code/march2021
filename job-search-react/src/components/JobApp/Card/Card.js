@@ -17,7 +17,7 @@ export default function Card({ isSubmitted, jobData }) {
 				)}
 			</div>
 			<div className="grid-item grid-item-6">
-				Date Posted: {} {/* TODO!!! */}
+				Date Posted: {jobData.created} {/* FORMAT DATE */}
 				<a
 					className="apply"
 					href={`${jobData.redirect_url}`}
