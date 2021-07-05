@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default function Card({ isSubmitted, jobData }) {
+	let date = new Date(jobData.created);
+
 	function removeHTML(text) {
 		// this regex removes html tags
 		return text.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, '');
@@ -16,17 +18,18 @@ export default function Card({ isSubmitted, jobData }) {
 			<div className="grid-item grid-item-3">
 				Remote:
 				{jobData.description.toLowerCase().indexOf('remote') > -1 ||
+				jobData.title.toLowerCase().indexOf('remote') > -1 ||
+				jobData.title.toLowerCase().indexOf('work from home') > -1 ||
 				jobData.description.toLowerCase().indexOf('work from home') > -1
 					? ' Yes'
 					: ' No'}
 			</div>
-			{/* TODO!!! */}
 			<div className="grid-item grid-item-4">
 				Job Description:
 				{removeHTML(jobData.description)}
 			</div>
 			<div className="grid-item grid-item-6">
-				Date Posted: {jobData.created} {/* FORMAT DATE */}
+				Date Posted: {date.toLocaleDateString()} 
 				<a
 					className="apply"
 					href={`${jobData.redirect_url}`}
