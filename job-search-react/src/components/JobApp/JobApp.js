@@ -30,7 +30,8 @@ export default function JobApp(props) {
 		fetch(url)
 			.then((response) => response.json())
 			.then(setJobData)
-			.catch(console.error);
+			.catch(console.error)
+			.then(setJobData(false));
 	}
 
 	return (
