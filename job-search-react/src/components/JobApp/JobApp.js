@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Typed from 'react-typed';
-import Form from './Form/Form.js';
+import Form from './Form/Form';
 import Card from './Card/Card';
 import Loader from './Loader/Loader';
-import Video from './Video/Video.js';
-import NoResults from './NoResults/NoResults.js';
+import Video from './Video/Video';
+import NoResults from './NoResults/NoResults';
+import Paginate from './Pagination/Pagination';
 
-export default function JobApp(props) e
+export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
 
 	const [formSubmitted, setFormSubmitted] = useState(false);
@@ -24,7 +25,13 @@ export default function JobApp(props) e
 		let what = 'JavaScript ReactJS Gatsby GraphQL NodeJS node.js';
 		let exclude = '0000 senior sr. Senior sr Sr. principal lead master';
 
-		let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${formResponse.zipCode}&distance=${formResponse.distance}&what_exclude=${exclude}&sort_by=date&max_days_old=30${formResponse.remote === true ? '&what_and=remote' : '' }&page=1`;
+		let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${
+			formResponse.zipCode
+		}&distance=${
+			formResponse.distance
+		}&what_exclude=${exclude}&sort_by=date&max_days_old=30${
+			formResponse.remote === true ? '&what_and=remote' : ''
+		}&page=1`;
 
 		fetch(url)
 			.then((response) => response.json())
@@ -95,7 +102,7 @@ export default function JobApp(props) e
 					</div>
 				</div>
 			</div>
-			<div id="pagination" className="tui-pagination hidden"></div>
+			<Paginate />
 			{/*  End Grid  */}
 		</div> // <-- render wrapper div
 	);
