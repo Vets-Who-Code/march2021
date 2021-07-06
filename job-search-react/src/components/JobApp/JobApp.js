@@ -37,14 +37,14 @@ export default function JobApp(props) {
 	return (
 		<div>
 			<div className="container">
-				<h1 id="main-header" className={`main-header ${props.ternary}`}>
+				<h1 id="main-header" className={`main-header ${props.getDarkTheme}`}>
 					JOB SEARCH
 				</h1>
 				<div className="typed-container">
 					<div id="typed-strings">
-						<p className={`lead-in ${props.ternary}`}>
+						<p className={`lead-in ${props.getDarkTheme}`}>
 							#VetsWhoCode{' '}
-							<span id="typed" className={`typed ${props.ternary}`}>
+							<span id="typed" className={`typed ${props.getDarkTheme}`}>
 								{' '}
 								<Typed
 									strings={[
@@ -82,7 +82,7 @@ export default function JobApp(props) {
 				{/*  End Empty Grid  */}
 
 				{/*  Grid  */}
-				<div className={`jobgrid-container ${props.ternary}`}>
+				<div className={`jobgrid-container ${props.getDarkTheme}`}>
 					<div
 						className={`jobgrid hide-native-scrollbar ${
 							jobData ? '' : 'hidden'
