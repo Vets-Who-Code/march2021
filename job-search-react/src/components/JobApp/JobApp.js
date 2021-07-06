@@ -6,7 +6,7 @@ import Loader from './Loader/Loader';
 import Video from './Video/Video.js';
 import NoResults from './NoResults/NoResults.js';
 
-export default function JobApp(props) {
+export default function JobApp(props) e
 	const [jobData, setJobData] = useState(false);
 
 	const [formSubmitted, setFormSubmitted] = useState(false);
