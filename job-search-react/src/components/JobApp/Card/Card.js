@@ -30,8 +30,7 @@ export default function Card({ isSubmitted, jobData }) {
 					: ' No'}
 			</div>
 			<div className="grid-item grid-item-4">
-				Job Description:
-				{removeHTML(jobData.description)}
+				Job Description: {removeHTML(jobData.description)}
 			</div>
 			<div className="grid-item grid-item-6">
 				Date Posted: {date}
