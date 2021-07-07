@@ -1,14 +1,13 @@
 import React from 'react';
 import Pagination from '@material-ui/lab/Pagination';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withTheme } from '@material-ui/core/styles';
+import { pink } from '@material-ui/core/colors';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
 	root: {
-		'& > *': {
-			marginTop: theme.spacing(2),
-		},
+		marginTop: 20,
 	},
-}));
+});
 
 export default function Paginate({ theme }) {
 	const classes = useStyles();
@@ -21,10 +20,10 @@ export default function Paginate({ theme }) {
 					showLastButton
 					color={theme === 'light' ? 'primary' : 'secondary'}
 				/>
-			</div>
-			<div className="adzuna">
-				Powered By <a href="https://www.adzuna.com/">Adzuna </a>
-				<img class="adzuna-logo" src="images/adzuna.png" alt="Adzuna Logo" />
+				<div className="adzuna">
+					Powered By <a href="https://www.adzuna.com/">Adzuna </a>
+					<img class="adzuna-logo" src="images/adzuna.png" alt="Adzuna Logo" />
+				</div>
 			</div>
 		</div>
 	);
