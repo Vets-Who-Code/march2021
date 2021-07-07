@@ -1,26 +1,19 @@
 import React from 'react';
 import Pagination from '@material-ui/lab/Pagination';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-	root: {
-		'& > *': {
-			marginTop: theme.spacing(2),
-		},
-	},
-}));
 
 export default function Paginate() {
-	const classes = useStyles();
-
 	return (
 		<div>
-			<div className={classes.root}>
+			<div>
 				<Pagination count={10} color="primary" />
 			</div>
 			<div className="adzuna">
 				Powered By <a href="https://www.adzuna.com/">Adzuna </a>
-				<img class="adzuna-logo" src="images/adzuna.png" alt="Adzuna Logo" />
+				<img
+					class="adzuna-logo"
+					src="../../../../public/images/adzuna.png"
+					alt="Adzuna Logo"
+				/>
 			</div>
 		</div>
 	);
