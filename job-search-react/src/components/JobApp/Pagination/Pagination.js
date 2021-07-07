@@ -8,10 +8,10 @@ const useStyles = makeStyles({
 	},
 });
 
-export default function Paginate({ theme }) {
+export default function Paginate({ theme, jobData }) {
 	const classes = useStyles();
 	return (
-		<div className="pagination-wrapper">
+		<div className={`pagination-wrapper ${jobData.data ? '' : 'hidden'}`}>
 			<div className={classes.root}>
 				<Pagination
 					count={10}
