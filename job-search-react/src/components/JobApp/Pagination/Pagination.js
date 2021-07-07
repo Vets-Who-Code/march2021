@@ -1,7 +1,6 @@
 import React from 'react';
 import Pagination from '@material-ui/lab/Pagination';
-import { makeStyles, withTheme } from '@material-ui/core/styles';
-import { pink } from '@material-ui/core/colors';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
 	root: {
