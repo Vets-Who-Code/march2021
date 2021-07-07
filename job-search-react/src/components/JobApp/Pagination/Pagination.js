@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Paginate({ theme }) {
 	const classes = useStyles();
 	return (
-		<div className="pagination">
+		<div className="pagination-wrapper">
 			<div className={classes.root}>
 				<Pagination
 					count={10}
