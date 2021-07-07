@@ -3,17 +3,20 @@ import Pagination from '@material-ui/lab/Pagination';
 import { makeStyles } from '@material-ui/core/styles';
 
 export default function Paginate({ theme, jobData }) {
-	const useStyles =
-		theme === 'light'
-			? makeStyles({ root: '' })
-			: makeStyles((theme) => ({
-					root: {
+	const useStyles = makeStyles({
+		root:
+			theme === 'light'
+				? ''
+				: {
 						'& ul > li > button:not(.Mui-selected)': {
-							backgroundColor: 'transparent',
 							color: '#ffffff',
 						},
-					},
-			  }));
+						'& .MuiPaginationItem-ellipsis': { color: 'white' },
+						'& ul > li button:not(.Mui-selected):hover': {
+							backgroundColor: '#496288',
+						},
+				  },
+	});
 
 	const classes = useStyles();
 
