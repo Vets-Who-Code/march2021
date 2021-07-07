@@ -6,7 +6,7 @@ import Loader from './Loader/Loader';
 import Video from './Video/Video.js';
 import NoResults from './NoResults/NoResults.js';
 
-export default function JobApp(props) e
+export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
 
 	const [formSubmitted, setFormSubmitted] = useState(false);
@@ -90,7 +90,7 @@ export default function JobApp(props) e
 						{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
 						{jobData.data &&
 							jobData.data.results.map((job) => (
-								<Card isSubmitted={formSubmitted} jobData={job} />
+								<Card isSubmitted={formSubmitted} jobData={job} theme={props.theme} />
 							))}
 					</div>
 				</div>
