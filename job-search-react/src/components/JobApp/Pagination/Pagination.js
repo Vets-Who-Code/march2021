@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
 	root: {
-		marginTop: 20,
+		marginTop: 10,
 	},
 });
 
@@ -19,8 +19,15 @@ export default function Paginate({ theme, jobData }) {
 					showLastButton
 					color={theme === 'light' ? 'primary' : 'secondary'}
 				/>
-				<div className="adzuna">
-					Powered By <a href="https://www.adzuna.com/">Adzuna </a>
+				<div className={`adzuna ${theme === 'light' ? '' : 'dark-theme'}`}>
+					Powered By{' '}
+					<a
+						href="https://www.adzuna.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Adzuna{' '}
+					</a>
 					<img class="adzuna-logo" src="images/adzuna.png" alt="Adzuna Logo" />
 				</div>
 			</div>

@@ -379,9 +379,6 @@ a:active {
 	justify-content: center;
 }
 
-.pagination {
-}
-
 .adzuna {
 	text-align: center;
 	padding-top: 20px;
@@ -389,7 +386,7 @@ a:active {
 	font-size: 0.9rem;
 }
 
-.adzuna .adzuna a:link,
+.adzuna a:link,
 .adzuna a:visited,
 .adzuna a:active {
 	color: var(--light-red);
@@ -650,6 +647,20 @@ footer .dropdown-menu > li > a:hover > span {
 
 .dark-container:hover {
 	box-shadow: 0 1px 4px 0 white;
+}
+
+.adzuna.dark-theme {
+	color: white;
+}
+
+.adzuna.dark-theme a:link,
+.adzuna.dark-theme a:visited,
+.adzuna.dark-theme a:active {
+	color: var(--light-red);
+}
+
+.adzuna.dark-theme a:hover {
+	color: var(--light-gold);
 }
 
 /* Dark Footer */
