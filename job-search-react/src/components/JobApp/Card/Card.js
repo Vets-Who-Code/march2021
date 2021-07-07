@@ -4,11 +4,10 @@ export default function Card({ isSubmitted, jobData, theme }) {
 	let date = '';
 	try {
 		date = new Date(jobData.created).toLocaleDateString();
-	} 
-	catch(err) {
+	} catch (err) {
 		console.error('Invalid date.', jobData.created);
 	}
-	
+
 	function removeHTML(text) {
 		// this regex removes html tags
 		return text.replace(/<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g, '');
@@ -37,6 +36,7 @@ export default function Card({ isSubmitted, jobData, theme }) {
 			<div className={`grid-item grid-item-6 ${theme === 'light' ? '' : 'dark-grid'}`}>
 				<p>Date Posted: {date}</p>
 				<a className={`apply ${theme === 'light' ? 'apply' : 'dark-apply'}`} href={jobData.redirect_url} target="blank" rel="noopener noreferrer">
+
 					Apply
 				</a>
 			</div>
