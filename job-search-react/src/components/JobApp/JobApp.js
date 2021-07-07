@@ -25,17 +25,7 @@ export default function JobApp(props) {
 		let what = 'JavaScript ReactJS Gatsby GraphQL NodeJS node.js';
 		let exclude = '0000 senior sr. Senior sr Sr. principal lead master';
 
-<<<<<<< HEAD
 		let url = `https://test-vwc-job-app.netlify.app/.netlify/functions/jobs/1?&results_per_page=15&what_or=${what}&where=${formResponse.zipCode}&distance=${formResponse.distance}&what_exclude=${exclude}&sort_by=date&max_days_old=30${formResponse.remote === true ? '&what_and=remote' : '' }`;
-=======
-		let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${
-			formResponse.zipCode
-		}&distance=${
-			formResponse.distance
-		}&what_exclude=${exclude}&sort_by=date&max_days_old=30${
-			formResponse.remote === true ? '&what_and=remote' : ''
-		}&page=1`;
->>>>>>> main
 
 		fetch(url)
 			.then((response) => response.json())
