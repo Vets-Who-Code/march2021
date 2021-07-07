@@ -23,10 +23,10 @@ export default function Card({ isSubmitted, jobData, theme }) {
 			</div>
 			<div className={`grid-item grid-item-3 ${theme === 'light' ? '' : 'dark-grid'}`}>
 				Remote:
-				{jobData.description.toLowerCase().indexOf('remote') > -1 ||
+				{(jobData.description.toLowerCase().indexOf('remote') > -1 ||
 				jobData.title.toLowerCase().indexOf('remote') > -1 ||
 				jobData.title.toLowerCase().indexOf('work from home') > -1 ||
-				jobData.description.toLowerCase().indexOf('work from home') > -1
+				jobData.description.toLowerCase().indexOf('work from home') > -1)
 					? ' Yes'
 					: ' No'}
 			</div>
@@ -35,13 +35,8 @@ export default function Card({ isSubmitted, jobData, theme }) {
 				{removeHTML(jobData.description)}
 			</div>
 			<div className={`grid-item grid-item-6 ${theme === 'light' ? '' : 'dark-grid'}`}>
-				Date Posted: {date} 
-				<a
-					className={`apply apply:hover ${theme === 'light' ? 'apply apply:hover' : 'dark-apply dark-apply:hover'}`}
-					href={`${jobData.redirect_url}`}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
+				<p>Date Posted: {date}</p>
+				<a className={`apply ${theme === 'light' ? 'apply' : 'dark-apply'}`} href={jobData.redirect_url} target="blank" rel="noopener noreferrer">
 					Apply
 				</a>
 			</div>
