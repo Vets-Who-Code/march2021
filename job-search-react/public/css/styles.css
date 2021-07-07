@@ -374,6 +374,32 @@ a:active {
 	color: black;
 }
 
+.pagination {
+	text-align: center;
+}
+
+.adzuna {
+	text-align: center;
+	padding-top: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9rem;
+}
+
+.adzuna .adzuna a:link,
+.adzuna a:visited,
+.adzuna a:active {
+	color: var(--light-red);
+}
+
+.adzuna a:hover {
+	color: var(--medium-blue);
+	text-decoration: underline;
+}
+
+.adzuna-logo {
+	width: 12px;
+	height: auto;
+}
 /* Footer */
 
 footer {
