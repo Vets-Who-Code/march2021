@@ -102,7 +102,7 @@ export default function JobApp(props) {
 					</div>
 				</div>
 			</div>
-			<Paginate theme={props.theme} />
+			<Paginate theme={props.theme} jobData={jobData} />
 			{/*  End Grid  */}
 		</div> // <-- render wrapper div
 	);

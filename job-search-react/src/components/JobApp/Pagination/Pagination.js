@@ -8,10 +8,10 @@ const useStyles = makeStyles({
 	},
 });
 
-export default function Paginate({ theme }) {
+export default function Paginate({ theme, jobData }) {
 	const classes = useStyles();
 	return (
-		<div className="pagination-wrapper">
+		<div className={`pagination-wrapper ${jobData.data ? '' : 'hidden'}`}>
 			<div className={classes.root}>
 				<Pagination
 					count={10}
@@ -20,7 +20,14 @@ export default function Paginate({ theme }) {
 					color={theme === 'light' ? 'primary' : 'secondary'}
 				/>
 				<div className="adzuna">
-					Powered By <a href="https://www.adzuna.com/">Adzuna </a>
+					Powered By{' '}
+					<a
+						href="https://www.adzuna.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Adzuna{' '}
+					</a>
 					<img class="adzuna-logo" src="images/adzuna.png" alt="Adzuna Logo" />
 				</div>
 			</div>
