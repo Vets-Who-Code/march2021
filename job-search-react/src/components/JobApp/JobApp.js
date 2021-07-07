@@ -6,7 +6,7 @@ import Loader from './Loader/Loader';
 import Video from './Video/Video.js';
 import NoResults from './NoResults/NoResults.js';
 
-export default function JobApp(props) e
+export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
 
 	const [formSubmitted, setFormSubmitted] = useState(false);
@@ -24,7 +24,7 @@ export default function JobApp(props) e
 		let what = 'JavaScript ReactJS Gatsby GraphQL NodeJS node.js';
 		let exclude = '0000 senior sr. Senior sr Sr. principal lead master';
 
-		let url = `http://romine.tech/api/adzuna.php?what_or=${what}&where=${formResponse.zipCode}&distance=${formResponse.distance}&what_exclude=${exclude}&sort_by=date&max_days_old=30${formResponse.remote === true ? '&what_and=remote' : '' }&page=1`;
+		let url = `https://test-vwc-job-app.netlify.app/.netlify/functions/jobs/1?&results_per_page=15&what_or=${what}&where=${formResponse.zipCode}&distance=${formResponse.distance}&what_exclude=${exclude}&sort_by=date&max_days_old=30${formResponse.remote === true ? '&what_and=remote' : '' }`;
 
 		fetch(url)
 			.then((response) => response.json())
@@ -88,8 +88,8 @@ export default function JobApp(props) e
 						}`}
 					>
 						{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
-						{jobData.data &&
-							jobData.data.results.map((job) => (
+						{jobData &&
+							jobData.results.map((job) => (
 								<Card isSubmitted={formSubmitted} jobData={job} />
 							))}
 					</div>
