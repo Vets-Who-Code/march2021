@@ -91,7 +91,7 @@ export default function JobApp(props) {
 						{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
 						{jobData &&
 							jobData.results.map((job) => (
-								<Card isSubmitted={formSubmitted} jobData={job} />
+								<Card isSubmitted={formSubmitted} jobData={job} theme={props.theme} />
 							))}
 					</div>
 				</div>
