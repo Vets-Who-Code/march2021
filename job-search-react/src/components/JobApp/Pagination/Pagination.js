@@ -10,12 +10,17 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function Paginate() {
+export default function Paginate({ theme }) {
 	const classes = useStyles();
 	return (
 		<div className="pagination">
 			<div className={classes.root}>
-				<Pagination count={10} color="primary" />
+				<Pagination
+					count={10}
+					showFirstButton
+					showLastButton
+					color={theme === 'light' ? 'primary' : 'secondary'}
+				/>
 			</div>
 			<div className="adzuna">
 				Powered By <a href="https://www.adzuna.com/">Adzuna </a>
