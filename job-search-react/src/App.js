@@ -9,7 +9,7 @@ export default function App() {
 	return (
 		<div className={`App ${theme === 'light' ? '' : 'dark-background'}`}>
 			<Header theme={theme} setTheme={setTheme} />
-			<JobApp theme={theme} setTheme={setTheme} ternary={getDarkTheme} />
+			<JobApp theme={theme} setTheme={setTheme} getDarkTheme={getDarkTheme} />
 			<Footer theme={theme} setTheme={setTheme} />
 		</div>
 	);
