@@ -14,11 +14,14 @@ export default function Paginate() {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.root}>
-			<Pagination count={10} />
-			<Pagination count={10} color="primary" />
-			<Pagination count={10} color="secondary" />
-			<Pagination count={10} disabled />
+		<div>
+			<div className={classes.root}>
+				<Pagination count={10} color="primary" />
+			</div>
+			<div className="adzuna">
+				Powered By <a href="https://www.adzuna.com/">Adzuna </a>
+				<img class="adzuna-logo" src="images/adzuna.png" alt="Adzuna Logo" />
+			</div>
 		</div>
 	);
 }
