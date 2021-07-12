@@ -2,7 +2,11 @@ import React from 'react';
 import Pagination from '@material-ui/lab/Pagination';
 import { makeStyles } from '@material-ui/core/styles';
 
-export default function Paginate({ theme, jobData }) {
+export default function Paginate({ theme, jobData, formData, clickEvent }) {
+	const pageChange = (event, value) => {
+		formData(clickEvent, value);
+	};
+
 	const useStyles = makeStyles({
 		root:
 			theme === 'light'
@@ -28,6 +32,7 @@ export default function Paginate({ theme, jobData }) {
 					showFirstButton
 					showLastButton
 					color={theme === 'light' ? 'primary' : 'secondary'}
+					onChange={pageChange}
 				/>
 				<div className={`adzuna ${theme === 'light' ? '' : 'dark-theme'}`}>
 					Powered By{' '}

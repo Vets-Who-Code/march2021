@@ -9,23 +9,25 @@ import Paginate from './Pagination/Pagination';
 
 export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
+	const [clickEvent, setClickEvent] = useState(false);
 
 	const [formSubmitted, setFormSubmitted] = useState(false);
 
-	function formData(clickEvent) {
+	function formData(clickEvent, page = 1) {
 		clickEvent.preventDefault();
+		setClickEvent(clickEvent);
 		setFormSubmitted(true);
 		document.getElementById('middle').scrollIntoView();
 
 		const formResponse = {
 			zipCode: clickEvent.target[0].value,
-			remote: clickEvent.target[1].checked, //TODO!!!!
+			remote: clickEvent.target[1].checked,
 			distance: clickEvent.target[2].value,
 		};
 		let what = 'JavaScript ReactJS Gatsby GraphQL NodeJS node.js';
 		let exclude = '0000 senior sr. Senior sr Sr. principal lead master';
 
-		let url = `https://test-vwc-job-app.netlify.app/.netlify/functions/jobs/1?&results_per_page=15&what_or=${what}&where=${
+		let url = `https://test-vwc-job-app.netlify.app/.netlify/functions/jobs/${page}?&results_per_page=15&what_or=${what}&where=${
 			formResponse.zipCode
 		}&distance=${
 			formResponse.distance
@@ -94,7 +96,6 @@ export default function JobApp(props) {
 							jobData && jobData.results.length > 0 ? '' : 'hidden'
 						}`}
 					>
-						{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
 						{jobData &&
 							jobData.results.map((job) => (
 								<Card
@@ -106,7 +107,12 @@ export default function JobApp(props) {
 					</div>
 				</div>
 			</div>
-			<Paginate theme={props.theme} jobData={jobData} />
+			<Paginate
+				theme={props.theme}
+				jobData={jobData}
+				formData={formData}
+				clickEvent={clickEvent}
+			/>
 			{/*  End Grid  */}
 		</div> // <-- render wrapper div
 	);
