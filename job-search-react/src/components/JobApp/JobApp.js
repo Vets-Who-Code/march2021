@@ -26,7 +26,13 @@ export default function JobApp(props) {
 		let what = 'JavaScript ReactJS Gatsby GraphQL NodeJS node.js';
 		let exclude = '0000 senior sr. Senior sr Sr. principal lead master';
 
-		let url = `https://test-vwc-job-app.netlify.app/.netlify/functions/jobs/1?&results_per_page=15&what_or=${what}&where=${formResponse.zipCode}&distance=${formResponse.distance}&what_exclude=${exclude}&sort_by=date&max_days_old=30${formResponse.remote === true ? '&what_and=remote' : '' }`;
+		let url = `https://test-vwc-job-app.netlify.app/.netlify/functions/jobs/1?&results_per_page=15&what_or=${what}&where=${
+			formResponse.zipCode
+		}&distance=${
+			formResponse.distance
+		}&what_exclude=${exclude}&sort_by=date&max_days_old=30${
+			formResponse.remote === true ? '&what_and=remote' : ''
+		}`;
 
 		fetch(url)
 			.then((response) => response.json())
@@ -84,6 +90,7 @@ export default function JobApp(props) {
 
 				{/*  Grid  */}
 
+
 					<div className={`jobgrid-container ${props.getDarkTheme}`}>
 							<ScrollContainer
 								className={`jobgrid hide-native-scrollbar ${
@@ -96,6 +103,7 @@ export default function JobApp(props) {
 										<Card isSubmitted={formSubmitted} jobData={job} theme={props.theme} />
 									))}
 							</ScrollContainer>
+
 					</div>
 			</div>
 			<Paginate theme={props.theme} jobData={jobData} />

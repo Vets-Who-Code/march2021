@@ -2,16 +2,26 @@ import React from 'react';
 import Pagination from '@material-ui/lab/Pagination';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
-	root: {
-		marginTop: 10,
-	},
-});
-
 export default function Paginate({ theme, jobData }) {
+	const useStyles = makeStyles({
+		root:
+			theme === 'light'
+				? ''
+				: {
+						'& ul > li > button:not(.Mui-selected)': {
+							color: '#ffffff',
+						},
+						'& .MuiPaginationItem-ellipsis': { color: 'white' },
+						'& ul > li button:not(.Mui-selected):hover': {
+							backgroundColor: '#496288',
+						},
+				  },
+	});
+
 	const classes = useStyles();
+
 	return (
-		<div className={`pagination-wrapper ${jobData.data ? '' : 'hidden'}`}>
+		<div className={`pagination-wrapper ${jobData ? '' : 'hidden'}`}>
 			<div className={classes.root}>
 				<Pagination
 					count={10}
