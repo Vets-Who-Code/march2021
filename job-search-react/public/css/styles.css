@@ -377,6 +377,7 @@ a:active {
 .pagination-wrapper {
 	display: flex;
 	justify-content: center;
+	margin-top: 20px;
 }
 
 .adzuna {
