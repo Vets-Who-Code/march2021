@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState }  from 'react';
 import Typed from 'react-typed';
 import Form from './Form/Form';
 import Card from './Card/Card';
@@ -6,6 +6,7 @@ import Loader from './Loader/Loader';
 import Video from './Video/Video';
 import NoResults from './NoResults/NoResults';
 import Paginate from './Pagination/Pagination';
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
@@ -82,19 +83,20 @@ export default function JobApp(props) {
 				{/*  End Empty Grid  */}
 
 				{/*  Grid  */}
-				<div className={`jobgrid-container ${props.getDarkTheme}`}>
-					<div
-						className={`jobgrid hide-native-scrollbar ${
-							jobData ? '' : 'hidden'
-						}`}
-					>
-						{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
-						{jobData &&
-							jobData.results.map((job) => (
-								<Card isSubmitted={formSubmitted} jobData={job} theme={props.theme} />
-							))}
+
+					<div className={`jobgrid-container ${props.getDarkTheme}`}>
+							<ScrollContainer
+								className={`jobgrid hide-native-scrollbar ${
+									jobData ? 'scroll-container' : 'hidden'
+								}`}
+							>
+								{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
+								{jobData &&
+									jobData.results.map((job) => (
+										<Card isSubmitted={formSubmitted} jobData={job} theme={props.theme} />
+									))}
+							</ScrollContainer>
 					</div>
-				</div>
 			</div>
 			<Paginate theme={props.theme} jobData={jobData} />
 			{/*  End Grid  */}
