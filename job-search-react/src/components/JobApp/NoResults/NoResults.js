@@ -5,9 +5,11 @@ export default function NoResults({ isSubmitted, jobData }) {
 		<div>
 			<p
 				className={`text-center no-results ${
-					isSubmitted && jobData.data && jobData.data.results.length === 0
-						? ''
-						: 'hidden'
+					(isSubmitted && jobData.data) ||
+					!isSubmitted ||
+					(isSubmitted && !jobData)
+						? 'hidden'
+						: ''
 				}`}
 			>
 				Sorry there were no results. Try again.
