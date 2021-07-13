@@ -13,16 +13,16 @@ export default function JobApp(props) {
 	const [formSubmitted, setFormSubmitted] = useState(false);
 	const getGrid = document.getElementById('jobgrid');
 
-	function formData(clickEvent, page = 1) {
-		clickEvent.preventDefault();
-		setClickEvent(clickEvent);
+	function formData(event, page = 1) {
+		event.preventDefault();
+		setClickEvent(event);
 		setFormSubmitted(true);
 		document.getElementById('middle').scrollIntoView();
 
 		const formResponse = {
-			zipCode: clickEvent.target[0].value,
-			remote: clickEvent.target[1].checked,
-			distance: clickEvent.target[2].value,
+			zipCode: event.target[0].value,
+			remote: event.target[1].checked,
+			distance: event.target[2].value,
 		};
 		let what = 'JavaScript ReactJS Gatsby GraphQL NodeJS node.js';
 		let exclude = '0000 senior sr. Senior sr Sr. principal lead master';
