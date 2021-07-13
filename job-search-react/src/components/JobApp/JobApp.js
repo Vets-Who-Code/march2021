@@ -6,6 +6,7 @@ import Loader from './Loader/Loader';
 import Video from './Video/Video';
 import NoResults from './NoResults/NoResults';
 import Paginate from './Pagination/Pagination';
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
@@ -91,10 +92,9 @@ export default function JobApp(props) {
 
 				{/*  Grid  */}
 				<div className={`jobgrid-container ${props.getDarkTheme}`}>
-					<div
-						id="jobgrid"
+					<ScrollContainer
 						className={`jobgrid hide-native-scrollbar ${
-							jobData && jobData.results.length > 0 ? '' : 'hidden'
+							jobData ? 'scroll-container' : 'hidden'
 						}`}
 					>
 						{jobData &&
@@ -105,7 +105,7 @@ export default function JobApp(props) {
 									theme={props.theme}
 								/>
 							))}
-					</div>
+					</ScrollContainer>
 				</div>
 			</div>
 			<Paginate
