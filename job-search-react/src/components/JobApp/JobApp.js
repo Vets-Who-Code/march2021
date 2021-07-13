@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState } from 'react';
 import Typed from 'react-typed';
 import Form from './Form/Form';
 import Card from './Card/Card';
@@ -10,23 +10,25 @@ import ScrollContainer from 'react-indiana-drag-scroll';
 
 export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
-
+	const [clickEvent, setClickEvent] = useState(false);
 	const [formSubmitted, setFormSubmitted] = useState(false);
+	const getGrid = document.getElementById('jobgrid');
 
-	function formData(clickEvent) {
-		clickEvent.preventDefault();
+	function formData(event, page = 1) {
+		event.preventDefault();
+		setClickEvent(event);
 		setFormSubmitted(true);
 		document.getElementById('middle').scrollIntoView();
 
 		const formResponse = {
-			zipCode: clickEvent.target[0].value,
-			remote: clickEvent.target[1].checked, //TODO!!!!
-			distance: clickEvent.target[2].value,
+			zipCode: event.target[0].value,
+			remote: event.target[1].checked,
+			distance: event.target[2].value,
 		};
 		let what = 'JavaScript ReactJS Gatsby GraphQL NodeJS node.js';
 		let exclude = '0000 senior sr. Senior sr Sr. principal lead master';
 
-		let url = `https://test-vwc-job-app.netlify.app/.netlify/functions/jobs/1?&results_per_page=15&what_or=${what}&where=${
+		let url = `https://test-vwc-job-app.netlify.app/.netlify/functions/jobs/${page}?&results_per_page=15&what_or=${what}&where=${
 			formResponse.zipCode
 		}&distance=${
 			formResponse.distance
@@ -89,24 +91,30 @@ export default function JobApp(props) {
 				{/*  End Empty Grid  */}
 
 				{/*  Grid  */}
-
-
-					<div className={`jobgrid-container ${props.getDarkTheme}`}>
-							<ScrollContainer
-								className={`jobgrid hide-native-scrollbar ${
-									jobData ? 'scroll-container' : 'hidden'
-								}`}
-							>
-								{/* we need to check that jobData.data exists before we can map the results of the fetch. https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator*/}
-								{jobData &&
-									jobData.results.map((job) => (
-										<Card isSubmitted={formSubmitted} jobData={job} theme={props.theme} />
-									))}
-							</ScrollContainer>
-
-					</div>
+				<div className={`jobgrid-container ${props.getDarkTheme}`}>
+					<ScrollContainer
+						className={`jobgrid hide-native-scrollbar ${
+							jobData ? 'scroll-container' : 'hidden'
+						}`}
+					>
+						{jobData &&
+							jobData.results.map((job) => (
+								<Card
+									isSubmitted={formSubmitted}
+									jobData={job}
+									theme={props.theme}
+								/>
+							))}
+					</ScrollContainer>
+				</div>
 			</div>
-			<Paginate theme={props.theme} jobData={jobData} />
+			<Paginate
+				theme={props.theme}
+				jobData={jobData}
+				formData={formData}
+				clickEvent={clickEvent}
+				getGrid={getGrid}
+			/>
 			{/*  End Grid  */}
 		</div> // <-- render wrapper div
 	);
