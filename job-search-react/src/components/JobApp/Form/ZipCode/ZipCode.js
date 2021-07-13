@@ -3,7 +3,7 @@ import React from 'react';
 export default function ZipCode() {
 	return (
 		<span>
-			<label className="sr-only" for="zipCode">
+			<label className="sr-only" htmlFor="zipCode">
 				Zip Code
 			</label>
 			<input

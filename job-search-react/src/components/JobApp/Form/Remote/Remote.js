@@ -8,7 +8,7 @@ export default function Checkbox() {
 				type="checkbox"
 				id="inlineFormCheck"
 			/>
-			<label className="form-check-label" for="inlineFormCheck">
+			<label className="form-check-label" htmlFor="inlineFormCheck">
 				Remote?
 			</label>
 		</span>

@@ -11,7 +11,7 @@ export default function Paginate({
 }) {
 	const pageChange = (event, value) => {
 		formData(clickEvent, value);
-		getGrid.scrollTop = 0;
+		getGrid.current.container.current.scrollTop = 0;
 	};
 
 	const useStyles = makeStyles({
@@ -50,7 +50,11 @@ export default function Paginate({
 					>
 						Adzuna{' '}
 					</a>
-					<img class="adzuna-logo" src="images/adzuna.png" alt="Adzuna Logo" />
+					<img
+						className="adzuna-logo"
+						src="images/adzuna.png"
+						alt="Adzuna Logo"
+					/>
 				</div>
 			</div>
 		</div>

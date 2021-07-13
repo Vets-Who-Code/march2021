@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Typed from 'react-typed';
 import Form from './Form/Form';
 import Card from './Card/Card';
@@ -12,7 +12,7 @@ export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
 	const [clickEvent, setClickEvent] = useState(false);
 	const [formSubmitted, setFormSubmitted] = useState(false);
-	const getGrid = document.getElementById('jobgrid');
+	const getGrid = useRef(null);
 
 	function formData(event, page = 1) {
 		event.preventDefault();
@@ -91,19 +91,21 @@ export default function JobApp(props) {
 				{/*  End Empty Grid  */}
 
 				{/*  Grid  */}
-				<div id="jobgrid" className={`jobgrid-container ${props.getDarkTheme}`}>
+				<div className={`jobgrid-container ${props.getDarkTheme}`}>
 					<ScrollContainer
+						ref={getGrid}
 						hideScrollbars={false}
 						className={`jobgrid hide-native-scrollbar ${
 							jobData ? 'scroll-container' : 'hidden'
 						}`}
 					>
 						{jobData &&
-							jobData.results.map((job) => (
+							jobData.results.map((job, i) => (
 								<Card
 									isSubmitted={formSubmitted}
 									jobData={job}
 									theme={props.theme}
+									key={`job data card-${i}`}
 								/>
 							))}
 					</ScrollContainer>
