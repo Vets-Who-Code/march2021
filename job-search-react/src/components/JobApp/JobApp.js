@@ -10,7 +10,6 @@ import Paginate from './Pagination/Pagination';
 export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
 	const [clickEvent, setClickEvent] = useState(false);
-
 	const [formSubmitted, setFormSubmitted] = useState(false);
 
 	function formData(clickEvent, page = 1) {
