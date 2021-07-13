@@ -2,9 +2,16 @@ import React from 'react';
 import Pagination from '@material-ui/lab/Pagination';
 import { makeStyles } from '@material-ui/core/styles';
 
-export default function Paginate({ theme, jobData, formData, clickEvent }) {
+export default function Paginate({
+	theme,
+	jobData,
+	formData,
+	clickEvent,
+	getGrid,
+}) {
 	const pageChange = (event, value) => {
 		formData(clickEvent, value);
+		getGrid.scrollTop = 0;
 	};
 
 	const useStyles = makeStyles({

@@ -11,6 +11,7 @@ export default function JobApp(props) {
 	const [jobData, setJobData] = useState(false);
 	const [clickEvent, setClickEvent] = useState(false);
 	const [formSubmitted, setFormSubmitted] = useState(false);
+	const getGrid = document.getElementById('jobgrid');
 
 	function formData(clickEvent, page = 1) {
 		clickEvent.preventDefault();
@@ -91,6 +92,7 @@ export default function JobApp(props) {
 				{/*  Grid  */}
 				<div className={`jobgrid-container ${props.getDarkTheme}`}>
 					<div
+						id="jobgrid"
 						className={`jobgrid hide-native-scrollbar ${
 							jobData && jobData.results.length > 0 ? '' : 'hidden'
 						}`}
@@ -111,6 +113,7 @@ export default function JobApp(props) {
 				jobData={jobData}
 				formData={formData}
 				clickEvent={clickEvent}
+				getGrid={getGrid}
 			/>
 			{/*  End Grid  */}
 		</div> // <-- render wrapper div
