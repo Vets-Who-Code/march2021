@@ -91,8 +91,9 @@ export default function JobApp(props) {
 				{/*  End Empty Grid  */}
 
 				{/*  Grid  */}
-				<div className={`jobgrid-container ${props.getDarkTheme}`}>
+				<div id="jobgrid" className={`jobgrid-container ${props.getDarkTheme}`}>
 					<ScrollContainer
+						hideScrollbars={false}
 						className={`jobgrid hide-native-scrollbar ${
 							jobData ? 'scroll-container' : 'hidden'
 						}`}
