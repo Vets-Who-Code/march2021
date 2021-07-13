@@ -28,7 +28,7 @@ export default function Paginate({ theme, jobData, formData, clickEvent }) {
 		<div className={`pagination-wrapper ${jobData ? '' : 'hidden'}`}>
 			<div className={classes.root}>
 				<Pagination
-					count={10}
+					count={Math.floor(jobData.count / 15)}
 					showFirstButton
 					showLastButton
 					color={theme === 'light' ? 'primary' : 'secondary'}
