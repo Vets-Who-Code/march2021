@@ -25,19 +25,19 @@ Welcome to Vets Who Code play repo for the new troops.
 
 ## Notes
 
-- [Week 1]()
-- [Week 2]()
-- [Week 3]()
-- [Week 4]()
-- [Week 5]()
-- [Week 6]()
-- [Week 7]()
-- [Week 8]()
-- [Week 9]()
-- [Week 10]()
+- [Week 1](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_01.md)
+- [Week 2](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_02.md)
+- [Week 3](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_03.md)
+- [Week 4](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_04.md)
+- [Week 5](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_05.md)
+- [Week 6](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_06.md)
+- [Week 7](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_07.md)
+- [Week 8](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_08.md)
+- [Week 9](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_09.md)
+- [Week 10](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_10.md)
 
 ## Projects
 
-- [Zombie App]()
-- [Job Search MVP]()
-- [Job Search - React]()
+- [Zombie App](https://stephanlamoureux.github.io/zombie-app/)
+- [Job Search MVP](https://stephanlamoureux.github.io/job-search-mvp/)
+- [Job Search - React](https://github.com/Vets-Who-Code/march2021/tree/main/job-search-react)
