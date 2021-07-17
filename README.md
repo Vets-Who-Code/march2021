@@ -40,4 +40,4 @@ Welcome to Vets Who Code play repo for the new troops.
 
 - [Zombie App](https://stephanlamoureux.github.io/zombie-app/)
 - [Job Search MVP](https://stephanlamoureux.github.io/job-search-mvp/)
-- [Job Search - React](https://github.com/Vets-Who-Code/march2021/tree/main/job-search-react)
+- [Job Search - React](https://test-vwc-job-app.netlify.app/)
