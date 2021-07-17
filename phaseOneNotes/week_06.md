@@ -49,12 +49,8 @@ function whatIsLet(sum) {
 
 ### Resources
 
-- https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-  developer.mozilla.orgdeveloper.mozilla.org
-  Window.localStorage - Web APIs | MDN
-- https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
-  developer.mozilla.orgdeveloper.mozilla.org
-  Window.sessionStorage - Web APIs | MDN
+- [MDN - localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [MDN - sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
 
 ## Day 2
 
@@ -202,12 +198,11 @@ do {
 
 - Example
 
-```
+```js
 const array1 = ['a', 'b', 'c'];
 for (const element of array1) {
-  console.log(element);
+	console.log(element);
 }
-
 ```
 
 ### Break and Continue
