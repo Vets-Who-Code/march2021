@@ -1,6 +1,9 @@
 # VWC Job Finder
+
 ## Project Planning Meeting for "VWC Job Finder" a.k.a. "Javascript Job Search"
+
 ### User Story
+
 - User's name is Jodi
 - Former Army enlisted
 - Married, has children, or both.
@@ -17,7 +20,9 @@
 - They want to login easily after searching for jobs and then send resume
 - The user is tech adjacent looking to get into tech with minimal experience (one to two years)
 - The average age for this user is 28-37 and they are male
+
 ### Requirements
+
 - The app will pass parameters in real time
 - We will set things that we need to feed in the jobs
 - Header, footer, body
@@ -35,10 +40,9 @@
 - the dark mode moon icon in the navbar should be pulled to the right with the donate button
 - no login requirement for mvp
 - no twitter links in the grid
-- no bookmarking jobs 
+- no bookmarking jobs
 - every job returned should have 2 or 3 explicit skills taught by VHC
+
 ### Mockup
+
 ![job project](images/mockup.jpg)
-
-
-
