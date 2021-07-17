@@ -78,7 +78,7 @@
 - Base (defaults, body, ul, ol, li, layouts like margin border that define your pages, module and modularity , specific components)
 - Buttons are reuseable, forms are too
 - State (like hidden), dark mode, typographic element or treatment,
-- When you're making a class to style something and youre on a base layer make a class as you see fit
+- When you're making a class to style something and you're on a base layer make a class as you see fit
 - Layout you have to prefix with an "l". Ex:
 - Base n just make the class name as you see fit.
 - Layout You have to prefix with an i. example: l-header
@@ -87,13 +87,13 @@
 
 ### Resources
 
-- https://dequeuniversity.com/library/aria/liveregion-playground
-- https://developer.mozilla.org/enUS/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions
-- https://developer.mozilla.org/en-US/docs/Web/Accessibility/An_overview_of_accessible_web_applications_and_widgets
+- [Aria Live Regions Playground](https://dequeuniversity.com/library/aria/liveregion-playground)
+- [MDN - Aria Live Regions](https://developer.mozilla.org/enUS/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions)
+- [MDN - A11y](https://developer.mozilla.org/en-US/docs/Web/Accessibility/An_overview_of_accessible_web_applications_and_widgets)
 
 ### Homework
 
-- Make Project accesible. Add reoles, and make important sections tabbable. Use tab index.
+- Make Project accessible. Add roles, and make important sections tabbable. Use tab index.
 - Look at your capstone and see where are the areas for improved accessibility
 - Use aria-label role and tabindex correctly
 
@@ -109,15 +109,15 @@
 - Look at javascript promises
 - Being successful involves building a thing, talking about it, blogging about it, documenting your journey, and adding to your professional portfolio
 - Brief overview of rss feeds. Mainly for podcast and blog post updates to be sent to subscribers
-- We will build an app with contraints
+- We will build an app with constraints
 - We will rebuild our product in Gatsby
 
-### Resources (productivity and others:
+### Resources (productivity and others)
 
 - [Wakatime](https://wakatime.com/)
 - Notion
 - Use Bullet Mockups
-- [Grammarly extension](tell grammarly what reading level you want)
+- Grammarly extension(tell grammarly what reading level you want)
 - [Top 10 Best Job APIs](https://blog.api.rakuten.net/top-10-best-jobs-apis-linkedin-indeed-glassdoor-and-others/)
 - "Superhuman" for email
 - [InMotion for Chrome](https://inmotion.app/meet/jerome-hardaway/9gxy6)
@@ -136,8 +136,7 @@
 
 ### Homework
 
-- 30, 60, and 90 day plan push content building things, build your skills, showcase skills externally
-  in the community
+- 30, 60, and 90 day plan push content building things, build your skills, showcase skills externally in the community
 
 ## Day 4
 
