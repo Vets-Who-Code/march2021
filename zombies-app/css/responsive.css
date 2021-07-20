@@ -1,0 +1,469 @@
+/* Media Queries */
+@media (min-width: 2700px) {
+  #radar {
+    width: 15%;
+    margin-top: 5%;
+  }
+
+  #hand {
+    width: 15%;
+    margin-top: 5%;
+  }
+
+  #army {
+    width: 15%;
+    margin-top: 5%;
+  }
+
+  #explosion {
+    width: 15%;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 2699px) {
+  #radar {
+    margin-top: -1%;
+  }
+
+  #hand {
+    margin-top: -1%;
+  }
+
+  #army {
+    margin-top: -1%;
+  }
+
+  #explosion {
+    margin-top: -1%;
+  }
+}
+
+@media (max-width: 2300px) {
+  #radar {
+    margin-top: 5%;
+  }
+
+  #hand {
+    margin-top: 5%;
+  }
+
+  #army {
+    margin-top: 5%;
+  }
+
+  #explosion {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 2000px) {
+  #radar {
+    margin-top: 10%
+  }
+
+  #hand {
+    margin-top: 10%;
+  }
+
+  #army {
+    margin-top: 10%;
+  }
+
+  #explosion {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 1600px) {
+  #radar {
+    margin-top: 12%
+  }
+
+  #hand {
+    margin-top: 12%;
+  }
+
+  #army {
+    margin-top: 12%;
+  }
+
+  #explosion {
+    margin-top: 12%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .blood {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 1300px) {
+  #radar {
+    margin-top: 17%
+  }
+
+  #hand {
+    margin-top: 17%;
+  }
+
+  #army {
+    margin-top: 17%;
+  }
+
+  #explosion {
+    margin-top: 17%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #radar {
+    margin-top: 20%
+  }
+
+  #hand {
+    margin-top: 20%;
+  }
+
+  #army {
+    margin-top: 20%;
+  }
+
+  #explosion {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .blood {
+    font-size: 3.3em;
+  }
+
+  p {
+    padding: 0 2em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .flex-container>a {
+    width: 75%;
+    margin: 0 auto 2em auto;
+  }
+
+  .zombie-img {
+    display: inline;
+    float: left;
+    margin-right: 1em;
+    border-radius: 3px;
+    width: 60%;
+  }
+
+  #radar {
+    margin-top: 10%
+  }
+
+  #hand {
+    margin-top: 10%;
+  }
+
+  #army {
+    margin-top: 10%;
+  }
+
+  #explosion {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    position: absolute;
+    top: 50px;
+  }
+
+  .blood {
+    font-size: 2.7em;
+    padding-top: 0;
+    margin-top: -27px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburg {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu {
+    z-index: 1000;
+    display: initial;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../images/menu-dark.png");
+    background-size: 100%;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .menu.dark-theme {
+    background-image: url("../images/menu.png");
+  }
+
+  .navbar {
+    position: absolute;
+    display: initial;
+    top: 0;
+    left: 0;
+    background: var(--dark-mode);
+    width: 100%;
+    height: 30%;
+    z-index: 999;
+    overflow: hidden;
+    color: var(--Tangerine);
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+  }
+
+  .navbar.dark-theme {
+    background-color: var(--light-mode);
+  }
+
+  .navbar.dark-theme a:link,
+  .navbar.dark-theme a:visited,
+  .navbar.dark-theme a:active {
+    color: var(--dark-mode);
+  }
+
+  .navbar.dark-theme a:hover {
+    padding: 8px;
+    border: 2px solid var(--dark-mode);
+  }
+
+  .showClose {
+    background-image: url("../images/close.png");
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .showClose.menu.dark-theme {
+    background-image: url("../images/close-dark.png");
+  }
+
+  .showNav {
+    transform: translateY(0);
+  }
+
+  .navbar ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .menu-link a,
+  .menu-link a:visited,
+  .menu-link a:active {
+    color: var(--Tangerine);
+    text-decoration: none;
+  }
+
+  .menu-link a:hover {
+    border: 2px solid var(--off-white);
+    padding: 8px;
+  }
+
+  .container {
+    height: 80vh;
+  }
+
+  .zombie-img {
+    width: 87%;
+    padding: 0 1em 20px 1em;
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  p {
+    padding: 0;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .flex-container {
+    text-align: center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto 90px auto;
+  }
+
+  #radar {
+    margin-top: 15%
+  }
+
+  #hand {
+    margin-top: 15%;
+  }
+
+  #army {
+    margin-top: 15%;
+  }
+
+  #explosion {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .blood {
+    font-size: 2em;
+  }
+
+  .zombie-tools {
+    margin-top: 200px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #radar {
+    margin-top: 18%
+  }
+
+  #hand {
+    margin-top: 18%;
+  }
+
+  #army {
+    margin-top: 18%;
+  }
+
+  #explosion {
+    margin-top: 18%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .blood {
+    font-size: 1.8em;
+  }
+
+  .footer-p {
+    font-size: .9em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #radar {
+    margin-top: 25%
+  }
+
+  #hand {
+    margin-top: 25%;
+  }
+
+  #army {
+    margin-top: 25%;
+  }
+
+  #explosion {
+    margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .blood {
+    font-size: 1.55em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #radar {
+    margin-top: 30%
+  }
+
+  #hand {
+    margin-top: 30%;
+  }
+
+  #army {
+    margin-top: 30%;
+  }
+
+  #explosion {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .blood {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .blood {
+    font-size: 1.1em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #radar {
+    margin-top: 40%
+  }
+
+  #hand {
+    margin-top: 40%;
+  }
+
+  #army {
+    margin-top: 40%;
+  }
+
+  #explosion {
+    margin-top: 40%;
+  }
+}

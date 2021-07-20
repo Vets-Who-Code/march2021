@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="icon" type="image/jpg" href="images/favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Creepster|Source+Sans+Pro|Nosifer" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+	<title>Web Basics And Zombies</title>
+</head>
+
+<body onload="advisory()">
+	<div class="loading"></div>
+	<div class="hide-if-loading">
+
+		<header>
+			<a class="skip-to-content-link" href="#about">Skip to Content</a>
+			<!-- Mobile Nav -->
+			<div class="hamburg">
+				<button class="menu" id="ham-menu"></button>
+				<nav class="navbar" id="navbar">
+					<ul class="nav-list">
+						<li class="menu-link"><a href="#about">About</a></li>
+						<li class="menu-link"><a href="#cards">Projects</a></li>
+						<li class="menu-link"><a href="#foot">Contact</a></li>
+						<li class="dark-mobile"><button class="button-toggle-mobile">Go Dark</button></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- End Mobile Menu -->
+			<div class="desktop-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#cards">Projects</a></li>
+					<li><a href="#foot">Contact</a></li>
+					<li><button class="button-toggle">Go Dark</button></li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- Cards -->
+		<div class="container" id="container">
+			<div id="arrow" tabindex="0" class="arrow" role="scrollbar" aria-label="arrow scroll bar"></div>
+			<div class="arrowhovertext">Click here to scroll</div>
+			<h1 class="title blood">Zombies With #VetsWhoCode</h1>
+			<div class="flex-container" id="cards">
+
+				<a href="#" onclick="zombieprompt()" class="radar" id="radar-div">
+					<!--Zombie Radar-->
+					<h1 class="card-header">Zombie Radar</h1>
+					<img id="radar" src="images/radar.png" alt="radar screen"></img>
+					<div class="center">
+						<p id="zqanswer"></p>
+					</div>
+				</a>
+
+				<a href="#" onclick="trigger(); screamSound()" class="trigger">
+					<!--DON'T PUSH!-->
+					<h1 class="card-header">DON'T PUSH!</h1>
+					<img id="hand" src="images/zombie.png" alt="zombie hand">
+				</a>
+
+				<a href="#" onclick="overRunMessage(); quake()" id="air-strike-div">
+					<h1 class="card-header">The Cure</h1>
+					<img src="images/nuclear-explosion.png" id="explosion" alt="nuclear mushroom cloud">
+					<div class="center" id="status"></div>
+					<audio id="bomb-sound" src="sounds/194623__qubodup__nuclear-explosion.flac"></audio>
+				</a>
+
+				<a href="https://www.balloon-juice.com/wp-content/uploads/2015/10/FM-999-3-Counter-Zombie-Operations-at-the-Fireteam-Level.pdf"
+					target="_blank" rel="noopener noreferrer">
+					<!--Zombie Field Manual-->
+					<h1 class="card-header">Zombie Field Manual</h1>
+					<img id="army" src="images/army-soldier-walking.png" alt="army soldier walking" title="Zombie Field Manual">
+				</a>
+
+				<div class="modal">
+					<span class="modal"></span>
+					<audio id="audio" src="sounds/132106__sironboy__woman-scream.wav"></audio>
+					<span class="modal-content">
+						<a href="#dont-touch-div"><span class="close-button">&times;</span></a>
+						<audio id="bomb-sound" src="sounds/194623__qubodup__nuclear-explosion.flac"></audio>
+						<img src="images/ceiling.gif" id="ceiling" alt="zombie crawling on the ceiling">
+						<h1>You're Infected!</h1>
+					</span>
+				</div>
+			</div>
+			<!-- Cards End -->
+
+			<!-- About Section -->
+			<div class="intro" id="about">
+				<article>
+					<img class="zombie-img"
+						src="https://st2.depositphotos.com/1606463/8079/i/600/depositphotos_80792684-stock-photo-toothy-zombie.jpg"
+						alt="zombie face" title="Toothy Zombie">
+					<h2>Kuru - The Facts, You Need To Know!</h2>
+					<p>Kuru is largely localized to the Fore people and people with whom they intermarried.
+						The Fore people ritualistically cooked and consumed body parts of their family members following their death
+						to
+						symbolize respect and mourning. Because the brain is the organ enriched in the infectious prion, women and
+						children,
+						who consumed brain had much higher likelihood of being infected than men, who preferentially consumed
+						muscles.</p>
+
+					<p>In 1961, Australian medical researcher Michael Alpers conducted extensive field studies among the Fore
+						accompanied by
+						anthropologist Shirley Lindenbaum. Their historical research suggested the epidemic may have originated
+						around 1900
+						from a single individual who lived on the edge of Fore territory and who is thought to have spontaneously
+						developed
+						some form of Creutzfeldt–Jakob disease. Alpers and Lindenbaum's research conclusively demonstrated that kuru
+						spread
+						easily and rapidly in the Fore people due to their endocannibalistic funeral practices, in which relatives
+						consumed
+						the bodies of the deceased to return the "life force" of the deceased to the hamlet, a Fore societal
+						subunit. Corpses of
+						family members were often buried for days, then exhumed once the corpses were infested with maggots, at
+						which point the
+						corpse would be dismembered and served with the maggots as a side dish.</p>
+					<p>The demographic distribution evident in the infection rates – kuru was eight to nine times more prevalent
+						in women and children than in men
+						at its peak – is because Fore men considered consuming human flesh to weaken them in times of conflict or
+						battle, while the women and children
+						were more likely to eat the bodies of the deceased, including the brain, where the prion particles were
+						particularly concentrated.
+						Also, the strong possibility exists that it was passed on to women and children more easily because they
+						took on the task of cleaning
+						relatives after death and may have had open sores and cuts on their hands.[<a
+							href="https://en.wikipedia.org/wiki/Kuru_(disease)" target="_blank">source</a>]</p>
+				</article>
+			</div>
+			<!-- About Section End -->
+
+			<footer id="foot" class="footer-light-theme">
+				<p class="footer-p">Coded by the <a href="https://github.com/Vets-Who-Code/march2021" target="_blank"
+						rel="noopener noreferrer">March 2021
+						Cohort</a></p>
+				<div class="footer-container">
+					<ul class="footer-col-1">
+						<li class="footer-link"><a href="https://github.com/joeromine" target="_blank"
+								rel="noopener noreferrer">Joe</a></li>
+						<li class="footer-link"><a href="https://github.com/djkalbert" target="_blank"
+								rel="noopener noreferrer">Albert</a></li>
+						<li class="footer-link"><a href="https://github.com/stephanlamoureux" target="_blank"
+								rel="noopener noreferrer">Steve</a>
+						</li>
+					</ul>
+					<ul class="footer-col-2">
+						<li class="footer-link"><a href="https://github.com/dtetreau251" target="_blank"
+								rel="noopener noreferrer">David</a></li>
+						<li class="footer-link"><a href="https://github.com/sml0291" target="_blank"
+								rel="noopener noreferrer">Lim</a></li>
+						<li class="footer-link"><a href="https://github.com/Skilis" target="_blank"
+								rel="noopener noreferrer">Seneca</a></li>
+					</ul>
+					<ul class="footer-col-3">
+						<li class="footer-link"><a href="https://github.com/TCoder920" target="_blank"
+								rel="noopener noreferrer">Trevon</a></li>
+						<li class="footer-link"><a href="https://github.com/HerndonC" target="_blank"
+								rel="noopener noreferrer">Clinton</a></li>
+						<li class="footer-link"><a href="https://github.com/mario-mitchell" target="_blank"
+								rel="noopener noreferrer">Mario</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-images">
+					<img class="VetsWhoCode-img" src="images/vetswhocode.jpg" alt="VetsWhoCode-Image">
+					<img class="GitHub-img" src="images/github.png" alt="GitHub-img">
+				</div>
+			</footer>
+		</div>
+
+		<script src="scripts/scripts.js"></script>
+</body>
+
+</html>
