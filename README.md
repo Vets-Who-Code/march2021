@@ -24,7 +24,7 @@ Welcome to Vets Who Code play repo for the new troops.
 - [Seneca](https://twitter.com/BrigadeChess)
 
 <details>
-  <summary>## Notes</summary>
+  <summary>Notes</summary>
 
 - [Week 1](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_01.md)
 - [Week 2](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_02.md)
