@@ -23,7 +23,8 @@ Welcome to Vets Who Code play repo for the new troops.
 - [Trevon](https://twitter.com/Trey41741256)
 - [Seneca](https://twitter.com/BrigadeChess)
 
-## Notes
+<details>
+  <summary>## Notes</summary>
 
 - [Week 1](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_01.md)
 - [Week 2](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_02.md)
@@ -35,6 +36,7 @@ Welcome to Vets Who Code play repo for the new troops.
 - [Week 8](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_08.md)
 - [Week 9](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_09.md)
 - [Week 10](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_10.md)
+</details>
 
 ## Projects
 
