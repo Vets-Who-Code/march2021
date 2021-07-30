@@ -26,14 +26,21 @@ Welcome to Vets Who Code play repo for the new troops.
 ## Projects
 
 - [Zombie App](https://stephanlamoureux.github.io/zombie-app/)
+
 <details>
+
   <summary>Job Search (MVP)</summary>
+
 - [Vanilla JS](https://stephanlamoureux.github.io/job-search-mvp/)
 - [React](https://test-vwc-job-app.netlify.app/)
-- [Production](https://vetswhocode.io/jobsearch)
+- [Gatsby (Production)](https://vetswhocode.io/jobsearch)
+
+</details>
 
 ## Notes
+
 <details>
+
   <summary>Phase 1</summary>
 
 - [Week 1](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_01.md)
@@ -46,4 +53,5 @@ Welcome to Vets Who Code play repo for the new troops.
 - [Week 8](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_08.md)
 - [Week 9](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_09.md)
 - [Week 10](https://github.com/Vets-Who-Code/march2021/blob/main/phase-one-notes/week_10.md)
+
 </details>
