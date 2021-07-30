@@ -27,7 +27,7 @@ Welcome to Vets Who Code play repo for the new troops.
 
 - [Zombie App](https://stephanlamoureux.github.io/zombie-app/)
 
-<details>
+<details open>
 
   <summary>Job Search (MVP)</summary>
 
