@@ -26,9 +26,11 @@ Welcome to Vets Who Code play repo for the new troops.
 ## Projects
 
 - [Zombie App](https://stephanlamoureux.github.io/zombie-app/)
-- [Job Search MVP](https://stephanlamoureux.github.io/job-search-mvp/)
-- [Job Search - React](https://test-vwc-job-app.netlify.app/)
-- [Job Search - Production]()
+<details>
+  <summary>Job Search (MVP)</summary>
+- [Vanilla JS](https://stephanlamoureux.github.io/job-search-mvp/)
+- [React](https://test-vwc-job-app.netlify.app/)
+- [Production](https://vetswhocode.io/jobsearch)
 
 ## Notes
 <details>
