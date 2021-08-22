@@ -16,7 +16,7 @@ Then, in order to compliment the block of instruction on React, the VWC Job Sear
 Finally, used Gatsby for our frontend client because we wanted performance from the start. Also, because the VWC website is built with Gatsby, we wanted to fully integrate with the technologies used on VWC. Also we deployed our site on Netlify. The test site can be seen [here](https://test-vwc-job-app.netlify.app/).
 
 ## Challenges + lessons learned
-The biggest challenge was pagination. Pagination was a very important part of the project because it is one of the main components that the user interacts with. Also, the pagination component used for the VWC Job Search had to also work for several other features on the site. The pagination changed several times before it could be integrated with the VWC site.  
+The biggest challenge was pagination. Pagination was a very important part of the project because it is one of the main components that the user interacts with. Also, the pagination component used for the VWC Job Search had to also work for several other features on the site. The pagination changed several times before it could be integrated with the VWC site. For the Vanilla JS version, the pagination was Toast UI. For the React version, it was Material UI. For the production (Gatsby) version, we made a custom pagination, and then had to create another custom pagination that could be used throughout the entire VWC app instead of just job search. 
 
 ## Repository
 The Github repo for our projects is located [here](https://github.com/Vets-Who-Code/march2021). There you will find the code for all three version of the VWC Job Search App as well as the other projects developed during the cohort.
