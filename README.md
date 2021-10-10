@@ -33,7 +33,7 @@ Welcome to Vets Who Code play repo for the new troops.
 
 - [Vanilla JS](https://stephanlamoureux.github.io/job-search-mvp/)
 - [React](https://test-vwc-job-app.netlify.app/)
-- [Gatsby (Production)](https://vetswhocode.io/jobsearch)
+- [Gatsby (Production)](https://vetswhocode.io/jobs)
 
 </details>
 
